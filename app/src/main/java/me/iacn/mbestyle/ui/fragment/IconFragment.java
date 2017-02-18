@@ -1,5 +1,8 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+
 import me.iacn.mbestyle.R;
 
 /**
@@ -9,15 +12,18 @@ import me.iacn.mbestyle.R;
 
 public class IconFragment extends BaseFragment {
 
+    private TabLayout mTab;
+    private ViewPager mViewPager;
+
     @Override
     protected int getInflateView() {
-        System.out.println("IconFragment");
         return R.layout.fragment_icon;
     }
 
     @Override
     protected void findView() {
-
+        mTab = (TabLayout) findViewById(R.id.tab_layout);
+        mViewPager = (ViewPager) findViewById(R.id.viewpager);
     }
 
     @Override
@@ -27,6 +33,7 @@ public class IconFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-
+        mTab.setupWithViewPager(mViewPager);
+        mViewPager.setAdapter();
     }
 }
