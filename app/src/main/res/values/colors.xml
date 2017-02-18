@@ -2,4 +2,7 @@
 <resources>
     <color name="colorPrimary">#FFC107</color>
     <color name="colorAccent">#A7E8BD</color>
+
+    <color name="about_item_title">#323232</color>
+    <color name="about_item_summary">#808080</color>
 </resources>
