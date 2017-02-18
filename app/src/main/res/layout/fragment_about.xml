@@ -13,6 +13,7 @@
         android:src="@drawable/logo" />
 
     <me.iacn.mbestyle.ui.widget.AboutItem
+        android:id="@+id/ai_version"
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:layout_marginBottom="1dp"
