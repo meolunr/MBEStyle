@@ -5,11 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
         android:elevation="8dp"
         app:itemIconTint="@color/selector_bottom_color"
         app:itemTextColor="@color/selector_bottom_color"
