@@ -42,7 +42,11 @@ public class IconFragment extends BaseFragment {
         fragments.add(new IconAdaptedFragment());
         fragments.add(new IconAllFragment());
 
+        List<String> titles = new ArrayList<>();
+        titles.add("已适配");
+        titles.add("全部");
+
         mTab.setupWithViewPager(mViewPager);
-        mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), fragments));
+        mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), fragments, titles));
     }
 }

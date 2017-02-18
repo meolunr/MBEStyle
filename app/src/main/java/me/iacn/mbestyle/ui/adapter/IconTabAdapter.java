@@ -14,19 +14,26 @@ import java.util.List;
 public class IconTabAdapter extends FragmentPagerAdapter {
 
     private List<Fragment> mFragments;
+    private List<String> mTitles;
 
-    public IconTabAdapter(FragmentManager fm, List<Fragment> fragments) {
+    public IconTabAdapter(FragmentManager fm, List<Fragment> fragments, List<String> titles) {
         super(fm);
         mFragments = fragments;
+        mTitles = titles;
     }
 
     @Override
     public Fragment getItem(int position) {
-        return null;
+        return mFragments.get(position);
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return mFragments.size();
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return mTitles.get(position);
     }
 }
