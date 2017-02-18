@@ -11,6 +11,7 @@ public class IconFragment extends BaseFragment {
 
     @Override
     protected int getInflateView() {
+        System.out.println("IconFragment");
         return R.layout.fragment_icon;
     }
 

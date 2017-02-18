@@ -1,5 +1,7 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import me.iacn.mbestyle.R;
+
 /**
  * Created by iAcn on 2017/2/18
  * Emali iAcn0301@foxmail.com
@@ -10,7 +12,7 @@ public class LauncherFragment extends BaseFragment {
     @Override
     protected int getInflateView() {
         System.out.println("LauncherFragment");
-        return 0;
+        return R.layout.fragment_launcher;
     }
 
     @Override
