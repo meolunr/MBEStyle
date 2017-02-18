@@ -7,24 +7,29 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_height="160dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/logo" />
 
     <me.iacn.mbestyle.ui.widget.AboutItem
         android:layout_width="match_parent"
         android:layout_height="68dp"
+        android:layout_marginBottom="1dp"
         app:summary="0.0"
         app:title="版本" />
 
     <me.iacn.mbestyle.ui.widget.AboutItem
         android:layout_width="match_parent"
         android:layout_height="68dp"
+        android:layout_marginBottom="1dp"
         app:summary="幼幼保护协会"
         app:title="设计" />
 
     <me.iacn.mbestyle.ui.widget.AboutItem
         android:layout_width="match_parent"
         android:layout_height="68dp"
+        android:layout_marginBottom="1dp"
         app:summary="iAcn"
         app:title="开发" />
 
