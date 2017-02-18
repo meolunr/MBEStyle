@@ -8,7 +8,9 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
@@ -19,6 +21,7 @@ import me.iacn.mbestyle.ui.fragment.AboutFragment;
 import me.iacn.mbestyle.ui.fragment.ApplyFragment;
 import me.iacn.mbestyle.ui.fragment.IconFragment;
 import me.iacn.mbestyle.ui.fragment.LauncherFragment;
+import me.iacn.mbestyle.util.ScreenUtils;
 import me.iacn.mbestyle.util.StatusBarUtils;
 
 /**
@@ -27,6 +30,8 @@ import me.iacn.mbestyle.util.StatusBarUtils;
  */
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+
+    private Toolbar mToolbar;
 
     private List mFragments;
     private int mCurrentIndex = -1;
@@ -40,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         StatusBarUtils.setColor(this, ContextCompat.getColor(this, R.color.colorPrimary));
 
         BottomNavigationView bottomView = (BottomNavigationView) findViewById(R.id.bottom_bar);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
         bottomView.setOnNavigationItemSelectedListener(this);
 
         mFragments = new ArrayList();
@@ -57,23 +64,35 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_icon:
+                handleToolbarElevation(0);
                 switchFragment(0);
                 return true;
 
             case R.id.menu_launcher:
+                handleToolbarElevation(1);
                 switchFragment(1);
                 return true;
 
             case R.id.menu_apply:
+                handleToolbarElevation(2);
                 switchFragment(2);
                 return true;
 
             case R.id.menu_about:
+                handleToolbarElevation(3);
                 switchFragment(3);
                 return true;
 
             default:
                 return false;
+        }
+    }
+
+    private void handleToolbarElevation(int index) {
+        if (index != 0) {
+            ViewCompat.setElevation(mToolbar, ScreenUtils.dip2px(this, 2));
+        } else {
+            ViewCompat.setElevation(mToolbar, 0);
         }
     }
 
