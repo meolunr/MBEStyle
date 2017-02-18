@@ -7,12 +7,14 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:elevation="8dp"
         app:itemIconTint="@color/selector_bottom_color"
         app:itemTextColor="@color/selector_bottom_color"
