@@ -14,7 +14,7 @@
 
     <style name="TitleStyle" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/title_color</item>
     </style>
 
 </resources>
