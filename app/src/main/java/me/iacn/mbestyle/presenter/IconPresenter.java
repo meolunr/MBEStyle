@@ -44,7 +44,6 @@ public class IconPresenter {
                     xml.next();
                 }
 
-                Thread.sleep(3000);
                 flowableEmitter.onNext(total);
             }
         }, BackpressureStrategy.BUFFER)
