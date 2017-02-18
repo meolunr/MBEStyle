@@ -9,14 +9,17 @@
     <item
         component="ComponentInfo{com.dv.adm.pay/com.dv.adm.pay.Main}"
         drawable="adm" />
+
     <!-- 安全中心 / security -->
     <item
         component="ComponentInfo{com.lenovo.security/com.lenovo.security.homepage.HomePageActivity}"
         drawable="security" />
+
     <!-- Copas / Copas -->
     <item
         component="ComponentInfo{mark.compass/mark.compass.CompassActivity}"
         drawable="compass" />
+
     <!-- 地图 / Map -->
     <item
         component="ComponentInfo{com.baidu.BaiduMap/com.baidu.BaiduMap.BaiduMap}"
@@ -33,6 +36,7 @@
     <item
         component="ComponentInfo{com.meizu.net.map/com.meizu.net.map.MainMapActivity}"
         drawable="map" />
+
     <!-- 计算器 / Calculator -->
     <item
         component="ComponentInfo{com.miui.calculator/com.miui.calculator.cal.CalculatorActivity}"
@@ -61,10 +65,12 @@
     <item
         component="ComponentInfo{com.meizu.flyme.calculator/com.meizu.flyme.calculator.Calculator}"
         drawable="calculator" />
+
     <!-- Phonograph / Phonograph -->
     <item
         component="ComponentInfo{com.kabouzeid.gramophone/com.kabouzeid.gramophone.ui.activities.MainActivity}"
         drawable="phonograph" />
+
     <!-- Pixive / Pixive -->
     <item
         component="ComponentInfo{jp.pxv.android/jp.pxv.android.RootActivity}"
@@ -75,10 +81,12 @@
     <item
         component="ComponentInfo{com.reiya.pixive/com.reiya.pixive.other.SplashActivity}"
         drawable="pixiv" />
+
     <!-- RAR / RAR -->
     <item
         component="ComponentInfo{com.rarlab.rar/com.rarlab.rar.MainActivity}"
         drawable="rar" />
+
     <!-- 日历 / Calendar -->
     <item
         component="ComponentInfo{com.lenovo.calculator/com.lenovo.calculator.Calculator}"
@@ -149,10 +157,12 @@
     <item
         component="ComponentInfo{com.jjrili.app/com.jjrili.app.MainActivity}"
         drawable="calendar" />
+
     <!-- SD Maid / SD Maid -->
     <item
         component="ComponentInfo{eu.thedarken.sdm/eu.thedarken.sdm.SDMMainActivity}"
         drawable="sd_maid" />
+
     <!-- 信息 / Contact Manager -->
     <item
         component="ComponentInfo{com.lenovo.ideafriend/com.lenovo.ideafriend.alias.MmsActivity}"
@@ -220,6 +230,7 @@
     <item
         component="ComponentInfo{com.sonyericsson.conversations/com.sonyericsson.conversations.ui.ConversationListActivity}"
         drawable="message" />
+
     <!-- 设置 / Settings -->
     <item
         component="ComponentInfo{com.android.settings/com.android.settings.Settings}"
@@ -287,6 +298,7 @@
     <item
         component="ComponentInfo{com.android.settings/com.android.settings.Settings$TetherSettingsActivity2}"
         drawable="settings" />
+
     <!-- 时钟 / Clock -->
     <item
         component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClock}"
@@ -315,26 +327,32 @@
     <item
         component="ComponentInfo{com.android.deskclock/com.android.deskclock.AlarmClock}"
         drawable="clock" />
+
     <!-- 手机京东 / jd -->
     <item
         component="ComponentInfo{com.jingdong.app.mall/com.jingdong.app.mall.main.MainActivity}"
         drawable="jd" />
+
     <!-- Solid Explorer / Solid Explorer -->
     <item
         component="ComponentInfo{pl.solidexplorer2/pl.solidexplorer.SolidExplorer}"
         drawable="solid_explorer" />
+
     <!-- 钛备份 / Titanium Backup -->
     <item
         component="ComponentInfo{com.keramidas.TitaniumBackup/com.keramidas.TitaniumBackup.MainActivity}"
         drawable="titanium_backup" />
+
     <!-- 旺信 / wangxin -->
     <item
         component="ComponentInfo{com.alibaba.mobileim/com.alibaba.mobileim.SplashActivity}"
         drawable="wangxin" />
+
     <!-- Welike / Welike -->
     <item
         component="ComponentInfo{com.sxy.ui/com.sxy.ui.view.MainActivity}"
         drawable="welike" />
+
     <!-- 相机 / Camera -->
     <item
         component="ComponentInfo{com.motorola.cameraone/com.motorola.camera.Camera}"
@@ -390,14 +408,17 @@
     <item
         component="ComponentInfo{com.oppo.camera/com.oppo.camera.Camera}"
         drawable="camera" />
+
     <!-- 下载 / Downloads -->
     <item
         component="ComponentInfo{com.android.providers.downloads.ui/com.android.providers.downloads.ui.DownloadList}"
         drawable="downloads" />
+
     <!-- 影梭 / Shadowsocks -->
     <item
         component="ComponentInfo{com.github.shadowsocks/com.github.shadowsocks.Shadowsocks}"
         drawable="shadowsocks" />
+
     <!-- 应用中心 / App Center -->
     <item
         component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}"
@@ -414,14 +435,17 @@
     <item
         component="ComponentInfo{com.lenovo.leos.appstore/com.lenovo.leos.appstore.activities.Main}"
         drawable="play_store" />
+
     <!-- 照片 / Photos -->
     <item
         component="ComponentInfo{com.google.android.apps.photos.offline/com.google.android.apps.photos.home.HomeActivity}"
         drawable="googlephotos" />
+
     <!-- 追书神器 /  zhuishushenqi  -->
     <item
         component="ComponentInfo{com.ushaqi.zhuishushenqi/com.ushaqi.zhuishushenqi.ui.SplashActivity}"
         drawable="zhuishushenqi" />
+
     <!-- 百度贴吧 /  tieba  -->
     <item
         component="ComponentInfo{com.baidu.tiebar/com.baidu.tieba.LogoActivity}"
@@ -435,6 +459,7 @@
     <item
         component="ComponentInfo{com.baidu.tieba/com.baidu.tieba.LogoActivity}"
         drawable="baidu_tieba" />
+
     <!-- 哔哩哔哩 /  bilibili  -->
     <item
         component="ComponentInfo{tv.danmaku.bili/tv.danmaku.bili.MainActivity}"
@@ -445,6 +470,7 @@
     <item
         component="ComponentInfo{tv.danmaku.bili/tv.danmaku.bili.ui.splash.SplashActivity}"
         drawable="bilibili" />
+
     <!-- 即刻 /  jike  -->
     <item
         component="ComponentInfo{com.ruguoapp.jike/com.ruguoapp.jike.ui.activity.WelcomeActivity}"
@@ -455,6 +481,7 @@
     <item
         component="ComponentInfo{com.ruguoapp.jike/com.ruguoapp.jike.business.main.ui.SplashActivity}"
         drawable="jike" />
+
     <!-- 电话 /  phone  -->
     <item
         component="ComponentInfo{com.android.phone/com.android.phone.DialtactsContactsEntryActivity}"
@@ -600,10 +627,12 @@
     <item
         component="ComponentInfo{com.htc.contacts/com.htc.contacts.DialerTabActivity}"
         drawable="phone" />
+
     <!-- 夸克 /  quark  -->
     <item
         component="ComponentInfo{com.quark.browser/com.ucpro.MainActivity}"
         drawable="quark" />
+
     <!-- 酷安 /  coolapk  -->
     <item
         component="ComponentInfo{com.coolapk.market/com.coolapk.market.activity.MainActivity}"
@@ -617,6 +646,7 @@
     <item
         component="ComponentInfo{com.coolapk.market/com.coolapk.market.view.main.MainActivity}"
         drawable="coolapk" />
+
     <!-- 联系人 /  contects  -->
     <item
         component="ComponentInfo{com.google.android.contacts/com.android.contacts.activities.PeopleActivity}"
@@ -669,10 +699,12 @@
     <item
         component="ComponentInfo{com.sonyericsson.android.socialphonebook/com.sonyericsson.android.socialphonebook.LaunchActivity}"
         drawable="contacts" />
+
     <!-- 绿色守护 /  greenify  -->
     <item
         component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyActivity}"
         drawable="greenify" />
+
     <!-- MXplayer /  MXplayer  -->
     <item
         component="ComponentInfo{com.mxtech.videoplayer.pro/com.mxtech.videoplayer.pro.ActivityMediaList}"
@@ -686,6 +718,7 @@
     <item
         component="ComponentInfo{com.mxtech.videoplayer.ad/com.mxtech.videoplayer.ad.ActivityMediaList}"
         drawable="mxplayer" />
+
     <!-- 写轮眼 /  myandroidool  -->
     <item
         component="ComponentInfo{cn.wq.myandroidtools/cn.wq.myandroidtools.MainActivity}"
@@ -693,6 +726,7 @@
     <item
         component="ComponentInfo{cn.wq.myandroidtoolspro/cn.wq.myandroidtoolspro.MainActivity}"
         drawable="myandroidtool" />
+
     <!-- QQ /  QQ  -->
     <item
         component="ComponentInfo{com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity}"
@@ -712,6 +746,7 @@
     <item
         component="ComponentInfo{com.tencent.mobileqqi/com.tencent.mobileqq.activity.SplashActivity}"
         drawable="qq" />
+
     <!-- 淘宝 /  taobao  -->
     <item
         component="ComponentInfo{com.taobao.taobao/com.taobao.tao.welcome.Welcome}"
@@ -719,14 +754,17 @@
     <item
         component="ComponentInfo{com.taobao.taobao/com.taobao.tao.Welcome}"
         drawable="taobao" />
+
     <!-- 微信 /  wechat  -->
     <item
         component="ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI}"
         drawable="wechat" />
+
     <!-- 支付宝 /  alipay  -->
     <item
         component="ComponentInfo{com.eg.android.AlipayGphone/com.eg.android.AlipayGphone.AlipayLogin}"
         drawable="zhifubao" />
+
     <!-- WPS /  WPS  -->
     <item
         component="ComponentInfo{cn.wps.moffice_eng/cn.wps.moffice.Smart}"
@@ -737,6 +775,7 @@
     <item
         component="ComponentInfo{cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity}"
         drawable="wps" />
+
     <!-- 图库 / gallery -->
     <item
         component="ComponentInfo{com.cooliris.media/com.cooliris.media.Gallery}"
@@ -783,6 +822,7 @@
     <item
         component="ComponentInfo{com.cyngn.gallerynext/com.cyngn.gallerynext.app.GalleryActivity}"
         drawable="gallery" />
+
     <!-- 微博 / weibo -->
     <item
         component="ComponentInfo{com.sina.weibo/com.sina.weibo.SplashActivity}"
@@ -790,5 +830,10 @@
     <item
         component="ComponentInfo{com.sina.weibolite/com.sina.weibo.SplashActivity}"
         drawable="weibo" />
+
+    <!-- MBE Style-->
+    <item
+        component="ComponentInfo{me.iacn.mbestyle/me.iacn.mbestyle.ui.activity}"
+        drawable="mbe" />
 
 </resources>
