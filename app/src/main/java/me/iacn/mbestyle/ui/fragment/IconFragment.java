@@ -1,17 +1,15 @@
 package me.iacn.mbestyle.ui.fragment;
 
 import android.app.Fragment;
-import android.content.res.XmlResourceParser;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-
-import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.presenter.IconPresenter;
 import me.iacn.mbestyle.ui.adapter.IconTabAdapter;
 
 /**
@@ -23,6 +21,7 @@ public class IconFragment extends BaseFragment {
 
     private TabLayout mTab;
     private ViewPager mViewPager;
+    private IconPresenter mPresenter;
 
     @Override
     protected int getInflateView() {
@@ -42,36 +41,26 @@ public class IconFragment extends BaseFragment {
 
     @Override
     protected void initData() {
+        mPresenter = new IconPresenter(this);
+
         List<Fragment> fragments = new ArrayList();
         fragments.add(new IconAdaptedFragment());
         fragments.add(new IconAllFragment());
 
-        String[] titles = new String[]{
-                "已适配",
-                String.format(Locale.getDefault(), "全部(%d)", getIconTotal())};
+        String[] titles = new String[]{"已适配", "全部"};
 
         mTab.setupWithViewPager(mViewPager);
         mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), fragments, titles));
+
+        mPresenter.calcIconTotal();
     }
 
-    private int getIconTotal() {
-        XmlResourceParser xml = getResources().getXml(R.xml.drawable);
-        int total = 0;
+    public void setIconTotal(int total) {
+        String all = String.format(Locale.getDefault(), "全部(%d)", total);
+        TabLayout.Tab allTab = mTab.getTabAt(1);
 
-        try {
-            while (xml.getEventType() != XmlResourceParser.END_DOCUMENT) {
-                if (xml.getEventType() == XmlPullParser.START_TAG) {
-                    if (xml.getName().startsWith("item")) {
-                        total++;
-                    }
-                }
-
-                xml.next();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (allTab != null && total != 0) {
+            allTab.setText(all);
         }
-
-        return total;
     }
 }
