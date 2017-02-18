@@ -1,9 +1,13 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import android.app.Fragment;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 
+import java.util.ArrayList;
+
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.ui.adapter.IconTabAdapter;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -34,6 +38,6 @@ public class IconFragment extends BaseFragment {
     @Override
     protected void initData() {
         mTab.setupWithViewPager(mViewPager);
-        mViewPager.setAdapter();
+        mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), new ArrayList<Fragment>()));
     }
 }

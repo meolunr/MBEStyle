@@ -1,8 +1,10 @@
 package me.iacn.mbestyle.ui.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.support.v13.app.FragmentPagerAdapter;
+
+import java.util.List;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -11,8 +13,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class IconTabAdapter extends FragmentPagerAdapter {
 
-    public IconTabAdapter(FragmentManager fm) {
+    private List<Fragment> mFragments;
+
+    public IconTabAdapter(FragmentManager fm, List<Fragment> fragments) {
         super(fm);
+        mFragments = fragments;
     }
 
     @Override
