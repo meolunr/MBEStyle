@@ -5,6 +5,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.adapter.IconTabAdapter;
@@ -37,7 +38,11 @@ public class IconFragment extends BaseFragment {
 
     @Override
     protected void initData() {
+        List<Fragment> fragments = new ArrayList();
+        fragments.add(new IconAdaptedFragment());
+        fragments.add(new IconAllFragment());
+
         mTab.setupWithViewPager(mViewPager);
-        mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), new ArrayList<Fragment>()));
+        mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), fragments));
     }
 }
