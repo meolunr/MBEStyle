@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <version>1</version>
+
+    <item drawable="adm" />
+    <item drawable="baidu_tieba" />
+    <item drawable="bilibili" />
+    <item drawable="browser" />
+    <item drawable="calculator" />
+    <item drawable="calendar" />
+    <item drawable="camera" />
+    <item drawable="chrome" />
+    <item drawable="clock" />
+    <item drawable="compass" />
+    <item drawable="contacts" />
+    <item drawable="coolapk" />
+    <item drawable="downloads" />
+    <item drawable="filemanger" />
+    <item drawable="gallery" />
+    <item drawable="googlephotos" />
+    <item drawable="greenify" />
+    <item drawable="jd" />
+    <item drawable="jike" />
+    <item drawable="mail" />
+    <item drawable="map" />
+    <item drawable="mbe" />
+    <item drawable="message" />
+    <item drawable="music" />
+    <item drawable="mxplayer" />
+    <item drawable="myandroidtool" />
+    <item drawable="note" />
+    <item drawable="phone" />
+    <item drawable="phonograph" />
+    <item drawable="pixiv" />
+    <item drawable="play_store" />
+    <item drawable="qq" />
+    <item drawable="quark" />
+    <item drawable="rar" />
+    <item drawable="sd_maid" />
+    <item drawable="security" />
+    <item drawable="settings" />
+    <item drawable="shadowsocks" />
+    <item drawable="solid_explorer" />
+    <item drawable="soundrecorder" />
+    <item drawable="taobao" />
+    <item drawable="titanium_backup" />
+    <item drawable="video" />
+    <item drawable="wangxin" />
+    <item drawable="weather" />
+    <item drawable="wechat" />
+    <item drawable="weibo" />
+    <item drawable="welike" />
+    <item drawable="wps" />
+    <item drawable="zhifubao" />
+    <item drawable="zhuishushenqi" />
+
+</resources>
