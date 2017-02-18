@@ -12,19 +12,19 @@
 
     <me.iacn.mbestyle.ui.widget.AboutItem
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         app:summary="0.0"
         app:title="版本" />
 
     <me.iacn.mbestyle.ui.widget.AboutItem
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         app:summary="幼幼保护协会"
         app:title="设计" />
 
     <me.iacn.mbestyle.ui.widget.AboutItem
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         app:summary="iAcn"
         app:title="开发" />
 
