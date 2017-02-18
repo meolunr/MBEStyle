@@ -3,7 +3,11 @@ package me.iacn.mbestyle.ui.fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import java.util.List;
+
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.bean.IconBean;
+import me.iacn.mbestyle.presenter.IconShowPresenter;
 import me.iacn.mbestyle.ui.adapter.IconAdapter;
 
 /**
@@ -14,6 +18,7 @@ import me.iacn.mbestyle.ui.adapter.IconAdapter;
 public class IconAllFragment extends BaseFragment {
 
     private RecyclerView rvIcon;
+    private IconShowPresenter mPresenter;
 
     @Override
     protected int getInflateView() {
@@ -32,6 +37,13 @@ public class IconAllFragment extends BaseFragment {
 
     @Override
     protected void initData() {
+        mPresenter = new IconShowPresenter(this);
+        mPresenter.getAllIcon();
+    }
+
+    public void showIcons(List<IconBean> icons) {
+        System.out.println("showIcons = " + icons.size());
+
         rvIcon.setAdapter(new IconAdapter());
     }
 }
