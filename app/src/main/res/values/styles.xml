@@ -1,8 +1,20 @@
 <resources>
 
-    <style name="AppThemeBase" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="AppThemeBase" />
+
+    <style name="AppThemeBase" parent="Theme.Design.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.Design.CollapsingToolbar">
+        <item name="android:background">?colorPrimary</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="TitleStyle" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>
