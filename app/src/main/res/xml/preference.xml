@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="version"
+        android:summary="0.0"
+        android:title="版本" />
+
+    <Preference
+        android:summary="幼幼保护协会"
+        android:title="设计" />
+
+    <Preference
+        android:summary="iAcn"
+        android:title="开发" />
+
+</PreferenceScreen>
