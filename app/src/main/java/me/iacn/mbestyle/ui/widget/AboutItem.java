@@ -50,4 +50,8 @@ public class AboutItem extends FrameLayout {
 
         array.recycle();
     }
+
+    public void setSummary(String summary) {
+        tvSummary.setText(summary);
+    }
 }

@@ -1,6 +1,8 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.ui.widget.AboutItem;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -9,6 +11,8 @@ import me.iacn.mbestyle.R;
 
 public class AboutFragment extends BaseFragment {
 
+    private AboutItem aiVersion;
+
     @Override
     protected int getInflateView() {
         return R.layout.fragment_about;
@@ -16,7 +20,7 @@ public class AboutFragment extends BaseFragment {
 
     @Override
     protected void findView() {
-
+        aiVersion = (AboutItem) findViewById(R.id.ai_version);
     }
 
     @Override
@@ -26,6 +30,6 @@ public class AboutFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-
+        aiVersion.setSummary(BuildConfig.VERSION_NAME);
     }
 }
