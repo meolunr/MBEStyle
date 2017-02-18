@@ -1,10 +1,5 @@
 package me.iacn.mbestyle.ui.fragment;
 
-import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceFragment;
-
-import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 
 /**
@@ -12,14 +7,25 @@ import me.iacn.mbestyle.R;
  * Emali iAcn0301@foxmail.com
  */
 
-public class AboutFragment extends PreferenceFragment {
+public class AboutFragment extends BaseFragment {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.preference);
+    protected int getInflateView() {
+        return R.layout.fragment_about;
+    }
 
-        Preference version = findPreference("version");
-        version.setSummary(BuildConfig.VERSION_NAME);
+    @Override
+    protected void findView() {
+
+    }
+
+    @Override
+    protected void setListener() {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }
