@@ -82,14 +82,21 @@ public class IconShowPresenter {
                             IconBean bean = new IconBean();
 
                             String component = xml.getAttributeValue(null, "component");
-                            String iconPkgName = findPackageName(component);
+                            bean.iconPkgName = findPackageName(component);
 
-                            System.out.println(iconPkgName);
+                            String iconName = xml.getAttributeValue(null, "drawable");
+                            bean.id = mView.getResources().getIdentifier(
+                                    iconName, "drawable", BuildConfig.APPLICATION_ID);
+                            bean.name = iconName;
+
+                            icons.add(bean);
                         }
                     }
+
                     xml.next();
                 }
 
+                System.out.println(icons);
                 flowableEmitter.onNext(icons);
             }
         }, BackpressureStrategy.BUFFER)
