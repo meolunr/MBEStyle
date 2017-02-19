@@ -112,12 +112,12 @@ public class IconShowPresenter {
                         Set<String> tempSet = new HashSet<>();
 
                         for (IconBean bean : list) {
-                            String pkgName = bean.iconPkgName;
+                            String iconName = bean.name;
 
                             // 排除重复图标
-                            if (appPkgNames.contains(pkgName) && !tempSet.contains(pkgName)) {
+                            if (appPkgNames.contains(bean.iconPkgName) && !tempSet.contains(iconName)) {
                                 newList.add(bean);
-                                tempSet.add(pkgName);
+                                tempSet.add(iconName);
                             }
                         }
 
