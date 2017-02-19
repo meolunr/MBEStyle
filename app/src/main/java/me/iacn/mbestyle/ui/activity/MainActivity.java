@@ -13,7 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import me.iacn.mbestyle.R;
@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         bottomView.setOnNavigationItemSelectedListener(this);
 
-        mFragments = new ArrayList();
-        mFragments.add(new IconFragment());
-        mFragments.add(new LauncherFragment());
-        mFragments.add(new ApplyFragment());
-        mFragments.add(new AboutFragment());
+        mFragments = Arrays.asList(
+                new IconFragment(),
+                new LauncherFragment(),
+                new ApplyFragment(),
+                new AboutFragment());
 
         mFragmentManager = getFragmentManager();
 
