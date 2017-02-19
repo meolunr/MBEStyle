@@ -7,6 +7,7 @@ import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.AppBean;
+import me.iacn.mbestyle.presenter.ApplyPresenter;
 import me.iacn.mbestyle.ui.adapter.AppAdapter;
 
 /**
@@ -17,6 +18,7 @@ import me.iacn.mbestyle.ui.adapter.AppAdapter;
 public class ApplyFragment extends BaseFragment {
 
     private RecyclerView rvApp;
+    private ApplyPresenter mPresenter;
 
     @Override
     protected int getInflateView() {
@@ -35,7 +37,8 @@ public class ApplyFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-
+        mPresenter = new ApplyPresenter(this);
+        mPresenter.loadInstallApp();
     }
 
     public void showApps(List<AppBean> list) {

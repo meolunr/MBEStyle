@@ -34,11 +34,9 @@ public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
     @Override
     public void onBindViewHolder(AppHolder holder, int position) {
         AppBean bean = mApps.get(position);
-
-
-//        holder.ivIcon.setImageResource(info.icon);
-//        holder.tvName.setText(info.name);
-//        holder.tvActivity.setText(info.labelRes);
+        holder.ivIcon.setImageDrawable(bean.icon);
+        holder.tvName.setText(bean.name);
+        holder.tvActivity.setText(bean.activity);
     }
 
     @Override

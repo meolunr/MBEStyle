@@ -1,10 +1,9 @@
 package me.iacn.mbestyle.presenter;
 
-import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import me.iacn.mbestyle.bean.AppBean;
@@ -25,6 +24,24 @@ public class ApplyPresenter {
     }
 
     public void loadInstallApp() {
+        PackageManager manager = mView.getActivity().getPackageManager();
+        List<ResolveInfo> list = PackageUtils.getAppByMainIntent(mView.getActivity());
+        List<AppBean> apps = new ArrayList<>();
 
+        for (ResolveInfo info : list) {
+            AppBean bean = new AppBean();
+            bean.name = info.loadLabel(manager).toString();
+            bean.activity = info.activityInfo.packageName;
+            bean.icon = info.loadIcon(manager);
+
+            System.out.println("--------");
+            System.out.println(bean.name);
+            System.out.println(bean.activity);
+            System.out.println(bean.icon);
+
+            apps.add(bean);
+        }
+
+        mView.showApps(apps);
     }
 }
