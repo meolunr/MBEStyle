@@ -24,6 +24,7 @@
             app:title="版本" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
+            android:id="@+id/ai_designer"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginBottom="1dp"
@@ -31,6 +32,7 @@
             app:title="设计" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
+            android:id="@+id/ai_developer"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginBottom="1dp"
@@ -38,6 +40,7 @@
             app:title="开发" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
+            android:id="@+id/ai_open_source"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginBottom="1dp"
