@@ -17,7 +17,7 @@
             android:clickable="true"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="10dp">
+            android:paddingLeft="12dp">
 
             <TextView
                 android:id="@+id/tv_title"

@@ -1,37 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <ImageView
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginBottom="36dp"
-        android:layout_marginTop="36dp"
-        android:src="@drawable/logo" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <me.iacn.mbestyle.ui.widget.AboutItem
-        android:id="@+id/ai_version"
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:layout_marginBottom="1dp"
-        app:summary="0.0"
-        app:title="版本" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="36dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/logo" />
 
-    <me.iacn.mbestyle.ui.widget.AboutItem
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:layout_marginBottom="1dp"
-        app:summary="幼幼保护协会"
-        app:title="设计" />
+        <me.iacn.mbestyle.ui.widget.AboutItem
+            android:id="@+id/ai_version"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="1dp"
+            app:summary="0.0"
+            app:title="版本" />
 
-    <me.iacn.mbestyle.ui.widget.AboutItem
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:layout_marginBottom="1dp"
-        app:summary="iAcn"
-        app:title="开发" />
+        <me.iacn.mbestyle.ui.widget.AboutItem
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="1dp"
+            app:summary="幼幼保护协会"
+            app:title="设计" />
 
-</LinearLayout>
+        <me.iacn.mbestyle.ui.widget.AboutItem
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="1dp"
+            app:summary="iAcn"
+            app:title="开发" />
+
+        <me.iacn.mbestyle.ui.widget.AboutItem
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="1dp"
+            app:summary="https://github.com/iAcn/MBEStyle.git"
+            app:title="开源相关" />
+
+    </LinearLayout>
+
+</ScrollView>
