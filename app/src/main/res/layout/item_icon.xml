@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView_item_icon"
+        android:id="@+id/iv_icon"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_gravity="center"

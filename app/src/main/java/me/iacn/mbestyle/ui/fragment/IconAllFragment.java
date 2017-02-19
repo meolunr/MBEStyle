@@ -42,8 +42,6 @@ public class IconAllFragment extends BaseFragment {
     }
 
     public void showIcons(List<IconBean> icons) {
-        System.out.println("showIcons = " + icons.size());
-
-        rvIcon.setAdapter(new IconAdapter());
+        rvIcon.setAdapter(new IconAdapter(icons));
     }
 }
