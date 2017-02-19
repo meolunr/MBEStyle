@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">MBE Style</string>
     <string name="app_title">MBE Style 图标包</string>
+    <!--<string name="component_template">ComponentInfo{%packageName%/%activityName%}</string>-->
+    <string name="component_template">ComponentInfo{$packageName$/$activityName$}</string>
 </resources>

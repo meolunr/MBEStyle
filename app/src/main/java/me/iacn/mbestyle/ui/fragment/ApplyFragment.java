@@ -21,6 +21,7 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
     private RecyclerView rvApp;
     private ApplyPresenter mPresenter;
+    private List<AppBean> mApps;
 
     @Override
     protected int getInflateView() {
@@ -44,13 +45,30 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
     }
 
     public void showApps(List<AppBean> list) {
-        AppAdapter adapter = new AppAdapter(list);
+        mApps = list;
+        AppAdapter adapter = new AppAdapter(mApps);
         adapter.setOnItemClickListener(this);
         rvApp.setAdapter(adapter);
     }
 
     @Override
     public void onItemClick(View itemView, int position) {
-        System.out.println(itemView);
+        AppBean bean = mApps.get(position);
+        String template = getString(R.string.component_template);
+        String[] split = bean.activity.split("/");
+
+        if (split[1].startsWith(".")) {
+            // 正常应用
+            template = template
+                    .replace("$packageName$", split[0])
+                    .replace("$activityName$", split[0] + split[1]);
+        } else {
+            // 蛋疼应用
+            template = template
+                    .replace("$packageName$", split[0])
+                    .replace("$activityName$", split[1]);
+        }
+
+        System.out.println(template);
     }
 }
