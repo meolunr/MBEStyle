@@ -15,7 +15,7 @@ import me.iacn.mbestyle.ui.adapter.IconAdapter;
  * Emali iAcn0301@foxmail.com
  */
 
-public class IconAllFragment extends BaseFragment {
+public class IconAllFragment extends BaseIconFragment {
 
     private RecyclerView rvIcon;
     private IconShowPresenter mPresenter;
@@ -41,6 +41,7 @@ public class IconAllFragment extends BaseFragment {
         mPresenter.getAllIcon();
     }
 
+    @Override
     public void showIcons(List<IconBean> icons) {
         rvIcon.setAdapter(new IconAdapter(icons));
     }
