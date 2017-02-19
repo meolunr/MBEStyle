@@ -27,7 +27,7 @@ public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
 
     @Override
     public int getItemCount() {
-        return 25;
+        return 40;
     }
 }
 
