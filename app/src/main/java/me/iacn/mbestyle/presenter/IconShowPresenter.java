@@ -18,7 +18,7 @@ import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.IconBean;
-import me.iacn.mbestyle.ui.fragment.IconAllFragment;
+import me.iacn.mbestyle.ui.fragment.BaseIconFragment;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -27,9 +27,9 @@ import me.iacn.mbestyle.ui.fragment.IconAllFragment;
 
 public class IconShowPresenter {
 
-    private IconAllFragment mView;
+    private BaseIconFragment mView;
 
-    public IconShowPresenter(IconAllFragment view) {
+    public IconShowPresenter(BaseIconFragment view) {
         mView = view;
     }
 
