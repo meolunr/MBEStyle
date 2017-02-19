@@ -11,6 +11,7 @@ import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.AppBean;
+import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
  * Created by iAcn on 2017/2/19
@@ -20,6 +21,7 @@ import me.iacn.mbestyle.bean.AppBean;
 public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
 
     private List<AppBean> mApps;
+    private OnItemClickListener mListener;
 
     public AppAdapter(List<AppBean> mApps) {
         this.mApps = mApps;
@@ -27,8 +29,11 @@ public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
 
     @Override
     public AppHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new AppHolder(LayoutInflater.from(
+        AppHolder holder = new AppHolder(LayoutInflater.from(
                 parent.getContext()).inflate(R.layout.item_app, parent, false));
+        holder.mListener = mListener;
+
+        return holder;
     }
 
     @Override
@@ -43,9 +48,15 @@ public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
     public int getItemCount() {
         return mApps.size();
     }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
 }
 
-class AppHolder extends RecyclerView.ViewHolder {
+class AppHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+    OnItemClickListener mListener;
 
     ImageView ivIcon;
     TextView tvName;
@@ -57,5 +68,14 @@ class AppHolder extends RecyclerView.ViewHolder {
         ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
         tvName = (TextView) itemView.findViewById(R.id.tv_name);
         tvActivity = (TextView) itemView.findViewById(R.id.tv_activity);
+
+        itemView.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (mListener != null) {
+            mListener.onItemClick(v, getLayoutPosition());
+        }
     }
 }
