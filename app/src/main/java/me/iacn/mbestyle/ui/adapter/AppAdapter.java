@@ -1,6 +1,5 @@
 package me.iacn.mbestyle.ui.adapter;
 
-import android.content.pm.ApplicationInfo;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.bean.AppBean;
 
 /**
  * Created by iAcn on 2017/2/19
@@ -19,9 +19,9 @@ import me.iacn.mbestyle.R;
 
 public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
 
-    private List<ApplicationInfo> mApps;
+    private List<AppBean> mApps;
 
-    public AppAdapter(List<ApplicationInfo> mApps) {
+    public AppAdapter(List<AppBean> mApps) {
         this.mApps = mApps;
     }
 
@@ -33,10 +33,7 @@ public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
 
     @Override
     public void onBindViewHolder(AppHolder holder, int position) {
-        ApplicationInfo info = mApps.get(position);
-        System.out.println("==========");
-        System.out.println(info.icon);
-        System.out.println(info.loadLabel(holder.ivIcon.getContext().getPackageManager()));
+        AppBean bean = mApps.get(position);
 
 
 //        holder.ivIcon.setImageResource(info.icon);
