@@ -31,13 +31,11 @@ public class ApplyPresenter {
         for (ResolveInfo info : list) {
             AppBean bean = new AppBean();
             bean.name = info.loadLabel(manager).toString();
-            bean.activity = info.activityInfo.packageName;
             bean.icon = info.loadIcon(manager);
 
-            System.out.println("--------");
-            System.out.println(bean.name);
-            System.out.println(bean.activity);
-            System.out.println(bean.icon);
+            // 缩短主 Activity 的显示长度
+            String pkgName = info.activityInfo.packageName;
+            bean.activity = info.activityInfo.name.replace(pkgName, pkgName + "/");
 
             apps.add(bean);
         }
