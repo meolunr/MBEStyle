@@ -38,7 +38,7 @@ public class IconAllFragment extends BaseIconFragment {
     @Override
     protected void initData() {
         mPresenter = new IconShowPresenter(this);
-        mPresenter.getAllIcon();
+        mPresenter.getAllIcons();
     }
 
     @Override
