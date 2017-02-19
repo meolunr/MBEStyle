@@ -3,9 +3,11 @@ package me.iacn.mbestyle.ui.fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import java.util.List;
+
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.bean.AppBean;
 import me.iacn.mbestyle.ui.adapter.AppAdapter;
-import me.iacn.mbestyle.util.PackageUtils;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -33,7 +35,11 @@ public class ApplyFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-        AppAdapter adapter = new AppAdapter(PackageUtils.getAllApp(getActivity()));
+
+    }
+
+    public void showApps(List<AppBean> list) {
+        AppAdapter adapter = new AppAdapter(list);
         rvApp.setAdapter(adapter);
     }
 }
