@@ -106,12 +106,18 @@ public class IconShowPresenter {
                 .map(new Function<List<IconBean>, List<IconBean>>() {
                     @Override
                     public List<IconBean> apply(@NonNull List<IconBean> list) throws Exception {
-                        List<IconBean> newList = new ArrayList<>();
                         Set<String> appPkgNames = getAppPkgNames();
 
+                        List<IconBean> newList = new ArrayList<>();
+                        Set<String> tempSet = new HashSet<>();
+
                         for (IconBean bean : list) {
-                            if (appPkgNames.contains(bean.iconPkgName)) {
+                            String pkgName = bean.iconPkgName;
+
+                            // 排除重复图标
+                            if (appPkgNames.contains(pkgName) && !tempSet.contains(pkgName)) {
                                 newList.add(bean);
+                                tempSet.add(pkgName);
                             }
                         }
 
@@ -121,7 +127,6 @@ public class IconShowPresenter {
                 .subscribe(new Consumer<List<IconBean>>() {
                     @Override
                     public void accept(@NonNull List<IconBean> list) throws Exception {
-                        System.out.println(list);
                         mView.showIcons(list);
                     }
                 });
