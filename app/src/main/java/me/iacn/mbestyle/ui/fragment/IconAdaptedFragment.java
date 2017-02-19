@@ -22,7 +22,7 @@ public class IconAdaptedFragment extends BaseIconFragment {
 
     @Override
     protected int getInflateView() {
-        return R.layout.fragment_adapted_icon;
+        return R.layout.fragment_show_icon;
     }
 
     @Override
