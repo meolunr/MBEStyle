@@ -28,14 +28,30 @@ public class ApplyPresenter {
         List<ResolveInfo> list = PackageUtils.getAppByMainIntent(mView.getActivity());
         List<AppBean> apps = new ArrayList<>();
 
+        StringBuilder builder = new StringBuilder();
+
         for (ResolveInfo info : list) {
             AppBean bean = new AppBean();
             bean.name = info.loadLabel(manager).toString();
             bean.icon = info.loadIcon(manager);
 
-            // 缩短主 Activity 的显示长度
             String pkgName = info.activityInfo.packageName;
-            bean.activity = info.activityInfo.name.replace(pkgName, pkgName + "/");
+            String activityName = info.activityInfo.name;
+
+            if (activityName.contains(pkgName)) {
+                // 缩短主 Activity 的显示长度
+                builder.append(pkgName)
+                        .append("/")
+                        .append(activityName.replace(pkgName, ""));
+            } else {
+                // 处理某些主 Activity 另起名的蛋疼应用
+                builder.append(pkgName)
+                        .append("/")
+                        .append(activityName);
+            }
+
+            bean.activity = builder.toString();
+            builder.delete(0, builder.length());
 
             apps.add(bean);
         }
