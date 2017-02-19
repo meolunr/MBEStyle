@@ -33,7 +33,7 @@ public class IconShowPresenter {
         mView = view;
     }
 
-    public void getAllIcon() {
+    public void getAllIcons() {
         Flowable.create(new FlowableOnSubscribe<List<IconBean>>() {
             @Override
             public void subscribe(FlowableEmitter<List<IconBean>> flowableEmitter) throws Exception {
@@ -67,5 +67,46 @@ public class IconShowPresenter {
                         mView.showIcons(iconBeen);
                     }
                 });
+    }
+
+    public void getAdaptedIcons() {
+        Flowable.create(new FlowableOnSubscribe<List<IconBean>>() {
+            @Override
+            public void subscribe(FlowableEmitter<List<IconBean>> flowableEmitter) throws Exception {
+                XmlResourceParser xml = mView.getResources().getXml(R.xml.appfilter);
+                List<IconBean> icons = new ArrayList<>();
+
+                while (xml.getEventType() != XmlResourceParser.END_DOCUMENT) {
+                    if (xml.getEventType() == XmlPullParser.START_TAG) {
+                        if (xml.getName().startsWith("item")) {
+                            IconBean bean = new IconBean();
+
+                            String component = xml.getAttributeValue(null, "component");
+                            String iconPkgName = findPackageName(component);
+
+                            System.out.println(iconPkgName);
+                        }
+                    }
+                    xml.next();
+                }
+
+                flowableEmitter.onNext(icons);
+            }
+        }, BackpressureStrategy.BUFFER)
+                .subscribe(new Consumer<List<IconBean>>() {
+                    @Override
+                    public void accept(@NonNull List<IconBean> list) throws Exception {
+
+                    }
+                });
+    }
+
+    private String findPackageName(String component) {
+        try {
+            return component.split("/")[0].split("\\{")[1];
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
