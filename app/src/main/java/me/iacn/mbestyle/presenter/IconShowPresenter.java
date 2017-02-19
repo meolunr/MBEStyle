@@ -124,6 +124,8 @@ public class IconShowPresenter {
                         return newList;
                     }
                 })
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<List<IconBean>>() {
                     @Override
                     public void accept(@NonNull List<IconBean> list) throws Exception {
