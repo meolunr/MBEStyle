@@ -3,6 +3,7 @@ package me.iacn.mbestyle.ui.fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import me.iacn.mbestyle.bean.AppBean;
 import me.iacn.mbestyle.presenter.ApplyPresenter;
 import me.iacn.mbestyle.ui.adapter.AppAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.StringUtils;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -69,6 +71,7 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
                     .replace("$activityName$", split[1]);
         }
 
-        System.out.println(template);
+        StringUtils.copyToClipboard(getActivity(), template);
+        Toast.makeText(getActivity(), "应用信息已复制到剪贴板", Toast.LENGTH_SHORT).show();
     }
 }
