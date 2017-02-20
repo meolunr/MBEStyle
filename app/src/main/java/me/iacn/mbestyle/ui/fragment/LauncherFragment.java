@@ -45,6 +45,7 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
                 R.drawable.ic_launcher_action,
                 R.drawable.ic_launcher_adw,
                 R.drawable.ic_launcher_apex,
+                R.drawable.ic_launcher_atom,
                 R.drawable.ic_launcher_aviate,
                 R.drawable.ic_launcher_go,
                 R.drawable.ic_launcher_kk,
