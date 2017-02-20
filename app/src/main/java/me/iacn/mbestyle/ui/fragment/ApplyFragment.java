@@ -40,10 +40,16 @@ public class ApplyFragment extends ILazyFragment implements OnItemClickListener 
         rvApp.setLayoutManager(new LinearLayoutManager(getActivity()));
     }
 
+
     @Override
     protected void initData() {
         mPresenter = new ApplyPresenter(this);
         mPresenter.loadInstallApp();
+    }
+
+    @Override
+    protected boolean isDataComplete() {
+        return mApps != null;
     }
 
     @Override

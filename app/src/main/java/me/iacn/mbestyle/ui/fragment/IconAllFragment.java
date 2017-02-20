@@ -22,6 +22,7 @@ public class IconAllFragment extends IIconFragment {
 
     private RecyclerView rvIcon;
     private IconShowPresenter mPresenter;
+    private List<IconBean> mIcons;
 
     @Override
     protected int getContentView() {
@@ -45,9 +46,16 @@ public class IconAllFragment extends IIconFragment {
     }
 
     @Override
+    protected boolean isDataComplete() {
+        return mIcons != null;
+    }
+
+    @Override
     public void onLoadData(List<IconBean> icons) {
         super.onLoadData(icons);
+
+        mIcons = icons;
         RequestManager glide = Glide.with(this);
-        rvIcon.setAdapter(new IconAdapter(icons, glide));
+        rvIcon.setAdapter(new IconAdapter(mIcons, glide));
     }
 }
