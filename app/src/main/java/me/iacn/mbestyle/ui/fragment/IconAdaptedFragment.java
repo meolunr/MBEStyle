@@ -18,13 +18,13 @@ import me.iacn.mbestyle.ui.adapter.IconAdapter;
  * Emali iAcn0301@foxmail.com
  */
 
-public class IconAdaptedFragment extends BaseIconFragment {
+public class IconAdaptedFragment extends IIconFragment {
 
     private RecyclerView rvIcon;
     private IconShowPresenter mPresenter;
 
     @Override
-    protected int getInflateView() {
+    protected int getContentView() {
         return R.layout.fragment_show_icon;
     }
 
@@ -45,7 +45,8 @@ public class IconAdaptedFragment extends BaseIconFragment {
     }
 
     @Override
-    public void showIcons(List<IconBean> icons) {
+    public void onLoadData(List<IconBean> icons) {
+        super.onLoadData(icons);
         RequestManager glide = Glide.with(this);
         rvIcon.setAdapter(new IconAdapter(icons, glide));
     }

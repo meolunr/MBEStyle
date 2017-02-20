@@ -22,7 +22,7 @@ import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.IconBean;
-import me.iacn.mbestyle.ui.fragment.BaseIconFragment;
+import me.iacn.mbestyle.ui.fragment.IIconFragment;
 import me.iacn.mbestyle.util.PackageUtils;
 
 /**
@@ -32,9 +32,9 @@ import me.iacn.mbestyle.util.PackageUtils;
 
 public class IconShowPresenter {
 
-    private BaseIconFragment mView;
+    private IIconFragment mView;
 
-    public IconShowPresenter(BaseIconFragment view) {
+    public IconShowPresenter(IIconFragment view) {
         mView = view;
     }
 
@@ -68,8 +68,8 @@ public class IconShowPresenter {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<List<IconBean>>() {
                     @Override
-                    public void accept(@NonNull List<IconBean> iconBeen) throws Exception {
-                        mView.showIcons(iconBeen);
+                    public void accept(@NonNull List<IconBean> list) throws Exception {
+                        mView.onLoadData(list);
                     }
                 });
     }
@@ -129,7 +129,7 @@ public class IconShowPresenter {
                 .subscribe(new Consumer<List<IconBean>>() {
                     @Override
                     public void accept(@NonNull List<IconBean> list) throws Exception {
-                        mView.showIcons(list);
+                        mView.onLoadData(list);
                     }
                 });
     }

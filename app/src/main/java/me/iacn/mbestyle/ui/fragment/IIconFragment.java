@@ -9,7 +9,9 @@ import me.iacn.mbestyle.bean.IconBean;
  * Emali iAcn0301@foxmail.com
  */
 
-public abstract class BaseIconFragment extends BaseFragment {
+public abstract class IIconFragment extends ILazyFragment {
 
-    public abstract void showIcons(List<IconBean> icons);
+    public void onLoadData(List<IconBean> icons) {
+        super.onLoadData();
+    }
 }

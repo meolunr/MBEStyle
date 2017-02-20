@@ -27,7 +27,7 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
     private RecyclerView rvLauncher;
 
     @Override
-    protected int getInflateView() {
+    protected int getContentView() {
         return R.layout.fragment_launcher;
     }
 
