@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
+import de.psdev.licensesdialog.LicensesDialog;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.widget.AboutItem;
@@ -66,7 +67,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
                 openUrl("http://coolapk.com/u/532152");
                 break;
             case R.id.ai_open_source:
-
+                showLicenseDialog();
                 break;
         }
     }
@@ -78,5 +79,12 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
         } catch (ActivityNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    private void showLicenseDialog() {
+        new LicensesDialog.Builder(getActivity())
+                .setNotices(R.raw.licenses)
+                .build()
+                .show();
     }
 }
