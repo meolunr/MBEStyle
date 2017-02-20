@@ -1,9 +1,11 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
@@ -48,6 +50,10 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
             case 0:
                 applyToNovaLauncher();
                 break;
+
+            case 1:
+                applyToActionLauncher();
+                break;
         }
     }
 
@@ -58,5 +64,24 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
         intent.putExtra("com.teslacoilsw.launcher.extra.ICON_THEME_PACKAGE", BuildConfig.APPLICATION_ID);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+    }
+
+    private void applyToActionLauncher() {
+        try {
+            Intent intent = getActivity().getPackageManager()
+                    .getLaunchIntentForPackage("com.actionlauncher.playstore");
+            intent.putExtra("apply_icon_pack", BuildConfig.APPLICATION_ID);
+            startActivity(intent);
+        } catch (Exception e) {
+            Toast.makeText(getActivity(), R.string.launcher_not_found, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void openActivity(Intent intent) {
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(getActivity(), R.string.launcher_not_found, Toast.LENGTH_SHORT).show();
+        }
     }
 }
