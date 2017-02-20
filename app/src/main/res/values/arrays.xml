@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="launchers">
+        <item>Nova</item>
+        <item>Action</item>
+        <item>Adw</item>
+        <item>Apex</item>
+        <item>Atom</item>
+        <item>Aviate</item>
+        <item>Go</item>
+        <item>KK</item>
+        <item>LG</item>
+        <item>Next</item>
+        <item>Smart</item>
+        <item>Solo</item>
+    </string-array>
+</resources>

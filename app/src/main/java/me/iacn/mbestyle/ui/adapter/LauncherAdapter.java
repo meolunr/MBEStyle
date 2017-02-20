@@ -17,7 +17,14 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 public class LauncherAdapter extends RecyclerView.Adapter<LauncherHolder> {
 
+    private int[] mLauncherIcons;
+    private String[] mLauncherNames;
     private OnItemClickListener mListener;
+
+    public LauncherAdapter(int[] mLauncherIcons, String[] mLauncherNames) {
+        this.mLauncherIcons = mLauncherIcons;
+        this.mLauncherNames = mLauncherNames;
+    }
 
     @Override
     public LauncherHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -30,7 +37,7 @@ public class LauncherAdapter extends RecyclerView.Adapter<LauncherHolder> {
 
     @Override
     public void onBindViewHolder(LauncherHolder holder, int position) {
-
+        System.out.println(mLauncherIcons);
     }
 
     @Override
