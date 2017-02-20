@@ -40,7 +40,23 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
 
     @Override
     protected void initData() {
-        LauncherAdapter adapter = new LauncherAdapter();
+        int[] launcherIcons = new int[]{
+                R.drawable.ic_launcher_nova,
+                R.drawable.ic_launcher_action,
+                R.drawable.ic_launcher_adw,
+                R.drawable.ic_launcher_apex,
+                R.drawable.ic_launcher_aviate,
+                R.drawable.ic_launcher_go,
+                R.drawable.ic_launcher_kk,
+                R.drawable.ic_launcher_lg,
+                R.drawable.ic_launcher_next,
+                R.drawable.ic_launcher_smart,
+                R.drawable.ic_launcher_solo,
+        };
+
+        String[] launcherNames = getResources().getStringArray(R.array.launchers);
+
+        LauncherAdapter adapter = new LauncherAdapter(launcherIcons, launcherNames);
         adapter.setOnItemClickListener(this);
 
         rvLauncher.setAdapter(adapter);
@@ -52,7 +68,6 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
             case 0:
                 NovaLauncher();
                 break;
-
             case 1:
                 ActionLauncher();
                 break;
