@@ -39,7 +39,19 @@ public abstract class ILazyFragment extends Fragment {
 
         findView();
         setListener();
-        initData();
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+
+        System.out.println("--- " + getClass() + " ---");
+        System.out.println(isVisibleToUser);
+        System.out.println(isDataComplete());
+
+        if (isVisibleToUser && !isDataComplete()) {
+            initData();
+        }
     }
 
     @Override
@@ -65,6 +77,8 @@ public abstract class ILazyFragment extends Fragment {
     protected abstract void setListener();
 
     protected abstract void initData();
+
+    protected abstract boolean isDataComplete();
 
     protected final View findViewById(@IdRes int id) {
         return mContentView.findViewById(id);
