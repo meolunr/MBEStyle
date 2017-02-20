@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginBottom="1dp"
-            app:summary="https://github.com/iAcn/MBEStyle.git"
+            app:summary="https://github.com/iAcn/MBEStyle"
             app:title="开源相关" />
 
     </LinearLayout>
