@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private Toolbar mToolbar;
 
-    private List<BaseFragment> mFragments;
+//    private List<BaseFragment> mFragments;
+    private List mFragments;
     private int mCurrentIndex = -1;
     private FragmentManager mFragmentManager;
 
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     private void switchFragment(int index) {
-        Fragment fragment = mFragments.get(index);
+        Fragment fragment = (Fragment) mFragments.get(index);
         FragmentTransaction transaction = mFragmentManager.beginTransaction();
 
         String indexString = String.valueOf(index);
@@ -106,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         if (mCurrentIndex != -1) {
             // 不是首次启动
-            transaction.hide(mFragments.get(mCurrentIndex));
+            transaction.hide((Fragment) mFragments.get(mCurrentIndex));
         }
 
         if (targetFragment == null) {

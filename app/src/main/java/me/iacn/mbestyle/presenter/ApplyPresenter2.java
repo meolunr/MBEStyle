@@ -23,11 +23,11 @@ import me.iacn.mbestyle.util.PackageUtils;
  * Emali iAcn0301@foxmail.com
  */
 
-public class ApplyPresenter {
+public class ApplyPresenter2 {
 
     private ApplyFragment mView;
 
-    public ApplyPresenter(ApplyFragment mView) {
+    public ApplyPresenter2(ApplyFragment mView) {
         this.mView = mView;
     }
 
@@ -75,7 +75,7 @@ public class ApplyPresenter {
                 .subscribe(new Consumer<List<AppBean>>() {
                     @Override
                     public void accept(@NonNull List<AppBean> list) throws Exception {
-                        mView.onLoadData(list);
+//                        mView.showApps(list);
                     }
                 });
     }
