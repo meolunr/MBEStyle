@@ -61,7 +61,6 @@ public class IconShowPresenter {
                     xml.next();
                 }
 
-                Thread.sleep(2000);
                 flowableEmitter.onNext(icons);
             }
         }, BackpressureStrategy.BUFFER)
@@ -122,7 +121,6 @@ public class IconShowPresenter {
                             }
                         }
 
-                        Thread.sleep(2000);
                         return newList;
                     }
                 })
