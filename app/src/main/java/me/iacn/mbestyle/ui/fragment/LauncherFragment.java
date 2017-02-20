@@ -72,6 +72,35 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
             case 1:
                 ActionLauncher();
                 break;
+            case 2:
+                AdwLauncher();
+                break;
+            case 3:
+                ApexLauncher();
+                break;
+            case 4:
+                AtomLauncher();
+            case 5:
+                AviateLauncher();
+                break;
+            case 6:
+                GoLauncher();
+                break;
+            case 7:
+                KKLauncher();
+                break;
+            case 8:
+                LgHomeLauncher();
+                break;
+            case 9:
+                NextLauncher();
+                break;
+            case 10:
+                SmartLauncher();
+                break;
+            case 11:
+                SoloLauncher();
+                break;
         }
     }
 
