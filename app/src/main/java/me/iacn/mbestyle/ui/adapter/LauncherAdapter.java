@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.RequestManager;
+
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
@@ -19,11 +21,13 @@ public class LauncherAdapter extends RecyclerView.Adapter<LauncherHolder> {
 
     private int[] mLauncherIcons;
     private String[] mLauncherNames;
+    private RequestManager mGlide;
     private OnItemClickListener mListener;
 
-    public LauncherAdapter(int[] mLauncherIcons, String[] mLauncherNames) {
+    public LauncherAdapter(int[] mLauncherIcons, String[] mLauncherNames, RequestManager glide) {
         this.mLauncherIcons = mLauncherIcons;
         this.mLauncherNames = mLauncherNames;
+        this.mGlide = glide;
     }
 
     @Override
@@ -37,7 +41,7 @@ public class LauncherAdapter extends RecyclerView.Adapter<LauncherHolder> {
 
     @Override
     public void onBindViewHolder(LauncherHolder holder, int position) {
-        holder.ivLauncherIcon.setImageResource(mLauncherIcons[position]);
+        mGlide.load(mLauncherIcons[position]).into(holder.ivLauncherIcon);
         holder.tvLauncherName.setText(mLauncherNames[position]);
     }
 

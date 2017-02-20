@@ -9,6 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.RequestManager;
+
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.adapter.LauncherAdapter;
@@ -56,8 +59,9 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
         };
 
         String[] launcherNames = getResources().getStringArray(R.array.launchers);
+        RequestManager glide = Glide.with(this);
 
-        LauncherAdapter adapter = new LauncherAdapter(launcherIcons, launcherNames);
+        LauncherAdapter adapter = new LauncherAdapter(launcherIcons, launcherNames, glide);
         adapter.setOnItemClickListener(this);
 
         rvLauncher.setAdapter(adapter);

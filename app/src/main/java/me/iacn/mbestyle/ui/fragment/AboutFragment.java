@@ -4,6 +4,9 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
@@ -16,6 +19,7 @@ import me.iacn.mbestyle.ui.widget.AboutItem;
 
 public class AboutFragment extends BaseFragment implements View.OnClickListener {
 
+    private ImageView ivLogo;
     private AboutItem aiVersion;
     private AboutItem aiDesigner;
     private AboutItem aiDeveloper;
@@ -28,6 +32,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
 
     @Override
     protected void findView() {
+        ivLogo = (ImageView) findViewById(R.id.iv_logo);
         aiVersion = (AboutItem) findViewById(R.id.ai_version);
         aiDesigner = (AboutItem) findViewById(R.id.ai_designer);
         aiDeveloper = (AboutItem) findViewById(R.id.ai_developer);
@@ -45,6 +50,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     @Override
     protected void initData() {
         aiVersion.setSummary(BuildConfig.VERSION_NAME);
+        Glide.with(this).load(R.drawable.logo).into(ivLogo);
     }
 
     @Override
