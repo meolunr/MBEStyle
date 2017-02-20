@@ -42,6 +42,12 @@ public abstract class ILazyFragment extends Fragment {
         initData();
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        mContentView = null;
+    }
+
     @LayoutRes
     protected int getInitialView() {
         return R.layout.inflate_loading;
