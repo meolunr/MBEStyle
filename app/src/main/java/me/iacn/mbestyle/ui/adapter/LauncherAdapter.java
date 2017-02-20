@@ -37,12 +37,13 @@ public class LauncherAdapter extends RecyclerView.Adapter<LauncherHolder> {
 
     @Override
     public void onBindViewHolder(LauncherHolder holder, int position) {
-        System.out.println(mLauncherIcons);
+        holder.ivLauncherIcon.setImageResource(mLauncherIcons[position]);
+        holder.tvLauncherName.setText(mLauncherNames[position]);
     }
 
     @Override
     public int getItemCount() {
-        return 6;
+        return mLauncherIcons.length;
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
@@ -58,7 +59,8 @@ class LauncherHolder extends RecyclerView.ViewHolder implements View.OnClickList
 
     LauncherHolder(View itemView) {
         super(itemView);
-
+        ivLauncherIcon = (ImageView) itemView.findViewById(R.id.iv_launcher_icon);
+        tvLauncherName = (TextView) itemView.findViewById(R.id.tv_launcher_name);
         itemView.setOnClickListener(this);
     }
 
