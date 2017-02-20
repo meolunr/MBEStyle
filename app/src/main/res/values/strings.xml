@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MBE Style</string>
     <string name="app_title">MBE Style 图标包</string>
-    <!--<string name="component_template">ComponentInfo{%packageName%/%activityName%}</string>-->
     <string name="component_template">ComponentInfo{$packageName$/$activityName$}</string>
+    <string name="launcher_not_found">你好像还没有安装该桌面==</string>
 </resources>
