@@ -1,7 +1,8 @@
 ## MBE Style IconPack
- 
- Designer：幼幼保护协会 @Coolapk  
- Developer：Leon连续 @Coolapk
+
+
+Designer：幼幼保护协会 @Coolapk  
+Developer：Leon连续 @Coolapk
  
 You can download it from [Coolapk](http://www.coolapk.com/apk/me.iacn.mbestyle)
 
