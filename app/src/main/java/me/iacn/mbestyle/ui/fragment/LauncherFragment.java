@@ -110,7 +110,7 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
         intent.putExtra("com.teslacoilsw.launcher.extra.ICON_THEME_TYPE", "GO");
         intent.putExtra("com.teslacoilsw.launcher.extra.ICON_THEME_PACKAGE", BuildConfig.APPLICATION_ID);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        openActivity(intent);
     }
 
     private void ActionLauncher() {
