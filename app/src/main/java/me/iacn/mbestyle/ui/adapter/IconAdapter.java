@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.bumptech.glide.RequestManager;
+
 import java.util.List;
 
 import me.iacn.mbestyle.R;
@@ -19,9 +21,11 @@ import me.iacn.mbestyle.bean.IconBean;
 public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
 
     private List<IconBean> mIcons;
+    private RequestManager mGlide;
 
-    public IconAdapter(List<IconBean> mIcons) {
+    public IconAdapter(List<IconBean> mIcons, RequestManager glide) {
         this.mIcons = mIcons;
+        this.mGlide = glide;
     }
 
     @Override
@@ -33,7 +37,7 @@ public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
     @Override
     public void onBindViewHolder(IconHolder holder, int position) {
         IconBean bean = mIcons.get(position);
-        holder.ivIcon.setImageResource(bean.id);
+        mGlide.load(bean.id).into(holder.ivIcon);
     }
 
     @Override

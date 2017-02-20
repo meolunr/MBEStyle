@@ -3,6 +3,9 @@ package me.iacn.mbestyle.ui.fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.RequestManager;
+
 import java.util.List;
 
 import me.iacn.mbestyle.R;
@@ -43,6 +46,7 @@ public class IconAllFragment extends BaseIconFragment {
 
     @Override
     public void showIcons(List<IconBean> icons) {
-        rvIcon.setAdapter(new IconAdapter(icons));
+        RequestManager glide = Glide.with(this);
+        rvIcon.setAdapter(new IconAdapter(icons, glide));
     }
 }
