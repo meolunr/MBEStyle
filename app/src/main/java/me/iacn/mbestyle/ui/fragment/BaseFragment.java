@@ -19,7 +19,7 @@ public abstract class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return View.inflate(getActivity(), getContentView(), null);
+        return View.inflate(getActivity(), getInflateView(), null);
     }
 
     @Override
@@ -32,7 +32,7 @@ public abstract class BaseFragment extends Fragment {
     }
 
     @LayoutRes
-    protected abstract int getContentView();
+    protected abstract int getInflateView();
 
     protected abstract void findView();
 
