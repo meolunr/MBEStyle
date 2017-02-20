@@ -4,6 +4,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.ui.adapter.LauncherAdapter;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -31,6 +32,7 @@ public class LauncherFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-
+        LauncherAdapter adapter = new LauncherAdapter();
+        rvLauncher.setAdapter(adapter);
     }
 }
