@@ -20,6 +20,7 @@ import me.iacn.mbestyle.R;
 public abstract class ILazyFragment extends Fragment {
 
     protected View mContentView;
+    protected boolean mStartExecuted;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,13 +46,20 @@ public abstract class ILazyFragment extends Fragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
 
-        System.out.println("--- " + getClass() + " ---");
-        System.out.println(isVisibleToUser);
-        System.out.println(isDataComplete());
-
-        if (isVisibleToUser && !isDataComplete()) {
+        if (isVisibleToUser && !isDataComplete() && mStartExecuted) {
             initData();
         }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        if (getUserVisibleHint() && !isDataComplete()) {
+            initData();
+        }
+
+        mStartExecuted = true;
     }
 
     @Override
