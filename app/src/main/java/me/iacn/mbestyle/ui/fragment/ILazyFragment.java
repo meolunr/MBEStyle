@@ -63,8 +63,9 @@ public abstract class ILazyFragment extends Fragment {
         FrameLayout layout = (FrameLayout) getView();
 
         if (layout != null) {
-            layout.removeAllViews();
-            layout.addView(mContentView);
+            ViewGroup group = (ViewGroup) layout.getParent();
+            group.removeAllViews();
+            group.addView(mContentView);
         }
     }
 }
