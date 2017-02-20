@@ -27,7 +27,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     private AboutItem aiOpenSource;
 
     @Override
-    protected int getInflateView() {
+    protected int getContentView() {
         return R.layout.fragment_about;
     }
 

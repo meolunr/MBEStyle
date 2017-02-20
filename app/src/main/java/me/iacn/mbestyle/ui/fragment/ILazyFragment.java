@@ -70,7 +70,7 @@ public abstract class ILazyFragment extends Fragment {
         return mContentView.findViewById(id);
     }
 
-    protected void onLoadData() {
+    public void onLoadData() {
         FrameLayout layout = (FrameLayout) getView();
 
         if (layout != null) {

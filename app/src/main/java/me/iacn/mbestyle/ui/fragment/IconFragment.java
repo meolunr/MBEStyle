@@ -24,7 +24,7 @@ public class IconFragment extends BaseFragment {
     private IconPresenter mPresenter;
 
     @Override
-    protected int getInflateView() {
+    protected int getContentView() {
         return R.layout.fragment_icon;
     }
 
