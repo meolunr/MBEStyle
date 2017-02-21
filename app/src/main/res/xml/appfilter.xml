@@ -839,7 +839,7 @@
     <!-- cnBeta / cnBeta -->
     <item
         component="ComponentInfo{me.yugy.cnbeta/me.yugy.cnbeta.activity.MainActivity}"
-        drawable="cnBeta" />
+        drawable="cnbeta" />
     <!-- minecraft / minecraft -->
     <item
         component="ComponentInfo{com.mojang.minecraftpe/com.mojang.minecraftpe.MainActivity}"
