@@ -55,6 +55,7 @@ public class IconShowPresenter {
                                     iconName, "drawable", BuildConfig.APPLICATION_ID);
                             bean.name = iconName;
 
+                            checkCodeError(bean);
                             icons.add(bean);
                         }
                     }
@@ -94,6 +95,7 @@ public class IconShowPresenter {
                                     iconName, "drawable", BuildConfig.APPLICATION_ID);
                             bean.name = iconName;
 
+                            checkCodeError(bean);
                             icons.add(bean);
                         }
                     }
@@ -152,5 +154,16 @@ public class IconShowPresenter {
         }
 
         return set;
+    }
+
+    /**
+     * Q：为什么有这个看似没用的逻辑？
+     * A：因为每个图标的 xml 编写是十分繁杂的，难免出错
+     * 所以在这里检查下（Ps.不好意思麻烦设计师，就只好麻烦自己啦~）
+     */
+    private void checkCodeError(IconBean bean) {
+        if (bean.id == 0) {
+            throw new RuntimeException("Icon resource id can't be zero." + " Icon = " + bean.name);
+        }
     }
 }
