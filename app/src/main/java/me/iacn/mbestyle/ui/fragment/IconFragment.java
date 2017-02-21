@@ -1,6 +1,7 @@
 package me.iacn.mbestyle.ui.fragment;
 
 import android.app.Fragment;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 
@@ -43,9 +44,14 @@ public class IconFragment extends BaseFragment {
     protected void initData() {
         mPresenter = new IconPresenter(this);
 
+        IconShowFragment fragment = new IconShowFragment();
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("ifShowAllIcons", true);
+        fragment.setArguments(bundle);
+
         List<Fragment> fragments = new ArrayList();
         fragments.add(new IconAdaptedFragment());
-        fragments.add(new IconAllFragment());
+        fragments.add(fragment);
 
         String[] titles = new String[]{"已适配", "全部"};
 
