@@ -51,7 +51,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     @Override
     protected void initData() {
         aiVersion.setSummary(BuildConfig.VERSION_NAME);
-        Glide.with(this).load(R.drawable.logo).into(ivLogo);
+        Glide.with(this).load(R.drawable.bg_about_logo).into(ivLogo);
     }
 
     @Override
