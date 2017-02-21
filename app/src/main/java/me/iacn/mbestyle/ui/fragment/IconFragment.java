@@ -44,14 +44,9 @@ public class IconFragment extends BaseFragment {
     protected void initData() {
         mPresenter = new IconPresenter(this);
 
-        IconShowFragment fragment = new IconShowFragment();
-        Bundle bundle = new Bundle();
-        bundle.putBoolean("ifShowAllIcons", true);
-        fragment.setArguments(bundle);
-
         List<Fragment> fragments = new ArrayList();
-        fragments.add(new IconAdaptedFragment());
-        fragments.add(fragment);
+        fragments.add(makeIconShowFragment(false));
+        fragments.add(makeIconShowFragment(true));
 
         String[] titles = new String[]{"已适配", "全部"};
 
@@ -68,5 +63,15 @@ public class IconFragment extends BaseFragment {
         if (allTab != null && total != 0) {
             allTab.setText(all);
         }
+    }
+
+    private IconShowFragment makeIconShowFragment(boolean ifShowAllIcons) {
+        IconShowFragment fragment = new IconShowFragment();
+
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("ifShowAllIcons", ifShowAllIcons);
+        fragment.setArguments(bundle);
+
+        return fragment;
     }
 }
