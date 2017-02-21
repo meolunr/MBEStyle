@@ -22,7 +22,7 @@ import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.IconBean;
-import me.iacn.mbestyle.ui.fragment.IIconFragment;
+import me.iacn.mbestyle.ui.fragment.IconShowFragment;
 import me.iacn.mbestyle.util.PackageUtils;
 
 /**
@@ -32,9 +32,9 @@ import me.iacn.mbestyle.util.PackageUtils;
 
 public class IconShowPresenter {
 
-    private IIconFragment mView;
+    private IconShowFragment mView;
 
-    public IconShowPresenter(IIconFragment view) {
+    public IconShowPresenter(IconShowFragment view) {
         mView = view;
     }
 

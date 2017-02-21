@@ -19,7 +19,7 @@ import me.iacn.mbestyle.ui.adapter.IconAdapter;
  * Emali iAcn0301@foxmail.com
  */
 
-public class IconShowFragment extends IIconFragment {
+public class IconShowFragment extends ILazyFragment {
 
     private RecyclerView rvIcon;
     private IconShowPresenter mPresenter;
@@ -59,9 +59,8 @@ public class IconShowFragment extends IIconFragment {
         return mIcons != null;
     }
 
-    @Override
     public void onLoadData(List<IconBean> icons) {
-        super.onLoadData(icons);
+        super.onLoadData();
 
         mIcons = icons;
         RequestManager glide = Glide.with(this);
