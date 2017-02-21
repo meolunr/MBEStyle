@@ -1,5 +1,6 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -43,9 +44,14 @@ public class IconShowFragment extends IIconFragment {
     protected void initData() {
         mPresenter = new IconShowPresenter(this);
 
-        boolean ifShowAllIcons = getArguments().getBoolean("ifShowAllIcons", false);
-        System.out.println(ifShowAllIcons);
-        mPresenter.getAllIcons();
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            if (getArguments().getBoolean("ifShowAllIcons", false)) {
+                mPresenter.getAllIcons();
+            } else {
+                mPresenter.getAdaptedIcons();
+            }
+        }
     }
 
     @Override
