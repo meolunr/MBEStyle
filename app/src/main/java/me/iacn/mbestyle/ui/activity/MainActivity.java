@@ -98,7 +98,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private void switchFragment(int index) {
         Fragment fragment = mFragments.get(index);
-        FragmentTransaction transaction = mFragmentManager.beginTransaction();
+        FragmentTransaction transaction =
+                mFragmentManager
+                        .beginTransaction()
+                        .setCustomAnimations(R.animator.fragment_in, R.animator.fragment_out);
 
         String indexString = String.valueOf(index);
         Fragment targetFragment = mFragmentManager.findFragmentByTag(indexString);
