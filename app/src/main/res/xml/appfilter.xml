@@ -1152,10 +1152,10 @@
     <item
         component="ComponentInfo{com.kugou.android/com.kugou.android.app.splash.SplashActivity}"
         drawable="kugou" />
-    <!-- 万能钥匙 / wifi -->
+    <!-- 万能钥匙 / wifi_key -->
     <item
         component="ComponentInfo{com.lfqy.wifilocating/com.lfqy.wifilocating.ui.activity.HomeActivity}"
-        drawable="wifi" />
+        drawable="wifi_key" />
     <item
         component="ComponentInfo{com.snda.wifilocating/com.lantern.launcher.ui.MainActivity}"
         drawable="wifi_key" />
@@ -1174,6 +1174,7 @@
     <item
         component="ComponentInfo{com.halo.wifikey.wifilocating/com.halo.wifikey.wifilocating.ui.activity.WelcomeActivity}"
         drawable="wifi_key" />
+
     <!-- 2_21 / 2017 -->
     <item
         component="ComponentInfo{com.taptap/com.play.taptap.ui.MainAct}"
