@@ -77,8 +77,11 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
 
     @Override
     public void onItemClick(View itemView, int position) {
-        System.out.println(position);
+        IconBean bean = mIcons.get(position);
         Intent intent = new Intent(getActivity(), IconViewActivity.class);
+        intent.putExtra("icon_name", bean.name);
+        intent.putExtra("resource_id", bean.id);
+
         ActivityOptionsCompat options = ActivityOptionsCompat
                 .makeSceneTransitionAnimation(getActivity(), itemView, "dialog_icon");
 
