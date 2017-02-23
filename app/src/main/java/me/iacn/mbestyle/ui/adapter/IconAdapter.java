@@ -65,7 +65,8 @@ class IconHolder extends RecyclerView.ViewHolder implements View.OnClickListener
         super(itemView);
         ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
 
-        itemView.setOnClickListener(this);
+        // 为了 Activity 传递动画，此处给 ImageView 设置
+        ivIcon.setOnClickListener(this);
     }
 
     @Override

@@ -34,7 +34,8 @@
                 android:layout_height="130dp"
                 android:layout_marginBottom="36dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/google_keyboard" />
+                android:src="@drawable/google_keyboard"
+                android:transitionName="dialog_icon" />
 
         </LinearLayout>
 
