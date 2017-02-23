@@ -1,7 +1,7 @@
 package me.iacn.mbestyle.ui.activity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import me.iacn.mbestyle.R;
@@ -14,8 +14,8 @@ import me.iacn.mbestyle.R;
 public class IconViewActivity extends AppCompatActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icon_view);
     }
 }
