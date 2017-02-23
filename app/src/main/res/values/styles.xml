@@ -2,6 +2,11 @@
 
     <style name="AppTheme" parent="AppThemeBase" />
 
+    <style name="AppTheme.Dialog" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/dialog_background</item>
+    </style>
+
     <style name="AppThemeBase" parent="Theme.Design.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
