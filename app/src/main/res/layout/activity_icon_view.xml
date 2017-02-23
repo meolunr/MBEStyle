@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
+        android:clickable="true"
         android:minWidth="300dp"
         app:cardElevation="16dp">
 
@@ -26,7 +27,6 @@
                 android:layout_height="?actionBarSize"
                 android:layout_marginLeft="24dp"
                 android:gravity="center_vertical"
-                android:text="test layout"
                 android:textColor="@color/main_text"
                 android:textSize="20sp" />
 
@@ -36,7 +36,6 @@
                 android:layout_height="130dp"
                 android:layout_marginBottom="36dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/google_keyboard"
                 android:transitionName="dialog_icon" />
 
         </LinearLayout>
