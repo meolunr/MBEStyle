@@ -3,6 +3,7 @@ package me.iacn.mbestyle.ui.activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -97,6 +98,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     private void switchFragment(int index) {
+        if (index == 2) {
+            startActivity(new Intent(this, IconViewActivity.class));
+        }
+
         if (index == mCurrentIndex) return;
 
         Fragment fragment = mFragments.get(index);
