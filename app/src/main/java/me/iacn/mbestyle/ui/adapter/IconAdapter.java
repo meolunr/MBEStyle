@@ -12,6 +12,7 @@ import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.IconBean;
+import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -22,6 +23,7 @@ public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
 
     private List<IconBean> mIcons;
     private RequestManager mGlide;
+    private OnItemClickListener mListener;
 
     public IconAdapter(List<IconBean> mIcons, RequestManager glide) {
         this.mIcons = mIcons;
@@ -30,8 +32,11 @@ public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
 
     @Override
     public IconHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new IconHolder(LayoutInflater.from(
+        IconHolder holder = new IconHolder(LayoutInflater.from(
                 parent.getContext()).inflate(R.layout.item_icon, parent, false));
+        holder.mListener = mListener;
+
+        return holder;
     }
 
     @Override
@@ -44,14 +49,29 @@ public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
     public int getItemCount() {
         return mIcons.size();
     }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
 }
 
-class IconHolder extends RecyclerView.ViewHolder {
+class IconHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+    OnItemClickListener mListener;
 
     ImageView ivIcon;
 
     IconHolder(View itemView) {
         super(itemView);
         ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
+
+        itemView.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (mListener != null) {
+            mListener.onItemClick(v, getLayoutPosition());
+        }
     }
 }
