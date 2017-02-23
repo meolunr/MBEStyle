@@ -2,6 +2,7 @@ package me.iacn.mbestyle.ui.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -77,6 +78,10 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
     @Override
     public void onItemClick(View itemView, int position) {
         System.out.println(position);
-        startActivity(new Intent(getActivity(), IconViewActivity.class));
+        Intent intent = new Intent(getActivity(), IconViewActivity.class);
+        ActivityOptionsCompat options = ActivityOptionsCompat
+                .makeSceneTransitionAnimation(getActivity(), itemView, "dialog_icon");
+
+        startActivity(intent, options.toBundle());
     }
 }
