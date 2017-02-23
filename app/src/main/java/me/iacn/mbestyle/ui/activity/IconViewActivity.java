@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
 import me.iacn.mbestyle.R;
 
 /**
@@ -37,7 +35,7 @@ public class IconViewActivity extends AppCompatActivity implements View.OnClickL
             int resourceId = intent.getIntExtra("resource_id", 0);
 
             tvTitle.setText(iconName);
-            Glide.with(this).load(resourceId).into(ivIcon);
+            ivIcon.setImageResource(resourceId);
         }
     }
 
