@@ -14,7 +14,7 @@
         app:cardElevation="16dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:animateLayoutChanges="true"
             android:orientation="vertical">
@@ -25,13 +25,13 @@
                 android:layout_marginLeft="24dp"
                 android:gravity="center_vertical"
                 android:text="test layout"
-                android:textColor="#212121"
+                android:textColor="@color/main_text"
                 android:textSize="20sp" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="36dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/google_keyboard" />
 
