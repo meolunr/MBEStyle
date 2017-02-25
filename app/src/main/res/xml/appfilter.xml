@@ -1465,4 +1465,129 @@
         component="ComponentInfo{com.automattic.simplenote/com.automattic.simplenote.NotesActivity}"
         drawable="simplenote" />
 
+    <!-- 2_23 / 2017-->
+    <item
+        component="ComponentInfo{com.iacn.limbrowser/com.iacn.limbrowser.ui.activity.MainActivity}"
+        drawable="lim" />
+    <item
+        component="ComponentInfo{io.github.javiewer/io.github.javiewer.activity.StartActivity}"
+        drawable="javiewer" />
+    <item
+        component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivity}"
+        drawable="telegram" />
+    <item
+        component="ComponentInfo{com.samruston.twitter/com.samruston.twitter.Launcher1}"
+        drawable="flamingo" />
+    <item
+        component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}"
+        drawable="twitter" />
+    <item
+        component="ComponentInfo{com.twitter.android/com.twitter.android.LoginActivity}"
+        drawable="twitter" />
+    <item
+        component="ComponentInfo{com.htc.htctwitter/com.htc.htctwitter.TwidroidSplash}"
+        drawable="twitter" />
+    <item
+        component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity}"
+        drawable="instagram" />
+    <item
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.BrowseActivity}"
+        drawable="google_keep" />
+    <item
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchActivity}"
+        drawable="google" />
+    <item
+        component="ComponentInfo{com.sing.client/com.sing.client.activity.DummyActivity}"
+        drawable="_5sing" />
+    <item
+        component="ComponentInfo{com.lbe.security/com.lbe.security.ui.SplashActivity}"
+        drawable="lbe" />
+    <item
+        component="ComponentInfo{com.icbc/com.icbc.activity.init.LoadingActivity}"
+        drawable="icbc" />
+    <item
+        component="ComponentInfo{com.tencent.android.qqdownloader/com.tencent.pangu.link.SplashActivity}"
+        drawable="tencent_appstore" />
+    <item
+        component="ComponentInfo{mark.via/mark.via.ui.activity.BrowserActivity}"
+        drawable="via" />
+    <item
+        component="ComponentInfo{com.duowan.kiwi/com.duowan.kiwi.simpleactivity.SplashActivity}"
+        drawable="huyatv" />
+    <item
+        component="ComponentInfo{air.tv.douyu.android/tv.douyu.view.activity.SplashActivity}"
+        drawable="douyutv" />
+    <item
+        component="ComponentInfo{com.panda.videoliveplatform/com.panda.videoliveplatform.activity.WelcomeActivity}"
+        drawable="pandatv" />
+    <item
+        component="ComponentInfo{com.maimiao.live.tv/com.maimiao.live.tv.ui.activity.SplashActivity}"
+        drawable="quanmintv" />
+    <item
+        component="ComponentInfo{com.longzhu.tga/com.longzhu.tga.clean.splash.SplashActivity}"
+        drawable="longzhutv" />
+    <item
+        component="ComponentInfo{com.gameabc.zhanqiAndroid/com.gameabc.zhanqiAndroid.Activty.LaunchActivity}"
+        drawable="zhanqitv" />
+    <item
+        component="ComponentInfo{com.ktls.fileinfo/com.ktls.fileinfo.MainSDClear}"
+        drawable="sdclean" />
+    <item
+        component="ComponentInfo{com.tencent.karaoke/com.tencent.karaoke.module.splash.ui.SplashBaseActivity}"
+        drawable="quanmink" />
+    <item
+        component="ComponentInfo{com.sonyericsson.trackid/com.sonyericsson.trackid.activity.WidgetHandlerActivity}"
+        drawable="trackid" />
+    <item
+        component="ComponentInfo{com.sonyericsson.fmradio/com.sonyericsson.fmradio.ui.FmRadioActivity}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{com.netease.newsreader.activity/com.netease.nr.biz.ad.AdActivity}"
+        drawable="netease_news" />
+    <item
+        component="ComponentInfo{com.netease.newsreader.activity/com.netease.nr.phone.main.MainActivity}"
+        drawable="netease_news" />
+    <item
+        component="ComponentInfo{com.sony.nfx.app.sfrc/com.sony.nfx.app.sfrc.npam.InitialActivity}"
+        drawable="sony_news" />
+    <item
+        component="ComponentInfo{com.sonymobile.sketch/com.sonymobile.sketch.dashboard.DashboardActivity}"
+        drawable="sketch" />
+    <item
+        component="ComponentInfo{com.journey.app/com.journey.app.SplashActivity}"
+        drawable="journey" />
+    <item
+        component="ComponentInfo{com.xiaomi.smarthome/com.xiaomi.smarthome.SmartHomeMainActivity}"
+        drawable="mihome" />
+    <item
+        component="ComponentInfo{com.blizzard.wtcg.hearthstone/com.blizzard.wtcg.hearthstone.HearthstoneNativeActivity}"
+        drawable="lushi" />
+    <item
+        component="ComponentInfo{com.xunlei.downloadprovider/com.xunlei.downloadprovider.launch.LaunchActivity}"
+        drawable="xunlei" />
+    <item
+        drawable="youku"
+        omponent="ComponentInfo{com.youku.phone/com.youku.phone.ActivityWelcome}" />
+    <item
+        component="ComponentInfo{com.youku.phone/com.youku.phone.ActivityWelcomeCopy}"
+        drawable="youku" />
+    <item
+        component="ComponentInfo{com.estrongs.android.pop.pro/com.estrongs.android.pop.view.FileExplorerActivity}"
+        drawable="es_explorer" />
+    <item
+        component="ComponentInfo{com.estrongs.android.pop/com.estrongs.android.pop.app.adgad.GdtSplashActivity}"
+        drawable="es_explorer" />
+    <item
+        component="ComponentInfo{com.estrongs.android.pop/com.estrongs.android.pop.resmanager.view.FileExplorerActivity}"
+        drawable="es_explorer" />
+    <item
+        component="ComponentInfo{com.estrongs.android.pop/com.estrongs.android.pop.view.FileExplorerActivity}"
+        drawable="es_explorer" />
+    <item
+        component="ComponentInfo{ml.puredark.hviewer/ml.puredark.hviewer.ui.activities.MainActivity}"
+        drawable="e_hviewer" />
+    <item
+        component="ComponentInfo{com.tencent.token/com.tencent.token.ui.LogoActivity}"
+        drawable="tencent_qq_secure" />
+
 </resources>
