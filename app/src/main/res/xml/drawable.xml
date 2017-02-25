@@ -3,7 +3,7 @@
 
     <version>1</version>
 
-    <item drawable="a10086" />
+    <item drawable="_10086" />
     <item drawable="adm" />
     <item drawable="appstore" />
     <item drawable="app_ops" />
