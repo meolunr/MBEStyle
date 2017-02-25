@@ -34,6 +34,11 @@ public class IconViewActivity extends AppCompatActivity implements View.OnClickL
             String iconName = intent.getStringExtra("icon_name");
             int resourceId = intent.getIntExtra("resource_id", 0);
 
+            if (iconName.startsWith("_")) {
+                // 处理 drawable 开头不能是数字的情况
+                iconName = iconName.substring(1);
+            }
+
             tvTitle.setText(iconName);
             ivIcon.setImageResource(resourceId);
         }
