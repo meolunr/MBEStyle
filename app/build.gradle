@@ -8,9 +8,9 @@ android {
         applicationId "me.iacn.mbestyle"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 3
-        versionName "1.0.6"
-        resConfigs "en", "zh"
+        versionCode 4
+        versionName "1.0.7"
+        resConfigs "en", "zh-rCN"
     }
 
     buildTypes {
