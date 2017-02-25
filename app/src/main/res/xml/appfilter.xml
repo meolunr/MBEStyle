@@ -1367,7 +1367,7 @@
         drawable="scan" />
     <item
         component="ComponentInfo{com.greenpoint.android.mc10086.activity/com.leadeon.cmcc.base.StartPageActivity}"
-        drawable="a10086" />
+        drawable="_10086" />
     <item
         component="ComponentInfo{com.ct.client/com.ct.client.SplashActivity}"
         drawable="ct_client" />
