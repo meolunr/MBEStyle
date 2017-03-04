@@ -1686,7 +1686,7 @@
         drawable="acfun" />
     <item
         component="ComponentInfo{com.kingpoint.gmcchh/com.kingpoint.gmcchh.ui.home.StartUpActivity}"
-        drawable="a10086" />
+        drawable="_10086" />
     <item
         component="ComponentInfo{com.xunlei.downloadprovider/com.xunlei.downloadprovider.loading.LaunchActivity}"
         drawable="xunlei" />
