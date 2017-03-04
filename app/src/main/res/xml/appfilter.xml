@@ -1662,7 +1662,7 @@
         drawable="prisma" />
     <item
         component="ComponentInfo{com.niksoftware.snapseed/com.google.android.apps.snapseed.MainActivity}"
-        drawable="sanpaeed" />
+        drawable="snapseed" />
     <item
         component="ComponentInfo{com.ximalaya.ting.android/com.ximalaya.ting.android.activity.account.WelComeActivity}"
         drawable="ximalaya" />
