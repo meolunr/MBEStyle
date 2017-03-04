@@ -48,7 +48,7 @@ public class IconFragment extends BaseFragment {
         fragments.add(makeIconShowFragment(false));
         fragments.add(makeIconShowFragment(true));
 
-        String[] titles = new String[]{"已适配", "全部"};
+        String[] titles = new String[]{"已安装", "全部"};
 
         mTab.setupWithViewPager(mViewPager);
         mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), fragments, titles));
