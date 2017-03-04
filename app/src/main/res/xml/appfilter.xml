@@ -1719,7 +1719,7 @@
         drawable="echo" />
     <item
         component="ComponentInfo{com.MobileTicket/com.MobileTicket.MobileTicket}"
-        drawable="a12306" />
+        drawable="_12306" />
     <item
         component="ComponentInfo{com.yipiao/com.yipiao.activity.LaunchActivity}"
         drawable="zhixing" />
