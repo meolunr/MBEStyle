@@ -1744,4 +1744,153 @@
         component="ComponentInfo{com.sony.tvsideview.videoph/com.sony.tvsideview.MainActivity}"
         drawable="sony_video_tv_slideview" />
 
+    <!-- 3_1 / 2017-->
+    <item
+        component="ComponentInfo{com.qiyi.video/com.qiyi.video.WelcomeActivity}"
+        drawable="iqiyi" />
+    <item
+        component="ComponentInfo{com.qiyi.video/com.qiyi.video.StartActivity}"
+        drawable="iqiyi" />
+    <item
+        component="ComponentInfo{com.weico.international/com.weico.international.activity.LogoActivity}"
+        drawable="weibo" />
+    <item
+        component="ComponentInfo{com.tencent.tmgp.sgame/com.tencent.tmgp.sgame.SGameActivity}"
+        drawable="wangzhe" />
+    <item
+        component="ComponentInfo{com.sankuai.meituan/com.sankuai.meituan.activity.Welcome}"
+        drawable="meituan" />
+    <item
+        component="ComponentInfo{so.ofo.labofo/so.ofo.labofo.activities.EntryActivity}"
+        drawable="ofo" />
+    <item
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}"
+        drawable="youtube" />
+    <item
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.tablet.HomeActivity}"
+        drawable="youtube" />
+    <item
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.HomeActivity}"
+        drawable="youtube" />
+    <item
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.HomePage}"
+        drawable="youtube" />
+    <item
+        component="ComponentInfo{com.google.android.youtube/net.ogmods.youtube.OGDownloadManager1}"
+        drawable="youtube" />
+    <item
+        component="ComponentInfo{com.shoujiduoduo.wallpaper/com.shoujiduoduo.wallpaper.activity.WallpaperSplashActivity}"
+        drawable="bizhiduoduo" />
+    <item
+        component="ComponentInfo{com.facebook.katana/com.facebook.katana.LoginActivity}"
+        drawable="bizhiduoduo" />
+    <item
+        component="ComponentInfo{com.wm.realname/com.wm.realname.ui.SplashActivity}"
+        drawable="shimingbao" />
+    <item
+        component="ComponentInfo{com.mygolbs.mybus/com.mygolbs.mybus.LoginActivity}"
+        drawable="zhangshanggongjiao" />
+    <item
+        component="ComponentInfo{com.tencent.weread/com.tencent.weread.presenter.LauncherActivity}"
+        drawable="weread" />
+    <item
+        component="ComponentInfo{org.solovyev.android.calculator/org.solovyev.android.calculator.CalculatorActivity}"
+        drawable="calculatorplus" />
+    <item
+        component="ComponentInfo{com.hupu.games/com.hupu.games.activity.LaunchActivity}"
+        drawable="huputiyu" />
+    <item
+        component="ComponentInfo{bin.mt.plus/bin.mt.plus.Main}"
+        drawable="mtfilemanger" />
+    <item
+        component="ComponentInfo{com.ohsame.android/com.ohsame.android.activity.WelcomeActivity}"
+        drawable="same" />
+    <item
+        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainActivity}"
+        drawable="icebox" />
+    <item
+        component="ComponentInfo{cn.xiaochuankeji.tieba/cn.xiaochuankeji.tieba.ui.base.SplashActivity}"
+        drawable="zuiyou" />
+    <item
+        component="ComponentInfo{com.douban.frodo/com.douban.frodo.activity.SplashActivity}"
+        drawable="douban" />
+    <item
+        component="ComponentInfo{fm.jihua.kecheng/fm.jihua.kecheng.ui.activity.BaseSplashActivity}"
+        drawable="kechenggezi" />
+    <item
+        component="ComponentInfo{com.android.browser/com.tencent.mtt.SplashActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{one.codehz.container/one.codehz.container.MainActivity}"
+        drawable="container" />
+    <item
+        component="ComponentInfo{com.mobileuncle.toolhero/com.mobileuncle.toolhero.main.activity.WelcomeActivity}"
+        drawable="toolhero" />
+    <item
+        component="ComponentInfo{com.quora.android/com.quora.android.LauncherActivity}"
+        drawable="quora" />
+    <item
+        component="ComponentInfo{com.advasoft.touchretouch/4.MainActivity}"
+        drawable="touchretouch" />
+    <item
+        component="ComponentInfo{com.cubic.autohome/com.cubic.autohome.LogoActivity}"
+        drawable="autohome" />
+    <item
+        component="ComponentInfo{com.sdu.didi.psnger/com.didi.sdk.app.DidiLoadDexActivity}"
+        drawable="didi" />
+    <item
+        component="ComponentInfo{com.microsoft.rdc.android.beta/com.microsoft.rdc.ui.activities.HomeActivity}"
+        drawable="remote_desktop" />
+    <item
+        component="ComponentInfo{io.github.mthli.Ninja/io.github.mthli.ninja.app.MainActivity}"
+        drawable="ninja" />
+    <item
+        component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.CameraLauncher}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{me.piebridge.prevent/me.piebridge.prevent.ui.PreventActivity}"
+        drawable="heiyu" />
+    <item
+        component="ComponentInfo{com.tencent.qqpim/com.tencent.qqpim.ui.QQPimAndroid}"
+        drawable="qqpim" />
+    <item
+        component="ComponentInfo{com.agilebits.onepassword/com.agilebits.onepassword.activity.LoginActivity}"
+        drawable="one_password" />
+    <item
+        component="ComponentInfo{com.lionmobi.powerclean/com.lionmobi.powerclean.activity.SplashActivity}"
+        drawable="powerclean" />
+    <item
+        component="ComponentInfo{com.kodarkooperativet.blackplayerex/com.kodarkooperativet.blackplayerex.activities.ViewPagerActivity}"
+        drawable="black_player" />
+    <item
+        component="ComponentInfo{com.google.android.apps.translate/com.google.android.apps.translate.TranslateActivity}"
+        drawable="google_translate" />
+    <item
+        component="ComponentInfo{com.sankuai.meituan.takeoutnew/com.sankuai.meituan.takeoutnew.ui.page.boot.WelcomeActivity}"
+        drawable="meituanwaimai" />
+    <item
+        component="ComponentInfo{com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.cardlist.CardListActivity}"
+        drawable="google_android_pay" />
+    <item
+        component="ComponentInfo{com.samsung.android.spay/com.samsung.android.spay.ui.SpayMainActivity}"
+        drawable="samsung_pay" />
+    <item
+        component="ComponentInfo{com.samsung.android.spay/com.samsung.android.spay.InitActivity}"
+        drawable="samsung_pay" />
+    <item
+        component="ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryOpaqueActivity}"
+        drawable="samsung_gallery" />
+    <item
+        component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.NewMainProxyActivity}"
+        drawable="google_drive" />
+    <item
+        component="ComponentInfo{com.kingsoft/com.kingsoft.StartActivity}"
+        drawable="kingsoft_dic" />
+    <item
+        component="ComponentInfo{com.alibaba.wireless/com.alibaba.wireless.v5.LauncherActivity}"
+        drawable="alibaba" />
+    <item
+        component="ComponentInfo{com.dropbox.android/com.dropbox.android.activity.DropboxBrowser}"
+        drawable="dropbox" />
+
 </resources>
