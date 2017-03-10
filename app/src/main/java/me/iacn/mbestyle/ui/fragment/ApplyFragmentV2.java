@@ -9,7 +9,7 @@ import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.AppBean;
-import me.iacn.mbestyle.presenter.ApplyPresenter;
+import me.iacn.mbestyle.presenter.ApplyPresenterV2;
 import me.iacn.mbestyle.ui.adapter.AppAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 import me.iacn.mbestyle.util.StringUtils;
@@ -22,7 +22,7 @@ import me.iacn.mbestyle.util.StringUtils;
 public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListener {
 
     private RecyclerView rvApp;
-    private ApplyPresenter mPresenter;
+    private ApplyPresenterV2 mPresenter;
     private List<AppBean> mApps;
 
     @Override
@@ -43,7 +43,7 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
 
     @Override
     protected void initData() {
-        mPresenter = new ApplyPresenter(this);
+        mPresenter = new ApplyPresenterV2(this);
         mPresenter.loadInstallApp();
     }
 
