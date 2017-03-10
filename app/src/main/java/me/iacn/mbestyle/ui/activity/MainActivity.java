@@ -18,7 +18,7 @@ import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.fragment.AboutFragment;
-import me.iacn.mbestyle.ui.fragment.ApplyFragment;
+import me.iacn.mbestyle.ui.fragment.ApplyFragmentV2;
 import me.iacn.mbestyle.ui.fragment.IconFragment;
 import me.iacn.mbestyle.ui.fragment.LauncherFragment;
 import me.iacn.mbestyle.util.ScreenUtils;
@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private Toolbar mToolbar;
 
-    private List<Fragment> mFragments;
     private int mCurrentIndex = -1;
+    private List<Fragment> mFragments;
     private FragmentManager mFragmentManager;
 
     @Override
@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         mFragments = Arrays.asList(
                 new IconFragment(),
                 new LauncherFragment(),
-                new ApplyFragment(),
+//                new ApplyFragment(),
+                new ApplyFragmentV2(),
                 new AboutFragment());
 
         mFragmentManager = getFragmentManager();

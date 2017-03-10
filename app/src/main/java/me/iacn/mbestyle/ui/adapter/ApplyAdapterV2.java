@@ -18,30 +18,30 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
  * Emali iAcn0301@foxmail.com
  */
 
-public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
+public class ApplyAdapterV2 extends RecyclerView.Adapter<ApplyHolderV2> {
 
     private List<AppBean> mApps;
     private OnItemClickListener mListener;
 
-    public AppAdapter(List<AppBean> mApps) {
+    public ApplyAdapterV2(List<AppBean> mApps) {
         this.mApps = mApps;
     }
 
     @Override
-    public AppHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        AppHolder holder = new AppHolder(LayoutInflater.from(
-                parent.getContext()).inflate(R.layout.item_app, parent, false));
+    public ApplyHolderV2 onCreateViewHolder(ViewGroup parent, int viewType) {
+        ApplyHolderV2 holder = new ApplyHolderV2(LayoutInflater.from(
+                parent.getContext()).inflate(R.layout.item_apply_v2, parent, false));
         holder.mListener = mListener;
 
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(AppHolder holder, int position) {
+    public void onBindViewHolder(ApplyHolderV2 holder, int position) {
         AppBean bean = mApps.get(position);
         holder.ivIcon.setImageDrawable(bean.icon);
         holder.tvName.setText(bean.name);
-        holder.tvActivity.setText(bean.activity);
+//        holder.tvActivity.setText(bean.activity);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class AppAdapter extends RecyclerView.Adapter<AppHolder> {
     }
 }
 
-class AppHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+class ApplyHolderV2 extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     OnItemClickListener mListener;
 
@@ -62,7 +62,7 @@ class AppHolder extends RecyclerView.ViewHolder implements View.OnClickListener 
     TextView tvName;
     TextView tvActivity;
 
-    AppHolder(View itemView) {
+    ApplyHolderV2(View itemView) {
         super(itemView);
 
         ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
