@@ -10,7 +10,7 @@ import java.util.List;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.AppBean;
 import me.iacn.mbestyle.presenter.ApplyPresenterV2;
-import me.iacn.mbestyle.ui.adapter.AppAdapter;
+import me.iacn.mbestyle.ui.adapter.ApplyAdapterV2;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 import me.iacn.mbestyle.util.StringUtils;
 
@@ -78,7 +78,7 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
         super.onLoadData();
 
         mApps = list;
-        AppAdapter adapter = new AppAdapter(mApps);
+        ApplyAdapterV2 adapter = new ApplyAdapterV2(mApps);
         adapter.setOnItemClickListener(this);
         rvApp.setAdapter(adapter);
     }
