@@ -28,6 +28,6 @@
         android:elevation="8dp"
         app:itemIconTint="@color/selector_bottom_color"
         app:itemTextColor="@color/selector_bottom_color"
-        app:menu="@menu/bottom_bar" />
+        app:menu="@menu/menu_bottom_bar" />
 
 </LinearLayout>

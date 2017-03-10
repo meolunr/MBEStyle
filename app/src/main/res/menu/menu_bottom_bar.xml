@@ -2,24 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_icon"
-        android:checked="true"
         android:icon="@drawable/ic_apps_black_24dp"
+        android:orderInCategory="0"
         android:title="图标" />
 
     <item
-        android:id="@+id/menu_launcher"
         android:icon="@drawable/ic_home_black_24dp"
+        android:orderInCategory="1"
         android:title="应用" />
 
     <item
-        android:id="@+id/menu_apply"
         android:icon="@drawable/ic_apply_black_24dp"
+        android:orderInCategory="2"
         android:title="申请" />
 
     <item
-        android:id="@+id/menu_about"
         android:icon="@drawable/ic_about_black_24dp"
+        android:orderInCategory="3"
         android:title="关于" />
 
 </menu>

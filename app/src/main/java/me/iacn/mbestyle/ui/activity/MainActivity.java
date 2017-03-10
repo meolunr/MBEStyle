@@ -63,30 +63,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_icon:
-                handleToolbarElevation(0);
-                switchFragment(0);
-                return true;
+        int order = item.getOrder();
 
-            case R.id.menu_launcher:
-                handleToolbarElevation(1);
-                switchFragment(1);
-                return true;
-
-            case R.id.menu_apply:
-                handleToolbarElevation(2);
-                switchFragment(2);
-                return true;
-
-            case R.id.menu_about:
-                handleToolbarElevation(3);
-                switchFragment(3);
-                return true;
-
-            default:
-                return false;
+        if (order >= 0 && order <= 3) {
+            handleToolbarElevation(order);
+            switchFragment(order);
+            return true;
         }
+
+        return false;
     }
 
     private void handleToolbarElevation(int index) {
