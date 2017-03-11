@@ -75,7 +75,10 @@ public class LeanApi {
                 .map(new Function<LeanBean, Integer>() {
                     @Override
                     public Integer apply(@NonNull LeanBean leanBean) throws Exception {
-                        System.out.println("============="+leanBean);
+                        if (leanBean.results == null || leanBean.results.size() == 0) {
+                            return 0;
+                        }
+                        // 返回单个应用的申请次数
                         return leanBean.results.get(0).requestTotal;
                     }
                 });
