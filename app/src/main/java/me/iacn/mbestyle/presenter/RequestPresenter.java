@@ -20,8 +20,8 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.bean.ApplyBeanV2;
-import me.iacn.mbestyle.ui.fragment.ApplyFragmentV2;
+import me.iacn.mbestyle.bean.RequestBean;
+import me.iacn.mbestyle.ui.fragment.RequestFragment;
 import me.iacn.mbestyle.util.PackageUtils;
 
 /**
@@ -29,18 +29,18 @@ import me.iacn.mbestyle.util.PackageUtils;
  * Emali iAcn0301@foxmail.com
  */
 
-public class ApplyPresenterV2 {
+public class RequestPresenter {
 
-    private ApplyFragmentV2 mView;
+    private RequestFragment mView;
 
-    public ApplyPresenterV2(ApplyFragmentV2 mView) {
+    public RequestPresenter(RequestFragment mView) {
         this.mView = mView;
     }
 
     public void loadInstallApp() {
-        Flowable.create(new FlowableOnSubscribe<List<ApplyBeanV2>>() {
+        Flowable.create(new FlowableOnSubscribe<List<RequestBean>>() {
             @Override
-            public void subscribe(FlowableEmitter<List<ApplyBeanV2>> e) throws Exception {
+            public void subscribe(FlowableEmitter<List<RequestBean>> e) throws Exception {
                 // 获得已适配的所有主 Activity 全名
                 XmlResourceParser xml = mView.getResources().getXml(R.xml.appfilter);
                 Set<String> adaptedActivitySet = new HashSet<>();
@@ -57,7 +57,7 @@ public class ApplyPresenterV2 {
 
                 PackageManager manager = mView.getActivity().getPackageManager();
                 List<ResolveInfo> list = PackageUtils.getAppByMainIntent(mView.getActivity());
-                List<ApplyBeanV2> apps = new ArrayList<>();
+                List<RequestBean> apps = new ArrayList<>();
 
                 StringBuilder builder = new StringBuilder();
 
@@ -65,7 +65,7 @@ public class ApplyPresenterV2 {
                     // 排除已经适配的应用
                     if (adaptedActivitySet.contains(info.activityInfo.name)) continue;
 
-                    ApplyBeanV2 bean = new ApplyBeanV2();
+                    RequestBean bean = new RequestBean();
                     bean.name = info.loadLabel(manager).toString();
                     bean.icon = info.loadIcon(manager);
 
@@ -86,9 +86,9 @@ public class ApplyPresenterV2 {
         }, BackpressureStrategy.BUFFER)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<List<ApplyBeanV2>>() {
+                .subscribe(new Consumer<List<RequestBean>>() {
                     @Override
-                    public void accept(@NonNull List<ApplyBeanV2> list) throws Exception {
+                    public void accept(@NonNull List<RequestBean> list) throws Exception {
                         mView.onLoadData(list);
                     }
                 });

@@ -8,9 +8,9 @@ import android.widget.CheckBox;
 import java.util.List;
 
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.bean.ApplyBeanV2;
-import me.iacn.mbestyle.presenter.ApplyPresenterV2;
-import me.iacn.mbestyle.ui.adapter.ApplyAdapterV2;
+import me.iacn.mbestyle.bean.RequestBean;
+import me.iacn.mbestyle.presenter.RequestPresenter;
+import me.iacn.mbestyle.ui.adapter.RequestAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
@@ -18,11 +18,11 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
  * Emali iAcn0301@foxmail.com
  */
 
-public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListener {
+public class RequestFragment extends ILazyFragment implements OnItemClickListener {
 
     private RecyclerView rvApp;
-    private ApplyPresenterV2 mPresenter;
-    private List<ApplyBeanV2> mApps;
+    private RequestPresenter mPresenter;
+    private List<RequestBean> mApps;
 
     @Override
     protected int getContentView() {
@@ -42,7 +42,7 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
 
     @Override
     protected void initData() {
-        mPresenter = new ApplyPresenterV2(this);
+        mPresenter = new RequestPresenter(this);
         mPresenter.loadInstallApp();
     }
 
@@ -53,7 +53,7 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
 
     @Override
     public void onItemClick(View itemView, int position) {
-        ApplyBeanV2 bean = mApps.get(position);
+        RequestBean bean = mApps.get(position);
         CheckBox cbCheck = (CheckBox) itemView.findViewById(R.id.cb_check);
 
         // 反向选择
@@ -61,11 +61,11 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
         bean.isCheck = !bean.isCheck;
     }
 
-    public void onLoadData(List<ApplyBeanV2> list) {
+    public void onLoadData(List<RequestBean> list) {
         super.onLoadData();
 
         mApps = list;
-        ApplyAdapterV2 adapter = new ApplyAdapterV2(mApps);
+        RequestAdapter adapter = new RequestAdapter(mApps);
         adapter.setOnItemClickListener(this);
         rvApp.setAdapter(adapter);
     }

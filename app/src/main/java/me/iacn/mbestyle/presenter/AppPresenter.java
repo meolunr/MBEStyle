@@ -15,7 +15,7 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.bean.AppBean;
-import me.iacn.mbestyle.ui.fragment.ApplyFragment;
+import me.iacn.mbestyle.ui.fragment.AppFragment;
 import me.iacn.mbestyle.util.PackageUtils;
 
 /**
@@ -23,11 +23,11 @@ import me.iacn.mbestyle.util.PackageUtils;
  * Emali iAcn0301@foxmail.com
  */
 
-public class ApplyPresenter {
+public class AppPresenter {
 
-    private ApplyFragment mView;
+    private AppFragment mView;
 
-    public ApplyPresenter(ApplyFragment mView) {
+    public AppPresenter(AppFragment mView) {
         this.mView = mView;
     }
 

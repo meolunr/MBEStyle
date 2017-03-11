@@ -18,9 +18,9 @@ import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.fragment.AboutFragment;
-import me.iacn.mbestyle.ui.fragment.ApplyFragmentV2;
 import me.iacn.mbestyle.ui.fragment.IconFragment;
 import me.iacn.mbestyle.ui.fragment.LauncherFragment;
+import me.iacn.mbestyle.ui.fragment.RequestFragment;
 import me.iacn.mbestyle.util.ScreenUtils;
 import me.iacn.mbestyle.util.StatusBarUtils;
 
@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         mFragments = Arrays.asList(
                 new IconFragment(),
                 new LauncherFragment(),
-//                new ApplyFragment(),
-                new ApplyFragmentV2(),
+                new RequestFragment(),
                 new AboutFragment());
 
         mFragmentManager = getFragmentManager();

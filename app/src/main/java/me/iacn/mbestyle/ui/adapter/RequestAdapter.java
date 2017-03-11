@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Locale;
 
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.bean.ApplyBeanV2;
+import me.iacn.mbestyle.bean.RequestBean;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
@@ -20,18 +20,18 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
  * Emali iAcn0301@foxmail.com
  */
 
-public class ApplyAdapterV2 extends RecyclerView.Adapter<ApplyHolderV2> {
+public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
 
-    private List<ApplyBeanV2> mApps;
+    private List<RequestBean> mApps;
     private OnItemClickListener mListener;
 
-    public ApplyAdapterV2(List<ApplyBeanV2> mApps) {
+    public RequestAdapter(List<RequestBean> mApps) {
         this.mApps = mApps;
     }
 
     @Override
-    public ApplyHolderV2 onCreateViewHolder(ViewGroup parent, int viewType) {
-        ApplyHolderV2 holder = new ApplyHolderV2(LayoutInflater.from(
+    public RequestHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        RequestHolder holder = new RequestHolder(LayoutInflater.from(
                 parent.getContext()).inflate(R.layout.item_apply_v2, parent, false));
         holder.mListener = mListener;
 
@@ -39,8 +39,8 @@ public class ApplyAdapterV2 extends RecyclerView.Adapter<ApplyHolderV2> {
     }
 
     @Override
-    public void onBindViewHolder(ApplyHolderV2 holder, int position) {
-        ApplyBeanV2 bean = mApps.get(position);
+    public void onBindViewHolder(RequestHolder holder, int position) {
+        RequestBean bean = mApps.get(position);
         holder.ivIcon.setImageDrawable(bean.icon);
         holder.tvName.setText(bean.name);
         holder.tvTotal.setText(String.format(Locale.getDefault(), "已申请 %d 次", bean.total));
@@ -57,7 +57,7 @@ public class ApplyAdapterV2 extends RecyclerView.Adapter<ApplyHolderV2> {
     }
 }
 
-class ApplyHolderV2 extends RecyclerView.ViewHolder implements View.OnClickListener {
+class RequestHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     OnItemClickListener mListener;
 
@@ -66,7 +66,7 @@ class ApplyHolderV2 extends RecyclerView.ViewHolder implements View.OnClickListe
     TextView tvTotal;
     CheckBox cbCheck;
 
-    ApplyHolderV2(View itemView) {
+    RequestHolder(View itemView) {
         super(itemView);
 
         ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
