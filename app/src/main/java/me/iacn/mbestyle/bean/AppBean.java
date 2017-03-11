@@ -12,4 +12,5 @@ public class AppBean {
     public String name;
     public String activity;
     public Drawable icon;
+    public boolean isCheck;
 }
