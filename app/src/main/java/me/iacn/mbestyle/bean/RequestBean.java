@@ -12,6 +12,7 @@ public class RequestBean {
     public String name;
     public Drawable icon;
     public String activity;
+    public String packageName;
     public int total;
     public boolean isCheck;
 }

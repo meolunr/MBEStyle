@@ -3,6 +3,7 @@ package me.iacn.mbestyle.presenter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.XmlResourceParser;
+import android.widget.TextView;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -21,6 +22,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.RequestBean;
+import me.iacn.mbestyle.network.LeanApi;
 import me.iacn.mbestyle.ui.fragment.RequestFragment;
 import me.iacn.mbestyle.util.PackageUtils;
 
@@ -68,6 +70,7 @@ public class RequestPresenter {
                     RequestBean bean = new RequestBean();
                     bean.name = info.loadLabel(manager).toString();
                     bean.icon = info.loadIcon(manager);
+                    bean.packageName = info.activityInfo.packageName;
 
                     builder.append("ComponentInfo{")
                             .append(info.activityInfo.packageName)
@@ -92,6 +95,24 @@ public class RequestPresenter {
                         mView.onLoadData(list);
                     }
                 });
+    }
+
+    public void getRequestTotal(String packageName, TextView textView) {
+        System.out.println(packageName);
+
+        LeanApi.getInstance()
+                .queryRequestTotal(packageName)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(@NonNull Integer integer) throws Exception {
+                        System.out.println(integer);
+                    }
+                });
+
+
+//        holder.tvTotal.setText(String.format(Locale.getDefault(), "已申请 %d 次", bean.total));
     }
 
     private String findActivityName(String component) {
