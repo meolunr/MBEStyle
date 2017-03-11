@@ -3,7 +3,7 @@ package me.iacn.mbestyle.ui.fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.CheckBox;
 
 import java.util.List;
 
@@ -12,7 +12,6 @@ import me.iacn.mbestyle.bean.AppBean;
 import me.iacn.mbestyle.presenter.ApplyPresenterV2;
 import me.iacn.mbestyle.ui.adapter.ApplyAdapterV2;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
-import me.iacn.mbestyle.util.StringUtils;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -55,23 +54,13 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
     @Override
     public void onItemClick(View itemView, int position) {
         AppBean bean = mApps.get(position);
-        String template = getString(R.string.component_template);
-        String[] split = bean.activity.split("/");
+        CheckBox cbCheck = (CheckBox) itemView.findViewById(R.id.cb_check);
 
-        if (split[1].startsWith(".")) {
-            // 正常应用
-            template = template
-                    .replace("$packageName$", split[0])
-                    .replace("$activityName$", split[0] + split[1]);
-        } else {
-            // 蛋疼应用
-            template = template
-                    .replace("$packageName$", split[0])
-                    .replace("$activityName$", split[1]);
-        }
+        // 反向选择
+        cbCheck.setChecked(!bean.isCheck);
+        bean.isCheck = !bean.isCheck;
 
-        StringUtils.copyToClipboard(getActivity(), template);
-        Toast.makeText(getActivity(), "应用信息已复制到剪贴板", Toast.LENGTH_SHORT).show();
+        System.out.println(bean.isCheck);
     }
 
     public void onLoadData(List<AppBean> list) {
