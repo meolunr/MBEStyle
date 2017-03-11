@@ -11,6 +11,7 @@ public class ApplyBeanV2 {
 
     public String name;
     public Drawable icon;
+    public String activity;
     public int total;
     public boolean isCheck;
 }
