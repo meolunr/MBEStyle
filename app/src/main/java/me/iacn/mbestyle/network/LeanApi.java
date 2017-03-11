@@ -75,6 +75,7 @@ public class LeanApi {
                 .map(new Function<LeanBean, Integer>() {
                     @Override
                     public Integer apply(@NonNull LeanBean leanBean) throws Exception {
+                        System.out.println("============="+leanBean);
                         return leanBean.results.get(0).requestTotal;
                     }
                 });

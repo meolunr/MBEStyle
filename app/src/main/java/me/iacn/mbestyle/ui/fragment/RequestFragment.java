@@ -65,7 +65,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         super.onLoadData();
 
         mApps = list;
-        RequestAdapter adapter = new RequestAdapter(mApps);
+        RequestAdapter adapter = new RequestAdapter(mApps, mPresenter);
         adapter.setOnItemClickListener(this);
         rvApp.setAdapter(adapter);
     }

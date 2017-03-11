@@ -9,10 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
-import java.util.Locale;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.RequestBean;
+import me.iacn.mbestyle.presenter.RequestPresenter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
@@ -23,10 +23,12 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
 
     private List<RequestBean> mApps;
+    private RequestPresenter mPresenter;
     private OnItemClickListener mListener;
 
-    public RequestAdapter(List<RequestBean> mApps) {
+    public RequestAdapter(List<RequestBean> mApps, RequestPresenter presenter) {
         this.mApps = mApps;
+        this.mPresenter = presenter;
     }
 
     @Override
@@ -41,10 +43,12 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
     @Override
     public void onBindViewHolder(RequestHolder holder, int position) {
         RequestBean bean = mApps.get(position);
+
         holder.ivIcon.setImageDrawable(bean.icon);
         holder.tvName.setText(bean.name);
-        holder.tvTotal.setText(String.format(Locale.getDefault(), "已申请 %d 次", bean.total));
         holder.cbCheck.setChecked(bean.isCheck);
+
+        mPresenter.getRequestTotal(bean.packageName, holder.tvTotal);
     }
 
     @Override
