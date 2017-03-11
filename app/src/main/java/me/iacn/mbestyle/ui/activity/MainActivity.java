@@ -11,6 +11,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import java.util.Arrays;
@@ -45,9 +46,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         StatusBarUtils.setColor(this, ContextCompat.getColor(this, R.color.colorPrimary));
 
         BottomNavigationView bottomView = (BottomNavigationView) findViewById(R.id.bottom_bar);
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
-
         bottomView.setOnNavigationItemSelectedListener(this);
+
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
 
         mFragments = Arrays.asList(
                 new IconFragment(),
@@ -61,11 +63,19 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        // 默认隐藏设置菜单
+        menu.getItem(0).setVisible(false);
+        return true;
+    }
+
+    @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int order = item.getOrder();
 
         if (order >= 0 && order <= 3) {
-            handleToolbarElevation(order);
+            handleToolbar(order);
             switchFragment(order);
             return true;
         }
@@ -73,12 +83,13 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         return false;
     }
 
-    private void handleToolbarElevation(int index) {
-        if (index != 0) {
-            ViewCompat.setElevation(mToolbar, ScreenUtils.dip2px(this, 2));
-        } else {
-            ViewCompat.setElevation(mToolbar, 0);
-        }
+    private void handleToolbar(int index) {
+        // 只在图标 Fragment 隐藏阴影
+        ViewCompat.setElevation(mToolbar, index == 0 ? 0 : ScreenUtils.dip2px(this, 2));
+
+        // 只在关于 Fragment 显示设置
+        MenuItem settingItem = mToolbar.getMenu().getItem(0);
+        settingItem.setVisible(index == 3);
     }
 
     private void switchFragment(int index) {
