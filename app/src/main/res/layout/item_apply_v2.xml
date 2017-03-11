@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?selectableItemBackground">
@@ -29,9 +30,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:text="MBE Style"
             android:textColor="@color/main_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="MBE Style" />
 
         <TextView
             android:id="@+id/tv_activity"
@@ -39,9 +40,9 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:lines="1"
-            android:text="已申请 5 次"
             android:textColor="@color/second_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:text="已申请 5 次" />
 
     </LinearLayout>
 
@@ -51,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="12dp" />
+        android:layout_marginEnd="12dp"
+        android:clickable="false" />
 
 </RelativeLayout>

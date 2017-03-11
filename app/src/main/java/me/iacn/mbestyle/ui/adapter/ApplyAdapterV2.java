@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -61,6 +62,7 @@ class ApplyHolderV2 extends RecyclerView.ViewHolder implements View.OnClickListe
     ImageView ivIcon;
     TextView tvName;
     TextView tvActivity;
+    CheckBox cbCheck;
 
     ApplyHolderV2(View itemView) {
         super(itemView);
@@ -68,6 +70,7 @@ class ApplyHolderV2 extends RecyclerView.ViewHolder implements View.OnClickListe
         ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
         tvName = (TextView) itemView.findViewById(R.id.tv_name);
         tvActivity = (TextView) itemView.findViewById(R.id.tv_activity);
+        cbCheck = (CheckBox) itemView.findViewById(R.id.cb_check);
 
         itemView.setOnClickListener(this);
     }
