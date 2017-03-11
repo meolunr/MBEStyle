@@ -830,7 +830,7 @@
 
     <!-- MBE Style-->
     <item
-        component="ComponentInfo{me.iacn.mbestyle/me.iacn.mbestyle.ui.activity}"
+        component="ComponentInfo{me.iacn.mbestyle/me.iacn.mbestyle.ui.activity.MainActivity}"
         drawable="mbe" />
 
     <!-- cnBeta / cnBeta -->
