@@ -9,9 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Locale;
 
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.bean.AppBean;
+import me.iacn.mbestyle.bean.ApplyBeanV2;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
@@ -21,10 +22,10 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 public class ApplyAdapterV2 extends RecyclerView.Adapter<ApplyHolderV2> {
 
-    private List<AppBean> mApps;
+    private List<ApplyBeanV2> mApps;
     private OnItemClickListener mListener;
 
-    public ApplyAdapterV2(List<AppBean> mApps) {
+    public ApplyAdapterV2(List<ApplyBeanV2> mApps) {
         this.mApps = mApps;
     }
 
@@ -39,10 +40,11 @@ public class ApplyAdapterV2 extends RecyclerView.Adapter<ApplyHolderV2> {
 
     @Override
     public void onBindViewHolder(ApplyHolderV2 holder, int position) {
-        AppBean bean = mApps.get(position);
+        ApplyBeanV2 bean = mApps.get(position);
         holder.ivIcon.setImageDrawable(bean.icon);
         holder.tvName.setText(bean.name);
-//        holder.tvTotal.setText(bean.activity);
+        holder.tvTotal.setText(String.format(Locale.getDefault(), "已申请 %d 次", bean.total));
+        holder.cbCheck.setChecked(bean.isCheck);
     }
 
     @Override

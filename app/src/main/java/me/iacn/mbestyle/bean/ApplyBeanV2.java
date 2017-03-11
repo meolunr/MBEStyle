@@ -7,9 +7,10 @@ import android.graphics.drawable.Drawable;
  * Emali iAcn0301@foxmail.com
  */
 
-public class AppBean {
+public class ApplyBeanV2 {
 
     public String name;
-    public String activity;
     public Drawable icon;
+    public int total;
+    public boolean isCheck;
 }
