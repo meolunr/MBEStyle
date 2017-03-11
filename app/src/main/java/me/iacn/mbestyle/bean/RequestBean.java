@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
  * Emali iAcn0301@foxmail.com
  */
 
-public class ApplyBeanV2 {
+public class RequestBean {
 
     public String name;
     public Drawable icon;
