@@ -35,14 +35,14 @@
             tools:text="MBE Style" />
 
         <TextView
-            android:id="@+id/tv_activity"
+            android:id="@+id/tv_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:lines="1"
+            android:text="......"
             android:textColor="@color/second_text"
-            android:textSize="14sp"
-            tools:text="已申请 5 次" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
