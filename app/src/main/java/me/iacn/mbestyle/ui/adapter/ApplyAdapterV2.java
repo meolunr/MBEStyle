@@ -42,7 +42,7 @@ public class ApplyAdapterV2 extends RecyclerView.Adapter<ApplyHolderV2> {
         AppBean bean = mApps.get(position);
         holder.ivIcon.setImageDrawable(bean.icon);
         holder.tvName.setText(bean.name);
-//        holder.tvActivity.setText(bean.activity);
+//        holder.tvTotal.setText(bean.activity);
     }
 
     @Override
@@ -61,7 +61,7 @@ class ApplyHolderV2 extends RecyclerView.ViewHolder implements View.OnClickListe
 
     ImageView ivIcon;
     TextView tvName;
-    TextView tvActivity;
+    TextView tvTotal;
     CheckBox cbCheck;
 
     ApplyHolderV2(View itemView) {
@@ -69,7 +69,7 @@ class ApplyHolderV2 extends RecyclerView.ViewHolder implements View.OnClickListe
 
         ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
         tvName = (TextView) itemView.findViewById(R.id.tv_name);
-        tvActivity = (TextView) itemView.findViewById(R.id.tv_activity);
+        tvTotal = (TextView) itemView.findViewById(R.id.tv_total);
         cbCheck = (CheckBox) itemView.findViewById(R.id.cb_check);
 
         itemView.setOnClickListener(this);
