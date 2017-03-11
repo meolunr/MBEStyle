@@ -14,7 +14,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
-import me.iacn.mbestyle.bean.AppBean;
+import me.iacn.mbestyle.bean.ApplyBeanV2;
 import me.iacn.mbestyle.ui.fragment.ApplyFragmentV2;
 import me.iacn.mbestyle.util.PackageUtils;
 
@@ -32,17 +32,17 @@ public class ApplyPresenterV2 {
     }
 
     public void loadInstallApp() {
-        Flowable.create(new FlowableOnSubscribe<List<AppBean>>() {
+        Flowable.create(new FlowableOnSubscribe<List<ApplyBeanV2>>() {
             @Override
-            public void subscribe(FlowableEmitter<List<AppBean>> e) throws Exception {
+            public void subscribe(FlowableEmitter<List<ApplyBeanV2>> e) throws Exception {
                 PackageManager manager = mView.getActivity().getPackageManager();
                 List<ResolveInfo> list = PackageUtils.getAppByMainIntent(mView.getActivity());
-                List<AppBean> apps = new ArrayList<>();
+                List<ApplyBeanV2> apps = new ArrayList<>();
 
                 StringBuilder builder = new StringBuilder();
 
                 for (ResolveInfo info : list) {
-                    AppBean bean = new AppBean();
+                    ApplyBeanV2 bean = new ApplyBeanV2();
                     bean.name = info.loadLabel(manager).toString();
                     bean.icon = info.loadIcon(manager);
 
@@ -61,7 +61,6 @@ public class ApplyPresenterV2 {
                                 .append(activityName);
                     }
 
-                    bean.activity = builder.toString();
                     builder.delete(0, builder.length());
 
                     apps.add(bean);
@@ -72,9 +71,9 @@ public class ApplyPresenterV2 {
         }, BackpressureStrategy.BUFFER)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<List<AppBean>>() {
+                .subscribe(new Consumer<List<ApplyBeanV2>>() {
                     @Override
-                    public void accept(@NonNull List<AppBean> list) throws Exception {
+                    public void accept(@NonNull List<ApplyBeanV2> list) throws Exception {
                         mView.onLoadData(list);
                     }
                 });

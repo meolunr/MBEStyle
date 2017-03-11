@@ -8,7 +8,7 @@ import android.widget.CheckBox;
 import java.util.List;
 
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.bean.AppBean;
+import me.iacn.mbestyle.bean.ApplyBeanV2;
 import me.iacn.mbestyle.presenter.ApplyPresenterV2;
 import me.iacn.mbestyle.ui.adapter.ApplyAdapterV2;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
@@ -22,7 +22,7 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
 
     private RecyclerView rvApp;
     private ApplyPresenterV2 mPresenter;
-    private List<AppBean> mApps;
+    private List<ApplyBeanV2> mApps;
 
     @Override
     protected int getContentView() {
@@ -53,17 +53,15 @@ public class ApplyFragmentV2 extends ILazyFragment implements OnItemClickListene
 
     @Override
     public void onItemClick(View itemView, int position) {
-        AppBean bean = mApps.get(position);
+        ApplyBeanV2 bean = mApps.get(position);
         CheckBox cbCheck = (CheckBox) itemView.findViewById(R.id.cb_check);
 
         // 反向选择
         cbCheck.setChecked(!bean.isCheck);
         bean.isCheck = !bean.isCheck;
-
-        System.out.println(bean.isCheck);
     }
 
-    public void onLoadData(List<AppBean> list) {
+    public void onLoadData(List<ApplyBeanV2> list) {
         super.onLoadData();
 
         mApps = list;
