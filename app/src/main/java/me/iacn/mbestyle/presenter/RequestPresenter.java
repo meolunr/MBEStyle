@@ -10,6 +10,7 @@ import org.xmlpull.v1.XmlPullParser;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 import io.reactivex.BackpressureStrategy;
@@ -97,9 +98,7 @@ public class RequestPresenter {
                 });
     }
 
-    public void getRequestTotal(String packageName, TextView textView) {
-        System.out.println(packageName);
-
+    public void getRequestTotal(String packageName, final RequestBean bean, final TextView textView) {
         LeanApi.getInstance()
                 .queryRequestTotal(packageName)
                 .subscribeOn(Schedulers.io())
@@ -107,12 +106,11 @@ public class RequestPresenter {
                 .subscribe(new Consumer<Integer>() {
                     @Override
                     public void accept(@NonNull Integer integer) throws Exception {
-                        System.out.println(integer);
+                        textView.setText(String.format(
+                                Locale.getDefault(), "已申请 %d 次", integer));
+                        bean.total = integer;
                     }
                 });
-
-
-//        holder.tvTotal.setText(String.format(Locale.getDefault(), "已申请 %d 次", bean.total));
     }
 
     private String findActivityName(String component) {

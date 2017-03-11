@@ -48,7 +48,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
         holder.tvName.setText(bean.name);
         holder.cbCheck.setChecked(bean.isCheck);
 
-        mPresenter.getRequestTotal(bean.packageName, holder.tvTotal);
+        mPresenter.getRequestTotal(bean.packageName, bean, holder.tvTotal);
     }
 
     @Override
