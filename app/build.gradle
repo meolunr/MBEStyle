@@ -19,6 +19,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    Properties prop = new Properties()
+    def file = project.rootProject.file('config.prop')
+    def leancloudId = '"+1S"'
+    def leancloudKey = '"+1S"'
+
+    if (file.exists()) {
+        InputStream stream = project.rootProject.file('config.prop').newDataInputStream();
+        prop.load(stream)
+        stream.close()
+
+        leancloudId = prop.getProperty('leancloudId')
+        leancloudKey = prop.getProperty('leancloudKey')
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'LEANCLOUD_ID', leancloudId
+        it.buildConfigField 'String', 'LEANCLOUD_KEY', leancloudKey
+    }
 }
 
 dependencies {
