@@ -1,8 +1,16 @@
 package me.iacn.mbestyle.network;
 
-import java.io.IOException;
+import com.google.gson.Gson;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import io.reactivex.Observable;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.functions.Function;
 import me.iacn.mbestyle.BuildConfig;
+import me.iacn.mbestyle.bean.LeanBean;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -57,5 +65,18 @@ public class LeanApi {
                 .client(client)
                 .build()
                 .create(LeanService.class);
+    }
+
+    public Observable<Integer> queryRequestTotal(String packageName) {
+        Map<String, String> where = new HashMap<>();
+        where.put("packageName", packageName);
+
+        return mLeanService.queryRequestTotal(new Gson().toJson(where))
+                .map(new Function<LeanBean, Integer>() {
+                    @Override
+                    public Integer apply(@NonNull LeanBean leanBean) throws Exception {
+                        return leanBean.results.get(0).requestTotal;
+                    }
+                });
     }
 }
