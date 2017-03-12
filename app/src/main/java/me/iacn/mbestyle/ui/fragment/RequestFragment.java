@@ -5,6 +5,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -116,39 +117,25 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
             }
 
             @Override
-            public void onNext(Boolean aBoolean) {
-                System.out.println("onNext = " + aBoolean);
+            public void onNext(Boolean success) {
+                Toast.makeText(getActivity(), success ? "申请成功" : "申请失败", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(Throwable e) {
-                System.out.println("onError");
+                Toast.makeText(getActivity(), "出现异常 " + e.getMessage(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onComplete() {
-                System.out.println("onComplete");
+                deselectAll();
             }
         });
     }
 
     public void onBackPressed() {
         if (mCheckedPositions.size() > 0) {
-            mCheckedPositions.clear();
-            handleFabShow();
-
-            // 取消所有 Bean 内记录的选中状态
-            for (RequestBean bean : mApps) {
-                bean.isCheck = false;
-            }
-
-            // 当前可见的所有 Item 取消选择
-            for (int i = 0; i < rvApp.getChildCount(); i++) {
-                View childAt = rvApp.getChildAt(i);
-                CheckBox cbCheck = (CheckBox) childAt.findViewById(R.id.cb_check);
-                cbCheck.setChecked(false);
-            }
-
+            deselectAll();
         } else {
             getActivity().finish();
         }
@@ -169,6 +156,23 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
             mFab.hide();
             mActivity.setToolbarTitle(getString(R.string.app_title));
             mCheckedPositions.clear();
+        }
+    }
+
+    private void deselectAll() {
+        mCheckedPositions.clear();
+        handleFabShow();
+
+        // 取消所有 Bean 内记录的选中状态
+        for (RequestBean bean : mApps) {
+            bean.isCheck = false;
+        }
+
+        // 当前可见的所有 Item 取消选择
+        for (int i = 0; i < rvApp.getChildCount(); i++) {
+            View childAt = rvApp.getChildAt(i);
+            CheckBox cbCheck = (CheckBox) childAt.findViewById(R.id.cb_check);
+            cbCheck.setChecked(false);
         }
     }
 }
