@@ -98,6 +98,12 @@ public class RequestPresenter {
     }
 
     public void getRequestTotal(String packageName, final RequestBean bean, final TextView textView) {
+        if (bean.total != 0) {
+            // 已经加载过一次，直接设置
+            textView.setText(String.format(Locale.getDefault(), "已申请 %d 次", bean.total));
+            return;
+        }
+
         LeanApi.getInstance()
                 .queryRequestTotal(packageName)
                 .subscribeOn(Schedulers.io())
