@@ -82,7 +82,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         if (bean.isCheck) {
             mCheckedPositions.add(position);
         } else {
-            mCheckedPositions.remove(position);
+            mCheckedPositions.remove(Integer.valueOf(position));
         }
 
         handleFabShow();
