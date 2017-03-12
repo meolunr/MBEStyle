@@ -98,9 +98,9 @@ public class RequestPresenter {
     }
 
     public void getRequestTotal(String packageName, final RequestBean bean, final TextView textView) {
-        if (bean.total != 0) {
+        if (bean.total != -1) {
             // 已经加载过一次，直接设置
-            textView.setText(String.format(Locale.getDefault(), "已申请 %d 次", bean.total));
+            setRequestTotal(textView, bean.total);
             return;
         }
 
@@ -112,11 +112,11 @@ public class RequestPresenter {
                     @Override
                     public void accept(@NonNull LeanQueryBean leanBean) throws Exception {
                         if (leanBean.results == null || leanBean.results.size() == 0) {
-                            textView.setText("还未被申请过~");
+                            setRequestTotal(textView, 0);
+                            bean.total = 0;
                         } else {
                             LeanQueryBean.ResultsBean lean = leanBean.results.get(0);
-                            textView.setText(String.format(
-                                    Locale.getDefault(), "已申请 %d 次", lean.requestTotal));
+                            setRequestTotal(textView, lean.requestTotal);
 
                             bean.total = lean.requestTotal;
                             bean.objectId = lean.objectId;
@@ -132,6 +132,14 @@ public class RequestPresenter {
         } catch (Exception e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    private void setRequestTotal(TextView textView, int value) {
+        if (value == 0) {
+            textView.setText("还未被申请过~");
+        } else {
+            textView.setText(String.format(Locale.getDefault(), "已申请 %d 次", value));
         }
     }
 }

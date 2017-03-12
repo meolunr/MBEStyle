@@ -15,6 +15,6 @@ public class RequestBean {
     public String packageName;
     public boolean isCheck;
 
-    public int total;
+    public int total = -1;
     public String objectId;
 }

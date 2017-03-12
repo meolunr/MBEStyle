@@ -151,8 +151,11 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
                 long currentTime = System.currentTimeMillis();
 
                 for (int i : mCheckedPositions) {
-                    // 存储单个应用上次申请的时间
+                    // 使能重新加载当前应用
                     RequestBean bean = mApps.get(i);
+                    bean.total = -1;
+
+                    // 存储单个应用上次申请的时间
                     SharedPrefUtils.putLong(getActivity(), bean.packageName, currentTime);
 
                     mAdapter.notifyItemChanged(i);
