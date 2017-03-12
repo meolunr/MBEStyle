@@ -1,4 +1,4 @@
-package me.iacn.mbestyle.bean;
+package me.iacn.mbestyle.bean.leancloud;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import java.util.List;
  * Emali iAcn0301@foxmail.com
  */
 
-public class LeanBean {
+public class LeanQueryBean {
 
     public List<ResultsBean> results;
 

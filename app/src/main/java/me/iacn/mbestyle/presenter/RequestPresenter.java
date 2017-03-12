@@ -22,7 +22,7 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.bean.LeanBean;
+import me.iacn.mbestyle.bean.leancloud.LeanQueryBean;
 import me.iacn.mbestyle.bean.RequestBean;
 import me.iacn.mbestyle.network.LeanApi;
 import me.iacn.mbestyle.ui.fragment.RequestFragment;
@@ -104,13 +104,13 @@ public class RequestPresenter {
                 .queryRequestTotal(packageName)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<LeanBean>() {
+                .subscribe(new Consumer<LeanQueryBean>() {
                     @Override
-                    public void accept(@NonNull LeanBean leanBean) throws Exception {
+                    public void accept(@NonNull LeanQueryBean leanBean) throws Exception {
                         if (leanBean.results == null || leanBean.results.size() == 0) {
                             textView.setText("还未被申请过~");
                         } else {
-                            LeanBean.ResultsBean lean = leanBean.results.get(0);
+                            LeanQueryBean.ResultsBean lean = leanBean.results.get(0);
                             textView.setText(String.format(
                                     Locale.getDefault(), "已申请 %d 次", lean.requestTotal));
 
