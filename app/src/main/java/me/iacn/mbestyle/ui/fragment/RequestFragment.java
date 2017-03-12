@@ -21,6 +21,7 @@ import me.iacn.mbestyle.presenter.RequestPresenter;
 import me.iacn.mbestyle.ui.activity.MainActivity;
 import me.iacn.mbestyle.ui.adapter.RequestAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.SharedPrefUtils;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -106,9 +107,21 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     @Override
     public void onClick(View v) {
         List<RequestBean> newRequests = new ArrayList<>();
+        List<Integer> copyList = new ArrayList<>(mCheckedPositions);
 
-        for (RequestBean bean : mApps) {
-            if (bean.isCheck) newRequests.add(bean);
+        long currentTime = System.currentTimeMillis();
+        long fiveMinute = 300000;
+
+        for (int i : copyList) {
+            RequestBean bean = mApps.get(i);
+            long lastRequestTime = SharedPrefUtils.getLong(getActivity(), bean.packageName, 0);
+
+            if (lastRequestTime + fiveMinute < currentTime) {
+                // 5分钟内同一个应用不得申请第二次
+                newRequests.add(bean);
+            } else {
+                mCheckedPositions.remove(Integer.valueOf(i));
+            }
         }
 
         LeanApi.getInstance().postRequests(newRequests).subscribe(new Observer<Boolean>() {
@@ -135,7 +148,13 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
             @Override
             public void onComplete() {
+                long currentTime = System.currentTimeMillis();
+
                 for (int i : mCheckedPositions) {
+                    // 存储单个应用上次申请的时间
+                    RequestBean bean = mApps.get(i);
+                    SharedPrefUtils.putLong(getActivity(), bean.packageName, currentTime);
+
                     mAdapter.notifyItemChanged(i);
                 }
 
