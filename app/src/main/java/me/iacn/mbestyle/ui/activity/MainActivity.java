@@ -83,6 +83,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         return false;
     }
 
+    @Override
+    public void onBackPressed() {
+        if (mCurrentIndex == 2) {
+            // 调用申请 Fragment 的 onBackPressed()
+            // 以处理有选中时的取消操作
+            RequestFragment fragment = (RequestFragment) mFragments.get(2);
+            fragment.onBackPressed();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
     public void setToolbarTitle(String title) {
         mToolbar.setTitle(title);
     }

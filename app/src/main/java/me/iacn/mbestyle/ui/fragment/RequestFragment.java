@@ -28,6 +28,8 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
     private RequestPresenter mPresenter;
     private List<RequestBean> mApps;
+    private RequestAdapter mAdapter;
+
     private int mCheckedCount;
     private MainActivity mActivity;
 
@@ -78,14 +80,36 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         super.onLoadData();
 
         mApps = list;
-        RequestAdapter adapter = new RequestAdapter(mApps, mPresenter);
-        adapter.setOnItemClickListener(this);
-        rvApp.setAdapter(adapter);
+        mAdapter = new RequestAdapter(mApps, mPresenter);
+        mAdapter.setOnItemClickListener(this);
+        rvApp.setAdapter(mAdapter);
     }
 
     @Override
     public void onClick(View v) {
 
+    }
+
+    public void onBackPressed() {
+        if (mCheckedCount > 0) {
+            mCheckedCount = 0;
+            handleFabShow(false);
+
+            // 取消所有 Bean 内记录的选中状态
+            for (RequestBean bean : mApps) {
+                bean.isCheck = false;
+            }
+
+            // 当前可见的所有 Item 取消选择
+            for (int i = 0; i < rvApp.getChildCount(); i++) {
+                View childAt = rvApp.getChildAt(i);
+                CheckBox cbCheck = (CheckBox) childAt.findViewById(R.id.cb_check);
+                cbCheck.setChecked(false);
+            }
+
+        } else {
+            getActivity().finish();
+        }
     }
 
     /**
