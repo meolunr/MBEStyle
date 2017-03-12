@@ -47,6 +47,11 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     @Override
     protected void setListener() {
         rvApp.setLayoutManager(new LinearLayoutManager(getActivity()));
+        // 优化同大小 Item 的性能
+        rvApp.setHasFixedSize(true);
+        // 确保每个 Item 都会走 onBindViewHolder()
+        rvApp.setItemViewCacheSize(0);
+
         mFab.setOnClickListener(this);
     }
 
