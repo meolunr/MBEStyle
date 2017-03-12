@@ -83,6 +83,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         return false;
     }
 
+    public void setToolbarTitle(String title) {
+        mToolbar.setTitle(title);
+    }
+
     private void handleToolbar(int index) {
         // 只在图标 Fragment 隐藏阴影
         ViewCompat.setElevation(mToolbar, index == 0 ? 0 : ScreenUtils.dip2px(this, 2));
