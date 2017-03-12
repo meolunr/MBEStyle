@@ -42,7 +42,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
     @Override
     protected int getContentView() {
-        return R.layout.fragment_apply;
+        return R.layout.fragment_request;
     }
 
     @Override
