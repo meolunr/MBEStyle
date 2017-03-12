@@ -135,6 +135,10 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
             @Override
             public void onComplete() {
+                for (int i : mCheckedPositions) {
+                    mAdapter.notifyItemChanged(i);
+                }
+
                 deselectAll();
                 mProgressDialog.dismiss();
             }
