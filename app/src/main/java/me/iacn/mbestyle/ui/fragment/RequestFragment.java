@@ -1,5 +1,6 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import android.app.ProgressDialog;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -111,9 +112,15 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         }
 
         LeanApi.getInstance().postRequests(newRequests).subscribe(new Observer<Boolean>() {
+
+            private ProgressDialog mProgressDialog;
+
             @Override
             public void onSubscribe(Disposable d) {
-                System.out.println("onSubscribe");
+                mProgressDialog = new ProgressDialog(getActivity());
+                mProgressDialog.setMessage("请稍后");
+                mProgressDialog.setCancelable(false);
+                mProgressDialog.show();
             }
 
             @Override
@@ -129,6 +136,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
             @Override
             public void onComplete() {
                 deselectAll();
+                mProgressDialog.dismiss();
             }
         });
     }
