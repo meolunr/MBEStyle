@@ -14,6 +14,8 @@ import io.reactivex.Observable;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.bean.RequestBean;
 import me.iacn.mbestyle.bean.leancloud.LeanBatchRequest;
+import me.iacn.mbestyle.bean.leancloud.LeanBatchRequest.RequestsBean.BodyAutoBean;
+import me.iacn.mbestyle.bean.leancloud.LeanBatchRequest.RequestsBean.BodyCreateBean;
 import me.iacn.mbestyle.bean.leancloud.LeanQueryBean;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -79,12 +81,10 @@ public class LeanApi {
     }
 
     public Observable<List<Boolean>> postRequests(List<RequestBean> list) {
-        Map<String, String> map = new HashMap<>();
-        Gson gson = new Gson();
-        StringBuilder builder = new StringBuilder();
-
         LeanBatchRequest request = new LeanBatchRequest();
         request.requests = new ArrayList<>();
+
+        StringBuilder builder = new StringBuilder();
 
         for (RequestBean bean : list) {
             LeanBatchRequest.RequestsBean req = new LeanBatchRequest.RequestsBean();
@@ -92,28 +92,32 @@ public class LeanApi {
             if (TextUtils.isEmpty(bean.objectId)) {
                 // 新建 object
 
-                map.put("appName", bean.name);
-                map.put("packageName", bean.packageName);
-                map.put("componentInfo", bean.activity);
+                BodyCreateBean body = new BodyCreateBean();
+                body.requestTotal = 1;
+                body.appName = bean.name;
+                body.componentInfo = bean.activity;
+                body.packageName = bean.packageName;
 
                 req.method = LeanBatchRequest.METHOD_POST;
-                req.path = "/1.1/classes/AppReport/";
-                req.body = gson.toJson(map);
-
-                map.clear();
+                req.path = "/1.1/classes/AppReport";
+                req.body = body;
 
             } else {
                 // 更新+1 requestTotal
 
+                BodyAutoBean body = new BodyAutoBean("Increment", 1);
+
                 req.method = LeanBatchRequest.METHOD_PUT;
                 req.path = builder.append("/1.1/classes/AppReport/").append(bean.objectId).toString();
-                req.body = "{\"requestTotal\":{\"__op\":\"Increment\",\"amount\":1}}";
+                req.body = body;
 
                 builder.delete(0, builder.length());
             }
+
+            request.requests.add(req);
         }
 
-        String str = gson.toJson(request);
+        String str = new Gson().toJson(request);
         System.out.println(str);
         return null;
     }
