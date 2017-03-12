@@ -7,10 +7,12 @@ import android.view.View;
 import android.widget.CheckBox;
 
 import java.util.List;
+import java.util.Locale;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.RequestBean;
 import me.iacn.mbestyle.presenter.RequestPresenter;
+import me.iacn.mbestyle.ui.activity.MainActivity;
 import me.iacn.mbestyle.ui.adapter.RequestAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
@@ -27,6 +29,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     private RequestPresenter mPresenter;
     private List<RequestBean> mApps;
     private int mCheckedCount;
+    private MainActivity mActivity;
 
     @Override
     protected int getContentView() {
@@ -50,6 +53,8 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     protected void initData() {
         mPresenter = new RequestPresenter(this);
         mPresenter.loadInstallApp();
+
+        mActivity = (MainActivity) getActivity();
     }
 
     @Override
@@ -91,8 +96,10 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
         if (mCheckedCount > 0) {
             mFab.show();
+            mActivity.setToolbarTitle(String.format(Locale.getDefault(), "已选中 %d 个", mCheckedCount));
         } else if (mFab.isShown()) {
             mFab.hide();
+            mActivity.setToolbarTitle(getString(R.string.app_title));
         }
     }
 }
