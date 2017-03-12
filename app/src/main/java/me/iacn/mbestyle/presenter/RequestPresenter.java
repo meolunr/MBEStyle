@@ -22,8 +22,8 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.bean.leancloud.LeanQueryBean;
 import me.iacn.mbestyle.bean.RequestBean;
+import me.iacn.mbestyle.bean.leancloud.LeanQueryBean;
 import me.iacn.mbestyle.network.LeanApi;
 import me.iacn.mbestyle.ui.fragment.RequestFragment;
 import me.iacn.mbestyle.util.PackageUtils;
@@ -74,13 +74,11 @@ public class RequestPresenter {
                     bean.icon = info.loadIcon(manager);
                     bean.packageName = info.activityInfo.packageName;
 
-                    builder.append("ComponentInfo{")
-                            .append(info.activityInfo.packageName)
+                    bean.activity = builder.append(info.activityInfo.packageName)
                             .append("/")
                             .append(info.activityInfo.name)
-                            .append("}");
+                            .toString();
 
-                    bean.activity = builder.toString();
                     builder.delete(0, builder.length());
 
                     apps.add(bean);
