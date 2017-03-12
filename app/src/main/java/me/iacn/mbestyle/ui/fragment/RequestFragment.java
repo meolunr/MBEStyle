@@ -123,9 +123,10 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     private void handleFabShow(boolean isCheck) {
         mCheckedCount = isCheck ? ++mCheckedCount : --mCheckedCount;
 
-
         if (mCheckedCount > 0) {
-            mFab.show();
+            if (!mFab.isShown())
+                mFab.show();
+
             mActivity.setToolbarTitle(String.format(Locale.getDefault(), "已选中 %d 个", mCheckedCount));
         } else if (mFab.isShown()) {
             mFab.hide();
