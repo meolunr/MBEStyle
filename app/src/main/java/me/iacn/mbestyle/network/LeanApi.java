@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.reactivex.Observable;
-import io.reactivex.annotations.NonNull;
-import io.reactivex.functions.Function;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.bean.LeanBean;
 import okhttp3.Interceptor;
@@ -67,20 +65,10 @@ public class LeanApi {
                 .create(LeanService.class);
     }
 
-    public Observable<Integer> queryRequestTotal(String packageName) {
+    public Observable<LeanBean> queryRequestTotal(String packageName) {
         Map<String, String> where = new HashMap<>();
         where.put("packageName", packageName);
 
-        return mLeanService.queryRequestTotal(new Gson().toJson(where))
-                .map(new Function<LeanBean, Integer>() {
-                    @Override
-                    public Integer apply(@NonNull LeanBean leanBean) throws Exception {
-                        if (leanBean.results == null || leanBean.results.size() == 0) {
-                            return 0;
-                        }
-                        // 返回单个应用的申请次数
-                        return leanBean.results.get(0).requestTotal;
-                    }
-                });
+        return mLeanService.queryRequestTotal(new Gson().toJson(where));
     }
 }

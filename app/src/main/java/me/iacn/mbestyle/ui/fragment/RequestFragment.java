@@ -55,7 +55,6 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         mFab.setOnClickListener(this);
     }
 
-
     @Override
     protected void initData() {
         mPresenter = new RequestPresenter(this);
