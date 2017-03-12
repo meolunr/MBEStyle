@@ -2,7 +2,7 @@ package me.iacn.mbestyle.network;
 
 import java.util.List;
 
-import io.reactivex.Observable;
+import io.reactivex.Flowable;
 import me.iacn.mbestyle.bean.leancloud.LeanBatchRequest;
 import me.iacn.mbestyle.bean.leancloud.LeanBatchResponse;
 import me.iacn.mbestyle.bean.leancloud.LeanQueryBean;
@@ -19,8 +19,8 @@ import retrofit2.http.Query;
 interface LeanService {
 
     @GET("1.1/classes/AppReport")
-    Observable<LeanQueryBean> queryRequestTotal(@Query("where") String where);
+    Flowable<LeanQueryBean> queryRequestTotal(@Query("where") String where);
 
     @POST("1.1/batch")
-    Observable<List<LeanBatchResponse>> batch(@Body LeanBatchRequest request);
+    Flowable<List<LeanBatchResponse>> batch(@Body LeanBatchRequest request);
 }
