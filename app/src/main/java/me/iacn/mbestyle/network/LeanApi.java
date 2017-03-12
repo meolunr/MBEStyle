@@ -10,12 +10,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.functions.Function;
+import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.bean.RequestBean;
 import me.iacn.mbestyle.bean.leancloud.LeanBatchRequest;
 import me.iacn.mbestyle.bean.leancloud.LeanBatchRequest.RequestsBean.BodyAutoBean;
 import me.iacn.mbestyle.bean.leancloud.LeanBatchRequest.RequestsBean.BodyCreateBean;
+import me.iacn.mbestyle.bean.leancloud.LeanBatchResponse;
 import me.iacn.mbestyle.bean.leancloud.LeanQueryBean;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -73,14 +79,14 @@ public class LeanApi {
                 .create(LeanService.class);
     }
 
-    public Observable<LeanQueryBean> queryRequestTotal(String packageName) {
+    public Flowable<LeanQueryBean> queryRequestTotal(String packageName) {
         Map<String, String> where = new HashMap<>();
         where.put("packageName", packageName);
 
         return mLeanService.queryRequestTotal(new Gson().toJson(where));
     }
 
-    public Observable<List<Boolean>> postRequests(List<RequestBean> list) {
+    public Observable<Boolean> postRequests(final List<RequestBean> list) {
         LeanBatchRequest request = new LeanBatchRequest();
         request.requests = new ArrayList<>();
 
@@ -117,8 +123,20 @@ public class LeanApi {
             request.requests.add(req);
         }
 
-        String str = new Gson().toJson(request);
-        System.out.println(str);
-        return null;
+        return mLeanService.batch(request)
+                .map(new Function<List<LeanBatchResponse>, Boolean>() {
+                    @Override
+                    public Boolean apply(@NonNull List<LeanBatchResponse> list) throws Exception {
+                        for (LeanBatchResponse response : list) {
+                            if (response.success == null || response.success.objectId == null) {
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                })
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .toObservable();
     }
 }

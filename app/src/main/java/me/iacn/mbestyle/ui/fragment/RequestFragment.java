@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.RequestBean;
 import me.iacn.mbestyle.network.LeanApi;
@@ -107,7 +109,27 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
             if (bean.isCheck) newRequests.add(bean);
         }
 
-        LeanApi.getInstance().postRequests(newRequests);
+        LeanApi.getInstance().postRequests(newRequests).subscribe(new Observer<Boolean>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+                System.out.println("onSubscribe");
+            }
+
+            @Override
+            public void onNext(Boolean aBoolean) {
+                System.out.println("onNext = " + aBoolean);
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                System.out.println("onError");
+            }
+
+            @Override
+            public void onComplete() {
+                System.out.println("onComplete");
+            }
+        });
     }
 
     public void onBackPressed() {
