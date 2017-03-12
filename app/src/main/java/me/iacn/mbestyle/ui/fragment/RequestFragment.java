@@ -6,11 +6,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.CheckBox;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.RequestBean;
+import me.iacn.mbestyle.network.LeanApi;
 import me.iacn.mbestyle.presenter.RequestPresenter;
 import me.iacn.mbestyle.ui.activity.MainActivity;
 import me.iacn.mbestyle.ui.adapter.RequestAdapter;
@@ -91,7 +93,13 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
     @Override
     public void onClick(View v) {
+        List<RequestBean> newRequests = new ArrayList<>();
 
+        for (RequestBean bean : mApps) {
+            if (bean.isCheck) newRequests.add(bean);
+        }
+
+        LeanApi.getInstance().postRequests(newRequests);
     }
 
     public void onBackPressed() {
