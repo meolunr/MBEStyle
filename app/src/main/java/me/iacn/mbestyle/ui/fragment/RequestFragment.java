@@ -30,9 +30,9 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
     private RequestPresenter mPresenter;
     private List<RequestBean> mApps;
+    private List<Integer> mCheckedPositions;
     private RequestAdapter mAdapter;
 
-    private int mCheckedCount;
     private MainActivity mActivity;
 
     @Override
@@ -79,13 +79,21 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         cbCheck.setChecked(!bean.isCheck);
         bean.isCheck = !bean.isCheck;
 
-        handleFabShow(bean.isCheck);
+        if (bean.isCheck) {
+            mCheckedPositions.add(position);
+        } else {
+            mCheckedPositions.remove(position);
+        }
+
+        handleFabShow();
     }
 
     public void onLoadData(List<RequestBean> list) {
         super.onLoadData();
 
         mApps = list;
+        mCheckedPositions = new ArrayList<>();
+
         mAdapter = new RequestAdapter(mApps, mPresenter);
         mAdapter.setOnItemClickListener(this);
         rvApp.setAdapter(mAdapter);
@@ -103,9 +111,9 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     }
 
     public void onBackPressed() {
-        if (mCheckedCount > 0) {
-            mCheckedCount = 0;
-            handleFabShow(false);
+        if (mCheckedPositions.size() > 0) {
+            mCheckedPositions.clear();
+            handleFabShow();
 
             // 取消所有 Bean 内记录的选中状态
             for (RequestBean bean : mApps) {
@@ -127,18 +135,18 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     /**
      * 处理是否显示 Fab
      */
-    private void handleFabShow(boolean isCheck) {
-        mCheckedCount = isCheck ? ++mCheckedCount : --mCheckedCount;
-
-        if (mCheckedCount > 0) {
+    private void handleFabShow() {
+        if (mCheckedPositions.size() > 0) {
             if (!mFab.isShown())
                 mFab.show();
 
-            mActivity.setToolbarTitle(String.format(Locale.getDefault(), "已选中 %d 个", mCheckedCount));
+            mActivity.setToolbarTitle(String.format(
+                    Locale.getDefault(), "已选中 %d 个", mCheckedPositions.size()));
+
         } else if (mFab.isShown()) {
             mFab.hide();
             mActivity.setToolbarTitle(getString(R.string.app_title));
-            mCheckedCount = 0;
+            mCheckedPositions.clear();
         }
     }
 }
