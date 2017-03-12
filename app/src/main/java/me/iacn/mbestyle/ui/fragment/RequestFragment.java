@@ -1,5 +1,6 @@
 package me.iacn.mbestyle.ui.fragment;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -18,11 +19,14 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
  * Emali iAcn0301@foxmail.com
  */
 
-public class RequestFragment extends ILazyFragment implements OnItemClickListener {
+public class RequestFragment extends ILazyFragment implements OnItemClickListener, View.OnClickListener {
 
     private RecyclerView rvApp;
+    private FloatingActionButton mFab;
+
     private RequestPresenter mPresenter;
     private List<RequestBean> mApps;
+    private int mCheckedCount;
 
     @Override
     protected int getContentView() {
@@ -32,11 +36,13 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     @Override
     protected void findView() {
         rvApp = (RecyclerView) findViewById(R.id.rv_app);
+        mFab = (FloatingActionButton) findViewById(R.id.fab);
     }
 
     @Override
     protected void setListener() {
         rvApp.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mFab.setOnClickListener(this);
     }
 
 
@@ -59,6 +65,8 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         // 反向选择
         cbCheck.setChecked(!bean.isCheck);
         bean.isCheck = !bean.isCheck;
+
+        handleFabShow(bean.isCheck);
     }
 
     public void onLoadData(List<RequestBean> list) {
@@ -68,5 +76,23 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         RequestAdapter adapter = new RequestAdapter(mApps, mPresenter);
         adapter.setOnItemClickListener(this);
         rvApp.setAdapter(adapter);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    /**
+     * 处理是否显示 Fab
+     */
+    private void handleFabShow(boolean isCheck) {
+        mCheckedCount = isCheck ? ++mCheckedCount : --mCheckedCount;
+
+        if (mCheckedCount > 0) {
+            mFab.show();
+        } else if (mFab.isShown()) {
+            mFab.hide();
+        }
     }
 }
