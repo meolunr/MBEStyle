@@ -24,6 +24,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     private AboutItem aiVersion;
     private AboutItem aiDesigner;
     private AboutItem aiDeveloper;
+    private AboutItem aiDonate;
     private AboutItem aiOpenSource;
 
     @Override
@@ -37,6 +38,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
         aiVersion = (AboutItem) findViewById(R.id.ai_version);
         aiDesigner = (AboutItem) findViewById(R.id.ai_designer);
         aiDeveloper = (AboutItem) findViewById(R.id.ai_developer);
+        aiDonate = (AboutItem) findViewById(R.id.ai_donate);
         aiOpenSource = (AboutItem) findViewById(R.id.ai_open_source);
     }
 
@@ -45,6 +47,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
         aiVersion.setOnClickListener(this);
         aiDesigner.setOnClickListener(this);
         aiDeveloper.setOnClickListener(this);
+        aiDonate.setOnClickListener(this);
         aiOpenSource.setOnClickListener(this);
     }
 
@@ -58,7 +61,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ai_version:
-
+                openAppList();
                 break;
             case R.id.ai_designer:
                 openUrl("http://coolapk.com/u/433446");
@@ -66,10 +69,17 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
             case R.id.ai_developer:
                 openUrl("http://coolapk.com/u/532152");
                 break;
+            case R.id.ai_donate:
+                openAliPay();
+                break;
             case R.id.ai_open_source:
                 showLicenseDialog();
                 break;
         }
+    }
+
+    private void openAppList() {
+
     }
 
     private void openUrl(String url) {
@@ -79,6 +89,10 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
         } catch (ActivityNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    private void openAliPay() {
+
     }
 
     private void showLicenseDialog() {
