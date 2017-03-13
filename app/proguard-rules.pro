@@ -31,3 +31,12 @@
     @retrofit2.http.* <methods>;
 }
 
+# Gson
+-keepattributes Signature
+-keepattributes *Annotation*
+-keepattributes EnclosingMethod
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+
+# JavaBean
+-keep class me.iacn.mbestyle.bean.** {*;}
