@@ -46,8 +46,6 @@
             android:name=".ui.activity.IconViewActivity"
             android:theme="@style/AppTheme.Dialog" />
 
-        <activity android:name=".ui.activity.AppListActivity" />
-
     </application>
 
 </manifest>
