@@ -6,6 +6,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -31,6 +32,8 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     private AboutItem aiDeveloper;
     private AboutItem aiDonate;
     private AboutItem aiOpenSource;
+
+    private long[] mHits = new long[3];
 
     @Override
     protected int getContentView() {
@@ -84,7 +87,12 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     }
 
     private void openAppList() {
+        System.arraycopy(mHits, 1, mHits, 0, mHits.length - 1);
+        mHits[mHits.length - 1] = SystemClock.uptimeMillis();
 
+        if (mHits[0] >= (SystemClock.uptimeMillis() - 500)) {
+            // TODO:打开应用列表
+        }
     }
 
     private void openUrl(String url) {
