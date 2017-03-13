@@ -1,10 +1,14 @@
 package me.iacn.mbestyle.ui.fragment;
 
 import android.content.ActivityNotFoundException;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -12,6 +16,7 @@ import de.psdev.licensesdialog.LicensesDialog;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.widget.AboutItem;
+import moe.feng.alipay.zerosdk.AlipayZeroSdk;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -92,7 +97,15 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     }
 
     private void openAliPay() {
+        if (AlipayZeroSdk.hasInstalledAlipayClient(getActivity())) {
+            AlipayZeroSdk.startAlipayClient(getActivity(), "xxx");
+        } else {
+            ((ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE))
+                    .setPrimaryClip(ClipData.newPlainText(null, "xxx@xxx"));
 
+            Toast.makeText(getActivity(),
+                    "未安装支付宝客户端\n已将支付宝ID复制到剪贴板", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void showLicenseDialog() {
