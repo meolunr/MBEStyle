@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -13,37 +14,41 @@
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_marginBottom="36dp"
-            android:layout_marginTop="36dp" />
+            android:layout_marginTop="36dp"
+            tools:src="@drawable/bg_about_logo" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_version"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginBottom="1dp"
+            android:layout_height="wrap_content"
             app:summary="0.0"
             app:title="版本" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_designer"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginBottom="1dp"
+            android:layout_height="wrap_content"
             app:summary="幼幼保护协会"
             app:title="设计" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_developer"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginBottom="1dp"
+            android:layout_height="wrap_content"
             app:summary="iAcn"
             app:title="开发" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
+            android:id="@+id/ai_donate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:summary="点击会尝试打开支付宝"
+            app:title="捐赠" />
+
+        <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_open_source"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginBottom="1dp"
+            android:layout_height="wrap_content"
             app:summary="https://github.com/iAcn/MBEStyle"
             app:title="开源相关" />
 
