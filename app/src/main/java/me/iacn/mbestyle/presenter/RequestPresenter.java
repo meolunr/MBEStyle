@@ -36,6 +36,7 @@ import me.iacn.mbestyle.util.PackageUtils;
 public class RequestPresenter {
 
     private RequestFragment mView;
+    private int mLoadingCount;
 
     public RequestPresenter(RequestFragment mView) {
         this.mView = mView;
@@ -104,6 +105,8 @@ public class RequestPresenter {
             return;
         }
 
+        mLoadingCount++;
+
         LeanApi.getInstance()
                 .queryRequestTotal(packageName)
                 .subscribeOn(Schedulers.io())
@@ -121,6 +124,9 @@ public class RequestPresenter {
                             bean.total = lean.requestTotal;
                             bean.objectId = lean.objectId;
                         }
+
+                        mLoadingCount--;
+                        System.out.println("2 = " + mLoadingCount);
                     }
                 });
     }

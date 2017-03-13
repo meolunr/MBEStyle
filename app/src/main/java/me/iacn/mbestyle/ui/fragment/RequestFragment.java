@@ -2,6 +2,7 @@ package me.iacn.mbestyle.ui.fragment;
 
 import android.app.ProgressDialog;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -30,6 +31,7 @@ import me.iacn.mbestyle.util.SharedPrefUtils;
 
 public class RequestFragment extends ILazyFragment implements OnItemClickListener, View.OnClickListener {
 
+    private SwipeRefreshLayout srMain;
     private RecyclerView rvApp;
     private FloatingActionButton mFab;
 
@@ -47,6 +49,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
     @Override
     protected void findView() {
+        srMain = (SwipeRefreshLayout) findViewById(R.id.sr_main);
         rvApp = (RecyclerView) findViewById(R.id.rv_app);
         mFab = (FloatingActionButton) findViewById(R.id.fab);
     }
@@ -60,6 +63,19 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         rvApp.setItemViewCacheSize(0);
 
         mFab.setOnClickListener(this);
+
+        srMain.setColorSchemeResources(R.color.colorAccent);
+        srMain.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                for (RequestBean bean : mApps) {
+                    bean.total = -1;
+                }
+
+                mAdapter.notifyItemRangeChanged(0, mAdapter.getItemCount());
+                srMain.setRefreshing(false);
+            }
+        });
     }
 
     @Override
