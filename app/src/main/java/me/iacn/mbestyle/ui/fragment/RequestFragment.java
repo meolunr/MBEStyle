@@ -69,11 +69,11 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
             @Override
             public void onRefresh() {
                 for (RequestBean bean : mApps) {
+                    // 使所有 Item 会重新加载
                     bean.total = -1;
                 }
 
                 mAdapter.notifyItemRangeChanged(0, mAdapter.getItemCount());
-                srMain.setRefreshing(false);
             }
         });
     }
@@ -189,6 +189,10 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         } else {
             getActivity().finish();
         }
+    }
+
+    public void stopLoadingState() {
+        srMain.setRefreshing(false);
     }
 
     /**

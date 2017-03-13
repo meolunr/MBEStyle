@@ -105,6 +105,7 @@ public class RequestPresenter {
             return;
         }
 
+        // 加载数自加1
         mLoadingCount++;
 
         LeanApi.getInstance()
@@ -126,7 +127,11 @@ public class RequestPresenter {
                         }
 
                         mLoadingCount--;
-                        System.out.println("2 = " + mLoadingCount);
+
+                        if (mLoadingCount == 0) {
+                            // 最后1个 Item 已加载完成
+                            mView.stopLoadingState();
+                        }
                     }
                 });
     }
