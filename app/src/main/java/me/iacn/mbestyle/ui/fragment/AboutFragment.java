@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 import de.psdev.licensesdialog.LicensesDialog;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.ui.activity.AppListActivity;
 import me.iacn.mbestyle.ui.widget.AboutItem;
 import moe.feng.alipay.zerosdk.AlipayZeroSdk;
 
@@ -92,6 +93,8 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
 
         if (mHits[0] >= (SystemClock.uptimeMillis() - 500)) {
             // TODO:打开应用列表
+            Intent intent = new Intent(getActivity(), AppListActivity.class);
+            startActivity(intent);
         }
     }
 
