@@ -42,6 +42,7 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
 
     @Override
     protected void setListener() {
+        rvIcon.setHasFixedSize(true);
         rvIcon.setLayoutManager(new GridLayoutManager(getActivity(), 4));
     }
 

@@ -38,6 +38,7 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
 
     @Override
     protected void setListener() {
+        rvLauncher.setHasFixedSize(true);
         rvLauncher.setLayoutManager(new GridLayoutManager(getActivity(), 2));
     }
 
