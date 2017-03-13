@@ -15,7 +15,7 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.bean.AppBean;
-import me.iacn.mbestyle.ui.fragment.AppFragment;
+import me.iacn.mbestyle.ui.activity.AppListActivity;
 import me.iacn.mbestyle.util.PackageUtils;
 
 /**
@@ -25,18 +25,21 @@ import me.iacn.mbestyle.util.PackageUtils;
 
 public class AppPresenter {
 
-    private AppFragment mView;
+    private AppListActivity mView;
 
-    public AppPresenter(AppFragment mView) {
-        this.mView = mView;
+    public AppPresenter(AppListActivity view) {
+        this.mView = view;
     }
 
     public void loadInstallApp() {
         Flowable.create(new FlowableOnSubscribe<List<AppBean>>() {
             @Override
             public void subscribe(FlowableEmitter<List<AppBean>> e) throws Exception {
-                PackageManager manager = mView.getActivity().getPackageManager();
-                List<ResolveInfo> list = PackageUtils.getAppByMainIntent(mView.getActivity());
+                Thread.sleep(3000);
+
+
+                PackageManager manager = mView.getPackageManager();
+                List<ResolveInfo> list = PackageUtils.getAppByMainIntent(mView);
                 List<AppBean> apps = new ArrayList<>();
 
                 StringBuilder builder = new StringBuilder();
