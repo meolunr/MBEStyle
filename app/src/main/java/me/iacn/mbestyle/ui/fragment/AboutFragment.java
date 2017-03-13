@@ -29,6 +29,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     private AboutItem aiVersion;
     private AboutItem aiDesigner;
     private AboutItem aiDeveloper;
+    private AboutItem aiDonate;
     private AboutItem aiOpenSource;
 
     @Override
@@ -42,6 +43,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
         aiVersion = (AboutItem) findViewById(R.id.ai_version);
         aiDesigner = (AboutItem) findViewById(R.id.ai_designer);
         aiDeveloper = (AboutItem) findViewById(R.id.ai_developer);
+        aiDonate = (AboutItem) findViewById(R.id.ai_donate);
         aiOpenSource = (AboutItem) findViewById(R.id.ai_open_source);
     }
 
@@ -50,6 +52,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
         aiVersion.setOnClickListener(this);
         aiDesigner.setOnClickListener(this);
         aiDeveloper.setOnClickListener(this);
+        aiDonate.setOnClickListener(this);
         aiOpenSource.setOnClickListener(this);
     }
 
@@ -88,10 +91,10 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
 
     private void openAliPay() {
         if (AlipayZeroSdk.hasInstalledAlipayClient(getActivity())) {
-            AlipayZeroSdk.startAlipayClient(getActivity(), "xxx");
+            AlipayZeroSdk.startAlipayClient(getActivity(), "aex08398iixbcgfl5ryqk3c");
         } else {
             ((ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE))
-                    .setPrimaryClip(ClipData.newPlainText(null, "xxx@xxx"));
+                    .setPrimaryClip(ClipData.newPlainText(null, "18588533502"));
 
             Toast.makeText(getActivity(),
                     "未安装支付宝客户端\n已将支付宝ID复制到剪贴板", Toast.LENGTH_SHORT).show();
