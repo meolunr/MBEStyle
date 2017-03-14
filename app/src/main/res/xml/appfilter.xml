@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <iconback img1="iconback" />
-    <iconmask img1="iconmask" />
-    <iconupon img1="iconupon" />
+
     <scale factor="1.0" />
+
+    <item
+        component=":BROWSER"
+        drawable="browser" />
+    <item
+        component=":SMS"
+        drawable="message" />
+    <item
+        component=":CALCULATOR"
+        drawable="calculator" />
+    <item
+        component=":CALENDAR"
+        drawable="calendar" />
+    <item
+        component=":CAMERA"
+        drawable="camera" />
+    <item
+        component=":CLOCK"
+        drawable="clock" />
+    <item
+        component=":CONTACTS"
+        drawable="contacts" />
+    <item
+        component=":EMAIL"
+        drawable="mail" />
+    <item
+        component=":GALLERY"
+        drawable="gallery" />
+    <item
+        component=":PHONE"
+        drawable="phone" />
 
     <!-- ADM Pro / ADM Pro -->
     <item
