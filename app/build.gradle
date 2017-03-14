@@ -8,8 +8,8 @@ android {
         applicationId "me.iacn.mbestyle"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 6
-        versionName "1.2.1"
+        versionCode 7
+        versionName "1.2.3"
         resConfigs "en", "zh-rCN"
     }
 
@@ -20,13 +20,13 @@ android {
         }
     }
 
-    Properties prop = new Properties()
     def file = project.rootProject.file('config.prop')
     def leancloudId = '"+1S"'
     def leancloudKey = '"+1S"'
 
     if (file.exists()) {
-        InputStream stream = project.rootProject.file('config.prop').newDataInputStream();
+        Properties prop = new Properties()
+        InputStream stream = file.newDataInputStream();
         prop.load(stream)
         stream.close()
 
