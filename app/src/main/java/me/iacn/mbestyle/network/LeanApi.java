@@ -79,7 +79,7 @@ public class LeanApi {
                 .create(LeanService.class);
     }
 
-    public Flowable<LeanQueryBean> queryRequestTotal(String packageName) {
+    public Observable<LeanQueryBean> queryRequestTotal(String packageName) {
         Map<String, String> where = new HashMap<>();
         where.put("packageName", packageName);
 
