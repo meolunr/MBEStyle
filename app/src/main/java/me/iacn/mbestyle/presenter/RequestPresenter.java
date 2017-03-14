@@ -17,8 +17,10 @@ import io.reactivex.BackpressureStrategy;
 import io.reactivex.Flowable;
 import io.reactivex.FlowableEmitter;
 import io.reactivex.FlowableOnSubscribe;
+import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.iacn.mbestyle.R;
@@ -112,9 +114,14 @@ public class RequestPresenter {
                 .queryRequestTotal(packageName)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<LeanQueryBean>() {
+                .subscribe(new Observer<LeanQueryBean>() {
                     @Override
-                    public void accept(@NonNull LeanQueryBean leanBean) throws Exception {
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(LeanQueryBean leanBean) {
                         if (leanBean.results == null || leanBean.results.size() == 0) {
                             setRequestTotal(textView, 0);
                             bean.total = 0;
@@ -125,15 +132,30 @@ public class RequestPresenter {
                             bean.total = lean.requestTotal;
                             bean.objectId = lean.objectId;
                         }
+                    }
 
-                        mLoadingCount--;
+                    @Override
+                    public void onError(Throwable e) {
+                        e.printStackTrace();
 
-                        if (mLoadingCount == 0) {
-                            // 最后1个 Item 已加载完成
-                            mView.stopLoadingState();
-                        }
+                        // 发生异常直接中断，所以手动调用一下
+                        handleLoadingState();
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        handleLoadingState();
                     }
                 });
+    }
+
+    private void handleLoadingState() {
+        mLoadingCount--;
+
+        if (mLoadingCount == 0) {
+            // 最后1个 Item 已加载完成
+            mView.stopLoadingState();
+        }
     }
 
     private String findActivityName(String component) {
