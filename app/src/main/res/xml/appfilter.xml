@@ -1932,4 +1932,38 @@
         component="ComponentInfo{net.oneplus.weather/net.oneplus.weather.app.MainActivity}"
         drawable="weather" />
 
+    <!-- Modify at 2017.03.15  ColorOS Apps -->
+    <item
+        component="ComponentInfo{com.coloros.alarmclock/com.coloros.alarmclock.AlarmClock}"
+        drawable="clock" />
+
+    <item
+        component="ComponentInfo{com.oppo.music/com.oppo.music.MainListActivity}"
+        drawable="music" />
+
+    <item
+        component="ComponentInfo{com.coloros.soundrecorder/oppo.multimedia.soundrecorder.RecorderActivity}"
+        drawable="soundrecorder" />
+
+    <item
+        component="ComponentInfo{com.coloros.filemanager/com.coloros.filemanager.Main}"
+        drawable="filemanger" />
+
+    <item
+        component="ComponentInfo{com.oppo.market/com.oppo.market.activity.MainActivity}"
+        drawable="appstore" />
+
+    <item
+        component="ComponentInfo{com.coloros.gallery3d/com.oppo.gallery3d.app.Gallery}"
+        drawable="gallery" />
+
+    <item
+        component="ComponentInfo{com.coloros.weather/com.coloros.weather.OppoMainActivity}"
+        drawable="weather" />
+
+    <!-- Modify at 2017.03.15  kingSoft Email -->
+    <item
+        component="ComponentInfo{com.android.email/com.kingsoft.email.activity.Welcome}"
+        drawable="mail" />
+
 </resources>
