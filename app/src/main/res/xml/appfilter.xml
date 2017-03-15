@@ -1921,5 +1921,10 @@
     <item
         component="ComponentInfo{com.dropbox.android/com.dropbox.android.activity.DropboxBrowser}"
         drawable="dropbox" />
+		
+	<!-- Modify at 2017.03.14  LuckyPatcher -->
+	<item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LACK/com.android.vending.billing.InAppBillingService.LACK.MainActivity-Original}"
+        drawable="lucklypatcher" />
 
 </resources>
