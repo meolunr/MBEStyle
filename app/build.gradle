@@ -26,7 +26,7 @@ android {
 
     if (file.exists()) {
         Properties prop = new Properties()
-        InputStream stream = file.newDataInputStream();
+        InputStream stream = file.newDataInputStream()
         prop.load(stream)
         stream.close()
 
