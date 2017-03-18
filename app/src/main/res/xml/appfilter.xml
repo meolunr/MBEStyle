@@ -2118,10 +2118,10 @@
         drawable="shadowsocks" />
     <item
         component="ComponentInfo{com.sunrise.scmbhc/com.sunrise.scmbhc.ui.activity.loading.LoadingActivity}"
-        drawable="a10086" />
+        drawable="_10086" />
     <item
         component="ComponentInfo{com.xinhang.mobileclient/com.xinhang.mobileclient.LoadingActivity}"
-        drawable="a10086" />
+        drawable="_10086" />
     <item
         component="ComponentInfo{com.tencent.FileManager/com.fteam.openmaster.SplashActivity}"
         drawable="qq_filemanager" />
