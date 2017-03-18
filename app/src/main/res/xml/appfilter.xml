@@ -2149,7 +2149,7 @@
         drawable="music" />
     <item
         component="ComponentInfo{com.lenovo.music/com.lenovo.music.ui.LeAppLoadingActivity}"
-        drawable="music" />
+        drawable="shanzhaiyun" />
     <item
         component="ComponentInfo{com.huawei.android.hwouc/com.huawei.android.hwouc.ui.activities.MainEntranceActivity}"
         drawable="update" />
