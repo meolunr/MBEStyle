@@ -14,6 +14,7 @@ import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.RequestBean;
 import me.iacn.mbestyle.presenter.RequestPresenter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.ui.callback.OnItemLongClickListener;
 
 /**
  * Created by iAcn on 2017/2/19
@@ -24,7 +25,8 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
 
     private List<RequestBean> mApps;
     private RequestPresenter mPresenter;
-    private OnItemClickListener mListener;
+    private OnItemClickListener mClickListener;
+    private OnItemLongClickListener mLongListener;
 
     public RequestAdapter(List<RequestBean> mApps, RequestPresenter presenter) {
         this.mApps = mApps;
@@ -35,7 +37,8 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
     public RequestHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         RequestHolder holder = new RequestHolder(LayoutInflater.from(
                 parent.getContext()).inflate(R.layout.item_request, parent, false));
-        holder.mListener = mListener;
+        holder.mClickListener = mClickListener;
+        holder.mLongListener = mLongListener;
 
         return holder;
     }
@@ -57,13 +60,14 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
-        mListener = listener;
+        mClickListener = listener;
     }
 }
 
-class RequestHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+class RequestHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
 
-    OnItemClickListener mListener;
+    OnItemClickListener mClickListener;
+    OnItemLongClickListener mLongListener;
 
     ImageView ivIcon;
     TextView tvName;
@@ -79,12 +83,18 @@ class RequestHolder extends RecyclerView.ViewHolder implements View.OnClickListe
         cbCheck = (CheckBox) itemView.findViewById(R.id.cb_check);
 
         itemView.setOnClickListener(this);
+        itemView.setOnLongClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (mListener != null) {
-            mListener.onItemClick(v, getLayoutPosition());
+        if (mClickListener != null) {
+            mClickListener.onItemClick(v, getLayoutPosition());
         }
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        return mLongListener != null && mLongListener.onItemLongClick(v, getLayoutPosition());
     }
 }
