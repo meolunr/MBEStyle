@@ -62,6 +62,10 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestHolder> {
     public void setOnItemClickListener(OnItemClickListener listener) {
         mClickListener = listener;
     }
+
+    public void setOnItemLongClickListener(OnItemLongClickListener listener) {
+        mLongListener = listener;
+    }
 }
 
 class RequestHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {

@@ -22,14 +22,16 @@ import me.iacn.mbestyle.presenter.RequestPresenter;
 import me.iacn.mbestyle.ui.activity.MainActivity;
 import me.iacn.mbestyle.ui.adapter.RequestAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.ui.callback.OnItemLongClickListener;
 import me.iacn.mbestyle.util.SharedPrefUtils;
+import me.iacn.mbestyle.util.StringUtils;
 
 /**
  * Created by iAcn on 2017/2/18
  * Emali iAcn0301@foxmail.com
  */
 
-public class RequestFragment extends ILazyFragment implements OnItemClickListener, View.OnClickListener {
+public class RequestFragment extends ILazyFragment implements OnItemClickListener, View.OnClickListener, OnItemLongClickListener {
 
     private SwipeRefreshLayout srMain;
     private RecyclerView rvApp;
@@ -109,6 +111,18 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         handleFabShow();
     }
 
+    @Override
+    public boolean onItemLongClick(View itemView, int position) {
+        RequestBean bean = mApps.get(position);
+        String template = getString(R.string.component_template)
+                .replace("$mainIntentActivity$", bean.activity);
+
+        StringUtils.copyToClipboard(getActivity(), template);
+        Toast.makeText(getActivity(), "应用信息已复制到剪贴板", Toast.LENGTH_SHORT).show();
+
+        return true;
+    }
+
     public void onLoadData(List<RequestBean> list) {
         super.onLoadData();
 
@@ -117,6 +131,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
 
         mAdapter = new RequestAdapter(mApps, mPresenter);
         mAdapter.setOnItemClickListener(this);
+        mAdapter.setOnItemLongClickListener(this);
         rvApp.setAdapter(mAdapter);
     }
 
