@@ -291,5 +291,6 @@
     <item drawable="youdaodic" />
     <item drawable="zhihunews" />
     <item drawable="zooper" />
+    <item drawable="drawer" />
 
 </resources>
