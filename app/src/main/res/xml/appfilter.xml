@@ -4,6 +4,10 @@
     <scale factor="1.0" />
 
     <item
+        component=":LAUNCHER_ACTION_APP_DRAWER"
+        drawable="drawer"/>
+
+    <item
         component=":BROWSER"
         drawable="browser" />
     <item
