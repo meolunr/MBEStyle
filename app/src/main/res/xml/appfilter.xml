@@ -5,7 +5,7 @@
 
     <item
         component=":LAUNCHER_ACTION_APP_DRAWER"
-        drawable="drawer"/>
+        drawable="drawer" />
 
     <item
         component=":BROWSER"
@@ -2264,5 +2264,306 @@
     <item
         component="ComponentInfo{com.tencent.qqpimsecure/com.tencent.server.fore.QuickLoadActivity}"
         drawable="qqguanjia" />
+
+    <item
+        component="ComponentInfo{com.lenovo.FileBrowser/com.lenovo.FileBrowser.activities.FileBrowserMain}"
+        drawable="filemanger" />
+    <item
+        component="ComponentInfo{com.lenovo.launcher/com.lenovo.launcher.LauncherFacade}"
+        drawable="home_launcher" />
+    <item
+        component="ComponentInfo{com.meizu.flyme.launcher/com.meizu.flyme.launcher.Launcher}"
+        drawable="home_launcher" />
+    <item
+        component="ComponentInfo{com.lenovo.themecenter/com.lenovo.themecenter.LoadingActivity}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.meizu.mstore/com.meizu.flyme.appcenter.activitys.AppMainActivity}"
+        drawable="appstore" />
+    <item
+        component="ComponentInfo{org.cyanogenmod.audiofx/org.cyanogenmod.audiofx.ActivityMusic}"
+        drawable="audiofx" />
+    <item
+        component="ComponentInfo{com.meizu.filemanager/com.meizu.flyme.filemanager.activity.HomeActivity}"
+        drawable="filemanger" />
+    <item
+        component="ComponentInfo{xyz.hanks.note/xyz.hanks.note.ui.activity.MainActivity}"
+        drawable="hanks_note" />
+    <item
+        component="ComponentInfo{nextapp.fx/nextapp.fx.ui.ExplorerActivity}"
+        drawable="fx_filemanger" />
+    <item
+        component="ComponentInfo{org.cyanogenmod.theme.chooser2/org.cyanogenmod.theme.chooser2.ChooserLauncher}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{org.cyanogenmod.theme.chooser/org.cyanogenmod.theme.chooser.ChooserActivity}"
+        drawable="cm_theme" />
+    <item
+        component="ComponentInfo{com.oneplus.opbugreport/com.oneplus.opbugreport.OPUploadReport}"
+        drawable="bugreport" />
+    <item
+        component="ComponentInfo{com.teamviewer.teamviewer.market.mobile/com.teamviewer.remotecontrollib.activity.MainActivity}"
+        drawable="teamviewer" />
+    <item
+        component="ComponentInfo{com.czbix.v2ex/com.czbix.v2ex.ui.MainActivity}"
+        drawable="v2ex" />
+    <item
+        component="ComponentInfo{bos.consoar.imagestitch/bos.consoar.imagestitch.ui.MainActivity}"
+        drawable="ppiicc" />
+    <item
+        component="ComponentInfo{com.yulong.android.coolshow/com.yulong.android.coolshow.app.CoolShowActivity}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.nearme.themespace/com.nearme.themespace.activities.ThemeActivity}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.yunos.theme.thememanager/com.yunos.theme.thememanager.ThemeLogoActivity}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.letv.android.themestore/com.letv.android.themestore.activity.HomeActivity}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.samsung.android.themestore/com.samsung.android.themestore.activity.Launcher}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{org.cyanogenmod.theme.chooser/org.cyanogenmod.theme.chooser.ChooserActivity}"
+        drawable="cm_theme" />
+    <item
+        component="ComponentInfo{com.huawei.KoBackup/com.huawei.KoBackup.InitializeActivity}"
+        drawable="backup" />
+    <item
+        component="ComponentInfo{com.coloros.backuprestore/com.coloros.backuprestore.activity.BootActivity}"
+        drawable="backup" />
+    <item
+        component="ComponentInfo{com.gigaset.backuprecover/com.gigaset.backuprecover.ui.BackupMainActivity}"
+        drawable="backup" />
+    <item
+        component="ComponentInfo{com.evenwell.backuptool/com.evenwell.backuptool.MainActivity}"
+        drawable="backup" />
+    <item
+        component="ComponentInfo{com.meizu.backup/com.meizu.backup.ui.MainBackupAct}"
+        drawable="backup" />
+    <item
+        component="ComponentInfo{com.android.backup/com.android.backup.TsMainBackActivity}"
+        drawable="backup" />
+    <item
+        component="ComponentInfo{com.gotokeep.keep/com.gotokeep.keep.activity.SplashActivity}"
+        drawable="keep" />
+    <item
+        component="ComponentInfo{com.mobike.mobikeapp/com.mobike.mobikeapp.SplashActivity}"
+        drawable="mobikeapp" />
+    <item
+        component="ComponentInfo{com.smzdm.client.android/com.smzdm.client.android.activity.WelComeActivity}"
+        drawable="smzdm" />
+    <item
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}"
+        drawable="google_voice_search" />
+    <item
+        component="ComponentInfo{com.shanbay.words/com.shanbay.words.startup.SplashActivity}"
+        drawable="shanbay" />
+    <item
+        component="ComponentInfo{org.zwanoo.android.speedtest/com.ookla.speedtest.softfacade.MainActivity}"
+        drawable="speedtest" />
+    <item
+        component="ComponentInfo{com.dianping.v1/com.dianping.main.guide.SplashScreenActivity}"
+        drawable="dianping" />
+    <item
+        component="ComponentInfo{com.microsoft.bing/com.microsoft.clients.bing.app.MainActivity}"
+        drawable="microsoft_bing_search" />
+    <item
+        component="ComponentInfo{com.motorola.modstore/com.motorola.modstore.MainActivity}"
+        drawable="moto_mods" />
+    <item
+        component="ComponentInfo{com.motorola.moto/com.motorola.assist.ui.screens.MainActivity}"
+        drawable="moto" />
+    <item
+        component="ComponentInfo{com.motorola.genie/com.motorola.genie.app.DashboardActivity}"
+        drawable="moto_genie" />
+    <item
+        component="ComponentInfo{com.miui.fm/com.miui.fmradio.FmActivity}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{com.sec.android.app.voicenote/com.sec.android.app.voicenote.main.VNMainActivity}"
+        drawable="soundrecorder" />
+    <item
+        component="ComponentInfo{com.android.bbksoundrecorder/com.android.bbksoundrecorder.SoundRecorder}"
+        drawable="soundrecorder" />
+    <item
+        component="ComponentInfo{com.yulong.android.soundrecorder/com.yulong.android.soundrecorder.CP_SoundRecorder}"
+        drawable="soundrecorder" />
+    <item
+        component="ComponentInfo{com.sonymobile.androidapp.audiorecorder/com.sonymobile.androidapp.audiorecorder.activity.MainActivity}"
+        drawable="soundrecorder" />
+    <item
+        component="ComponentInfo{com.qihoo.browser/com.qihoo.browser.activity.SplashActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FMRadioMainActivity}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{com.yulong.android.calendar/com.yulong.android.calendar.ui.MenuAnimationActivity}"
+        drawable="calendar" />
+    <item
+        component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadio}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{com.oppo.alarmclock/com.oppo.alarmclock.AlarmClock}"
+        drawable="clock" />
+    <item
+        component="ComponentInfo{com.color.safecenter/com.color.safecenter.SecureSafeMainActivity}"
+        drawable="security" />
+    <item
+        component="ComponentInfo{com.oppo.video/com.oppo.video.VideoListActivity}"
+        drawable="video" />
+    <item
+        component="ComponentInfo{de.robv.android.xposed.installer/de.robv.android.xposed.installer.WelcomeActivity-dvdandroid}"
+        drawable="xposed" />
+    <item
+        component="ComponentInfo{com.meizu.notepaper/com.meizu.flyme.notepaper.app.NotePaperActivity}"
+        drawable="note" />
+    <item
+        component="ComponentInfo{com.meizu.media.music/com.meizu.media.music.MusicActivity}"
+        drawable="music" />
+    <item
+        component="ComponentInfo{net.oneplus.music/net.oneplus.music.activity.MainActivity}"
+        drawable="music" />
+    <item
+        component="ComponentInfo{org.cyanogenmod.gello.browser/com.android.browser.BrowserLauncher}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.sitech.ac/com.cmcc.sjyyt.activitys.WelcomeActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.example.businesshall/com.businesshall.activity.NewLogoActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.meizu.voiceassistant/com.meizu.voiceassistant.MainActivity}"
+        drawable="voiceassist" />
+    <item
+        component="ComponentInfo{com.vivo.gallery/com.android.gallery3d.vivo.GalleryTabActivity}"
+        drawable="gallery" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.huawei.gallery.app.GalleryActivity}"
+        drawable="gallery" />
+    <item
+        component="ComponentInfo{com.android.VideoPlayer/com.android.VideoPlayer.VideoPlayer}"
+        drawable="video" />
+    <item
+        component="ComponentInfo{com.meizu.flyme.update/com.meizu.flyme.update.SystemUpgradeListActivity}"
+        drawable="update" />
+    <item
+        component="ComponentInfo{com.chinamworld.main/com.ccb.start.StartActivity}"
+        drawable="ccb" />
+    <item
+        component="ComponentInfo{com.meizu.feedback/com.meizu.feedback.activity.MainActivity}"
+        drawable="bugreport" />
+    <item
+        component="ComponentInfo{com.zui.cameragallery/com.zui.cameragallery.camera.CameraActivity}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.bbk.appstore/com.bbk.appstore.ui.AppStore}"
+        drawable="appstore" />
+    <item
+        component="ComponentInfo{com.vivo.weather/com.vivo.weather.WeatherMain}"
+        drawable="weather" />
+    <item
+        component="ComponentInfo{com.vivo.browser/com.vivo.browser.BrowserActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.bbk.theme/com.bbk.theme.Theme}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.bbk.calendar/com.bbk.calendar.MainActivity}"
+        drawable="calendar" />
+    <item
+        component="ComponentInfo{com.sonyericsson.androidapp.lunarcalendar/com.sonyericsson.androidapp.lunarcalendar.CalendarActivity}"
+        drawable="calendar" />
+    <item
+        component="ComponentInfo{com.android.camera/com.android.camera.CameraActivity}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.yunos.camera/com.yunos.camera.CameraActivity}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.yunos.calculator/com.yunos.calculator.Calculator}"
+        drawable="calculator" />
+    <item
+        component="ComponentInfo{com.android.bbkcalculator/com.android.bbkcalculator.Calculator}"
+        drawable="calculator" />
+    <item
+        component="ComponentInfo{com.android.filemanager/com.android.filemanager.FileManagerActivity}"
+        drawable="filemanager" />
+    <item
+        component="ComponentInfo{com.android.notes/com.android.notes.Notes}"
+        drawable="note" />
+    <item
+        component="ComponentInfo{com.nearme.note/com.nearme.note.view.AllNoteActivity}"
+        drawable="note" />
+    <item
+        component="ComponentInfo{com.meizu.notes/com.meizu.flyme.notepaper.app.NoteSplashActivity}"
+        drawable="note" />
+    <item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LOCK/com.android.vending.billing.InAppBillingService.LOCK.MainActivity-4}"
+        drawable="lucklypatcher" />
+    <item
+        component="ComponentInfo{kh.android.dir/kh.android.dir.ui.Icons.EntryWithGreenIcon}"
+        drawable="dirclean" />
+    <item
+        component="ComponentInfo{com.yulong.android.xtime/yulong.xtime.ui.main.XTimeActivity}"
+        drawable="clock" />
+    <item
+        component="ComponentInfo{com.zui.mms/com.fancymaker.mms.ui.XuiMmsMainActivity}"
+        drawable="message" />
+    <item
+        component="ComponentInfo{com.evenwell.fmradio/com.evenwell.fmradio.FMRadioActivity}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{com.microsoft.office.excel/com.microsoft.office.apphost.LaunchActivity}"
+        drawable="microsoft_office_excel" />
+    <item
+        component="ComponentInfo{com.microsoft.office.word/com.microsoft.office.apphost.LaunchActivity}"
+        drawable="microsoft_office_word" />
+    <item
+        component="ComponentInfo{com.sonyericsson.video/com.sonyericsson.video.placeholderwrapper.MainActivity}"
+        drawable="video" />
+    <item
+        component="ComponentInfo{com.microsoft.office.powerpoint/com.microsoft.office.apphost.LaunchActivity}"
+        drawable="microsoft_office_powerpoint" />
+    <item
+        component="ComponentInfo{bingdic.android.activity/bingdic.android.activity.SplashscreenActivitySplashscreenActivitySplashscreenActivity}"
+        drawable="microsoft_bing_dict" />
+    <item
+        component="ComponentInfo{com.tencent.qt.qtl/com.tencent.qt.qtl.activity.main.LauncherActivity}"
+        drawable="qt_qtl" />
+    <item
+        component="ComponentInfo{com.jiongji.andriod.card/com.baicizhan.main.activity.LoadingPageActivity}"
+        drawable="baicizhan" />
+    <item
+        component="ComponentInfo{com.cmbchina.ccd.pluto.cmbActivity/com.cmbchina.ccd.pluto.cmbActivity.SplashActivity}"
+        drawable="ccd_pluto" />
+    <item
+        component="ComponentInfo{com.tencent.tgp.wzry/com.tencent.tgp.wzry.login.LaunchActivity}"
+        drawable="tgp_wzry" />
+    <item
+        component="ComponentInfo{com.tencent.tgp/com.tencent.tgp.login.LaunchActivity}"
+        drawable="tgp" />
+    <item
+        component="ComponentInfo{com.jd.jrapp/com.jd.jrapp.WelcomeActivity}"
+        drawable="jdjr" />
+    <item
+        component="ComponentInfo{com.sonymobile.support/com.sonymobile.support.InAppSupport}"
+        drawable="moto_genie" />
+    <item
+        component="ComponentInfo{com.cainiao.wireless/com.cainiao.wireless.homepage.presentation.view.activity.HomepageActivity}"
+        drawable="cainiao" />
+    <item
+        component="ComponentInfo{com.nuomi/com.baidu.bainuo.dex.InstallDexActivity}"
+        drawable="nuomi" />
+    <item
+        component="ComponentInfo{com.funinput.digit/com.funinput.digit.activity.WelcomeActivity}"
+        drawable="dgtle" />
+    <item
+        component="ComponentInfo{com.funinput.digit/com.qihoo.util.StartActivity}"
+        drawable="dgtle" />
 
 </resources>
