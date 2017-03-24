@@ -141,14 +141,14 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
         List<Integer> copyList = new ArrayList<>(mCheckedPositions);
 
         long currentTime = System.currentTimeMillis();
-        long fiveMinute = 300000;
+        long aHour = 3600000;
 
         for (int i : copyList) {
             RequestBean bean = mApps.get(i);
             long lastRequestTime = SharedPrefUtils.getLong(getActivity(), bean.packageName, 0);
 
-            if (lastRequestTime + fiveMinute < currentTime) {
-                // 5分钟内同一个应用不得申请第二次
+            if (lastRequestTime + aHour < currentTime) {
+                // 1小时内同一个应用不得申请第二次
                 newRequests.add(bean);
             } else {
                 mCheckedPositions.remove(Integer.valueOf(i));
