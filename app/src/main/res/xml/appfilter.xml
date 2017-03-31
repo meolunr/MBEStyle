@@ -1662,7 +1662,7 @@
         drawable="gallery" />
     <item
         component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.home.HomeFileActivity}"
-        drawable="baiduyun" />
+        drawable="shanzhaiyun" />
     <item
         component="ComponentInfo{in.zhaoj.shadowsocksr/com.github.shadowsocks.Shadowsocks}"
         drawable="shadowsocksr" />
@@ -1984,7 +1984,7 @@
         drawable="music" />
     <item
         component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.home.DrawerHomeActivity}"
-        drawable="music" />
+        drawable="shanzhaiyun" />
     <item
         component="ComponentInfo{com.One.WoodenLetter/com.androlua.Welcome}"
         drawable="muhan" />
