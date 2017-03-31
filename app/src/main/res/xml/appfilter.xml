@@ -2396,7 +2396,7 @@
         drawable="soundrecorder" />
     <item
         component="ComponentInfo{com.qihoo.browser/com.qihoo.browser.activity.SplashActivity}"
-        drawable="browser" />
+        drawable="qihoo_browser" />
     <item
         component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FMRadioMainActivity}"
         drawable="fm" />
@@ -2570,5 +2570,121 @@
     <item
         component="ComponentInfo{me.iacn.sdunicomnet/me.iacn.sdunicomnet.MainActivity}"
         drawable="memory_cleaner" />
+
+    <!-- 2017.03.31 New Add -->
+    <item
+        component="ComponentInfo{com.qihoo.yunpan/com.qihoo.yunpan.phone.MainProxyActivity}"
+        drawable="qihoo_cloud" />
+    <item
+        component="ComponentInfo{com.android.bankabc/com.android.bankabc.MainActivity}"
+        drawable="bankabc" />
+    <item
+        component="ComponentInfo{org.aisen.weibo.sina/org.aisen.weibo.sina.ui.activity.base.SplashActivity}"
+        drawable="aisen" />
+    <item
+        component="ComponentInfo{org.aisen.weibo.sina/org.aisen.weibo.sina.ui.activity.basic.SplashActivity}"
+        drawable="aisen" />
+    <item
+        component="ComponentInfo{com.qihoo.antivirus/com.qihoo.antivirus.ui.index.AppEnterActivity}"
+        drawable="qihoo_geek" />
+    <item
+        component="ComponentInfo{com.qihoo360.mobilesafe/com.qihoo360.mobilesafe.ui.index.AppEnterActivity}"
+        drawable="qihoo" />
+    <item
+        component="ComponentInfo{com.qihoo.chrome360/com.qihoo.browser.activity.SplashActivity}"
+        drawable="qihoo_jisu" />
+    <item
+        component="ComponentInfo{com.lemon.faceu/com.lemon.faceu.login.LoadingPageActivity}"
+        drawable="faceu" />
+    <item
+        component="ComponentInfo{com.netease.uu/com.netease.uu.activity.SplashScreenActivity}"
+        drawable="uu" />
+    <item
+        component="ComponentInfo{com.netease.onmyoji/com.netease.onmyoji.Launcher}"
+        drawable="onmyoji" />
+    <item
+        component="ComponentInfo{com.netease.onmyoji.bili/com.netease.onmyoji.Launcher}"
+        drawable="onmyoji" />
+    <item
+        component="ComponentInfo{com.netease.onmyoji.wdj/com.netease.onmyoji.Launcher}"
+        drawable="onmyoji" />
+    <item
+        component="ComponentInfo{com.netease.onmyoji.baidu/com.netease.onmyoji.Launcher}"
+        drawable="onmyoji" />
+    <item
+        component="ComponentInfo{com.tencent.tmgp.yys.zqb/com.netease.onmyoji.Launcher}"
+        drawable="onmyoji" />
+    <item
+        component="ComponentInfo{com.netease.yyszs/com.netease.yyszs.app.StartActivity}"
+        drawable="onmyoji_zs" />
+    <item
+        component="ComponentInfo{com.anzogame.sy_yys/com.anzogame.sy_yys.AppFlashActivity}"
+        drawable="onmyoji_zyb" />
+    <item
+        component="ComponentInfo{com.sec.android.app.shealth/com.samsung.android.app.shealth.home.HomeMainActivity}"
+        drawable="shealth" />
+    <item
+        component="ComponentInfo{com.xio.cardnews/com.xio.cardnews.activity.MainActivity}"
+        drawable="cardnews" />
+    <item
+        component="ComponentInfo{com.pleasure.trace_wechat/com.pleasure.trace_wechat.activity.SplashActivity}"
+        drawable="trace_wechat" />
+    <item
+        component="ComponentInfo{com.flarejune.perfectcolorbar/com.flarejune.perfectcolorbar.ui.actMain}"
+        drawable="perfectcolorbar" />
+    <item
+        component="ComponentInfo{com.sspai.cuto.android/com.sspai.cuto.android.EntryActivity}"
+        drawable="cuto" />
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.android.view.splash.CtripSplashActivity}"
+        drawable="ctrip" />
+    <item
+        component="ComponentInfo{com.topjohnwu.magisk/com.topjohnwu.magisk.SplashActivity}"
+        drawable="magisk" />
+    <item
+        component="ComponentInfo{org.noear.ddcat/org.noear.ddcat.controller.HomeNavigationActivity}"
+        drawable="ddcat" />
+    <item
+        component="ComponentInfo{cn.amazon.mShop.android/com.amazon.mShop.home.HomeActivity}"
+        drawable="amazon" />
+    <item
+        component="ComponentInfo{com.taobao.movie.android/com.taobao.movie.android.app.home.activity.SplashActivity}"
+        drawable="taobao_dianying" />
+    <item
+        component="ComponentInfo{com.google.android.gms/com.google.android.gms.app.settings.GoogleSettingsActivity}"
+        drawable="google_setting" />
+    <item
+        component="ComponentInfo{com.mokee.aegis/com.mokee.aegis.activities.ManagePermissionsActivity}"
+        drawable="aegis" />
+    <item
+        component="ComponentInfo{com.magicmagnet/com.magicmagnet.common.SplashActivity}"
+        drawable="magicmagnet" />
+    <item
+        component="ComponentInfo{com.netease.snailread/com.netease.snailread.activity.SplashActivity}"
+        drawable="netease_snailread" />
+    <item
+        component="ComponentInfo{com.youdao.hanyu/com.youdao.hanyu.activity.SplashActv}"
+        drawable="youdao_hanyu" />
+    <item
+        component="ComponentInfo{com.hitokoto/com.hitokoto.activity.MainActivity}"
+        drawable="hitokoto" />
+    <item
+        component="ComponentInfo{com.smartisan.notes/com.smartisan.notes.NewNotesActivity}"
+        drawable="smartisan_notes" />
+    <item
+        component="ComponentInfo{eu.chainfire.perfmon/eu.chainfire.perfmon.LaunchActivity}"
+        drawable="perfmon" />
+    <item
+        component="ComponentInfo{com.orekie.search/com.orekie.search.components.EntryActivity}"
+        drawable="lite_search" />
+    <item
+        component="ComponentInfo{com.intsig.camscanner/com.intsig.camscanner.WelcomeActivity}"
+        drawable="camscanner" />
+    <item
+        component="ComponentInfo{com.samsung.android.onlinevideo/com.samsung.android.onlinevideo.list.activity.VideoList}"
+        drawable="samsung_video" />
+    <item
+        component="ComponentInfo{com.samsung.android.sm_cn/com.samsung.android.sm.ui.cstyleboard.SmartManagerDashBoardActivity}"
+        drawable="samsung_smart_manager" />
 
 </resources>
