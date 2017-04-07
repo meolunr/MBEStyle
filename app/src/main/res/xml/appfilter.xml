@@ -1178,6 +1178,10 @@
     <item
         component="ComponentInfo{com.taobao.fleamarket/com.taobao.fleamarket.activity.InitActivity}"
         drawable="xianyu" />
+    <item
+        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Round}"
+        drawable="xianyu" />
+
     <!-- 酷狗 / kugou -->
     <item
         component="ComponentInfo{com.kugou.android/com.kugou.android.app.splash.SplashActivity}"
@@ -1283,6 +1287,9 @@
         drawable="vlc" />
     <item
         component="ComponentInfo{com.audlabs.viperfx/com.audlabs.viperfx.main.MainActivity}"
+        drawable="viper_fx" />
+    <item
+        component="ComponentInfo{com.vipercn.viper4android_v2/com.vipercn.viper4android_v2.activity.ViPER4Android}"
         drawable="viper_fx" />
 
     <!-- 智行火车票 / zhixing -->
@@ -2686,5 +2693,166 @@
     <item
         component="ComponentInfo{com.samsung.android.sm_cn/com.samsung.android.sm.ui.cstyleboard.SmartManagerDashBoardActivity}"
         drawable="samsung_smart_manager" />
+
+    <!-- 2017.04.07 -->
+    <item
+        component="ComponentInfo{com.meizu.media.gallery/com.meizu.media.gallery.GalleryActivity}"
+        drawable="gallery" />
+    <item
+        component="ComponentInfo{com.meizu.customizecenter/com.meizu.customizecenter.CustomizeCenterActivity}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.huawei.vassistant/com.huawei.vassistant.ui.VAssistantActivity}"
+        drawable="voiceassist" />
+    <item
+        component="ComponentInfo{com.flarejune.perfectcolorbar.kk/com.flarejune.perfectcolorbar.kk.ui.actMain}"
+        drawable="perfectcolorbar" />
+    <item
+        component="ComponentInfo{com.iqoo.secure/com.iqoo.secure.MainGuideActivity}"
+        drawable="security" />
+    <item
+        component="ComponentInfo{com.zui.safecenter/com.lenovo.safecenter.MainTab.LeSafeMainActivity}"
+        drawable="security" />
+    <item
+        component="ComponentInfo{com.android.BBKClock/com.android.BBKClock.Timer}"
+        drawable="clock" />
+    <item
+        component="ComponentInfo{mark.qrcode/mark.qrcode.CaptureActivity}"
+        drawable="scan" />
+    <item
+        component="ComponentInfo{com.zui.calendar/com.zui.calendar.MainActivity}"
+        drawable="calendar" />
+    <item
+        component="ComponentInfo{com.kimcy929.screenrecorder/com.kimcy929.screenrecorder.activity.MainActivity}"
+        drawable="screencast" />
+    <item
+        component="ComponentInfo{ml.puredark.hviewer/ml.puredark.hviewer.ui.activities.LockActivity}"
+        drawable="e_hviewer" />
+    <item
+        component="ComponentInfo{com.zui.notes/com.zui.notes.MainActivity}"
+        drawable="note" />
+    <item
+        component="ComponentInfo{com.zui.recorder/com.zui.recorder.SoundRecorder}"
+        drawable="soundrecorder" />
+    <item
+        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainActivityWithRoundIcon}"
+        drawable="icebox" />
+    <item
+        component="ComponentInfo{com.zui.calculator/com.zui.calculator.Calculator}"
+        drawable="calculator" />
+    <item
+        component="ComponentInfo{com.zui.compass/com.zui.compass.CompassActivity}"
+        drawable="compass" />
+    <item
+        component="ComponentInfo{oh.yeah.baiduyun/oh.yeah.baiduyun.MainActivity}"
+        drawable="shanzhaiyun" />
+    <item
+        component="ComponentInfo{com.android.music/com.android.music.ui.MusicBrowserActivity}"
+        drawable="music" />
+    <item
+        component="ComponentInfo{com.zui.deskclock/com.zui.deskclock.DeskClock}"
+        drawable="clock" />
+    <item
+        component="ComponentInfo{com.zui.filemanager/com.zui.filemanager.MainActivity}"
+        drawable="filemanager" />
+    <item
+        component="ComponentInfo{com.taobao.htao.android/com.taobao.htao.android.common.activity.MainDockerActivity}"
+        drawable="taobao" />
+    <item
+        component="ComponentInfo{com.iflytek.cmcc/com.iflytek.viafly.SplashActivity}"
+        drawable="voiceassist" />
+    <item
+        component="ComponentInfo{com.zui.launcher/com.zui.launcher.Launcher}"
+        drawable="home_launcher" />
+    <item
+        component="ComponentInfo{com.zui.ota/com.zui.ota.ui.MainActivity}"
+        drawable="update" />
+    <item
+        component="ComponentInfo{com.zui.browser/com.lenovo.browser.BrowserActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.zui.cameragallery/com.zui.cameragallery.gallery.app.GalleryActivity}"
+        drawable="gallery" />
+    <item
+        component="ComponentInfo{com.fenbi.android.solar/com.fenbi.android.solar.activity.SplashActivity}"
+        drawable="solar" />
+    <item
+        component="ComponentInfo{cmb.pb/cmb.pb.ui.PBInitActivity}"
+        drawable="cmb_pb" />
+    <item
+        component="ComponentInfo{com.estrongs.android.pop/com.estrongs.android.pop.app.openscreenad.NewSplashActivity}"
+        drawable="es_explorer" />
+    <item
+        component="ComponentInfo{com.baidu.homework/com.baidu.homework.activity.init.InitActivity}"
+        drawable="baidu_homework" />
+    <item
+        component="ComponentInfo{com.linecorp.b612.android/com.linecorp.b612.android.activity.ActivityCamera}"
+        drawable="b612" />
+    <item
+        component="ComponentInfo{com.xiaomi.router/com.xiaomi.router.module.splash.SplashActivity}"
+        drawable="xiaomi_router" />
+    <item
+        component="ComponentInfo{com.zjp.translateit/com.zjp.translateit.activity.MainActivity}"
+        drawable="zjp_translateit" />
+    <item
+        component="ComponentInfo{com.grarak.kerneladiutor/com.grarak.kerneladiutor.activities.StartActivity}"
+        drawable="kerneladiutor" />
+    <item
+        component="ComponentInfo{com.dotamax.app/com.max.app.module.welcome.WelcomeActivity}"
+        drawable="dotamax" />
+    <item
+        component="ComponentInfo{com.youdao.note/com.youdao.note.v4.MainActivity}"
+        drawable="youdaonote" />
+    <item
+        component="ComponentInfo{com.xiaomi.shop/com.xiaomi.shop.activity.MainTabActivity}"
+        drawable="xiaomi_shop" />
+    <item
+        component="ComponentInfo{com.pplive.androidphone/com.pplive.androidphone.ui.FirstActivity}"
+        drawable="pplive_androidphone" />
+    <item
+        component="ComponentInfo{com.bocharov.xposed.fsbi/com.bocharov.xposed.fsbi.settings.Main}"
+        drawable="fsbi" />
+    <item
+        component="ComponentInfo{com.smile.gifmaker/com.yxcorp.gifshow.HomeActivity}"
+        drawable="kuaishou" />
+    <item
+        component="ComponentInfo{com.hunantv.imgo.activity/com.hunantv.imgo.activity.MainActivity}"
+        drawable="imgo" />
+    <item
+        component="ComponentInfo{com.wandoujia/com.wandoujia.ripple.activity.HomeActivity}"
+        drawable="wandoujia" />
+    <item
+        component="ComponentInfo{com.taobao.trip/com.alipay.mobile.quinox.LauncherActivity}"
+        drawable="taobao_trip" />
+    <item
+        component="ComponentInfo{com.microsoft.cortana/com.microsoft.bing.dss.SplashActivity}"
+        drawable="cortana" />
+    <item
+        component="ComponentInfo{com.youdao.translator/com.youdao.translator.activity.LaunchActivity}"
+        drawable="youdao_translator" />
+    <item
+        component="ComponentInfo{com.didi.echo/com.didi.echo.bussiness.splash.SplashActivity}"
+        drawable="uber" />
+    <item
+        component="ComponentInfo{com.miHoYo.enterprise.NGHSoD/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.tencent.tmgp.bh3/com.tencent.tmgp.bh3.AgentMain}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.uc/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.bilibili/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.nearme.gamecenter/com.miHoYo.bh3.nearme.gamecenter.OppoSDKUtils}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.mz/com.miHoYo.bh3.mz.meizusdk}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.wdj/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
+        drawable="bh3" />
 
 </resources>

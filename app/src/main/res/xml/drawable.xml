@@ -361,5 +361,27 @@
     <item drawable="trace_wechat" />
     <item drawable="uu" />
     <item drawable="youdao_hanyu" />
+    <item drawable="acfun" />
+    <item drawable="b612" />
+    <item drawable="baidu_homework" />
+    <item drawable="bh3" />
+    <item drawable="cmb_pb" />
+    <item drawable="cortana" />
+    <item drawable="dotamax" />
+    <item drawable="fgo" />
+    <item drawable="fsbi" />
+    <item drawable="imgo" />
+    <item drawable="kerneladiutor" />
+    <item drawable="kuaishou" />
+    <item drawable="pplive_androidphone" />
+    <item drawable="solar" />
+    <item drawable="taobao_trip" />
+    <item drawable="uber" />
+    <item drawable="wandoujia" />
+    <item drawable="xiaomi_router" />
+    <item drawable="xiaomi_shop" />
+    <item drawable="youdaonote" />
+    <item drawable="youdao_translator" />
+    <item drawable="zjp_translateit" />
 
 </resources>
