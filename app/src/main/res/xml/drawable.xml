@@ -2,7 +2,7 @@
 <resources>
 
     <version>1</version>
-
+	
     <item drawable="_10086" />
     <item drawable="adm" />
     <item drawable="appstore" />
@@ -167,13 +167,11 @@
     <item drawable="trackid" />
     <item drawable="twitter" />
     <item drawable="via" />
-    <item drawable="wangyiyun" />
     <item drawable="xunlei" />
     <item drawable="youku" />
     <item drawable="zhanqitv" />
     <item drawable="acfun" />
     <item drawable="apkpure" />
-    <item drawable="appstore" />
     <item drawable="baidu_map" />
     <item drawable="dida" />
     <item drawable="dongqiudi" />
@@ -263,7 +261,6 @@
     <item drawable="dirclean" />
     <item drawable="eudic" />
     <item drawable="flashlight" />
-    <item drawable="gmail" />
     <item drawable="ifont" />
     <item drawable="makeimageqin" />
     <item drawable="meituxiuxiu" />
@@ -272,7 +269,6 @@
     <item drawable="oneplus_market" />
     <item drawable="qqguanjia" />
     <item drawable="qq_filemanager" />
-    <item drawable="samsung_pay" />
     <item drawable="sanpseed" />
     <item drawable="screencast" />
     <item drawable="shanzhaiyun" />
@@ -317,8 +313,6 @@
     <item drawable="nuomi" />
     <item drawable="ppiicc" />
     <item drawable="qt_qtl" />
-    <item drawable="samsung_gallery" />
-    <item drawable="screencast" />
     <item drawable="shanbay" />
     <item drawable="smzdm" />
     <item drawable="speedtest" />
@@ -361,14 +355,12 @@
     <item drawable="trace_wechat" />
     <item drawable="uu" />
     <item drawable="youdao_hanyu" />
-    <item drawable="acfun" />
     <item drawable="b612" />
     <item drawable="baidu_homework" />
     <item drawable="bh3" />
     <item drawable="cmb_pb" />
     <item drawable="cortana" />
     <item drawable="dotamax" />
-    <item drawable="fgo" />
     <item drawable="fsbi" />
     <item drawable="imgo" />
     <item drawable="kerneladiutor" />
@@ -383,5 +375,5 @@
     <item drawable="youdaonote" />
     <item drawable="youdao_translator" />
     <item drawable="zjp_translateit" />
-
+	
 </resources>
