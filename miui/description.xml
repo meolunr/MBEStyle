@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<version><![CDATA[1.0]]></version>
+	<uiVersion>6</uiVersion>
+	
+	<author><![CDATA[iAcn]]></author>
+	<designer><![CDATA[幼幼保护协会]]></designer>
+	
+	<title><![CDATA[MBE Style 图标包]]></title>
+	<description><![CDATA[MBE Style 图标包]]></description>
+	
+	<authors>
+		<author locale="zh_CN"><![CDATA[iAcn]]></author>
+	</authors>
+	<designers>
+		<designer locale="zh_CN"><![CDATA[幼幼保护协会]]></designer>
+	</designers>
+	
+	<titles>
+		<title locale="zh_CN"><![CDATA[MBE Style 图标包]]></title>
+	</titles>
+	<descriptions>
+		<description locale="zh_CN"><![CDATA[MBE Style 图标包]]></description>
+	</descriptions>
+</theme>
