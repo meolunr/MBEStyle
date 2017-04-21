@@ -1668,9 +1668,6 @@
         component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}"
         drawable="gallery" />
     <item
-        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.home.HomeFileActivity}"
-        drawable="shanzhaiyun" />
-    <item
         component="ComponentInfo{in.zhaoj.shadowsocksr/com.github.shadowsocks.Shadowsocks}"
         drawable="shadowsocksr" />
     <item
@@ -1990,9 +1987,6 @@
         component="ComponentInfo{com.cyanogenmod.eleven/com.cyanogenmod.eleven.ui.activities.HomeActivity}"
         drawable="music" />
     <item
-        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.home.DrawerHomeActivity}"
-        drawable="shanzhaiyun" />
-    <item
         component="ComponentInfo{com.One.WoodenLetter/com.androlua.Welcome}"
         drawable="muhan" />
     <item
@@ -2156,7 +2150,7 @@
         drawable="music" />
     <item
         component="ComponentInfo{com.lenovo.music/com.lenovo.music.ui.LeAppLoadingActivity}"
-        drawable="shanzhaiyun" />
+        drawable="music" />
     <item
         component="ComponentInfo{com.huawei.android.hwouc/com.huawei.android.hwouc.ui.activities.MainEntranceActivity}"
         drawable="update" />
@@ -2744,9 +2738,6 @@
         component="ComponentInfo{com.zui.compass/com.zui.compass.CompassActivity}"
         drawable="compass" />
     <item
-        component="ComponentInfo{oh.yeah.baiduyun/oh.yeah.baiduyun.MainActivity}"
-        drawable="shanzhaiyun" />
-    <item
         component="ComponentInfo{com.android.music/com.android.music.ui.MusicBrowserActivity}"
         drawable="music" />
     <item
@@ -3058,9 +3049,6 @@
         component="ComponentInfo{com.android2.calculator3/com.xlythe.calculator.material.Theme.Orange}"
         drawable="calculator" />
     <item
-        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.splash.SplashActivity}"
-        drawable="shanzhaiyun" />
-    <item
         component="ComponentInfo{com.netease.yanxuan/com.netease.yanxuan.module.splash.activity.SplashActivity}"
         drawable="netease_yanxuan" />
     <item
@@ -3252,5 +3240,19 @@
     <item
         component="ComponentInfo{com.qq.ac.android/com.qq.ac.android.view.activity.SplashActivity}"
         drawable="tencent_manga" />
+
+    <!-- 山寨云 -->
+    <item
+        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.home.DrawerHomeActivity}"
+        drawable="shanzhaiyun" />
+    <item
+        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.home.HomeFileActivity}"
+        drawable="shanzhaiyun" />
+    <item
+        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.splash.SplashActivity}"
+        drawable="shanzhaiyun" />
+    <item
+        component="ComponentInfo{oh.yeah.baiduyun/oh.yeah.baiduyun.MainActivity}"
+        drawable="shanzhaiyun" />
 
 </resources>
