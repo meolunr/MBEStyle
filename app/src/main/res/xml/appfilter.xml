@@ -2537,7 +2537,7 @@
         component="ComponentInfo{com.microsoft.office.powerpoint/com.microsoft.office.apphost.LaunchActivity}"
         drawable="microsoft_office_powerpoint" />
     <item
-        component="ComponentInfo{bingdic.android.activity/bingdic.android.activity.SplashscreenActivitySplashscreenActivitySplashscreenActivity}"
+        component="ComponentInfo{bingdic.android.activity/bingdic.android.activity.SplashscreenActivity}"
         drawable="microsoft_bing_dict" />
     <item
         component="ComponentInfo{com.tencent.qt.qtl/com.tencent.qt.qtl.activity.main.LauncherActivity}"
