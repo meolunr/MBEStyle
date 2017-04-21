@@ -138,6 +138,7 @@ public class IconShowPresenter {
 
     private String findPackageName(String component) {
         try {
+            System.out.println("------------ " + component);
             return component.split("/")[0].split("\\{")[1];
         } catch (Exception e) {
             e.printStackTrace();

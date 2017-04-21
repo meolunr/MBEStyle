@@ -2,7 +2,7 @@
 <resources>
 
     <version>1</version>
-	
+
     <item drawable="_10086" />
     <item drawable="adm" />
     <item drawable="appstore" />
@@ -375,5 +375,43 @@
     <item drawable="youdaonote" />
     <item drawable="youdao_translator" />
     <item drawable="zjp_translateit" />
-	
+    <item drawable="adaway" />
+    <item drawable="adobe_flash" />
+    <item drawable="androidesk" />
+    <item drawable="baidu_waimai" />
+    <item drawable="bikamanga" />
+    <item drawable="blizzard_bma" />
+    <item drawable="bubble" />
+    <item drawable="bukamanhua" />
+    <item drawable="busybox" />
+    <item drawable="caoliu" />
+    <item drawable="dingding" />
+    <item drawable="fooview" />
+    <item drawable="google_music" />
+    <item drawable="gravitybox" />
+    <item drawable="greenvpn" />
+    <item drawable="huawei_appstore" />
+    <item drawable="huluxia3" />
+    <item drawable="iflat" />
+    <item drawable="jiakao" />
+    <item drawable="kingroot" />
+    <item drawable="kuaiya" />
+    <item drawable="letv" />
+    <item drawable="lockscreen" />
+    <item drawable="lofter" />
+    <item drawable="miuibbs" />
+    <item drawable="netease_edu" />
+    <item drawable="netease_vopen" />
+    <item drawable="netease_yanxuan" />
+    <item drawable="originalwish" />
+    <item drawable="photoeditor" />
+    <item drawable="pixlr" />
+    <item drawable="rrmj" />
+    <item drawable="super_calculator" />
+    <item drawable="taskerm" />
+    <item drawable="vue" />
+    <item drawable="wandoujia2" />
+    <item drawable="wikipedia" />
+    <item drawable="zaker" />
+
 </resources>
