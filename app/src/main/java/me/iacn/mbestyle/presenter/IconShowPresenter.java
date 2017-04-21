@@ -88,8 +88,10 @@ public class IconShowPresenter {
                             IconBean bean = new IconBean();
 
                             String component = xml.getAttributeValue(null, "component");
-                            bean.iconPkgName = findPackageName(component);
-
+                            if (!component.startsWith(":")) {
+                                // 跳过 Component 系统图标模糊匹配
+                                bean.iconPkgName = findPackageName(component);
+                            }
                             String iconName = xml.getAttributeValue(null, "drawable");
                             bean.id = mView.getResources().getIdentifier(
                                     iconName, "drawable", BuildConfig.APPLICATION_ID);
@@ -138,7 +140,6 @@ public class IconShowPresenter {
 
     private String findPackageName(String component) {
         try {
-            System.out.println("------------ " + component);
             return component.split("/")[0].split("\\{")[1];
         } catch (Exception e) {
             e.printStackTrace();
