@@ -19,6 +19,9 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
 
+    private static final int TYPE_ITEM_WALLPAPER = 7;
+    private static final int TYPE_ITEM_LAUNCHER = 103;
+
     private int[] mLauncherIcons;
     private String[] mLauncherNames;
     private RequestManager mGlide;
@@ -32,8 +35,10 @@ public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
 
     @Override
     public ApplyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        ApplyHolder holder = new ApplyHolder(LayoutInflater.from(
-                parent.getContext()).inflate(R.layout.item_apply_launcher, parent, false));
+        int layoutId = viewType == TYPE_ITEM_WALLPAPER ?
+                R.layout.item_apply_wallpaper : R.layout.item_apply_launcher;
+
+        ApplyHolder holder = new ApplyHolder(LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false));
         holder.mListener = mListener;
 
         return holder;
@@ -48,6 +53,11 @@ public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
     @Override
     public int getItemCount() {
         return mLauncherIcons.length;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position == 0 ? TYPE_ITEM_WALLPAPER : TYPE_ITEM_LAUNCHER;
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
