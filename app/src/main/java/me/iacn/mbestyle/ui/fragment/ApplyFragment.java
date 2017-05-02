@@ -38,8 +38,15 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
     @Override
     protected void setListener() {
-        rvLauncher.setHasFixedSize(true);
-        rvLauncher.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        final GridLayoutManager manager = new GridLayoutManager(getActivity(), 2);
+        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+                return position == 0 ? manager.getSpanCount() : 1;
+            }
+        });
+
+        rvLauncher.setLayoutManager(manager);
     }
 
     @Override
