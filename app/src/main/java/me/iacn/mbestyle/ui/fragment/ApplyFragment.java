@@ -14,6 +14,7 @@ import com.bumptech.glide.RequestManager;
 
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.ui.activity.WallpaperActivity;
 import me.iacn.mbestyle.ui.adapter.ApplyAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
@@ -24,7 +25,7 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
-    private RecyclerView rvLauncher;
+    private RecyclerView rvApply;
 
     @Override
     protected int getContentView() {
@@ -33,7 +34,7 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
     @Override
     protected void findView() {
-        rvLauncher = (RecyclerView) findViewById(R.id.rv_launcher);
+        rvApply = (RecyclerView) findViewById(R.id.rv_wallpaper);
     }
 
     @Override
@@ -46,7 +47,7 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
             }
         });
 
-        rvLauncher.setLayoutManager(manager);
+        rvApply.setLayoutManager(manager);
     }
 
     @Override
@@ -72,14 +73,14 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
         ApplyAdapter adapter = new ApplyAdapter(launcherIcons, launcherNames, glide);
         adapter.setOnItemClickListener(this);
 
-        rvLauncher.setAdapter(adapter);
+        rvApply.setAdapter(adapter);
     }
 
     @Override
     public void onItemClick(View itemView, int position) {
         switch (position) {
             case 0:
-                Toast.makeText(getActivity(), "设置壁纸", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), WallpaperActivity.class));
                 break;
             case 1:
                 NovaLauncher();
