@@ -6,13 +6,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        style="@style/ToolbarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        app:title="@string/app_title"
-        app:titleTextAppearance="@style/TitleStyle" />
+    <include layout="@layout/inclue_toolbar" />
 
     <FrameLayout
         android:id="@+id/fl_content"
