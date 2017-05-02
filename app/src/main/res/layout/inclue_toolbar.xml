@@ -5,5 +5,6 @@
     style="@style/ToolbarStyle"
     android:layout_width="match_parent"
     android:layout_height="?actionBarSize"
+    android:elevation="2dp"
     app:title="@string/app_title"
     app:titleTextAppearance="@style/TitleStyle" />
