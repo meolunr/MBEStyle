@@ -56,7 +56,10 @@ public class RequestPresenter {
                     if (xml.getEventType() == XmlPullParser.START_TAG) {
                         if (xml.getName().startsWith("item")) {
                             String component = xml.getAttributeValue(null, "component");
-                            adaptedActivitySet.add(findActivityName(component));
+                            if (!component.startsWith(":")) {
+                                // 跳过 Component 系统图标模糊匹配
+                                adaptedActivitySet.add(findActivityName(component));
+                            }
                         }
                     }
                     xml.next();
