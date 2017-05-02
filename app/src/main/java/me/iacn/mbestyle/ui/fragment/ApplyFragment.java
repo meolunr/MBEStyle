@@ -14,7 +14,7 @@ import com.bumptech.glide.RequestManager;
 
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
-import me.iacn.mbestyle.ui.adapter.LauncherAdapter;
+import me.iacn.mbestyle.ui.adapter.ApplyAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
@@ -22,13 +22,13 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
  * Emali iAcn0301@foxmail.com
  */
 
-public class LauncherFragment extends BaseFragment implements OnItemClickListener {
+public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
     private RecyclerView rvLauncher;
 
     @Override
     protected int getContentView() {
-        return R.layout.fragment_launcher;
+        return R.layout.fragment_apply;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class LauncherFragment extends BaseFragment implements OnItemClickListene
         String[] launcherNames = getResources().getStringArray(R.array.launchers);
         RequestManager glide = Glide.with(this);
 
-        LauncherAdapter adapter = new LauncherAdapter(launcherIcons, launcherNames, glide);
+        ApplyAdapter adapter = new ApplyAdapter(launcherIcons, launcherNames, glide);
         adapter.setOnItemClickListener(this);
 
         rvLauncher.setAdapter(adapter);
