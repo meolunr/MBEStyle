@@ -35,10 +35,16 @@ public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
 
     @Override
     public ApplyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        int layoutId = viewType == TYPE_ITEM_WALLPAPER ?
-                R.layout.item_apply_wallpaper : R.layout.item_apply_launcher;
+        ApplyHolder holder;
 
-        ApplyHolder holder = new ApplyHolder(LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false));
+        if (viewType == TYPE_ITEM_WALLPAPER) {
+            holder = new ApplyHolder(LayoutInflater.from(
+                    parent.getContext()).inflate(R.layout.item_apply_wallpaper, parent, false), true);
+        } else {
+            holder = new ApplyHolder(LayoutInflater.from(
+                    parent.getContext()).inflate(R.layout.item_apply_launcher, parent, false), false);
+        }
+
         holder.mListener = mListener;
 
         return holder;
@@ -46,13 +52,16 @@ public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
 
     @Override
     public void onBindViewHolder(ApplyHolder holder, int position) {
+        if (position == 0) return;
+        position--;
+
         mGlide.load(mLauncherIcons[position]).into(holder.ivLauncherIcon);
         holder.tvLauncherName.setText(mLauncherNames[position]);
     }
 
     @Override
     public int getItemCount() {
-        return mLauncherIcons.length;
+        return mLauncherIcons.length + 1;
     }
 
     @Override
@@ -71,8 +80,14 @@ class ApplyHolder extends RecyclerView.ViewHolder implements View.OnClickListene
     TextView tvLauncherName;
     OnItemClickListener mListener;
 
-    ApplyHolder(View itemView) {
+    ApplyHolder(View itemView, boolean isHeaderView) {
         super(itemView);
+
+        if (isHeaderView) {
+            itemView.setOnClickListener(this);
+            return;
+        }
+
         ivLauncherIcon = (ImageView) itemView.findViewById(R.id.iv_launcher_icon);
         tvLauncherName = (TextView) itemView.findViewById(R.id.tv_launcher_name);
         itemView.setOnClickListener(this);
