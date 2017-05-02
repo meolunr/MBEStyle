@@ -413,5 +413,28 @@
     <item drawable="wandoujia2" />
     <item drawable="wikipedia" />
     <item drawable="zaker" />
+    <item drawable="_12123" />
+    <item drawable="androidterm" />
+    <item drawable="appsettings" />
+    <item drawable="baidu" />
+    <item drawable="boc" />
+    <item drawable="cmclean" />
+    <item drawable="dangle" />
+    <item drawable="dongmanzhijia" />
+    <item drawable="doudizhu" />
+    <item drawable="fategowiki" />
+    <item drawable="majiang" />
+    <item drawable="microsoft_onedrive" />
+    <item drawable="microsoft_onenote" />
+    <item drawable="mix" />
+    <item drawable="mokee_center" />
+    <item drawable="nga" />
+    <item drawable="playstation" />
+    <item drawable="soul_knight" />
+    <item drawable="s_help" />
+    <item drawable="vainglory" />
+    <item drawable="xbrowser" />
+    <item drawable="xmvideoplayer" />
+    <item drawable="youdao_dict" />
 
 </resources>
