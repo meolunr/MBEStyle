@@ -79,38 +79,42 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
     public void onItemClick(View itemView, int position) {
         switch (position) {
             case 0:
-                NovaLauncher();
+                Toast.makeText(getActivity(), "设置壁纸", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
-                ActionLauncher();
+                NovaLauncher();
                 break;
             case 2:
-                AdwLauncher();
+                ActionLauncher();
                 break;
             case 3:
-                ApexLauncher();
+                AdwLauncher();
                 break;
             case 4:
-                AtomLauncher();
+                ApexLauncher();
+                break;
             case 5:
-                AviateLauncher();
+                AtomLauncher();
                 break;
             case 6:
-                GoLauncher();
+                AviateLauncher();
                 break;
             case 7:
-                KKLauncher();
+                GoLauncher();
                 break;
             case 8:
-                LgHomeLauncher();
+                KKLauncher();
                 break;
             case 9:
-                NextLauncher();
+                LgHomeLauncher();
                 break;
             case 10:
-                SmartLauncher();
+                NextLauncher();
                 break;
             case 11:
+                SmartLauncher();
+                break;
+            case 12:
                 SoloLauncher();
                 break;
         }
