@@ -17,30 +17,30 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
  * Emali iAcn0301@foxmail.com
  */
 
-public class LauncherAdapter extends RecyclerView.Adapter<LauncherHolder> {
+public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
 
     private int[] mLauncherIcons;
     private String[] mLauncherNames;
     private RequestManager mGlide;
     private OnItemClickListener mListener;
 
-    public LauncherAdapter(int[] mLauncherIcons, String[] mLauncherNames, RequestManager glide) {
+    public ApplyAdapter(int[] mLauncherIcons, String[] mLauncherNames, RequestManager glide) {
         this.mLauncherIcons = mLauncherIcons;
         this.mLauncherNames = mLauncherNames;
         this.mGlide = glide;
     }
 
     @Override
-    public LauncherHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        LauncherHolder holder = new LauncherHolder(LayoutInflater.from(
-                parent.getContext()).inflate(R.layout.item_launcher, parent, false));
+    public ApplyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        ApplyHolder holder = new ApplyHolder(LayoutInflater.from(
+                parent.getContext()).inflate(R.layout.item_apply_launcher, parent, false));
         holder.mListener = mListener;
 
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(LauncherHolder holder, int position) {
+    public void onBindViewHolder(ApplyHolder holder, int position) {
         mGlide.load(mLauncherIcons[position]).into(holder.ivLauncherIcon);
         holder.tvLauncherName.setText(mLauncherNames[position]);
     }
@@ -55,13 +55,13 @@ public class LauncherAdapter extends RecyclerView.Adapter<LauncherHolder> {
     }
 }
 
-class LauncherHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+class ApplyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     ImageView ivLauncherIcon;
     TextView tvLauncherName;
     OnItemClickListener mListener;
 
-    LauncherHolder(View itemView) {
+    ApplyHolder(View itemView) {
         super(itemView);
         ivLauncherIcon = (ImageView) itemView.findViewById(R.id.iv_launcher_icon);
         tvLauncherName = (TextView) itemView.findViewById(R.id.tv_launcher_name);
