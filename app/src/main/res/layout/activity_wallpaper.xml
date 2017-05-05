@@ -5,13 +5,13 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <include layout="@layout/inclue_toolbar" />
+    <include layout="@layout/include_toolbar" />
 
     <android.support.v7.widget.RecyclerView
-        android:background="#ffeeee"
         android:id="@+id/rv_wallpaper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="4dp" />
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
 
 </LinearLayout>

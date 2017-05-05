@@ -20,7 +20,7 @@ public class ScreenUtils {
 
     public static int dip2px(Context context, float dip) {
         float density = context.getResources().getDisplayMetrics().density;
-        // 4.9 -> 4, 4.1 -> 4, 四舍五入
+        // 4.9 -> 4, 4.1 -> 4, 舍去小数
         int px = (int) (dip * density + 0.5f);
 
         return px;
