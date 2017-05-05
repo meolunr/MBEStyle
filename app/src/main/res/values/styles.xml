@@ -12,9 +12,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="ToolbarStyle" parent="Widget.Design.CollapsingToolbar">
+    <style name="ToolbarStyle" parent="@style/Widget.Design.CollapsingToolbar">
         <item name="android:background">?colorPrimary</item>
         <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <item name="colorControlNormal">#FFF</item>
     </style>
 
     <style name="TitleStyle" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded">

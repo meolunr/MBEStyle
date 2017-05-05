@@ -6,6 +6,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
 import com.bumptech.glide.Glide;
 
@@ -28,6 +30,11 @@ public class WallpaperActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wallpaper);
         StatusBarUtils.setColor(this, ContextCompat.getColor(this, R.color.colorPrimary));
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("请选择一张壁纸");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         rvWallpaper = (RecyclerView) findViewById(R.id.rv_wallpaper);
         rvWallpaper.setLayoutManager(new GridLayoutManager(this, 2));
 
@@ -41,5 +48,11 @@ public class WallpaperActivity extends AppCompatActivity {
         };
 
         rvWallpaper.setAdapter(new WallpaperAdapter(ids, Glide.with(this)));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
     }
 }
