@@ -8,11 +8,13 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.bumptech.glide.Glide;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.adapter.WallpaperAdapter;
+import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 import me.iacn.mbestyle.util.StatusBarUtils;
 
 /**
@@ -47,7 +49,14 @@ public class WallpaperActivity extends AppCompatActivity {
                 R.drawable.wallpaper_strawberry
         };
 
-        rvWallpaper.setAdapter(new WallpaperAdapter(ids, Glide.with(this)));
+        WallpaperAdapter adapter = new WallpaperAdapter(ids, Glide.with(this));
+        rvWallpaper.setAdapter(adapter);
+        adapter.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(View itemView, int position) {
+                System.out.println("ItemClick");
+            }
+        });
     }
 
     @Override

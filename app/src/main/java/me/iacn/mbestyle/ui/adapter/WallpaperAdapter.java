@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.RequestManager;
 
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 
 /**
  * Created by iAcn on 2017/5/2
@@ -19,6 +20,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperHolder> {
 
     private int[] mIds;
     private RequestManager mGlide;
+    private OnItemClickListener mListener;
 
     public WallpaperAdapter(int[] mIds, RequestManager glide) {
         this.mIds = mIds;
@@ -27,8 +29,11 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperHolder> {
 
     @Override
     public WallpaperHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new WallpaperHolder(LayoutInflater.from(
+        WallpaperHolder holder = new WallpaperHolder(LayoutInflater.from(
                 parent.getContext()).inflate(R.layout.item_wallpaper, parent, false));
+        holder.mListener = mListener;
+        return holder;
+
     }
 
     @Override
@@ -40,15 +45,27 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperHolder> {
     public int getItemCount() {
         return mIds.length;
     }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
 }
 
-class WallpaperHolder extends RecyclerView.ViewHolder {
+class WallpaperHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     ImageView imageView;
+    OnItemClickListener mListener;
 
     WallpaperHolder(View itemView) {
         super(itemView);
-
         imageView = (ImageView) itemView.findViewById(R.id.imageview);
+        itemView.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (mListener != null) {
+            mListener.onItemClick(v, getLayoutPosition());
+        }
     }
 }
