@@ -3434,4 +3434,129 @@
         component="ComponentInfo{com.pinguo.edit.sdk/us.pinguo.mix.modules.splash.SplashActivity}"
         drawable="mix" />
 
+    <!-- 2017.05.13 Add -->
+    <item
+        component="ComponentInfo{com.crossbowffs.nekosms/com.crossbowffs.nekosms.app.MainActivity}"
+        drawable="nekosms" />
+    <item
+        component="ComponentInfo{mark.notification/mark.notification.Main}"
+        drawable="tongzhitongzhi" />
+    <item
+        component="ComponentInfo{liubaoyua.customtext/liubaoyua.customtext.ui.AppListActivity}"
+        drawable="customtext" />
+    <item
+        component="ComponentInfo{com.javiersantos.mlmanager/com.javiersantos.mlmanager.activities.MainActivity}"
+        drawable="mlmanager" />
+    <item
+        component="ComponentInfo{chenmc.sms.code.helper/chenmc.smscodehelper.MainActivity}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{me.gitai.smscodehelper/me.gitai.smscodehelper.ui.MainPreferences}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{com.tencent.tmgp.cf/com.tencent.tmgp.cf.AFMainActivity}"
+        drawable="cf" />
+    <item
+        component="ComponentInfo{com.zuoxia.iconpack/com.zuoxia.iconpack.HomeActivity}"
+        drawable="cornerx" />
+    <item
+        component="ComponentInfo{kh.android.dir/kh.android.dir.ui.activities.CleanActivity}"
+        drawable="dirclean" />
+    <item
+        component="ComponentInfo{com.achievo.vipshop/com.achievo.vipshop.activity.LodingActivity}"
+        drawable="vipshop" />
+    <item
+        component="ComponentInfo{anabolicandroids.chanobol.reallysfw/anabolicandroids.chanobol.ui.boards.FavoritesActivity}"
+        drawable="chanobol" />
+    <item
+        component="ComponentInfo{com.dooba.iconnamereader/com.dooba.iconnamereader.IconNameReaderActivity}"
+        drawable="android_name" />
+    <item
+        component="ComponentInfo{com.ijinshan.browser_fast/com.ijinshan.browser.screen.SplashActivity}"
+        drawable="liebao_browser" />
+    <item
+        component="ComponentInfo{com.nfyg.hsbb/com.nfyg.hsbb.views.activities.CoverActivity}"
+        drawable="huashengditie" />
+    <item
+        component="ComponentInfo{cn.dxy.android.aspirin/cn.dxy.android.aspirin.ui.activity.StartupActivity}"
+        drawable="dingxiangyisheng" />
+    <item
+        component="ComponentInfo{com.taobao.etao/com.taobao.sns.activity.LaunchActivity}"
+        drawable="etao" />
+    <item
+        component="ComponentInfo{yyc.xk/yyc.xk.MainActivity}"
+        drawable="yyc_xk" />
+    <item
+        component="ComponentInfo{com.google.earth/com.google.earth.EarthActivity}"
+        drawable="google_earth" />
+    <item
+        component="ComponentInfo{com.jianshu.haruki/com.baiji.jianshu.account.SplashScreenActivity}"
+        drawable="jianshu" />
+    <item
+        component="ComponentInfo{com.sankuai.movie/com.sankuai.movie.welcome.Welcome}"
+        drawable="sankuai_movie" />
+    <item
+        component="ComponentInfo{com.xiachufang/com.xiachufang.activity.StartPageActivity}"
+        drawable="xiachufang" />
+    <item
+        component="ComponentInfo{me.iacn.bilineat/me.iacn.bilineat.ui.MainActivity-Alias}"
+        drawable="android_app" />
+    <item
+        component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.NewGreenifyActivity}"
+        drawable="greenify" />
+    <item
+        component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.HibernateAndLockScreen}"
+        drawable="greenify_sleep" />
+    <item
+        component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyShortcut}"
+        drawable="greenify_sleep" />
+    <item
+        component="ComponentInfo{com.flarejune.perfectcolorbar/com.flarejune.perfectcolorbar.ui.actMain}"
+        drawable="perfectcolorbar" />
+    <item
+        component="ComponentInfo{com.iwoll.weather/com.iwoll.weather.activity.SplashActivity}"
+        drawable="iwollweather" />
+    <item
+        component="ComponentInfo{com.meizu.flyme.gamecenter/com.meizu.flyme.gamecenter.activity.GameMainActivity}"
+        drawable="game" />
+    <item
+        component="ComponentInfo{me.gfuil.bmap/me.gfuil.bmap.activity.MainActivity}"
+        drawable="bmap" />
+    <item
+        component="ComponentInfo{com.psyone.brainmusic/com.psyone.brainmusic.SplashActivity}"
+        drawable="brainmusic" />
+    <item
+        component="ComponentInfo{com.google.android.apps.wallpaper/com.google.android.apps.wallpaper.picker.CategoryPickerActivity}"
+        drawable="pixel_wallpaper" />
+    <item
+        component="ComponentInfo{com.qtfreet.musicuu/com.qtfreet.musicuu.ui.activity.MainActivity}"
+        drawable="music_helper" />
+    <item
+        component="ComponentInfo{com.gombosdev.ampere/com.gombosdev.ampere.MainActivity}"
+        drawable="ampere" />
+    <item
+        component="ComponentInfo{com.changba/com.changba.splash.Welcome}"
+        drawable="changba" />
+    <item
+        component="ComponentInfo{com.pandecheng.iconpack/com.by_syk.lib.nanoiconpack.MainActivity}"
+        drawable="pdc" />
+    <item
+        component="ComponentInfo{com.wandoujia.eyepetizer/com.wandoujia.eyepetizer.ui.activity.LandingActivity}"
+        drawable="kaiyan" />
+    <item
+        component="ComponentInfo{com.Qunar/com.mqunar.splash.SplashActivity}"
+        drawable="qunaer" />
+    <item
+        component="ComponentInfo{com.wenba.bangbang/com.wenba.bangbang.activity.CoverActivity}"
+        drawable="xuebajun" />
+    <item
+        component="ComponentInfo{wangdaye.com.geometricweather/wangdaye.com.geometricweather.view.activity.MainActivity}"
+        drawable="geometricweather" />
+    <item
+        component="ComponentInfo{com.netease.edu.ucmooc/com.netease.edu.ucmooc.activity.ActivityWelcome}"
+        drawable="netease_ucmooc" />
+    <item
+        component="ComponentInfo{com.kuaikan.comic/com.kuaikan.comic.ui.LaunchActivity}"
+        drawable="kuaikan_manga" />
+
 </resources>
