@@ -1,16 +1,13 @@
 package me.iacn.mbestyle.presenter;
 
 import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.content.res.XmlResourceParser;
 
 import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import io.reactivex.BackpressureStrategy;
@@ -36,11 +33,9 @@ import me.iacn.mbestyle.util.PackageUtils;
 public class IconShowPresenter {
 
     private IconShowFragment mView;
-    private PackageManager mPkgManager;
 
     public IconShowPresenter(IconShowFragment view) {
         mView = view;
-        mPkgManager = mView.getActivity().getPackageManager();
     }
 
     public void getAllIcons() {
@@ -115,22 +110,18 @@ public class IconShowPresenter {
                 .map(new Function<List<IconBean>, List<IconBean>>() {
                     @Override
                     public List<IconBean> apply(@NonNull List<IconBean> list) throws Exception {
-                        Map<String, ApplicationInfo> appPkgNames = getAppPkgNames();
+                        Set<String> appPkgNames = getAppPkgNames();
 
                         List<IconBean> newList = new ArrayList<>();
-                        Set<Integer> tempSet = new HashSet<>();
+                        Set<String> tempSet = new HashSet<>();
 
                         for (IconBean bean : list) {
-                            int drawableId = bean.id;
-                            String iconPkgName = bean.iconPkgName;
+                            String iconName = bean.name;
 
                             // 排除重复图标
-                            if (appPkgNames.keySet().contains(iconPkgName) && !tempSet.contains(drawableId)) {
-                                // 更新 Icon 名为实际安装的应用名
-                                bean.name = appPkgNames.get(iconPkgName).loadLabel(mPkgManager).toString();
-
+                            if (appPkgNames.contains(bean.iconPkgName) && !tempSet.contains(iconName)) {
                                 newList.add(bean);
-                                tempSet.add(drawableId);
+                                tempSet.add(iconName);
                             }
                         }
 
@@ -156,15 +147,15 @@ public class IconShowPresenter {
         }
     }
 
-    private Map<String, ApplicationInfo> getAppPkgNames() {
+    private Set<String> getAppPkgNames() {
         List<ApplicationInfo> apps = PackageUtils.getAllApp(mView.getActivity());
-        Map<String, ApplicationInfo> map = new HashMap<>();
+        Set<String> set = new HashSet<>();
 
         for (ApplicationInfo info : apps) {
-            map.put(info.packageName, info);
+            set.add(info.packageName);
         }
 
-        return map;
+        return set;
     }
 
     /**
