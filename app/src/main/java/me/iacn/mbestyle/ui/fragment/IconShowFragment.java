@@ -30,6 +30,8 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
     private IconShowPresenter mPresenter;
     private List<IconBean> mIcons;
 
+    private boolean mShowAllIcons;
+
     @Override
     protected int getContentView() {
         return R.layout.fragment_show_icon;
@@ -49,10 +51,12 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
     @Override
     protected void initData() {
         mPresenter = new IconShowPresenter(this);
-
         Bundle bundle = getArguments();
+
         if (bundle != null) {
-            if (getArguments().getBoolean("ifShowAllIcons", false)) {
+            mShowAllIcons = bundle.getBoolean("ifShowAllIcons", false);
+
+            if (mShowAllIcons) {
                 mPresenter.getAllIcons();
             } else {
                 mPresenter.getAdaptedIcons();
@@ -82,6 +86,11 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
         Intent intent = new Intent(getActivity(), IconViewActivity.class);
         intent.putExtra("icon_name", bean.name);
         intent.putExtra("resource_id", bean.id);
+
+        if (!mShowAllIcons) {
+            // 已适配 Fragment，传入包名
+            intent.putExtra("package_name", bean.iconPkgName);
+        }
 
         ActivityOptionsCompat options = ActivityOptionsCompat
                 .makeSceneTransitionAnimation(getActivity(), itemView, "dialog_icon");
