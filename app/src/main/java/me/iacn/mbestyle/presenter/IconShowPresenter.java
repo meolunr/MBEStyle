@@ -115,17 +115,20 @@ public class IconShowPresenter {
                 .map(new Function<List<IconBean>, List<IconBean>>() {
                     @Override
                     public List<IconBean> apply(@NonNull List<IconBean> list) throws Exception {
-                        Map<String, String> appPkgNames = getAppPkgNames();
+                        Map<String, ApplicationInfo> appPkgNames = getAppPkgNames();
 
                         List<IconBean> newList = new ArrayList<>();
                         Set<Integer> tempSet = new HashSet<>();
 
                         for (IconBean bean : list) {
                             int drawableId = bean.id;
+                            String iconPkgName = bean.iconPkgName;
 
                             // 排除重复图标
-                            if (appPkgNames.keySet().contains(bean.iconPkgName) && !tempSet.contains(drawableId)) {
-                                bean.name = appPkgNames.get(bean.iconPkgName);
+                            if (appPkgNames.keySet().contains(iconPkgName) && !tempSet.contains(drawableId)) {
+                                // 更新 Icon 名为实际安装的应用名
+                                bean.name = appPkgNames.get(iconPkgName).loadLabel(mPkgManager).toString();
+
                                 newList.add(bean);
                                 tempSet.add(drawableId);
                             }
@@ -153,12 +156,12 @@ public class IconShowPresenter {
         }
     }
 
-    private Map<String, String> getAppPkgNames() {
+    private Map<String, ApplicationInfo> getAppPkgNames() {
         List<ApplicationInfo> apps = PackageUtils.getAllApp(mView.getActivity());
-        Map<String, String> map = new HashMap<>();
+        Map<String, ApplicationInfo> map = new HashMap<>();
 
         for (ApplicationInfo info : apps) {
-            map.put(info.packageName, info.loadLabel(mPkgManager).toString());
+            map.put(info.packageName, info);
         }
 
         return map;
