@@ -472,5 +472,29 @@
     <item drawable="xiachufang" />
     <item drawable="xuebajun" />
     <item drawable="yyc_xk" />
+    <item drawable="arrowio" />
+    <item drawable="bluegogo" />
+    <item drawable="delsart_color" />
+    <item drawable="google_talk" />
+    <item drawable="gtgj" />
+    <item drawable="heshi" />
+    <item drawable="huawei_care" />
+    <item drawable="huomaotv" />
+    <item drawable="kuke_manga" />
+    <item drawable="lifelog" />
+    <item drawable="meiyan_camera" />
+    <item drawable="neko_rpg" />
+    <item drawable="puretie" />
+    <item drawable="qgame" />
+    <item drawable="qpay" />
+    <item drawable="samsung_music" />
+    <item drawable="share" />
+    <item drawable="souhuvideo" />
+    <item drawable="support" />
+    <item drawable="s_voice" />
+    <item drawable="tumbsave" />
+    <item drawable="wanshier" />
+    <item drawable="wifi_password" />
+    <item drawable="yuantiku" />
 
 </resources>

@@ -3559,4 +3559,186 @@
         component="ComponentInfo{com.kuaikan.comic/com.kuaikan.comic.ui.LaunchActivity}"
         drawable="kuaikan_manga" />
 
+    <!-- 2017.05.25 Add -->
+    <item
+        component="ComponentInfo{kh.android.dir/kh.android.dir.ui.activities.MDMainActivity}"
+        drawable="dirclean" />
+    <item
+        component="ComponentInfo{com.beastbike.bluegogo/com.beastbike.bluegogo.activity.BGSplashActivity}"
+        drawable="bluegogo" />
+    <item
+        component="ComponentInfo{com.beastbike.bluegogo/com.beastbike.bluegogo.activity.BGSplashActivity}"
+        drawable="bluegogo" />
+    <item
+        component="ComponentInfo{com.huawei.phoneservice/com.huawei.phoneservice.ui.HelpCenterActivity}"
+        drawable="huawei_care" />
+    <item
+        component="ComponentInfo{com.huomaotv.mobile/com.huomaotv.mobile.ui.activity.StartActivity}"
+        drawable="huomaotv" />
+    <item
+        component="ComponentInfo{net.kernys.rgss/net.kernys.rgss.MainActivity}"
+        drawable="neko_rpg" />
+    <item
+        component="ComponentInfo{com.magicbelt.lockscreen/com.magicbelt.lockscreen.MainActivity}"
+        drawable="lockscreen" />
+    <item
+        component="ComponentInfo{com.cuilab.pkgviewer/com.cuilab.pkgviewer.ui.MainActivity}"
+        drawable="android_search" />
+    <item
+        component="ComponentInfo{com.tencent.android.qqdownloader/com.tencent.assistant.activity.SplashActivity}"
+        drawable="tencent_appstore" />
+    <item
+        component="ComponentInfo{com.GrSJX.ZUI.theme/com.iapp.app.logoActivity}"
+        drawable="theme" />
+    <item
+        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Round}"
+        drawable="xianyu" />
+    <item
+        component="ComponentInfo{com.jingdong.app.mall/com.jingdong.app.mall.MainActivity}"
+        drawable="jd" />
+    <item
+        component="ComponentInfo{kh.android.dir/kh.android.dir.ui.activities.MDMainActivity}"
+        drawable="dirclean" />
+    <item
+        component="ComponentInfo{com.lerist.go_hosts/com.lerist.gohosts.ui.activity.MainActivity}"
+        drawable="go_hosts" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.meitu.mobile.contacts.dialer.activities.MeiosDialtactsActivity}"
+        drawable="phone" />
+    <item
+        component="ComponentInfo{com.mlab.photos/com.mlab.photos.app.Photos}"
+        drawable="gallery" />
+    <item
+        component="ComponentInfo{com.android.deskclock/com.pantech.app.clock.ClockLauncher}"
+        drawable="clock" />
+    <item
+        component="ComponentInfo{com.android.music/com.android.music.MusicBrowserActivity}"
+        drawable="music" />
+    <item
+        component="ComponentInfo{com.mediatek.systemupdate/com.mediatek.systemupdate.MainEntry}"
+        drawable="update" />
+    <item
+        component="ComponentInfo{com.mediatek.security/com.mediatek.security.ui.PermissionControlPageActivity}"
+        drawable="security" />
+    <item
+        component="ComponentInfo{com.android.fmradio/com.android.fmradio.MeituFmMainActivity}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{com.android.meitu.appstore/com.android.meitu.appstore.activity.PreloadActivity}"
+        drawable="appstore" />
+    <item
+        component="ComponentInfo{com.android.providers.downloads.ui/com.android.providers.downloads.ui.GnDownloadTabActivity}"
+        drawable="downloads" />
+    <item
+        component="ComponentInfo{com.mediatek.filemanager/com.mediatek.filemanager.FileManagerOperationActivity}"
+        drawable="filemanager" />
+    <item
+        component="ComponentInfo{com.android.email/com.vivo.email.activity.Welcome}"
+        drawable="mail" />
+    <item
+        component="ComponentInfo{com.motorola.filemanager/com.motorola.filemanager.MainFileManagerActivity}"
+        drawable="filemanager" />
+    <item
+        component="ComponentInfo{com.meitu.mobile.notes/com.meitu.mobile.notes.ui.NotesListActivity}"
+        drawable="note" />
+    <item
+        component="ComponentInfo{com.vivo.game/com.vivo.game.ui.LogoActivity}"
+        drawable="game" />
+    <item
+        component="ComponentInfo{com.hengye.share/com.hengye.share.Launcher}"
+        drawable="share" />
+    <item
+        component="ComponentInfo{com.tencent.weread/com.tencent.weread.LauncherActivity}"
+        drawable="weread" />
+    <item
+        component="ComponentInfo{com.wokee.qpay/com.wokee.qpay.EmptyActivity}"
+        drawable="qpay" />
+    <item
+        component="ComponentInfo{com.cmcm.arrowio/com.cmcm.arrowio.AppActivity}"
+        drawable="arrowio" />
+    <item
+        component="ComponentInfo{com.google.android.talk/com.google.android.talk.SigningInActivity}"
+        drawable="google_talk" />
+    <item
+        component="ComponentInfo{com.vjson.anime/com.vjson.comic.views.activity.MainActivity}"
+        drawable="kuke_manga" />
+    <item
+        component="ComponentInfo{bos.consoar.countdown/bos.consoar.countdown.ui.MainActivity}"
+        drawable="heshi" />
+    <item
+        component="ComponentInfo{com.android.bbkmusic/com.android.bbkmusic.WidgetToTrackActivity}"
+        drawable="music" />
+    <item
+        component="ComponentInfo{com.meitu.meiyancamera/com.meitu.meiyancamera.MyxjActivity}"
+        drawable="meiyan_camera" />
+    <item
+        component="ComponentInfo{com.sonymobile.lifelog/com.sonymobile.lifelog.login.StartActivity}"
+        drawable="lifelog" />
+    <item
+        component="ComponentInfo{com.gtgj.view/com.gtgj.view.LaunchActivity}"
+        drawable="gtgj" />
+    <item
+        component="ComponentInfo{com.fenbi.android.gaozhong/com.fenbi.android.s.activity.portal.WelcomeActivity}"
+        drawable="yuantiku" />
+    <item
+        component="ComponentInfo{com.tencent.qgame/com.tencent.qgame.presentation.activity.SplashActivity}"
+        drawable="qgame" />
+    <item
+        component="ComponentInfo{com.samsung.android.app.music.chn/com.samsung.android.app.music.common.activity.MusicMainActivity}"
+        drawable="samsung_music" />
+    <item
+        component="ComponentInfo{com.ywwynm.everythingdone/com.ywwynm.everythingdone.activities.ThingsActivity}"
+        drawable="wanshier" />
+    <item
+        component="ComponentInfo{com.Delsart.color/com.Delsart.color.MainActivity}"
+        drawable="delsart_color" />
+    <item
+        component="ComponentInfo{com.android.browser/com.android.browser.GNBrowserActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.zui.browser/com.zui.browser.BrowserActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.browser_llqhz/com.browser2345.StartBrowserActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.seal.browser/com.seal.browser.ui.activities.WelcomeActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.ume.browser/com.ume.browser.MainActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.lenovo.intlmb/com.opera.Opera}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.xesygao.puretie/com.xesygao.xtieba.ui.activity.MainActivity}"
+        drawable="puretie" />
+    <item
+        component="ComponentInfo{com.sonymobile.support/com.sonymobile.support.InAppSupportLauncher}"
+        drawable="support" />
+    <item
+        component="ComponentInfo{com.sohu.sohuvideo/com.sohu.sohuvideo.FirstNavigationActivityGroup}"
+        drawable="souhuvideo" />
+    <item
+        component="ComponentInfo{com.samsung.voiceserviceplatform/com.samsung.voiceserviceplatform.ui.SVoiceMainActivity}"
+        drawable="s_voice" />
+    <item
+        component="ComponentInfo{com.hazuu.tumblersave/com.hazuu.tumblersave.MainActivity}"
+        drawable="tumbsave" />
+    <item
+        component="ComponentInfo{me.yourbay.wifi_pswd/me.yourbay.wificodeviwer.ui.main.MainActivity}"
+        drawable="wifi_password" />
+    <item
+        component="ComponentInfo{wilk.wifi.pwd/wilk.wifi.pwd.ui.MainActivity}"
+        drawable="wifi_password" />
+    <item
+        component="ComponentInfo{com.view.wifi/com.view.wifi.MainActivity}"
+        drawable="wifi_password" />
+    <item
+        component="ComponentInfo{com.wifi.pskviewer/com.wifibanlv.wifipartner.activity.LogoActivity}"
+        drawable="wifi_password" />
+    <item
+        component="ComponentInfo{com.youan.universal/com.youan.universal.ui.activity.SplashActivity}"
+        drawable="wifi" />
+
 </resources>
