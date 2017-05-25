@@ -3737,8 +3737,9 @@
     <item
         component="ComponentInfo{com.wifi.pskviewer/com.wifibanlv.wifipartner.activity.LogoActivity}"
         drawable="wifi_password" />
+
     <item
         component="ComponentInfo{com.youan.universal/com.youan.universal.ui.activity.SplashActivity}"
-        drawable="wifi" />
+        drawable="wifi_key" />
 
 </resources>
