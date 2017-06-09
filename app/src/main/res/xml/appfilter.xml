@@ -3772,60 +3772,202 @@
         component="ComponentInfo{com.cyanogenmod.updater/com.cyanogenmod.updater.UpdatesSettings}"
         drawable="update" />
 
-    <item component="ComponentInfo{com.mediatek.fmradio/com.broadcom.bt.app.fm.rx.fmradio}" drawable="fm" />
+    <item
+        component="ComponentInfo{com.mediatek.fmradio/com.broadcom.bt.app.fm.rx.fmradio}"
+        drawable="fm" />
 
-    <item component="ComponentInfo{com.oppo.filemanager/com.oppo.filemanager.Main}" drawable="filemanager" />
+    <item
+        component="ComponentInfo{com.oppo.filemanager/com.oppo.filemanager.Main}"
+        drawable="filemanager" />
 
-    <item component="ComponentInfo{com.yulong.android.filebrowser/com.yulong.android.filebrowser.activity.LeadingActivity}" drawable="filemanager" />
+    <item
+        component="ComponentInfo{com.yulong.android.filebrowser/com.yulong.android.filebrowser.activity.LeadingActivity}"
+        drawable="filemanager" />
 
-    <item component="ComponentInfo{com.letv.android.filemanager/com.letv.android.filemanager.activities.FileManagerActivity}" drawable="filemanager" />
+    <item
+        component="ComponentInfo{com.letv.android.filemanager/com.letv.android.filemanager.activities.FileManagerActivity}"
+        drawable="filemanager" />
 
-    <item component="ComponentInfo{com.google.android.gms/com.google.android.gms.app.settings.GoogleSettingsActivity}" drawable="google_setting" />
+    <item
+        component="ComponentInfo{com.google.android.gms/com.google.android.gms.app.settings.GoogleSettingsActivity}"
+        drawable="google_setting" />
 
-    <item component="ComponentInfo{dascom.telecom.vipclub/dascom.telecom.vipclub.InitActivity}" drawable="unicom" />
+    <item
+        component="ComponentInfo{dascom.telecom.vipclub/dascom.telecom.vipclub.InitActivity}"
+        drawable="unicom" />
 
-    <item component="ComponentInfo{com.android.launcherEx/com.android.launcherEx.Launcher}" drawable="home_launcher" />
+    <item
+        component="ComponentInfo{com.android.launcherEx/com.android.launcherEx.Launcher}"
+        drawable="home_launcher" />
 
-    <item component="ComponentInfo{com.android.yepvieoplayer/com.android.yepvieoplayer.MovieListActivity}" drawable="video" />
+    <item
+        component="ComponentInfo{com.android.yepvieoplayer/com.android.yepvieoplayer.MovieListActivity}"
+        drawable="video" />
 
-    <item component="ComponentInfo{com.adups.fota/com.adups.fota.GoogleOtaClient}" drawable="update" />
+    <item
+        component="ComponentInfo{com.adups.fota/com.adups.fota.GoogleOtaClient}"
+        drawable="update" />
 
-    <item component="ComponentInfo{ctrip.android.view/ctrip.android.view.view.CtripDeclarationActivity}" drawable="ctrip" />
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.android.view.view.CtripDeclarationActivity}"
+        drawable="ctrip" />
 
-    <item component="ComponentInfo{com.sohu.inputmethod.sogou.zte/com.sohu.inputmethod.sogou.zte.SogouIMELauncher}" drawable="sougou_keyboard" />
+    <item
+        component="ComponentInfo{com.sohu.inputmethod.sogou.zte/com.sohu.inputmethod.sogou.zte.SogouIMELauncher}"
+        drawable="sougou_keyboard" />
 
-    <item component="ComponentInfo{zte.com.market/zte.com.market.LoginActivity}" drawable="appstore" />
+    <item
+        component="ComponentInfo{zte.com.market/zte.com.market.LoginActivity}"
+        drawable="appstore" />
 
-    <item component="ComponentInfo{com.autonavi.minimap.carmode/com.autonavi.minimap.Splashy}" drawable="gaode_map" />
+    <item
+        component="ComponentInfo{com.autonavi.minimap.carmode/com.autonavi.minimap.Splashy}"
+        drawable="gaode_map" />
 
-    <item component="ComponentInfo{com.cmcm.arrowio.elm/com.xiaomi.helper.SplashAdActivity}" drawable="arrowio" />
+    <item
+        component="ComponentInfo{com.cmcm.arrowio.elm/com.xiaomi.helper.SplashAdActivity}"
+        drawable="arrowio" />
 
-    <item component="ComponentInfo{name.caiyao.neteasemusic/bin.xposed.Unblock163MusicClient.ui.SettingsActivity-Alias}" drawable="android_app" />
+    <item
+        component="ComponentInfo{name.caiyao.neteasemusic/bin.xposed.Unblock163MusicClient.ui.SettingsActivity-Alias}"
+        drawable="android_app" />
 
-    <item component="ComponentInfo{bin.xposed.Unblock163MusicClient/bin.xposed.Unblock163MusicClient.ui.SettingsActivity-Alias}" drawable="android_app" />
+    <item
+        component="ComponentInfo{bin.xposed.Unblock163MusicClient/bin.xposed.Unblock163MusicClient.ui.SettingsActivity-Alias}"
+        drawable="android_app" />
 
-    <item component="ComponentInfo{com.fkzhang.qqunrecalled/com.fkzhang.qqunrecalled.MainActivity-Alias}" drawable="android_app" />
+    <item
+        component="ComponentInfo{com.fkzhang.qqunrecalled/com.fkzhang.qqunrecalled.MainActivity-Alias}"
+        drawable="android_app" />
 
-    <item component="ComponentInfo{com.cofface.superuser/com.cofface.superuser.MainActivity}" drawable="supersu" />
+    <item
+        component="ComponentInfo{com.cofface.superuser/com.cofface.superuser.MainActivity}"
+        drawable="supersu" />
 
-    <item component="ComponentInfo{com.pantech.app.mms/com.pantech.app.mms.ui.EntryActivity}" drawable="message" />
+    <item
+        component="ComponentInfo{com.pantech.app.mms/com.pantech.app.mms.ui.EntryActivity}"
+        drawable="message" />
 
-    <item component="ComponentInfo{com.moblynx.cameraicsplus/com.moblynx.cameraics.Camera}" drawable="camera" />
+    <item
+        component="ComponentInfo{com.moblynx.cameraicsplus/com.moblynx.cameraics.Camera}"
+        drawable="camera" />
 
-    <item component="ComponentInfo{com.huawei.gamebox/com.huawei.gamebox.GameBoxActivity}" drawable="game" />
+    <item
+        component="ComponentInfo{com.huawei.gamebox/com.huawei.gamebox.GameBoxActivity}"
+        drawable="game" />
 
-    <item component="ComponentInfo{com.baidu.searchbox_AndroidM/com.baidu.searchbox.SplashActivity}" drawable="baidu" />
+    <item
+        component="ComponentInfo{com.baidu.searchbox_AndroidM/com.baidu.searchbox.SplashActivity}"
+        drawable="baidu" />
 
-    <item component="ComponentInfo{com.huawei.vassistant/com.huawei.vassistant.ui.VAssistantActivity}" drawable="voiceassist" />
+    <item
+        component="ComponentInfo{com.huawei.vassistant/com.huawei.vassistant.ui.VAssistantActivity}"
+        drawable="voiceassist" />
 
-    <item component="ComponentInfo{com.miHoYo.bh3.qihoo/com.miHoYo.overridenativeactivity.OverrideNativeActivity}" drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.qihoo/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
+        drawable="bh3" />
 
-    <item component="ComponentInfo{com.tencent.tmgp.cfalpha/com.tencent.tmgp.cfalpha.AFMainActivity}" drawable="cf" />
+    <item
+        component="ComponentInfo{com.tencent.tmgp.cfalpha/com.tencent.tmgp.cfalpha.AFMainActivity}"
+        drawable="cf" />
 
-    <item component="ComponentInfo{com.DiaoChangStudio.CFT001/com.Sarkozy}" drawable="cf" />
+    <item
+        component="ComponentInfo{com.DiaoChangStudio.CFT001/com.Sarkozy}"
+        drawable="cf" />
 
-    <item component="ComponentInfo{com.miui.gallery/com.miui.gallery.app.Gallery}" drawable="gallery" />
+    <item
+        component="ComponentInfo{com.miui.gallery/com.miui.gallery.app.Gallery}"
+        drawable="gallery" />
 
-    <item component="ComponentInfo{com.wandoujia.phoenix2/com.wandoujia.jupiter.activity.HomeActivity}" drawable="wandoujia2" />
+    <item
+        component="ComponentInfo{com.wandoujia.phoenix2/com.wandoujia.jupiter.activity.HomeActivity}"
+        drawable="wandoujia2" />
+
+    <!-- 2017.06.09 -->
+    <item
+        component="ComponentInfo{com.atony.iconpack.originalwish/com.by_syk.nanoiconpack.sample.MainActivity}"
+        drawable="originalwish" />
+    <item
+        component="ComponentInfo{com.tencent.tmgp.sgamece/com.tencent.tmgp.sgamece.SGameActivity}"
+        drawable="wangzhenew" />
+    <item
+        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.startup.activities.StartupActivity}"
+        drawable="paypal" />
+    <item
+        component="ComponentInfo{com.samsung.android.globalroaming/com.samsung.android.globalroaming.activity.StartingActivity}"
+        drawable="s_manyou" />
+    <item
+        component="ComponentInfo{com.caij.emore/com.caij.emore.ui.activity.SplashActivity}"
+        drawable="emore" />
+    <item
+        component="ComponentInfo{com.samsung.android.sm/com.samsung.android.sm.app.dashboard.SmartManagerDashBoardActivity}"
+        drawable="s_security" />
+    <item
+        component="ComponentInfo{com.clover.daysmatter/com.clover.daysmatter.ui.activity.MainActivity}"
+        drawable="daysmatter" />
+    <item
+        component="ComponentInfo{com.meizu.flyme.toolbox/com.meizu.flyme.toolbox.activity.ToolBoxActivity}"
+        drawable="flyme_toolbox" />
+    <item
+        component="ComponentInfo{com.xiaomi.account/com.xiaomi.account.ui.MainAccountActivity}"
+        drawable="xiaomi_account" />
+    <item
+        component="ComponentInfo{com.huawei.android.ds/com.huawei.android.hicloud.hisync.activity.NewHiSyncSettingActivity}"
+        drawable="huawei_cloud" />
+    <item
+        component="ComponentInfo{xsky.txvpn/xsky.txvpn.activity.SplashActivity}"
+        drawable="tianxing" />
+    <item
+        component="ComponentInfo{com.vpn.tianxing/com.vpn.tianxing.LoadingActivity}"
+        drawable="tianxing" />
+    <item
+        component="ComponentInfo{com.lenovo.calendar/com.lenovo.calendar.splashpic.SplashActivity}"
+        drawable="calendar" />
+    <item
+        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Rect}"
+        drawable="xianyu" />
+    <item
+        component="ComponentInfo{com.amazon.kindlefc/com.amazon.kindle.UpgradePage}"
+        drawable="kindle" />
+    <item
+        component="ComponentInfo{com.zol.android/com.zol.android.ui.FirstActivity}"
+        drawable="zol" />
+    <item
+        component="ComponentInfo{com.mybank.android.phone/com.mybank.android.phone.MainActivity}"
+        drawable="mybank" />
+    <item
+        component="ComponentInfo{com.huluxia.gametools/com.huluxia.gametools.ui.MainActivity.AppStart}"
+        drawable="huluxia3" />
+    <item
+        component="ComponentInfo{com.tencent.ttpic/com.tencent.ttpic.module.MainActivity}"
+        drawable="ttpt" />
+    <item
+        component="ComponentInfo{com.wei.account/com.wei.account.activity.StartActivity}"
+        drawable="zhanghaobenzi" />
+    <item
+        component="ComponentInfo{com.picsart.studio/com.socialin.android.photo.picsinphoto.MainPagerActivity}"
+        drawable="picsart" />
+    <item
+        component="ComponentInfo{cn.soloho.fuli/cn.soloho.fuli.view.SplashActivity}"
+        drawable="fulimanman" />
+    <item
+        component="ComponentInfo{com.ss.launcher2/com.ss.launcher2.MainActivity}"
+        drawable="total" />
+    <item
+        component="ComponentInfo{com.kekeclient_/com.kekeclient.activity.InitActivity}"
+        drawable="kekeenglish" />
+    <item
+        component="ComponentInfo{com.qdaily.ui/com.qdaily.ui.LauncherActivity}"
+        drawable="qdaily" />
+    <item
+        component="ComponentInfo{com.wuba/com.wuba.activity.launch.LaunchActivity}"
+        drawable="_58" />
+    <item
+        component="ComponentInfo{com.duitang.main/com.duitang.main.activity.SplashActivity}"
+        drawable="duitang" />
+    <item
+        component="ComponentInfo{com.maxmpz.audioplayer/com.maxmpz.audioplayer.StartupActivity}"
+        drawable="poweramp" />
 
 </resources>

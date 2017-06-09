@@ -498,5 +498,27 @@
     <item drawable="_500px" />
     <item drawable="_5sing" />
     <item drawable="_2048" />
+    <item drawable="daysmatter" />
+    <item drawable="duitang" />
+    <item drawable="emore" />
+    <item drawable="flyme_toolbox" />
+    <item drawable="fulimanman" />
+    <item drawable="huawei_cloud" />
+    <item drawable="kekeenglish" />
+    <item drawable="kindle" />
+    <item drawable="mybank" />
+    <item drawable="paypal" />
+    <item drawable="picsart" />
+    <item drawable="poweramp" />
+    <item drawable="qdaily" />
+    <item drawable="s_manyou" />
+    <item drawable="s_security" />
+    <item drawable="tianxing" />
+    <item drawable="total" />
+    <item drawable="ttpt" />
+    <item drawable="wangzhenew" />
+    <item drawable="zhanghaobenzi" />
+    <item drawable="zol" />
+    <item drawable="_58" />
 
 </resources>
