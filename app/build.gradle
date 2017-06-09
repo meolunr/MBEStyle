@@ -38,6 +38,13 @@ android {
         it.buildConfigField 'String', 'LEANCLOUD_ID', leancloudId
         it.buildConfigField 'String', 'LEANCLOUD_KEY', leancloudKey
     }
+
+    // 修改生成 Apk 的文件名
+    android.applicationVariants.all { variant ->
+        def outFile = variant.outputs[0].outputFile
+        def outFileName = 'MBEStyle_' + defaultConfig.versionName + '.apk'
+        variant.outputs[0].outputFile = new File(outFile.parent, outFileName)
+    }
 }
 
 dependencies {
