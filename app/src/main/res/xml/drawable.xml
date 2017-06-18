@@ -520,5 +520,26 @@
     <item drawable="zhanghaobenzi" />
     <item drawable="zol" />
     <item drawable="_58" />
+    <item drawable="adsafe" />
+    <item drawable="anyview" />
+    <item drawable="camera360" />
+    <item drawable="camera_huangyou" />
+    <item drawable="forest" />
+    <item drawable="huawei_fans" />
+    <item drawable="huawei_health" />
+    <item drawable="huawei_hwmirror" />
+    <item drawable="kaola" />
+    <item drawable="maibaapp_elf" />
+    <item drawable="meizu_fuli" />
+    <item drawable="microsoft_launcher" />
+    <item drawable="mooc" />
+    <item drawable="moviecreator" />
+    <item drawable="mysplash" />
+    <item drawable="psiphon" />
+    <item drawable="qidian" />
+    <item drawable="sdmaid_unlock" />
+    <item drawable="shanbay_news" />
+    <item drawable="spotify" />
+    <item drawable="yy" />
 
 </resources>
