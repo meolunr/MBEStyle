@@ -76,10 +76,24 @@ def zoom_for_miui():
             out_img.close()
 
 
+def zip_icons():
+    print('>>> 压缩图标文件...\n')
+
+    os.chdir('icons_temp')
+    zip = zipfile.ZipFile('../icons', mode='w')
+
+    for parent, dirs, files in os.walk('.'):
+        for file in files:
+            zip.write(file, os.path.join('res/drawable-xxhdpi', file))
+
+    zip.close()
+    os.chdir('..')
+
+
 if __name__ == '__main__':
     print('>>> 开始运行\n')
 
     icon_map = parse_xml()
     move_drawable_to_temp(icon_map)
     zoom_for_miui()
-   
+    zip_icons()
