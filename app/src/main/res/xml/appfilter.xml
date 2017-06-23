@@ -471,7 +471,7 @@
 
     <!-- 照片 / Photos -->
     <item
-        component="ComponentInfo{com.google.android.apps.photos.offline/com.google.android.apps.photos.home.HomeActivity}"
+        component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}"
         drawable="googlephotos" />
 
     <!-- 追书神器 /  zhuishushenqi  -->
