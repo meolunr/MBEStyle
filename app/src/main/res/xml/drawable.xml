@@ -541,5 +541,25 @@
     <item drawable="shanbay_news" />
     <item drawable="spotify" />
     <item drawable="yy" />
+    <item drawable="baidu_wenku" />
+    <item drawable="bobdzt" />
+    <item drawable="bookmarklife" />
+    <item drawable="bubei" />
+    <item drawable="cilikanpian" />
+    <item drawable="fenqile" />
+    <item drawable="googleinstall" />
+    <item drawable="hook_model" />
+    <item drawable="huawei_vdrive" />
+    <item drawable="jibuqi" />
+    <item drawable="liveware" />
+    <item drawable="microsoft_office" />
+    <item drawable="qq_videoplayer" />
+    <item drawable="samsung_voc" />
+    <item drawable="securefolder" />
+    <item drawable="tencent_tiyu" />
+    <item drawable="v_study" />
+    <item drawable="wot" />
+    <item drawable="xfplay" />
+    <item drawable="xperiatransfermobile" />
 
 </resources>
