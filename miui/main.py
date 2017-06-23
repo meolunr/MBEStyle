@@ -30,7 +30,7 @@ def parse_xml():
 
 
 def move_drawable_to_temp(map):
-    print('>>> 转换 Drawable 至临时文件夹...')
+    print('>>> 复制 Drawable 至临时文件夹...')
 
     if os.path.exists('icons_temp'):
         shutil.rmtree('icons_temp')
@@ -38,18 +38,14 @@ def move_drawable_to_temp(map):
     os.mkdir('icons_temp')
 
     for key, value in map.items():
-        print('正在转换 %s ==> %s' % (value, key))
+        src_path = os.path.join(res_folder, 'drawable-nodpi', '%s.png') % value
+        out_path = os.path.join('icons_temp', '%s.png') % key
 
-        src = 'drawable-nodpi/' + value + '.png'
-
-        if os.path.exists(src):
-            dst = 'out/' + key + '.png'
-            shutil.copyfile(src, dst)
+        shutil.copyfile(src_path, out_path)
 
 
 if __name__ == '__main__':
     print('>>> 开始运行\n')
 
     icon_map = parse_xml()
-    print(icon_map)
-    print(len(icon_map))
+    move_drawable_to_temp(icon_map)
