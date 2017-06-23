@@ -1,4 +1,5 @@
 import os
+import shutil
 import xml.etree.ElementTree as ET
 
 res_folder = '../app/src/main/res'
@@ -26,6 +27,24 @@ def parse_xml():
             icon_map[package_name] = drawable
 
     return icon_map
+
+
+def move_drawable_to_temp(map):
+    print('>>> 转换 Drawable 至临时文件夹...')
+
+    if os.path.exists('icons_temp'):
+        shutil.rmtree('icons_temp')
+
+    os.mkdir('icons_temp')
+
+    for key, value in map.items():
+        print('正在转换 %s ==> %s' % (value, key))
+
+        src = 'drawable-nodpi/' + value + '.png'
+
+        if os.path.exists(src):
+            dst = 'out/' + key + '.png'
+            shutil.copyfile(src, dst)
 
 
 if __name__ == '__main__':
