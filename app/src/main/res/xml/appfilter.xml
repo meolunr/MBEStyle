@@ -4023,7 +4023,7 @@
         component="ComponentInfo{com.daohangforxiuzhuo/com.daohang2345.LanuchActivity}"
         drawable="browser" />
     <item
-        component="ComponentInfo{net.wargaming.wot.blitz/net.wargaming.wot.blitz.WotBlitz}"
+        component="ComponentInfo{net.wargaming.wot.blitz/com.dava.engine.DavaActivity}"
         drawable="wot" />
     <item
         component="ComponentInfo{com.sonyericsson.extras.liveware/com.sonyericsson.extras.liveware.ui.LaunchActivity}"
