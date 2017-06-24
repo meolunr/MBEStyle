@@ -113,6 +113,11 @@ def zip_miui_mtz():
     zip_file.close()
 
 
+def clean_temp_files():
+    shutil.rmtree('icons_temp')
+    os.remove('icons')
+
+
 if __name__ == '__main__':
     print('>>> 开始运行\n')
 
@@ -121,5 +126,6 @@ if __name__ == '__main__':
     zoom_for_miui()
     zip_icons()
     zip_miui_mtz()
+    clean_temp_files()
 
     print('转换完成')
