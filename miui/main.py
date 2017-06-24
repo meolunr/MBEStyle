@@ -80,14 +80,37 @@ def zip_icons():
     print('>>> 压缩图标文件...\n')
 
     os.chdir('icons_temp')
-    zip = zipfile.ZipFile('../icons', mode='w')
+    zip_file = zipfile.ZipFile('../icons', mode='w')
 
     for parent, dirs, files in os.walk('.'):
         for file in files:
-            zip.write(file, os.path.join('res/drawable-xxhdpi', file))
+            zip_file.write(file, os.path.join('res/drawable-xxhdpi', file))
 
-    zip.close()
+    zip_file.close()
     os.chdir('..')
+
+
+def zip_miui_mtz():
+    print('>>> 生成主题文件...\n')
+
+    zip_file = zipfile.ZipFile(os.path.join(os.getcwd(), 'MBEStyle.mtz'), mode='w')
+    os.chdir('resource')
+
+    for parent, dirs, files in os.walk('.'):
+        for file in files:
+            if parent == '.':
+                # 直接放进压缩包的文件
+                zip_file.write(file)
+            else:
+                # 文件夹形式放入压缩包
+                file_path = os.path.join(parent, file)
+                arcname = file_path[1:].strip(os.path.sep)
+                zip_file.write(file_path, arcname)
+
+    os.chdir('..')
+    zip_file.write('icons')
+
+    zip_file.close()
 
 
 if __name__ == '__main__':
@@ -97,3 +120,6 @@ if __name__ == '__main__':
     move_drawable_to_temp(icon_map)
     zoom_for_miui()
     zip_icons()
+    zip_miui_mtz()
+
+    print('转换完成')
