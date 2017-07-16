@@ -4071,4 +4071,102 @@
         component="ComponentInfo{com.tencent.qqsports/com.tencent.qqsports.ui.SplashActivity}"
         drawable="tencent_tiyu" />
 
+    <!-- 2017.07.16 Add -->
+    <item
+        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Round}"
+        drawable="xianyu" />
+    <item
+        component="ComponentInfo{com.xesygao.puretie/com.xesygao.puretie.ui.activity.MainActivity}"
+        drawable="puretie" />
+    <item
+        component="ComponentInfo{org.getlantern.lantern/org.lantern.app.activity.LanternMainActivity_}"
+        drawable="lantern" />
+    <item
+        component="ComponentInfo{com.ChillyRoom.DungeonShooter/com.unity3d.player.UnityPlayerActivity}"
+        drawable="soul_knight" />
+    <item
+        component="ComponentInfo{com.qq.reader/com.qq.reader.activity.SplashActivity}"
+        drawable="qq_reader" />
+    <item
+        component="ComponentInfo{com.meizu.flyme.wallet/com.meizu.flyme.wallet.activity.WalletTabActivity}"
+        drawable="wallet" />
+    <item
+        component="ComponentInfo{com.huawei.wallet/com.huawei.wallet.view.MainActivity}"
+        drawable="wallet" />
+    <item
+        component="ComponentInfo{com.tencent.radio/com.tencent.radio.common.ui.MainActivity}"
+        drawable="qq_fm" />
+    <item
+        component="ComponentInfo{com.xda.labs/com.xda.labs.LabsLauncher}"
+        drawable="xda" />
+    <item
+        component="ComponentInfo{com.xda.labs.play/com.xda.labs.ForumLauncher}"
+        drawable="xda" />
+    <item
+        component="ComponentInfo{com.icbc.im/com.icbc.im.ui.activity.LauncherActivity}"
+        drawable="icbc_im" />
+    <item
+        component="ComponentInfo{com.suning.mobile.ebuy/com.suning.mobile.ebuy.base.host.InitialActivity}"
+        drawable="suning" />
+    <item
+        component="ComponentInfo{com.u17.comic.phone/com.u17.comic.phone.activitys.FirstActivity}"
+        drawable="youyaoqi" />
+    <item
+        component="ComponentInfo{com.immomo.momo/com.immomo.momo.android.activity.WelcomeActivity}"
+        drawable="momo" />
+    <item
+        component="ComponentInfo{com.zhaopin.social/com.zhaopin.social.SplashActivity}"
+        drawable="zhilian" />
+    <item
+        component="ComponentInfo{com.chinamworld.main/com.ccb.start.CcbSplashActivity}"
+        drawable="ccb" />
+    <item
+        component="ComponentInfo{com.bankcomm.Bankcomm/com.bankcomm.config.ConfigActivity}"
+        drawable="bankcomm" />
+    <item
+        component="ComponentInfo{com.cpuid.cpu_z/com.cpuid.cpu_z.MainActivity}"
+        drawable="cpu_z" />
+    <item
+        component="ComponentInfo{com.moji.mjweather/com.moji.mjweather.LauncherActivity}"
+        drawable="moji" />
+    <item
+        component="ComponentInfo{com.ideashower.readitlater.pro/com.ideashower.readitlater.activity.AppCacheCheckActivity}"
+        drawable="pocket" />
+    <item
+        component="ComponentInfo{com.douban.book.reader/com.douban.book.reader.activity.WelcomeActivity_}"
+        drawable="douban_reader" />
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.base.ui.splash.CtripSplashActivity}"
+        drawable="ctrip" />
+    <item
+        component="ComponentInfo{com.Kingdee.Express/com.Kingdee.Express.activity.SplashActivity}"
+        drawable="kuaidi_100" />
+    <item
+        component="ComponentInfo{com.antutu.ABenchMark/com.antutu.ABenchMark.ABenchMarkStart}"
+        drawable="antutu" />
+    <item
+        component="ComponentInfo{com.pianke.client/com.pianke.client.ui.activity.SplashActivity}"
+        drawable="pianke" />
+    <item
+        component="ComponentInfo{com.wandoujia.phoenix2/com.pp.assistant.activity.PPMainActivity}"
+        drawable="wandoujia2" />
+    <item
+        component="ComponentInfo{com.quicinc.fmradio/com.quicinc.fmradio.FMRadio}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{cn.com.shouji.market/cn.com.shouji.market.MainTabActivity}"
+        drawable="shoujileyuan" />
+    <item
+        component="ComponentInfo{wangdaye.com.geometricweather/wangdaye.com.geometricweather.ui.activity.MainActivity}"
+        drawable="geometricweather" />
+    <item
+        component="ComponentInfo{com.samsung.android.app.watchmanager/com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity}"
+        drawable="samsung_gear" />
+    <item
+        component="ComponentInfo{com.soft.blued/com.soft.blued.ui.welcome.FirstActivity}"
+        drawable="blued" />
+    <item
+        component="ComponentInfo{com.p1.mobile.putong/com.p1.mobile.putong.ui.splash.SplashAct}"
+        drawable="putong" />
+
 </resources>
