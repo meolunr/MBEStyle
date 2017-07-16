@@ -561,5 +561,25 @@
     <item drawable="wot" />
     <item drawable="xfplay" />
     <item drawable="xperiatransfermobile" />
+    <item drawable="antutu" />
+    <item drawable="bankcomm" />
+    <item drawable="blued" />
+    <item drawable="cpu_z" />
+    <item drawable="douban_reader" />
+    <item drawable="icbc_im" />
+    <item drawable="kuaidi_100" />
+    <item drawable="moji" />
+    <item drawable="momo" />
+    <item drawable="pianke" />
+    <item drawable="pocket" />
+    <item drawable="putong" />
+    <item drawable="qq_fm" />
+    <item drawable="qq_reader" />
+    <item drawable="samsung_gear" />
+    <item drawable="suning" />
+    <item drawable="wallet" />
+    <item drawable="xda" />
+    <item drawable="youyaoqi" />
+    <item drawable="zhilian" />
 
 </resources>
