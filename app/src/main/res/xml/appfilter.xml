@@ -1311,9 +1311,6 @@
         component="ComponentInfo{com.android.camera/com.android.camera.Camera}"
         drawable="camera" />
     <item
-        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}"
-        drawable="contacts" />
-    <item
         component="ComponentInfo{com.android.contacts/com.android.contacts.activities.TwelveKeyDialer}"
         drawable="phone" />
     <item
@@ -4168,5 +4165,10 @@
     <item
         component="ComponentInfo{com.p1.mobile.putong/com.p1.mobile.putong.ui.splash.SplashAct}"
         drawable="putong" />
+
+    <!-- Add this form Contacts of Sony -->
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.NonPhoneActivity}"
+        drawable="contacts" />
 
 </resources>
