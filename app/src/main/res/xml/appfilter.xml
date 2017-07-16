@@ -122,9 +122,6 @@
 
     <!-- 日历 / Calendar -->
     <item
-        component="ComponentInfo{com.lenovo.calculator/com.lenovo.calculator.Calculator}"
-        drawable="calendar" />
-    <item
         component="ComponentInfo{com.lenovo.calendar/com.lenovo.calendar.SplashActivity}"
         drawable="calendar" />
     <item
@@ -197,9 +194,6 @@
         drawable="sd_maid" />
 
     <!-- 信息 / Contact Manager -->
-    <item
-        component="ComponentInfo{com.lenovo.ideafriend/com.lenovo.ideafriend.alias.MmsActivity}"
-        drawable="message" />
     <item
         component="ComponentInfo{com.lenovo.ideafriend/com.lenovo.ideafriend.alias.MmsActivity}"
         drawable="message" />
@@ -355,9 +349,6 @@
         component="ComponentInfo{com.android.deskclock/com.android.deskclock.AlarmsMainActivity}"
         drawable="clock" />
     <item
-        component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClock}"
-        drawable="clock" />
-    <item
         component="ComponentInfo{com.android.deskclock/com.android.deskclock.AlarmClock}"
         drawable="clock" />
 
@@ -410,9 +401,6 @@
         drawable="camera" />
     <item
         component="ComponentInfo{com.htc.camera/com.htc.camera.CameraEntry}"
-        drawable="camera" />
-    <item
-        component="ComponentInfo{com.sec.android.app.camera/com.sec.android.app.camera.Camera}"
         drawable="camera" />
     <item
         component="ComponentInfo{com.sonyericsson.android.camera/com.sonyericsson.android.camera.CameraActivity}"
@@ -773,9 +761,6 @@
     <item
         component="ComponentInfo{com.tencent.qqlite/com.tencent.qqlite.activity.SplashActivity}"
         drawable="qq" />
-    <item
-        component="ComponentInfo{com.tencent.mobileqqi/com.tencent.mobileqq.activity.SplashActivity}"
-        drawable="qq" />
 
     <!-- 淘宝 /  taobao  -->
     <item
@@ -921,30 +906,6 @@
     <item
         component="ComponentInfo{com.UCMobile/com.UCMobile.main.UCMobile}"
         drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.android.browser/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.UCMobile.internet.org/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.UCMobile.intl/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.UCMobile/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.android.browser/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.UCMobile.internet.org/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.UCMobile.intl/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
-    <item
-        component="ComponentInfo{com.UCMobile/com.UCMobile.main.UCMobile}"
-        drawable="uc_browser" />
     <!-- 网易云 / netease -->
     <item
         component="ComponentInfo{com.netease.cloudmusic/com.netease.cloudmusic.activity.LoadingActivity}"
@@ -998,9 +959,6 @@
         drawable="mail" />
     <item
         component="ComponentInfo{com.samsung.android.email.provider/com.samsung.android.email.ui.activity.MessageListXL}"
-        drawable="mail" />
-    <item
-        component="ComponentInfo{com.sonymobile.email/com.sonymobile.email.activity.Welcome}"
         drawable="mail" />
     <!-- chrome / chrome -->
     <item
@@ -1128,23 +1086,14 @@
         drawable="quickpic" />
     <!-- 一加系 / oneplus -->
     <item
-        component="ComponentInfo{com.android.contacts/com.oneplus.contacts.activities.OPPeopleActivity}"
-        drawable="contacts" />
-    <item
         component="ComponentInfo{com.android.dialer/com.oneplus.contacts.activities.OPDialtactsActivity}"
         drawable="phone" />
-    <item
-        component="ComponentInfo{com.android.mms/com.android.mms.ui.ConversationList}"
-        drawable="message" />
     <item
         component="ComponentInfo{com.oneplus.calendar/com.android.calendar.AllInOneActivity}"
         drawable="calendar" />
     <item
         component="ComponentInfo{com.oneplus.deskclock/com.oneplus.deskclock.DeskClock}"
         drawable="clock" />
-    <item
-        component="ComponentInfo{com.android.settings/com.android.settings.Settings}"
-        drawable="settings" />
     <item
         component="ComponentInfo{com.oneplus.calculator/com.oneplus.calculator.Calculator}"
         drawable="calculator" />
@@ -1160,9 +1109,6 @@
     <item
         component="ComponentInfo{com.oneplus.soundrecorder/com.oneplus.soundrecorder.SoundRecorder}"
         drawable="soundrecorder" />
-    <item
-        component="ComponentInfo{net.oneplus.weather/net.oneplus.weather.app.MainActivity}"
-        drawable="weather" />
     <!-- xposed / xposed -->
     <item
         component="ComponentInfo{de.robv.android.xposed.installer/de.robv.android.xposed.installer.WelcomeActivity}"
@@ -1308,35 +1254,14 @@
         component="ComponentInfo{com.android.calendar/com.android.calendar.homepage.AllInOneActivity}"
         drawable="calendar" />
     <item
-        component="ComponentInfo{com.android.camera/com.android.camera.Camera}"
-        drawable="camera" />
-    <item
-        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.TwelveKeyDialer}"
-        drawable="phone" />
-    <item
-        component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClockTabActivity}"
-        drawable="clock" />
-    <item
-        component="ComponentInfo{com.android.email/com.android.email.activity.Welcome}"
-        drawable="mail" />
-    <item
         component="ComponentInfo{com.android.fileexplorer/com.android.fileexplorer.FileExplorerTabActivity}"
         drawable="filemanager" />
-    <item
-        component="ComponentInfo{com.android.mms/com.android.mms.ui.MmsTabActivity}"
-        drawable="message" />
-    <item
-        component="ComponentInfo{com.android.settings/com.android.settings.MainSettings}"
-        drawable="settings" />
     <item
         component="ComponentInfo{com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity}"
         drawable="theme" />
     <item
         component="ComponentInfo{com.mipay.wallet/com.mipay.wallet.ui.MipayEntryActivity}"
         drawable="mipay" />
-    <item
-        component="ComponentInfo{com.miui.calculator/com.miui.calculator.cal.CalculatorActivity}"
-        drawable="calculator" />
     <item
         component="ComponentInfo{com.miui.gallery/com.miui.gallery.activity.HomePageActivity}"
         drawable="gallery" />
@@ -1353,14 +1278,8 @@
         component="ComponentInfo{com.xiaomi.scanner/com.xiaomi.scanner.app.ScanActivity}"
         drawable="scan" />
     <item
-        component="ComponentInfo{com.android.providers.downloads.ui/com.android.providers.downloads.ui.DownloadList}"
-        drawable="downloads" />
-    <item
         component="ComponentInfo{com.android.soundrecorder/com.android.soundrecorder.SoundRecorder}"
         drawable="soundrecorder" />
-    <item
-        component="ComponentInfo{com.android.stk/com.android.stk.StkMain}"
-        drawable="usim" />
     <item
         component="ComponentInfo{com.android.updater/com.android.updater.MainActivity}"
         drawable="update" />
@@ -1420,9 +1339,6 @@
     <item
         component="ComponentInfo{com.flyersoft.moonreaderp/com.flyersoft.moonreaderp.ActivityMain}"
         drawable="moonreader" />
-    <item
-        component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}"
-        drawable="play_store" />
     <item
         component="ComponentInfo{com.duokan.reader/com.duokan.reader.DkReaderActivity}"
         drawable="duokan" />
@@ -1754,9 +1670,6 @@
     <item
         component="ComponentInfo{com.MobileTicket/com.MobileTicket.MobileTicket}"
         drawable="_12306" />
-    <item
-        component="ComponentInfo{com.yipiao/com.yipiao.activity.LaunchActivity}"
-        drawable="zhixing" />
     <!-- nova / nova -->
     <item
         component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaShortcutHandler}"
@@ -1932,11 +1845,6 @@
         component="ComponentInfo{com.android.vending.billing.InAppBillingService.LACK/com.android.vending.billing.InAppBillingService.LACK.MainActivity-Original}"
         drawable="lucklypatcher" />
 
-    <!-- Modify at 2017.03.15  H2OS Weather -->
-    <item
-        component="ComponentInfo{net.oneplus.weather/net.oneplus.weather.app.MainActivity}"
-        drawable="weather" />
-
     <!-- Modify at 2017.03.15  ColorOS Apps -->
     <item
         component="ComponentInfo{com.coloros.alarmclock/com.coloros.alarmclock.AlarmClock}"
@@ -1998,9 +1906,6 @@
     <item
         component="ComponentInfo{com.zhihu.daily.android/com.zhihu.daily.android.activity.MainActivity_}"
         drawable="zhihunews" />
-    <item
-        component="ComponentInfo{com.niksoftware.snapseed/com.google.android.apps.snapseed.MainActivity}"
-        drawable="snapseed" />
     <item
         component="ComponentInfo{com.sorcerer.sorcery.iconpack/com.sorcerer.sorcery.iconpack.ui.activities.MainActivity}"
         drawable="sorcery" />
@@ -2090,9 +1995,6 @@
         drawable="filemanager" />
     <item
         component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.ClockPackage}"
-        drawable="clock" />
-    <item
-        component="ComponentInfo{com.coloros.alarmclock/com.coloros.alarmclock.AlarmClock}"
         drawable="clock" />
     <item
         component="ComponentInfo{com.android.mediacenter/com.android.mediacenter.PageActivity}"
@@ -2323,9 +2225,6 @@
     <item
         component="ComponentInfo{com.samsung.android.themestore/com.samsung.android.themestore.activity.Launcher}"
         drawable="theme" />
-    <item
-        component="ComponentInfo{org.cyanogenmod.theme.chooser/org.cyanogenmod.theme.chooser.ChooserActivity}"
-        drawable="cm_theme" />
     <item
         component="ComponentInfo{com.huawei.KoBackup/com.huawei.KoBackup.InitializeActivity}"
         drawable="backup" />
@@ -2983,9 +2882,6 @@
         component="ComponentInfo{com.evenwell.music/com.fihtdc.music.ui.activities.MainActivity}"
         drawable="music" />
     <item
-        component="ComponentInfo{com.cyanogenmod.eleven/com.cyanogenmod.eleven.ui.activities.HomeActivity}"
-        drawable="music" />
-    <item
         component="ComponentInfo{fm.xiami.yunos/fm.xiami.main.SplashActivity}"
         drawable="music" />
     <item
@@ -3302,9 +3198,6 @@
         component="ComponentInfo{com.forms/com.forms.start.ActStart}"
         drawable="boc" />
     <item
-        component="ComponentInfo{com.chinamworld.bocmbci/com.chinamworld.bocmbci.biz.DexActivity}"
-        drawable="boc" />
-    <item
         component="ComponentInfo{com.qqgame.hlddz/com.qqgame.hlddz.NewHLDDZ}"
         drawable="doudizhu" />
     <item
@@ -3323,17 +3216,11 @@
         component="ComponentInfo{com.microsoft.amp.apps.bingweather/com.microsoft.amp.apps.bingweather.activities.MainActivity}"
         drawable="weather" />
     <item
-        component="ComponentInfo{com.cyanogenmod.filemanager/com.cyanogenmod.filemanager.activities.NavigationActivity}"
-        drawable="cm_filemanager" />
-    <item
         component="ComponentInfo{org.mokee.filemanager/com.amaze.filemanager.activities.MainActivity}"
         drawable="cm_filemanager" />
     <item
         component="ComponentInfo{com.sohu.inputmethod.sogou.gigaset/com.sohu.inputmethod.sogou.gigaset.SogouIMELauncher}"
         drawable="sougou_keyboard" />
-    <item
-        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LOCK/com.android.vending.billing.InAppBillingService.LOCK.MainActivity-4}"
-        drawable="lucklypatcher" />
     <item
         component="ComponentInfo{com.yunos.alicontacts/com.yunos.alicontacts.activities.DialtactsContactsActivity}"
         drawable="phone" />
@@ -3349,9 +3236,6 @@
     <item
         component="ComponentInfo{com.gigaset.soundrecorder/com.gigaset.soundrecorder.activities.SoundRecorderActivity}"
         drawable="soundrecorder" />
-    <item
-        component="ComponentInfo{com.orekie.search/com.orekie.search.components.EntryActivity}"
-        drawable="lite_search" />
     <item
         component="ComponentInfo{com.gigaset.note/com.gigaset.note.NoteMainActivity}"
         drawable="note" />
@@ -3374,20 +3258,8 @@
         component="ComponentInfo{pl.surix.holo.compass/pl.surix.holo.compass.impl.MainActivity}"
         drawable="compass" />
     <item
-        component="ComponentInfo{com.lerist.ghosts/com.lerist.gohosts.MainActivity}"
-        drawable="go_hosts" />
-    <item
-        component="ComponentInfo{com.kapp.ifont/com.kapp.ifont.ui.SplashScreenActivity}"
-        drawable="ifont" />
-    <item
         component="ComponentInfo{com.yulong.android.userreport/com.yulong.android.userreport.menu.BugreportFeedbackInstruct}"
         drawable="bugreport" />
-    <item
-        component="ComponentInfo{com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity}"
-        drawable="dingding" />
-    <item
-        component="ComponentInfo{com.myzaker.ZAKER_Phone/com.myzaker.ZAKER_Phone.view.LogoActivity}"
-        drawable="zaker" />
     <item
         component="ComponentInfo{com.netease.yanxuan/com.netease.yanxuan.module.splash.SplashActivity}"
         drawable="netease_yanxuan" />
@@ -3397,9 +3269,6 @@
     <item
         component="ComponentInfo{com.umowang.fgo/com.umowang.template.SplashActivity}"
         drawable="fategowiki" />
-    <item
-        component="ComponentInfo{com.One.WoodenLetter/com.androlua.Welcome}"
-        drawable="muhan" />
     <item
         component="ComponentInfo{com.scee.psxandroid/com.scee.psxandroid.activity.TopActivity}"
         drawable="playstation" />
@@ -3508,9 +3377,6 @@
         component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyShortcut}"
         drawable="greenify_sleep" />
     <item
-        component="ComponentInfo{com.flarejune.perfectcolorbar/com.flarejune.perfectcolorbar.ui.actMain}"
-        drawable="perfectcolorbar" />
-    <item
         component="ComponentInfo{com.iwoll.weather/com.iwoll.weather.activity.SplashActivity}"
         drawable="iwollweather" />
     <item
@@ -3564,9 +3430,6 @@
         component="ComponentInfo{com.beastbike.bluegogo/com.beastbike.bluegogo.activity.BGSplashActivity}"
         drawable="bluegogo" />
     <item
-        component="ComponentInfo{com.beastbike.bluegogo/com.beastbike.bluegogo.activity.BGSplashActivity}"
-        drawable="bluegogo" />
-    <item
         component="ComponentInfo{com.huawei.phoneservice/com.huawei.phoneservice.ui.HelpCenterActivity}"
         drawable="huawei_care" />
     <item
@@ -3588,14 +3451,8 @@
         component="ComponentInfo{com.GrSJX.ZUI.theme/com.iapp.app.logoActivity}"
         drawable="theme" />
     <item
-        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Round}"
-        drawable="xianyu" />
-    <item
         component="ComponentInfo{com.jingdong.app.mall/com.jingdong.app.mall.MainActivity}"
         drawable="jd" />
-    <item
-        component="ComponentInfo{kh.android.dir/kh.android.dir.ui.activities.MDMainActivity}"
-        drawable="dirclean" />
     <item
         component="ComponentInfo{com.lerist.go_hosts/com.lerist.gohosts.ui.activity.MainActivity}"
         drawable="go_hosts" />
@@ -3608,9 +3465,6 @@
     <item
         component="ComponentInfo{com.android.deskclock/com.pantech.app.clock.ClockLauncher}"
         drawable="clock" />
-    <item
-        component="ComponentInfo{com.android.music/com.android.music.MusicBrowserActivity}"
-        drawable="music" />
     <item
         component="ComponentInfo{com.mediatek.systemupdate/com.mediatek.systemupdate.MainEntry}"
         drawable="update" />
@@ -3694,9 +3548,6 @@
         drawable="browser" />
     <item
         component="ComponentInfo{com.zui.browser/com.zui.browser.BrowserActivity}"
-        drawable="browser" />
-    <item
-        component="ComponentInfo{com.browser_llqhz/com.browser2345.StartBrowserActivity}"
         drawable="browser" />
     <item
         component="ComponentInfo{com.seal.browser/com.seal.browser.ui.activities.WelcomeActivity}"
@@ -3786,10 +3637,6 @@
         drawable="filemanager" />
 
     <item
-        component="ComponentInfo{com.google.android.gms/com.google.android.gms.app.settings.GoogleSettingsActivity}"
-        drawable="google_setting" />
-
-    <item
         component="ComponentInfo{dascom.telecom.vipclub/dascom.telecom.vipclub.InitActivity}"
         drawable="unicom" />
 
@@ -3858,10 +3705,6 @@
         drawable="baidu" />
 
     <item
-        component="ComponentInfo{com.huawei.vassistant/com.huawei.vassistant.ui.VAssistantActivity}"
-        drawable="voiceassist" />
-
-    <item
         component="ComponentInfo{com.miHoYo.bh3.qihoo/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
         drawable="bh3" />
 
@@ -3872,14 +3715,6 @@
     <item
         component="ComponentInfo{com.DiaoChangStudio.CFT001/com.Sarkozy}"
         drawable="cf" />
-
-    <item
-        component="ComponentInfo{com.miui.gallery/com.miui.gallery.app.Gallery}"
-        drawable="gallery" />
-
-    <item
-        component="ComponentInfo{com.wandoujia.phoenix2/com.wandoujia.jupiter.activity.HomeActivity}"
-        drawable="wandoujia2" />
 
     <!-- 2017.06.09 -->
     <item
@@ -4005,16 +3840,10 @@
         component="ComponentInfo{com.mokee.yubrowser/com.mokee.yubrowser.Main}"
         drawable="browser" />
     <item
-        component="ComponentInfo{com.browser_llqhz/com.browser2345.StartBrowserActivity}"
-        drawable="browser" />
-    <item
         component="ComponentInfo{com.baidu.browser.apps_mr/com.baidu.browser.apps.BrowserActivity}"
         drawable="browser" />
     <item
         component="ComponentInfo{com.android.browser/com.android.browser.PermissionCheckActivity}"
-        drawable="browser" />
-    <item
-        component="ComponentInfo{com.android.browser/com.android.browser.GNBrowserActivity}"
         drawable="browser" />
     <item
         component="ComponentInfo{com.daohangforxiuzhuo/com.daohang2345.LanuchActivity}"
@@ -4069,9 +3898,6 @@
         drawable="tencent_tiyu" />
 
     <!-- 2017.07.16 Add -->
-    <item
-        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Round}"
-        drawable="xianyu" />
     <item
         component="ComponentInfo{com.xesygao.puretie/com.xesygao.puretie.ui.activity.MainActivity}"
         drawable="puretie" />
