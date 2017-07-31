@@ -52,7 +52,7 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
     @Override
     protected void initData() {
-        int[] launcherIcons = new int[]{
+        /*int[] launcherIcons = new int[]{
                 R.drawable.ic_launcher_nova,
                 R.drawable.ic_launcher_action,
                 R.drawable.ic_launcher_adw,
@@ -65,7 +65,9 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
                 R.drawable.ic_launcher_next,
                 R.drawable.ic_launcher_smart,
                 R.drawable.ic_launcher_solo,
-        };
+        };*/
+
+        int[] launcherIcons = new int[]{};
 
         String[] launcherNames = getResources().getStringArray(R.array.launchers);
         RequestManager glide = Glide.with(this);

@@ -16,8 +16,7 @@
         <ImageView
             android:id="@+id/iv_launcher_icon"
             android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_launcher_nova" />
+            android:layout_height="80dp" />
 
         <TextView
             android:id="@+id/tv_launcher_name"
