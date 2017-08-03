@@ -910,10 +910,20 @@
     <item
         component="ComponentInfo{com.netease.cloudmusic/com.netease.cloudmusic.activity.LoadingActivity}"
         drawable="wangyiyun" />
+
     <!-- 头条 / jinri -->
     <item
-        component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.activity.SplashActivity}}"
+        component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.activity.SplashActivity}"
         drawable="jinri" />
+
+    <item
+        component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.MainActivityBadge0}"
+        drawable="jinri" />
+
+    <item
+        component="ComponentInfo{com.ss.android.article.lite/com.ss.android.article.lite.activity.SplashActivity}"
+        drawable="jinri" />
+
     <!-- 邮箱 / mail -->
     <item
         component="ComponentInfo{com.android.email/com.android.email.activity.Welcome}"
@@ -1544,9 +1554,6 @@
         drawable="tencent_qq_secure" />
 
     <!-- 2_25 / 2017-->
-    <item
-        component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.activity.SplashActivity}"
-        drawable="jinri" />
     <item
         component="ComponentInfo{com.android.documentsui/com.android.documentsui.LauncherActivity}"
         drawable="downloads" />
