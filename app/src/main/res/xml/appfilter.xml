@@ -492,6 +492,11 @@
         component="ComponentInfo{tv.danmaku.bili/tv.danmaku.bili.ui.splash.SplashActivity}"
         drawable="bilibili" />
 
+    <!-- 哔哩哔哩国际版 -->
+    <item
+        component="ComponentInfo{com.bilibili.tv/com.bilibili.tv.ui.splash.SplashActivity}"
+        drawable="bilibili" />
+
     <!-- 即刻 /  jike  -->
     <item
         component="ComponentInfo{com.ruguoapp.jike/com.ruguoapp.jike.ui.activity.WelcomeActivity}"
