@@ -481,7 +481,7 @@
         component="ComponentInfo{com.baidu.tieba/com.baidu.tieba.LogoActivity}"
         drawable="baidu_tieba" />
 
-    <!-- 哔哩哔哩 /  bilibili  -->
+    <!-- 哔哩哔哩 -->
     <item
         component="ComponentInfo{tv.danmaku.bili/tv.danmaku.bili.MainActivity}"
         drawable="bilibili" />
@@ -496,6 +496,11 @@
     <item
         component="ComponentInfo{com.bilibili.tv/com.bilibili.tv.ui.splash.SplashActivity}"
         drawable="bilibili" />
+
+    <!-- 哔哩哔哩概念-->
+    <item
+        component="ComponentInfo{com.bilibili.app.blue/tv.danmaku.bili.ui.splash.SplashActivity}"
+        drawable="bilibili_blue" />
 
     <!-- 即刻 /  jike  -->
     <item
@@ -1334,17 +1339,40 @@
     <item
         component="ComponentInfo{com.xiaomi.gamecenter/com.xiaomi.gamecenter.ui.MainTabActivity}"
         drawable="game" />
-    <!-- 哔哩哔哩概念 / bilibili-->
+
+    <!-- 10086 -->
     <item
-        component="ComponentInfo{com.bilibili.app.blue/tv.danmaku.bili.ui.splash.SplashActivity}"
-        drawable="bilibili_blue" />
+        component="ComponentInfo{com.greenpoint.android.mc10086.activity/com.leadeon.cmcc.base.StartPageActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.kingpoint.gmcchh/com.kingpoint.gmcchh.ui.home.StartUpActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.sunrise.scmbhc/com.sunrise.scmbhc.ui.activity.loading.LoadingActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.xinhang.mobileclient/com.xinhang.mobileclient.LoadingActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.sitech.ac/com.cmcc.sjyyt.activitys.WelcomeActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.example.businesshall/com.businesshall.activity.NewLogoActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.jsmcc/com.jsmcc.ui.WelcomeActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.cqmc.client/com.cqmc.client.SplashActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{zz.dela.cmcc.traffic/zz.dela.cmcc.traffic.activity.SplashActivity}"
+        drawable="_10086" />
+
     <!-- 2_23 / 2017-->
     <item
         component="ComponentInfo{com.meizu.flyme.scanner/com.meizu.flyme.scanner.activity.ScannerActivity}"
         drawable="scan" />
-    <item
-        component="ComponentInfo{com.greenpoint.android.mc10086.activity/com.leadeon.cmcc.base.StartPageActivity}"
-        drawable="_10086" />
     <item
         component="ComponentInfo{com.ct.client/com.ct.client.SplashActivity}"
         drawable="ct_client" />
@@ -1652,9 +1680,6 @@
     <item
         component="ComponentInfo{tv.acfundanmaku.video/tv.acfun.core.view.activity.SplashActivity}"
         drawable="acfun" />
-    <item
-        component="ComponentInfo{com.kingpoint.gmcchh/com.kingpoint.gmcchh.ui.home.StartUpActivity}"
-        drawable="_10086" />
     <item
         component="ComponentInfo{com.xunlei.downloadprovider/com.xunlei.downloadprovider.loading.LaunchActivity}"
         drawable="xunlei" />
@@ -2039,12 +2064,6 @@
         component="ComponentInfo{com.github.shadowsocks/com.github.shadowsocks.MainActivity}"
         drawable="shadowsocks" />
     <item
-        component="ComponentInfo{com.sunrise.scmbhc/com.sunrise.scmbhc.ui.activity.loading.LoadingActivity}"
-        drawable="_10086" />
-    <item
-        component="ComponentInfo{com.xinhang.mobileclient/com.xinhang.mobileclient.LoadingActivity}"
-        drawable="_10086" />
-    <item
         component="ComponentInfo{com.tencent.FileManager/com.fteam.openmaster.SplashActivity}"
         drawable="qq_filemanager" />
     <item
@@ -2345,12 +2364,6 @@
     <item
         component="ComponentInfo{org.cyanogenmod.gello.browser/com.android.browser.BrowserLauncher}"
         drawable="browser" />
-    <item
-        component="ComponentInfo{com.sitech.ac/com.cmcc.sjyyt.activitys.WelcomeActivity}"
-        drawable="_10086" />
-    <item
-        component="ComponentInfo{com.example.businesshall/com.businesshall.activity.NewLogoActivity}"
-        drawable="_10086" />
     <item
         component="ComponentInfo{com.meizu.voiceassistant/com.meizu.voiceassistant.MainActivity}"
         drawable="voiceassist" />
@@ -3153,9 +3166,6 @@
     <item
         component="ComponentInfo{com.google.android.music/com.android.music.activitymanagement.TopLevelActivity}"
         drawable="google_music" />
-    <item
-        component="ComponentInfo{com.jsmcc/com.jsmcc.ui.WelcomeActivity}"
-        drawable="_10086" />
     <item
         component="ComponentInfo{com.android.bankabc/com.android.bankabc.SplashActivity}"
         drawable="bankabc" />
