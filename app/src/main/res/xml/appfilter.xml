@@ -3997,4 +3997,126 @@
         component="ComponentInfo{com.android.contacts/com.android.contacts.NonPhoneActivity}"
         drawable="contacts" />
 
+    <!-- 2017.08.03 Add -->
+    <item
+        component="ComponentInfo{org.lineageos.jelly/org.lineageos.jelly.MainActivity}"
+        drawable="browser" />
+    <item
+        component="ComponentInfo{com.samsung.android.game.gamehome/com.samsung.android.game.gamehome.activity.StartActivity}"
+        drawable="game" />
+    <item
+        component="ComponentInfo{com.nearme.gamecenter/com.nearme.gamecenter.ui.activity.SplashActivity}"
+        drawable="game" />
+    <item
+        component="ComponentInfo{com.psiphon3/com.psiphon3.StatusActivity}"
+        drawable="psiphon" />
+    <item
+        component="ComponentInfo{ce.hesh.wechatUI/ce.hesh.wechatUI.SettingsActivityLauncher}"
+        drawable="android_app" />
+    <item
+        component="ComponentInfo{com.maibaapp.elf/com.maibaapp.elf.activity.SplashActivity}"
+        drawable="maibaapp_elf" />
+    <item
+        component="ComponentInfo{com.htc.soundrecorder/com.htc.soundrecorder.SoundRecorderBG}"
+        drawable="soundrecorder" />
+    <item
+        component="ComponentInfo{com.anyview/com.anyview.Splash}"
+        drawable="anyview" />
+    <item
+        component="ComponentInfo{com.microsoft.office.outlook/com.microsoft.office.outlook.MainActivity}"
+        drawable="microsoft_outlook" />
+    <item
+        component="ComponentInfo{org.ppsspp.ppsspp/org.ppsspp.ppsspp.PpssppActivity}"
+        drawable="ppsspp" />
+    <item
+        component="ComponentInfo{org.ppsspp.ppsspp3kqq/org.ppsspp.ppsspp3kqq.PpssppActivity}"
+        drawable="ppsspp" />
+    <item
+        component="ComponentInfo{org.ppsspp.ppssppgold/org.ppsspp.ppssppgold.PpssppActivity}"
+        drawable="ppsspp" />
+    <item
+        component="ComponentInfo{org.ppsspp.ppssp/org.ppsspp.ppsspp.PpssppActivity}"
+        drawable="ppsspp" />
+    <item
+        component="ComponentInfo{com.bilibili.azurlane/com.manjuu.azurlane.MainActivity}"
+        drawable="azurlane" />
+    <item
+        component="ComponentInfo{com.tencent.tmgp.bilibili.blhx/com.manjuu.azurlane.MainActivity}"
+        drawable="azurlane" />
+    <item
+        component="ComponentInfo{com.google.android.apps.fitness/com.google.android.apps.fitness.welcome.WelcomeActivity}"
+        drawable="fitness" />
+    <item
+        component="ComponentInfo{com.huawei.trustspace/com.huawei.trustspace.mainscreen.LoadActivity}"
+        drawable="trustspace" />
+    <item
+        component="ComponentInfo{com.magnets.toolbox/com.magnets.toolbox.ui.activity.WelcomeActivity}"
+        drawable="magnets_toolbox" />
+    <item
+        component="ComponentInfo{com.atom.socks5/com.atom.socks5.Shadowsocks}"
+        drawable="atom_vpn" />
+    <item
+        component="ComponentInfo{com.huawei.android.findmyphone/com.huawei.android.findmyphone.ui.FindMyPhoneActivity}"
+        drawable="findmyphone" />
+    <item
+        component="ComponentInfo{com.google.android.apps.adm/com.google.android.apps.adm.MainActivity}"
+        drawable="findmyphone" />
+    <item
+        component="ComponentInfo{com.github.chenxiaolong.dualbootpatcher.snapshot/com.github.chenxiaolong.dualbootpatcher.MainActivity}"
+        drawable="dualbootpatcher" />
+    <item
+        component="ComponentInfo{com.mobisystems.fileman/com.mobisystems.files.FileBrowser}"
+        drawable="fileman" />
+    <item
+        component="ComponentInfo{com.kascend.chushou/com.kascend.chushou.ChuShouTV}"
+        drawable="chushou" />
+    <item
+        component="ComponentInfo{com.yek.android.kfc.activitys/com.yum.brandkfc.SplashAct}"
+        drawable="kfc" />
+    <item
+        component="ComponentInfo{com.happyteam.steambang/com.happyteam.steambang.module.welcome.view.WelcomeActivity}"
+        drawable="steambang" />
+    <item
+        component="ComponentInfo{free.vpn.unblock.proxy.turbovpn/free.vpn.unblock.proxy.turbovpn.activity.VpnMainActivity}"
+        drawable="turbovpn" />
+    <item
+        component="ComponentInfo{me.twrp.twrpapp/me.twrp.officialtwrpapp.activities.MainActivity}"
+        drawable="twrp" />
+    <item
+        component="ComponentInfo{com.tplink.cloudrouter/com.tplink.cloudrouter.activity.InitAppActivity}"
+        drawable="tplink" />
+    <item
+        component="ComponentInfo{cn.missevan/com.stub.stub01.Stub01}"
+        drawable="missevan" />
+    <item
+        component="ComponentInfo{chenmc.sms.code.helper/chenmc.smscodehelper.MainActivity}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{com.rincyan.smsdelete/com.rincyan.smsdelete.MainActivity}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{me.drakeet.inmessage/me.drakeet.inmessage.MainActivity}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{com.zzy.captcha/com.zzy.captcha.ui.activity.PermissionActivity}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{tech.summerly.smshelper/tech.summerly.smshelper.activity.MainActivity}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{rikka.smscodehelper/rikka.smscodehelper.MainActivity}"
+        drawable="smscodehelper" />
+    <item
+        component="ComponentInfo{com.zzz.wifiview/com.zzz.wifiview.MainActivity}"
+        drawable="wifi_password" />
+    <item
+        component="ComponentInfo{com.xesygao.xtieba/com.xesygao.xtieba.ui.activity.MainActivity}"
+        drawable="puretie" />
+    <item
+        component="ComponentInfo{com.alicom.smartdail/com.alicom.smartdail.view.enter.SplashActivity}"
+        drawable="ali_smartdail" />
+    <item
+        component="ComponentInfo{com.chinatelecom.bestpayclient/com.chinatelecom.bestpayclient.mvp.launch.MVPSplashActivity}"
+        drawable="bestpayclient" />
+
 </resources>
