@@ -2738,6 +2738,8 @@
     <item
         component="ComponentInfo{com.didi.echo/com.didi.echo.bussiness.splash.SplashActivity}"
         drawable="uber" />
+
+    <!-- 崩坏3 -->
     <item
         component="ComponentInfo{com.miHoYo.enterprise.NGHSoD/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
         drawable="bh3" />
@@ -2758,6 +2760,15 @@
         drawable="bh3" />
     <item
         component="ComponentInfo{com.miHoYo.bh3.wdj/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.qihoo/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.huawei/com.miHoYo.bh3.huawei.HuaweiACT}"
+        drawable="bh3" />
+    <item
+        component="ComponentInfo{com.miHoYo.bh3.uc/com.miHoYo.bh3.uc.UCGameACT}"
         drawable="bh3" />
 
     <!-- 2017.04.21 Add -->
@@ -3721,10 +3732,6 @@
     <item
         component="ComponentInfo{com.baidu.searchbox_AndroidM/com.baidu.searchbox.SplashActivity}"
         drawable="baidu" />
-
-    <item
-        component="ComponentInfo{com.miHoYo.bh3.qihoo/com.miHoYo.overridenativeactivity.OverrideNativeActivity}"
-        drawable="bh3" />
 
     <item
         component="ComponentInfo{com.tencent.tmgp.cfalpha/com.tencent.tmgp.cfalpha.AFMainActivity}"
