@@ -1142,6 +1142,12 @@
     <item
         component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Round}"
         drawable="xianyu" />
+    <item
+        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Rect}"
+        drawable="xianyu" />
+    <item
+        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.home.activity.InitActivity.Round}"
+        drawable="xianyu" />
 
     <!-- 酷狗 / kugou -->
     <item
@@ -3768,9 +3774,6 @@
     <item
         component="ComponentInfo{com.lenovo.calendar/com.lenovo.calendar.splashpic.SplashActivity}"
         drawable="calendar" />
-    <item
-        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Rect}"
-        drawable="xianyu" />
     <item
         component="ComponentInfo{com.amazon.kindlefc/com.amazon.kindle.UpgradePage}"
         drawable="kindle" />
