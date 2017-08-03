@@ -6,13 +6,17 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.internal.BottomNavigationItemView;
+import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
+import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 
@@ -46,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         BottomNavigationView bottomView = (BottomNavigationView) findViewById(R.id.bottom_bar);
         bottomView.setOnNavigationItemSelectedListener(this);
+        setBottomIconOriColor(bottomView);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
@@ -61,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switchFragment(0);
         handleToolbarElevation(0);
     }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -84,6 +90,29 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             fragment.onBackPressed();
         } else {
             super.onBackPressed();
+        }
+    }
+
+    private void setBottomIconOriColor(BottomNavigationView bottomView) {
+        try {
+            Field mMenuViewField = BottomNavigationView.class.getDeclaredField("mMenuView");
+            mMenuViewField.setAccessible(true);
+            BottomNavigationMenuView mMenuView = (BottomNavigationMenuView) mMenuViewField.get(bottomView);
+
+            Field mButtonsField = BottomNavigationMenuView.class.getDeclaredField("mButtons");
+            mButtonsField.setAccessible(true);
+            BottomNavigationItemView[] mButtons = (BottomNavigationItemView[]) mButtonsField.get(mMenuView);
+
+            Field mIconField = BottomNavigationItemView.class.getDeclaredField("mIcon");
+            mIconField.setAccessible(true);
+
+            for (BottomNavigationItemView item : mButtons) {
+                ImageView mIcon = (ImageView) mIconField.get(item);
+                mIcon.setImageTintList(null);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

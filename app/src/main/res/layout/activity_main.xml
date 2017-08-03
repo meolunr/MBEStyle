@@ -20,8 +20,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:elevation="8dp"
-        app:itemIconTint="@color/selector_bottom_color"
-        app:itemTextColor="@color/selector_bottom_color"
+        app:itemTextColor="@color/selector_bottom_textcolor"
         app:menu="@menu/bottom_bar" />
 
 </LinearLayout>
