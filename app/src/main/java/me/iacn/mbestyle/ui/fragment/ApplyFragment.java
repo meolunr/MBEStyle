@@ -52,22 +52,20 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
     @Override
     protected void initData() {
-        /*int[] launcherIcons = new int[]{
-                R.drawable.ic_launcher_nova,
-                R.drawable.ic_launcher_action,
-                R.drawable.ic_launcher_adw,
-                R.drawable.ic_launcher_apex,
-                R.drawable.ic_launcher_atom,
-                R.drawable.ic_launcher_aviate,
-                R.drawable.ic_launcher_go,
-                R.drawable.ic_launcher_kk,
-                R.drawable.ic_launcher_lg,
-                R.drawable.ic_launcher_next,
-                R.drawable.ic_launcher_smart,
-                R.drawable.ic_launcher_solo,
-        };*/
-
-        int[] launcherIcons = new int[]{};
+        int[] launcherIcons = new int[]{
+                R.drawable.nova_launcher,
+                R.drawable.action_launcher,
+                R.drawable.adw_launcher,
+                R.drawable.apex_launcher,
+                R.drawable.atom_launcher,
+                R.drawable.aviate_launcher,
+                R.drawable.go_launcher,
+                R.drawable.kk_launcher,
+                R.drawable.lg_launcher,
+                R.drawable.next_launcher,
+                R.drawable.smart_launcher,
+                R.drawable.solo_launcher,
+        };
 
         String[] launcherNames = getResources().getStringArray(R.array.launchers);
         RequestManager glide = Glide.with(this);
