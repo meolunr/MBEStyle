@@ -3917,7 +3917,7 @@
         component="ComponentInfo{com.huawei.wallet/com.huawei.wallet.view.MainActivity}"
         drawable="wallet" />
     <item
-        component="ComponentInfo{com.tencent.radio/com.tencent.radio.common.ui.MainActivity}"
+        component="ComponentInfo{com.tencent.radio/com.tencent.radio.common.ui.LaunchActivity}"
         drawable="qq_fm" />
     <item
         component="ComponentInfo{com.xda.labs/com.xda.labs.LabsLauncher}"
