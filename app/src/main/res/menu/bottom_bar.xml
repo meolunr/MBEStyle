@@ -7,17 +7,17 @@
         android:title="图标" />
 
     <item
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/selector_bottom_launcher"
         android:orderInCategory="1"
         android:title="应用" />
 
     <item
-        android:icon="@drawable/ic_apply_black_24dp"
+        android:icon="@drawable/selector_bottom_request"
         android:orderInCategory="2"
         android:title="申请" />
 
     <item
-        android:icon="@drawable/ic_about_black_24dp"
+        android:icon="@drawable/selector_bottom_about"
         android:orderInCategory="3"
         android:title="关于" />
 
