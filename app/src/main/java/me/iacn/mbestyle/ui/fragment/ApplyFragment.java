@@ -39,7 +39,7 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
 
     @Override
     protected void setListener() {
-        final GridLayoutManager manager = new GridLayoutManager(getActivity(), 2);
+        final GridLayoutManager manager = new GridLayoutManager(getActivity(), 3);
         manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
