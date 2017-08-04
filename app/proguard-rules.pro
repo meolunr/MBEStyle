@@ -40,3 +40,14 @@
 
 # JavaBean
 -keep class me.iacn.mbestyle.bean.** {*;}
+
+# Reflect
+-keepclassmembers class android.support.design.widget.BottomNavigationView {
+  android.support.design.internal.BottomNavigationMenuView mMenuView;
+}
+-keepclassmembers class android.support.design.internal.BottomNavigationMenuView {
+  android.support.design.internal.BottomNavigationItemView[] mButtons;
+}
+-keepclassmembers class android.support.design.internal.BottomNavigationItemView {
+  android.widget.ImageView mIcon;
+}
