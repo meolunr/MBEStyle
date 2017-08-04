@@ -4154,4 +4154,68 @@
         component="ComponentInfo{com.chinatelecom.bestpayclient/com.chinatelecom.bestpayclient.mvp.launch.MVPSplashActivity}"
         drawable="bestpayclient" />
 
+    <!-- Action Launcher  -->
+    <item
+        component="ComponentInfo{com.actionlauncher.playstore/com.actionlauncher.ActionLauncherActivity}"
+        drawable="action_launcher" />
+
+    <!-- ADW Launcher -->
+    <item
+        component="ComponentInfo{org.adw.launcher/org.adw.launcher.LauncherActivity}"
+        drawable="adw_launcher" />
+
+    <!-- Apex Launcher -->
+    <item
+        component="ComponentInfo{com.anddoes.launcher/com.anddoes.launcher.Launcher}"
+        drawable="apex_launcher" />
+
+    <!-- Atom 桌面 -->
+    <item
+        component="ComponentInfo{com.dlto.atom.launcher/com.nemustech.slauncher.LauncherAlias}"
+        drawable="atom_launcher" />
+
+    <!-- Aviate -->
+    <item
+        component="ComponentInfo{com.tul.aviate/com.tul.aviator.ui.TabbedHomeActivity}"
+        drawable="aviate_launcher" />
+
+    <!-- GO 桌面 -->
+    <item
+        component="ComponentInfo{com.gau.go.launcherex/com.jiubang.golauncher.GOLauncherFacade}"
+        drawable="go_launcher" />
+    <item
+        component="ComponentInfo{com.gau.go.launcherex/com.jiubang.ggheart.apps.desks.diy.GoLauncherFacade}"
+        drawable="go_launcher" />
+    <item
+        component="ComponentInfo{com.gau.go.launcherex/com.go.gomarketex.activity.main.GOMarketEXActivity}"
+        drawable="go_launcher" />
+
+    <!-- KK Launcher -->
+    <item
+        component="ComponentInfo{com.ovidos.android.kitkat.launcher3/com.ovidos.android.kitkat.launcher3.custom.LauncherActivityShortcut}"
+        drawable="kk_launcher" />
+    <item
+        component="ComponentInfo{com.kk.launcher/com.kk.launcher.Launcher}"
+        drawable="kk_launcher" />
+
+    <!-- LG Launcher -->
+    <item
+        component="ComponentInfo{com.lge.bnr.launcher/com.lge.bnr.launcher.BNRLauncherActivity}"
+        drawable="lg_launcher" />
+
+    <!-- Nextbit Home -->
+    <item
+        component="ComponentInfo{com.nextbit.launcher/com.nextbit.nextbithome.Launcher}"
+        drawable="next_launcher" />
+
+    <!-- Smart Launcher -->
+    <item
+        component="ComponentInfo{ginlemon.flowerpro/ginlemon.flower.HomeScreen}"
+        drawable="smart_launcher" />
+
+    <!-- Solo 桌面 -->
+    <item
+        component="ComponentInfo{home.solo.launcher.free/home.solo.launcher.free.SplashActivity}"
+        drawable="solo_launcher" />
+
 </resources>
