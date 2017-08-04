@@ -8,8 +8,8 @@ android {
         applicationId "me.iacn.mbestyle"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 19
-        versionName "1.5.1"
+        versionCode 20
+        versionName "1.6.2"
         resConfigs "en", "zh-rCN"
     }
 
