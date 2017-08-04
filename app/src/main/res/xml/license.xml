@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="开源许可">
+
+        <Preference
+            android:summary="GNU General Public License 3.0"
+            android:title="MBE Style">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/iAcn/MBEStyle" />
+
+        </Preference>
+
+        <Preference
+            android:summary="Apache Software License 2.0"
+            android:title="RxJava">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ReactiveX/RxJava" />
+
+        </Preference>
+
+        <Preference
+            android:summary="Apache Software License 2.0"
+            android:title="RxAndroid">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ReactiveX/RxAndroid" />
+
+        </Preference>
+
+        <Preference
+            android:summary="Apache Software License 2.0"
+            android:title="OkHttp">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/square/okhttp" />
+
+        </Preference>
+
+        <Preference
+            android:summary="Apache Software License 2.0"
+            android:title="Retrofit">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/square/retrofit" />
+
+        </Preference>
+
+        <Preference
+            android:summary="Apache Software License 2.0"
+            android:title="Gson">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/google/gson" />
+
+        </Preference>
+
+        <Preference
+            android:summary="BSD 3-Clause License"
+            android:title="Glide">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/bumptech/glide" />
+
+        </Preference>
+
+        <Preference
+            android:summary="Apache Software License 2.0"
+            android:title="AlipayZeroSdk">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/fython/AlipayZeroSdk" />
+
+        </Preference>
+
+        <Preference
+            android:summary="Apache Software License 2.0"
+            android:title="AVLoadingIndicatorView">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/81813780/AVLoadingIndicatorView" />
+
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

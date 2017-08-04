@@ -12,9 +12,9 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import de.psdev.licensesdialog.LicensesDialog;
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
+import me.iacn.mbestyle.ui.activity.LicenseActivity;
 import me.iacn.mbestyle.ui.widget.AboutItem;
 import moe.feng.alipay.zerosdk.AlipayZeroSdk;
 
@@ -75,7 +75,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
                 openAliPay();
                 break;
             case R.id.ai_open_source:
-                showLicenseDialog();
+                startActivity(new Intent(getActivity(), LicenseActivity.class));
                 break;
         }
     }
@@ -99,12 +99,5 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
             Toast.makeText(getActivity(),
                     "未安装支付宝客户端\n已将支付宝ID复制到剪贴板", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    private void showLicenseDialog() {
-        new LicensesDialog.Builder(getActivity())
-                .setNotices(R.raw.licenses)
-                .build()
-                .show();
     }
 }

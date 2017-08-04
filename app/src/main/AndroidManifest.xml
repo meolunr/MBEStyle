@@ -155,6 +155,10 @@
 
         <activity android:name=".ui.activity.WallpaperActivity" />
 
+        <activity
+            android:name=".ui.activity.LicenseActivity"
+            android:theme="@android:style/Theme.Material.Light.Dialog" />
+
     </application>
 
 </manifest>
