@@ -2564,9 +2564,6 @@
         component="ComponentInfo{com.sspai.cuto.android/com.sspai.cuto.android.EntryActivity}"
         drawable="cuto" />
     <item
-        component="ComponentInfo{ctrip.android.view/ctrip.android.view.splash.CtripSplashActivity}"
-        drawable="ctrip" />
-    <item
         component="ComponentInfo{com.topjohnwu.magisk/com.topjohnwu.magisk.SplashActivity}"
         drawable="magisk" />
     <item
@@ -3689,10 +3686,6 @@
         drawable="update" />
 
     <item
-        component="ComponentInfo{ctrip.android.view/ctrip.android.view.view.CtripDeclarationActivity}"
-        drawable="ctrip" />
-
-    <item
         component="ComponentInfo{com.sohu.inputmethod.sogou.zte/com.sohu.inputmethod.sogou.zte.SogouIMELauncher}"
         drawable="sougou_keyboard" />
 
@@ -3987,9 +3980,6 @@
     <item
         component="ComponentInfo{com.douban.book.reader/com.douban.book.reader.activity.WelcomeActivity_}"
         drawable="douban_reader" />
-    <item
-        component="ComponentInfo{ctrip.android.view/ctrip.base.ui.splash.CtripSplashActivity}"
-        drawable="ctrip" />
     <item
         component="ComponentInfo{com.Kingdee.Express/com.Kingdee.Express.activity.SplashActivity}"
         drawable="kuaidi_100" />
@@ -4296,5 +4286,22 @@
     <item
         component="ComponentInfo{com.wandoujia.phoenix2/com.wandoujia.p4.activity.ExploreActivity}"
         drawable="wandoujia2" />
+
+    <!-- 携程旅行 -->
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.base.ui.splash.CtripSplashActivity}"
+        drawable="ctrip" />
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.android.view.view.CtripDeclarationActivity}"
+        drawable="ctrip" />
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.android.view.splash.CtripSplashActivity}"
+        drawable="ctrip" />
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.business.splash.CtripSplashActivity}"
+        drawable="ctrip" />
+    <item
+        component="ComponentInfo{ctrip.android.view/ctrip.android.view.home.CtripDeclarationActivity}"
+        drawable="ctrip" />
 
 </resources>
