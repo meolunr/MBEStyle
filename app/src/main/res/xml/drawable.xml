@@ -3,6 +3,23 @@
 
     <version>1</version>
 
+    <item drawable="airdroid" />
+    <item drawable="aweme" />
+    <item drawable="dangdang" />
+    <item drawable="diyidan" />
+    <item drawable="foodie" />
+    <item drawable="happyelements" />
+    <item drawable="killthermal" />
+    <item drawable="kuaidu_free" />
+    <item drawable="lawnchair" />
+    <item drawable="omniswitch" />
+    <item drawable="pornhub" />
+    <item drawable="powersecurity" />
+    <item drawable="starbucks" />
+    <item drawable="switchnfc" />
+    <item drawable="tide" />
+    <item drawable="xiaoshuting" />
+    <item drawable="yingshidaquan" />
     <item drawable="acfun" />
     <item drawable="action_launcher" />
     <item drawable="adaway" />

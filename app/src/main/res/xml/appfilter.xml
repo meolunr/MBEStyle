@@ -4218,4 +4218,78 @@
         component="ComponentInfo{home.solo.launcher.free/home.solo.launcher.free.SplashActivity}"
         drawable="solo_launcher" />
 
+    <!-- 2017.08.18 Add -->
+    <item
+        component="ComponentInfo{com.lm.powersecurity/com.lm.powersecurity.activity.SplashActivity}"
+        drawable="powersecurity" />
+    <item
+        component="ComponentInfo{org.omnirom.omniswitch/org.omnirom.omniswitch.SettingsActivity}"
+        drawable="omniswitch" />
+    <item
+        component="ComponentInfo{com.app.pornhub/com.app.pornhub.alias.normal}"
+        drawable="pornhub" />
+    <item
+        component="ComponentInfo{io.moreless.tide/io.moreless.tide.play.PlayActivity}"
+        drawable="tide" />
+    <item
+        component="ComponentInfo{com.linecorp.foodcam.android/com.linecorp.foodcam.android.camera.CameraActivity}"
+        drawable="foodie" />
+    <item
+        component="ComponentInfo{com.an.killthermal/com.an.killthermal.MainActivity}"
+        drawable="killthermal" />
+    <item
+        component="ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}"
+        drawable="aweme" />
+    <item
+        component="ComponentInfo{com.diyidan/com.diyidan.activity.SplashActivity}"
+        drawable="diyidan" />
+    <item
+        component="ComponentInfo{com.microsoft.launcher/com.microsoft.launcher.EntryActivity}"
+        drawable="microsoft_launcher" />
+    <item
+        component="ComponentInfo{com.tencent.androidqqmail/com.tencent.qqmail.launcher.desktop.LaucherActivity}"
+        drawable="qq_mail" />
+    <item
+        component="ComponentInfo{com.wokee.switchnfc/com.wokee.switchnfc.MainActivity}"
+        drawable="switchnfc" />
+    <item
+        component="ComponentInfo{com.qihoo.haosou.subscribe.vertical.book/com.reader.activity.LoadingActivity}"
+        drawable="xiaoshuting" />
+    <item
+        component="ComponentInfo{com.freereader.kankan/com.freereader.kankan.ui.SplashActivity}"
+        drawable="kuaidu_free" />
+    <item
+        component="ComponentInfo{com.happyelements.AndroidAnimal/com.happyelements.hellolua.MainActivity}"
+        drawable="happyelements" />
+    <item
+        component="ComponentInfo{org.mokee.lawnchair/ch.deletescape.lawnchair.Launcher}"
+        drawable="lawnchair" />
+    <item
+        component="ComponentInfo{com.le123.ysdq/com.elinkway.infinitemovies.ui.activity.SplashActivity}"
+        drawable="yingshidaquan" />
+    <item
+        component="ComponentInfo{com.android.hwmirror/com.android.hwmirror.Mirror}"
+        drawable="huawei_hwmirror" />
+    <item
+        component="ComponentInfo{com.ximalaya.ting.android/com.ximalaya.ting.android.activity.login.WelcomeActivity}"
+        drawable="ximalaya" />
+    <item
+        component="ComponentInfo{com.sollyu.xposed.hook.model/com.sollyu.android.appenv.activity.SplashActivity}"
+        drawable="hook_model" />
+    <item
+        component="ComponentInfo{com.starbucks.cn/com.starbucks.cn.ui.StartActivity}"
+        drawable="starbucks" />
+    <item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.CLON/com.android.vending.billing.InAppBillingService.CLON.MainActivity-Original}"
+        drawable="lucklypatcher" />
+    <item
+        component="ComponentInfo{com.dangdang.buy2/com.dangdang.buy2.StartupActivity}"
+        drawable="dangdang" />
+    <item
+        component="ComponentInfo{com.sand.airdroid/com.sand.airdroid.ui.splash.SplashActivity_}"
+        drawable="airdroid" />
+    <item
+        component="ComponentInfo{cn.com.shouji.market/cn.com.shouji.market.LogoActivity}"
+        drawable="shoujileyuan" />
+
 </resources>
