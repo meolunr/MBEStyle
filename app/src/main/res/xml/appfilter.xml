@@ -2990,9 +2990,6 @@
         component="ComponentInfo{com.youdao.calculator/com.youdao.calculator.activities.MainActivity}"
         drawable="super_calculator" />
     <item
-        component="ComponentInfo{com.wandoujia.phoenix2/com.wandoujia.jupiter.activity.HomeActivity}"
-        drawable="wandoujia2" />
-    <item
         component="ComponentInfo{com.pixlr.express/com.pixlr.express.StartupActivity}"
         drawable="pixlr" />
     <item
@@ -4003,9 +4000,6 @@
         component="ComponentInfo{com.pianke.client/com.pianke.client.ui.activity.SplashActivity}"
         drawable="pianke" />
     <item
-        component="ComponentInfo{com.wandoujia.phoenix2/com.pp.assistant.activity.PPMainActivity}"
-        drawable="wandoujia2" />
-    <item
         component="ComponentInfo{com.quicinc.fmradio/com.quicinc.fmradio.FMRadio}"
         drawable="fm" />
     <item
@@ -4291,5 +4285,16 @@
     <item
         component="ComponentInfo{cn.com.shouji.market/cn.com.shouji.market.LogoActivity}"
         drawable="shoujileyuan" />
+
+    <!-- 真·豌豆荚 -->
+    <item
+        component="ComponentInfo{com.wandoujia.phoenix2/com.wandoujia.jupiter.activity.HomeActivity}"
+        drawable="wandoujia2" />
+    <item
+        component="ComponentInfo{com.wandoujia.phoenix2/com.pp.assistant.activity.PPMainActivity}"
+        drawable="wandoujia2" />
+    <item
+        component="ComponentInfo{com.wandoujia.phoenix2/com.wandoujia.p4.activity.ExploreActivity}"
+        drawable="wandoujia2" />
 
 </resources>
