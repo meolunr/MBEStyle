@@ -5,19 +5,14 @@ import zipfile
 
 from PIL import Image
 
-res_folder = '../app/src/main/res'
+xml_folder = '../app/src/main/res/xml'
 miui_zoom_multiples = 0.75
 
 
-def parse_xml(xml_folder_path=None):
+def parse_xml():
     print('>>> 解析 xml 文件...\n')
 
-    if xml_folder_path is None:
-        tree = ET.parse(os.path.join(res_folder, 'xml/appfilter.xml'))
-    else:
-        print(os.path.join(xml_folder_path, 'appfilter.xml'))
-        tree = ET.parse(os.path.join(xml_folder_path, 'appfilter.xml'))
-
+    tree = ET.parse(os.path.join(xml_folder, 'appfilter.xml'))
     root = tree.getroot()
 
     icon_map = {}
@@ -47,7 +42,7 @@ def move_drawable_to_temp(map):
     os.mkdir('icons_temp')
 
     for key, value in map.items():
-        src_path = os.path.join(res_folder, 'drawable-nodpi', '%s.png') % value
+        src_path = os.path.join(xml_folder, '../drawable-nodpi', '%s.png') % value
         out_path = os.path.join('icons_temp', '%s.png') % key
 
         shutil.copyfile(src_path, out_path)
@@ -140,7 +135,7 @@ def auto_transform_miui():
 def check_comoponent_repeat():
     print('\n>>> 检查中...')
 
-    tree = ET.parse(os.path.join(res_folder, 'xml/appfilter.xml'))
+    tree = ET.parse(os.path.join(xml_folder, 'appfilter.xml'))
     root = tree.getroot()
 
     repeat_components = {}
@@ -171,8 +166,9 @@ def check_comoponent_repeat():
 
 
 def transform_iconname_for_other():
-    path = input('请输入 appfilter.xml 所在的文件夹路径：')
-    icon_map = parse_xml(path)
+    global xml_folder
+    xml_folder = input('请输入 appfilter.xml 所在的文件夹路径：')
+    icon_map = parse_xml()
     move_drawable_to_temp(icon_map)
 
 
