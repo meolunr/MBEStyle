@@ -132,6 +132,15 @@ def auto_transform_miui():
     clean_temp_files()
 
 
+def get_option(options):
+    while True:
+        option = input('请输入你要执行的操作：')
+        if option in options:
+            return option
+        else:
+            print('输入错误，', end='')
+
+
 def main():
     print('''
 1. 转换 MBEStyle 图标包到 Miui 主题
@@ -139,7 +148,7 @@ def main():
 3. 为其他图标包转换图标文件名
     ''')
 
-    option = input('请输入你要执行的操作：')
+    option = get_option(['1', '2', '3'])
 
     if option == '1':
         auto_transform_miui()
@@ -147,6 +156,9 @@ def main():
         pass
     elif option == '3':
         pass
+
+    print('\n执行完成，按任意键退出')
+    input()
 
 
 if __name__ == '__main__':
