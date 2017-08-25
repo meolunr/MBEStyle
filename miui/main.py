@@ -118,20 +118,34 @@ def clean_temp_files():
     os.remove('icons')
 
 
+def auto_transform_miui():
+    auto_zoom = input('是否自动缩放图标大小？(yes/no)：')
+
+    icon_map = parse_xml()
+    move_drawable_to_temp(icon_map)
+
+    if auto_zoom == 'yes':
+        zoom_for_miui()
+
+    zip_icons()
+    zip_miui_mtz()
+    clean_temp_files()
+
+
 def main():
     print('''
-    1. 转换 MBEStyle 图标包到 Miui 主题
-    2. 检查 MBEStyle 图标包 Component 信息重复
-    3. 为其他图标包转换图标文件名
+1. 转换 MBEStyle 图标包到 Miui 主题
+2. 检查 MBEStyle 图标包 Component 信息重复
+3. 为其他图标包转换图标文件名
     ''')
 
     option = input('请输入你要执行的操作：')
 
-    if option == 1:
+    if option == '1':
+        auto_transform_miui()
+    elif option == '2':
         pass
-    elif option == 2:
-        pass
-    elif option == 3:
+    elif option == '3':
         pass
 
 
