@@ -4108,9 +4108,6 @@
         component="ComponentInfo{cn.missevan/com.stub.stub01.Stub01}"
         drawable="missevan" />
     <item
-        component="ComponentInfo{chenmc.sms.code.helper/chenmc.smscodehelper.MainActivity}"
-        drawable="smscodehelper" />
-    <item
         component="ComponentInfo{com.rincyan.smsdelete/com.rincyan.smsdelete.MainActivity}"
         drawable="smscodehelper" />
     <item
