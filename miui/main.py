@@ -118,14 +118,32 @@ def clean_temp_files():
     os.remove('icons')
 
 
+def main():
+    print('''
+    1. 转换 MBEStyle 图标包到 Miui 主题
+    2. 检查 MBEStyle 图标包 Component 信息重复
+    3. 为其他图标包转换图标文件名
+    ''')
+
+    option = input('请输入你要执行的操作：')
+
+    if option == 1:
+        pass
+    elif option == 2:
+        pass
+    elif option == 3:
+        pass
+
+
 if __name__ == '__main__':
-    print('>>> 开始运行\n')
-
-    icon_map = parse_xml()
-    move_drawable_to_temp(icon_map)
-    zoom_for_miui()
-    zip_icons()
-    zip_miui_mtz()
-    clean_temp_files()
-
-    print('转换完成')
+    # print('>>> 开始运行\n')
+    #
+    # icon_map = parse_xml()
+    # move_drawable_to_temp(icon_map)
+    # zoom_for_miui()
+    # zip_icons()
+    # zip_miui_mtz()
+    # clean_temp_files()
+    #
+    # print('转换完成')
+    main()
