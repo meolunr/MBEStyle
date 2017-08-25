@@ -9,10 +9,15 @@ res_folder = '../app/src/main/res'
 miui_zoom_multiples = 0.75
 
 
-def parse_xml():
+def parse_xml(xml_folder_path=None):
     print('>>> 解析 xml 文件...\n')
 
-    tree = ET.parse(os.path.join(res_folder, 'xml/appfilter.xml'))
+    if xml_folder_path is None:
+        tree = ET.parse(os.path.join(res_folder, 'xml/appfilter.xml'))
+    else:
+        print(os.path.join(xml_folder_path, 'appfilter.xml'))
+        tree = ET.parse(os.path.join(xml_folder_path, 'appfilter.xml'))
+
     root = tree.getroot()
 
     icon_map = {}
@@ -165,6 +170,12 @@ def check_comoponent_repeat():
         print('[', ', '.join(drawables), ']')
 
 
+def transform_iconname_for_other():
+    path = input('请输入 appfilter.xml 所在的文件夹路径：')
+    icon_map = parse_xml(path)
+    move_drawable_to_temp(icon_map)
+
+
 def get_option(options):
     while True:
         option = input('请输入你要执行的操作：')
@@ -174,12 +185,12 @@ def get_option(options):
             print('输入错误，', end='')
 
 
-def main():
+if __name__ == '__main__':
     print('''
 1. 转换 MBEStyle 图标包到 Miui 主题
 2. 检查 MBEStyle 图标包 Component 信息重复
 3. 为其他图标包转换图标文件名
-    ''')
+        ''')
 
     option = get_option(['1', '2', '3'])
 
@@ -188,21 +199,7 @@ def main():
     elif option == '2':
         check_comoponent_repeat()
     elif option == '3':
-        pass
+        transform_iconname_for_other()
 
     print('\n执行完成，按任意键退出')
     input()
-
-
-if __name__ == '__main__':
-    # print('>>> 开始运行\n')
-    #
-    # icon_map = parse_xml()
-    # move_drawable_to_temp(icon_map)
-    # zoom_for_miui()
-    # zip_icons()
-    # zip_miui_mtz()
-    # clean_temp_files()
-    #
-    # print('转换完成')
-    main()
