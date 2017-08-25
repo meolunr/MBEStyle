@@ -132,6 +132,39 @@ def auto_transform_miui():
     clean_temp_files()
 
 
+def check_comoponent_repeat():
+    print('\n>>> 检查中...')
+
+    tree = ET.parse(os.path.join(res_folder, 'xml/appfilter.xml'))
+    root = tree.getroot()
+
+    repeat_components = {}
+    # Key: ComponentInfo
+    # Value: Drawables
+
+    icon_map = {}
+    for item in root.findall('item'):
+        component = item.get('component')
+        drawable = item.get('drawable')
+
+        # 确定是 ComponentInfo 再添加
+        if not component.startswith('ComponentInfo'): continue
+
+        if component not in icon_map:
+            icon_map[component] = drawable
+        else:
+            if component in repeat_components:
+                # 已存在 2 个及以上重复 Drawable
+                repeat_components[component].append(drawable)
+            else:
+                repeat_components[component] = [icon_map[component], drawable]
+
+    for component, drawables in repeat_components.items():
+        print()
+        print(component)
+        print('[', ', '.join(drawables), ']')
+
+
 def get_option(options):
     while True:
         option = input('请输入你要执行的操作：')
@@ -153,7 +186,7 @@ def main():
     if option == '1':
         auto_transform_miui()
     elif option == '2':
-        pass
+        check_comoponent_repeat()
     elif option == '3':
         pass
 
