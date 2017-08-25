@@ -6,6 +6,7 @@ import zipfile
 from PIL import Image
 
 xml_folder = '../app/src/main/res/xml'
+drawables_folder_name = 'drawable-nodpi'
 miui_zoom_multiples = 0.75
 
 
@@ -42,7 +43,7 @@ def move_drawable_to_temp(map):
     os.mkdir('icons_temp')
 
     for key, value in map.items():
-        src_path = os.path.join(xml_folder, '../drawable-nodpi', '%s.png') % value
+        src_path = os.path.join(xml_folder, '..', drawables_folder_name, '%s.png') % value
         out_path = os.path.join('icons_temp', '%s.png') % key
 
         shutil.copyfile(src_path, out_path)
@@ -118,7 +119,7 @@ def clean_temp_files():
     os.remove('icons')
 
 
-def auto_transform_miui():
+def auto_convert_miui():
     auto_zoom = input('是否自动缩放图标大小？(yes/no)：')
 
     icon_map = parse_xml()
@@ -165,11 +166,17 @@ def check_comoponent_repeat():
         print('[', ', '.join(drawables), ']')
 
 
-def transform_iconname_for_other():
+def convert_iconname_for_other():
     global xml_folder
+    global drawables_folder_name
+
     xml_folder = input('请输入 appfilter.xml 所在的文件夹路径：')
+    drawables_folder_name = 'drawable-nodpi-v4'
+
     icon_map = parse_xml()
     move_drawable_to_temp(icon_map)
+
+    os.rename('icons_temp', 'converted_icons')
 
 
 def get_option(options):
@@ -191,11 +198,11 @@ if __name__ == '__main__':
     option = get_option(['1', '2', '3'])
 
     if option == '1':
-        auto_transform_miui()
+        auto_convert_miui()
     elif option == '2':
         check_comoponent_repeat()
     elif option == '3':
-        transform_iconname_for_other()
+        convert_iconname_for_other()
 
     print('\n执行完成，按任意键退出')
     input()
