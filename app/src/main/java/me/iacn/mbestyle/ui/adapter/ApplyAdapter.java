@@ -7,10 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.RequestManager;
-
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/2/20
@@ -24,10 +23,10 @@ public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
 
     private int[] mLauncherIcons;
     private String[] mLauncherNames;
-    private RequestManager mGlide;
+    private GlideUtils mGlide;
     private OnItemClickListener mListener;
 
-    public ApplyAdapter(int[] mLauncherIcons, String[] mLauncherNames, RequestManager glide) {
+    public ApplyAdapter(int[] mLauncherIcons, String[] mLauncherNames, GlideUtils glide) {
         this.mLauncherIcons = mLauncherIcons;
         this.mLauncherNames = mLauncherNames;
         this.mGlide = glide;
@@ -55,7 +54,7 @@ public class ApplyAdapter extends RecyclerView.Adapter<ApplyHolder> {
         if (position == 0) return;
         position--;
 
-        mGlide.load(mLauncherIcons[position]).into(holder.ivLauncherIcon);
+        mGlide.showImage(mLauncherIcons[position], holder.ivLauncherIcon);
         holder.tvLauncherName.setText(mLauncherNames[position]);
     }
 
