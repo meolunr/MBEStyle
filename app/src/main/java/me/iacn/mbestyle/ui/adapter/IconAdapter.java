@@ -6,13 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bumptech.glide.RequestManager;
-
 import java.util.List;
 
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.IconBean;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -22,10 +21,10 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
 
     private List<IconBean> mIcons;
-    private RequestManager mGlide;
+    private GlideUtils mGlide;
     private OnItemClickListener mListener;
 
-    public IconAdapter(List<IconBean> mIcons, RequestManager glide) {
+    public IconAdapter(List<IconBean> mIcons, GlideUtils glide) {
         this.mIcons = mIcons;
         this.mGlide = glide;
     }
@@ -42,7 +41,7 @@ public class IconAdapter extends RecyclerView.Adapter<IconHolder> {
     @Override
     public void onBindViewHolder(IconHolder holder, int position) {
         IconBean bean = mIcons.get(position);
-        mGlide.load(bean.id).into(holder.ivIcon);
+        mGlide.showImage(bean.id, holder.ivIcon);
     }
 
     @Override

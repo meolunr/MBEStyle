@@ -7,9 +7,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.RequestManager;
-
 import java.util.List;
 
 import me.iacn.mbestyle.R;
@@ -18,6 +15,7 @@ import me.iacn.mbestyle.presenter.IconShowPresenter;
 import me.iacn.mbestyle.ui.activity.IconViewActivity;
 import me.iacn.mbestyle.ui.adapter.IconAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -73,8 +71,7 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
         super.onLoadData();
 
         mIcons = icons;
-        RequestManager glide = Glide.with(this);
-        IconAdapter adapter = new IconAdapter(mIcons, glide);
+        IconAdapter adapter = new IconAdapter(mIcons, GlideUtils.with(this));
         rvIcon.setAdapter(adapter);
 
         adapter.setOnItemClickListener(this);

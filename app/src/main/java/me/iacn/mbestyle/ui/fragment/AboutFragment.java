@@ -10,12 +10,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.activity.LicenseActivity;
 import me.iacn.mbestyle.ui.widget.AboutItem;
+import me.iacn.mbestyle.util.GlideUtils;
 import moe.feng.alipay.zerosdk.AlipayZeroSdk;
 
 /**
@@ -59,7 +58,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     @Override
     protected void initData() {
         aiVersion.setSummary(BuildConfig.VERSION_NAME);
-        Glide.with(this).load(R.drawable.bg_about_logo).into(ivLogo);
+        GlideUtils.with(this).showImage(R.drawable.bg_about_logo, ivLogo);
     }
 
     @Override

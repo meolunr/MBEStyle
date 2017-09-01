@@ -9,14 +9,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.RequestManager;
-
 import me.iacn.mbestyle.BuildConfig;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.activity.WallpaperActivity;
 import me.iacn.mbestyle.ui.adapter.ApplyAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/2/18
@@ -68,9 +66,8 @@ public class ApplyFragment extends BaseFragment implements OnItemClickListener {
         };
 
         String[] launcherNames = getResources().getStringArray(R.array.launchers);
-        RequestManager glide = Glide.with(this);
 
-        ApplyAdapter adapter = new ApplyAdapter(launcherIcons, launcherNames, glide);
+        ApplyAdapter adapter = new ApplyAdapter(launcherIcons, launcherNames, GlideUtils.with(this));
         adapter.setOnItemClickListener(this);
 
         rvApply.setAdapter(adapter);
