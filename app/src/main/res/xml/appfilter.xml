@@ -4304,7 +4304,7 @@
     <!-- 2017.09.01 Add -->
     <item
         component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}"
-        drawable="Spotify" />
+        drawable="spotify" />
     <item
         component="ComponentInfo{com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity}"
         drawable="scan" />
