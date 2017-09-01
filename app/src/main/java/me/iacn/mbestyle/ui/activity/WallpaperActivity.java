@@ -14,8 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -23,6 +21,7 @@ import java.io.InputStream;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.adapter.WallpaperAdapter;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.GlideUtils;
 import me.iacn.mbestyle.util.StatusBarUtils;
 
 /**
@@ -58,7 +57,7 @@ public class WallpaperActivity extends AppCompatActivity {
                 R.raw.wallpaper_strawberry
         };
 
-        WallpaperAdapter adapter = new WallpaperAdapter(mIds, Glide.with(this));
+        WallpaperAdapter adapter = new WallpaperAdapter(mIds, GlideUtils.with(this));
         rvWallpaper.setAdapter(adapter);
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
