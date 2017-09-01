@@ -6,10 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bumptech.glide.RequestManager;
-
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.ui.callback.OnItemClickListener;
+import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/5/2
@@ -19,10 +18,10 @@ import me.iacn.mbestyle.ui.callback.OnItemClickListener;
 public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperHolder> {
 
     private int[] mIds;
-    private RequestManager mGlide;
+    private GlideUtils mGlide;
     private OnItemClickListener mListener;
 
-    public WallpaperAdapter(int[] mIds, RequestManager glide) {
+    public WallpaperAdapter(int[] mIds, GlideUtils glide) {
         this.mIds = mIds;
         this.mGlide = glide;
     }
@@ -38,7 +37,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperHolder> {
 
     @Override
     public void onBindViewHolder(WallpaperHolder holder, int position) {
-        mGlide.load(mIds[position]).into(holder.imageView);
+        mGlide.showImage(mIds[position], holder.imageView);
     }
 
     @Override
