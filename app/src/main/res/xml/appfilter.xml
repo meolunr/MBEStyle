@@ -4315,9 +4315,6 @@
         component="ComponentInfo{sina.mobile.tianqitong/com.sina.tianqitong.ui.main.Splash}"
         drawable="weather" />
     <item
-        component="ComponentInfo{com.nearme.gamecenter/com.nearme.gamecenter.ui.activity.SplashActivity}"
-        drawable="game" />
-    <item
         component="ComponentInfo{com.huawei.android.ds/com.huawei.android.hicloud.ui.activity.NewHiSyncSettingActivity}"
         drawable="huawei_cloud" />
     <item
