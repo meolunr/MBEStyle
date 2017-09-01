@@ -1,5 +1,6 @@
 package me.iacn.mbestyle.util;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.widget.ImageView;
 
@@ -17,8 +18,17 @@ public class GlideUtils {
     private static GlideUtils sSelf;
     private static RequestManager mGlide;
 
+    private GlideUtils(Activity activity) {
+        mGlide = Glide.with(activity);
+    }
+
     private GlideUtils(Fragment fragment) {
         mGlide = Glide.with(fragment);
+    }
+
+    public static GlideUtils with(Activity activity) {
+        sSelf = new GlideUtils(activity);
+        return sSelf;
     }
 
     public static GlideUtils with(Fragment fragment) {
