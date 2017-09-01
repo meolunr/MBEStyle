@@ -3,6 +3,21 @@
 
     <version>1</version>
 
+    <item drawable="aikanreader" />
+    <item drawable="alimama_moon" />
+    <item drawable="easymover" />
+    <item drawable="huaban" />
+    <item drawable="huputiyu" />
+    <item drawable="milk" />
+    <item drawable="nico_stytool" />
+    <item drawable="oppo" />
+    <item drawable="qihoo_cleandroid" />
+    <item drawable="quark" />
+    <item drawable="scriptdroid" />
+    <item drawable="shoujiduoduo_ringtone" />
+    <item drawable="synjones_commerce" />
+    <item drawable="toolwiz_photo" />
+    <item drawable="vivo_space" />
     <item drawable="airdroid" />
     <item drawable="aweme" />
     <item drawable="dangdang" />
@@ -227,7 +242,6 @@
     <item drawable="huawei_vdrive" />
     <item drawable="huluxia3" />
     <item drawable="huomaotv" />
-    <item drawable="huputiyu" />
     <item drawable="huyatv" />
     <item drawable="icbc" />
     <item drawable="icbc_im" />
@@ -414,7 +428,6 @@
     <item drawable="qt_qtl" />
     <item drawable="quanmink" />
     <item drawable="quanmintv" />
-    <item drawable="quark" />
     <item drawable="quickpic" />
     <item drawable="qunaer" />
     <item drawable="quora" />

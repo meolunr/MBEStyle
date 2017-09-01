@@ -4301,4 +4301,75 @@
         component="ComponentInfo{ctrip.android.view/ctrip.android.view.home.CtripDeclarationActivity}"
         drawable="ctrip" />
 
+    <!-- 2017.09.01 Add -->
+    <item
+        component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}"
+        drawable="Spotify" />
+    <item
+        component="ComponentInfo{com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity}"
+        drawable="scan" />
+    <item
+        component="ComponentInfo{com.sec.android.app.fm/com.sec.android.app.fm.MainActivity}"
+        drawable="fm" />
+    <item
+        component="ComponentInfo{sina.mobile.tianqitong/com.sina.tianqitong.ui.main.Splash}"
+        drawable="weather" />
+    <item
+        component="ComponentInfo{com.nearme.gamecenter/com.nearme.gamecenter.ui.activity.SplashActivity}"
+        drawable="game" />
+    <item
+        component="ComponentInfo{com.huawei.android.ds/com.huawei.android.hicloud.ui.activity.NewHiSyncSettingActivity}"
+        drawable="huawei_cloud" />
+    <item
+        component="ComponentInfo{nico.styTool/nico.styTool.proguard}"
+        drawable="nico_stytool" />
+    <item
+        component="ComponentInfo{com.stardust.scriptdroid/com.stardust.scriptdroid.ui.main.MainActivity}"
+        drawable="scriptdroid" />
+    <item
+        component="ComponentInfo{com.alimama.moon/com.alimama.moon.ui.WizardActivity}"
+        drawable="alimama_moon" />
+    <item
+        component="ComponentInfo{xyz.loveeyly7.mix/xyz.loveeyly7.mix.ui.MainActivity}"
+        drawable="mix" />
+    <item
+        component="ComponentInfo{com.shoujiduoduo.ringtone/com.shoujiduoduo.ringtone.activity.WelcomeActivity}"
+        drawable="shoujiduoduo_ringtone" />
+    <item
+        component="ComponentInfo{com.meizu.compaign/com.meizu.component.HomeActivity}"
+        drawable="meizu_fuli" />
+    <item
+        component="ComponentInfo{com.qihoo.cleandroid_cn/com.qihoo360.mobilesafe.opti.ui.main.AppEnterActivity}"
+        drawable="qihoo_cleandroid" />
+    <item
+        component="ComponentInfo{com.huaban.android/com.huaban.android.modules.main.MainActivity}"
+        drawable="huaban" />
+    <item
+        component="ComponentInfo{com.btows.photo/com.toolwiz.photo.activity.SplashAdActivity}"
+        drawable="toolwiz_photo" />
+    <item
+        component="ComponentInfo{synjones.commerce/synjones.commerce.activity.WelcomeActivity}"
+        drawable="synjones_commerce" />
+    <item
+        component="ComponentInfo{com.sec.android.easyMover/com.sec.android.easyMover.DistributionActivity}"
+        drawable="easymover" />
+    <item
+        component="ComponentInfo{com.vivo.space/com.vivo.space.ui.LogoActivity}"
+        drawable="vivo_space" />
+    <item
+        component="ComponentInfo{com.mdroid.read/com.mdroid.application.ui.welcome.WelcomeActivity}"
+        drawable="aikanreader" />
+    <item
+        component="ComponentInfo{com.oppo.usercenter/com.oppo.usercenter.vip.UCVIPMainActivity}"
+        drawable="oppo" />
+    <item
+        component="ComponentInfo{cn.missevan/cn.missevan.activity.SplashActivity}"
+        drawable="missevan" />
+    <item
+        component="ComponentInfo{f.star.iota.milk/f.star.iota.milk.ui.splash.SplashActivity}"
+        drawable="milk" />
+    <item
+        component="ComponentInfo{g.star.iota.milk/g.star.iota.milk.ui.splash.SplashActivity}"
+        drawable="milk" />
+
 </resources>
