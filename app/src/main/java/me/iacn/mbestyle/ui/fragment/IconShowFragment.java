@@ -9,6 +9,7 @@ import android.view.View;
 
 import java.util.List;
 
+import io.reactivex.disposables.Disposable;
 import me.iacn.mbestyle.R;
 import me.iacn.mbestyle.bean.IconBean;
 import me.iacn.mbestyle.presenter.IconShowPresenter;
@@ -19,7 +20,7 @@ import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/2/18
- * Emali iAcn0301@foxmail.com
+ * Email iAcn0301@foxmail.com
  */
 
 public class IconShowFragment extends ILazyFragment implements OnItemClickListener {
@@ -32,7 +33,9 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
     private IconShowPresenter mPresenter;
     private List<IconBean> mIcons;
 
-    private boolean mShowAllIcons;
+    private boolean mIsInstalledFragment;
+    private Disposable mDisposable;
+
 
     @Override
     protected int getContentView() {
@@ -58,14 +61,14 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
         if (bundle != null) {
             switch (bundle.getInt("showIconCategory")) {
                 case ICONS_LOAD_INSTALLED:
-                    mPresenter.getAdaptedIcons();
+                    mIsInstalledFragment = true;
+                    mDisposable = mPresenter.getAdaptedIcons();
                     break;
                 case ICONS_LOAD_WHATSNEW:
-                    mPresenter.getWhatsNewIcons();
+                    mDisposable = mPresenter.getWhatsNewIcons();
                     break;
                 case ICONS_LOAD_ALL:
-                    mShowAllIcons = true;
-                    mPresenter.getAllIcons();
+                    mDisposable = mPresenter.getAllIcons();
                     break;
             }
         }
@@ -73,7 +76,11 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
 
     @Override
     protected void destroyData() {
-
+        if (mIcons != null) {
+            mIcons.clear();
+            mIcons = null;
+        }
+        mDisposable.dispose();
     }
 
     @Override
@@ -98,7 +105,7 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
         intent.putExtra("icon_name", bean.name);
         intent.putExtra("resource_id", bean.id);
 
-        if (!mShowAllIcons) {
+        if (mIsInstalledFragment) {
             // 已适配 Fragment，传入包名
             intent.putExtra("package_name", bean.iconPkgName);
         }
