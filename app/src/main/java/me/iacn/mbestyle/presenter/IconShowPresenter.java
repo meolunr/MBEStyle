@@ -39,11 +39,10 @@ public class IconShowPresenter {
     }
 
     public Disposable getAllIcons() {
-        return Observable.create(new ObservableOnSubscribe<List<IconBean>>() {
+        return Observable.create(new ObservableOnSubscribe<IconBean>() {
             @Override
-            public void subscribe(@NonNull ObservableEmitter<List<IconBean>> e) throws Exception {
+            public void subscribe(@NonNull ObservableEmitter<IconBean> e) throws Exception {
                 XmlResourceParser xml = mView.getResources().getXml(R.xml.drawable);
-                List<IconBean> icons = new ArrayList<>();
 
                 while (xml.getEventType() != XmlResourceParser.END_DOCUMENT) {
                     if (xml.getEventType() == XmlPullParser.START_TAG) {
@@ -55,16 +54,14 @@ public class IconShowPresenter {
                                     iconName, "drawable", BuildConfig.APPLICATION_ID);
                             bean.name = iconName;
 
-                            checkCodeError(bean);
-                            icons.add(bean);
+                            e.onNext(bean);
                         }
                     }
                     xml.next();
                 }
-
-                e.onNext(icons);
+                e.onComplete();
             }
-        }).subscribeOn(Schedulers.io())
+        }).toList().subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<List<IconBean>>() {
                     @Override
