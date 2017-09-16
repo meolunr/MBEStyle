@@ -24,6 +24,10 @@ import me.iacn.mbestyle.util.GlideUtils;
 
 public class IconShowFragment extends ILazyFragment implements OnItemClickListener {
 
+    public static final int ICONS_LOAD_INSTALLED = 567;
+    public static final int ICONS_LOAD_WHATSNEW = 184;
+    public static final int ICONS_LOAD_ALL = 575;
+
     private RecyclerView rvIcon;
     private IconShowPresenter mPresenter;
     private List<IconBean> mIcons;
