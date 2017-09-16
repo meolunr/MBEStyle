@@ -10,12 +10,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import io.reactivex.BackpressureStrategy;
-import io.reactivex.Flowable;
-import io.reactivex.FlowableEmitter;
-import io.reactivex.FlowableOnSubscribe;
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
@@ -38,10 +38,10 @@ public class IconShowPresenter {
         mView = view;
     }
 
-    public void getAllIcons() {
-        Flowable.create(new FlowableOnSubscribe<List<IconBean>>() {
+    public Disposable getAllIcons() {
+        return Observable.create(new ObservableOnSubscribe<List<IconBean>>() {
             @Override
-            public void subscribe(FlowableEmitter<List<IconBean>> flowableEmitter) throws Exception {
+            public void subscribe(@NonNull ObservableEmitter<List<IconBean>> e) throws Exception {
                 XmlResourceParser xml = mView.getResources().getXml(R.xml.drawable);
                 List<IconBean> icons = new ArrayList<>();
 
@@ -62,25 +62,23 @@ public class IconShowPresenter {
                     xml.next();
                 }
 
-                flowableEmitter.onNext(icons);
+                e.onNext(icons);
             }
-        }, BackpressureStrategy.BUFFER)
-                .subscribeOn(Schedulers.io())
+        }).subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<List<IconBean>>() {
                     @Override
-                    public void accept(@NonNull List<IconBean> list) throws Exception {
+                    public void accept(List<IconBean> list) throws Exception {
                         mView.onLoadData(list);
                     }
                 });
     }
 
-    public void getAdaptedIcons() {
-        Flowable.create(new FlowableOnSubscribe<List<IconBean>>() {
+    public Disposable getAdaptedIcons() {
+        return Observable.create(new ObservableOnSubscribe<IconBean>() {
             @Override
-            public void subscribe(FlowableEmitter<List<IconBean>> flowableEmitter) throws Exception {
+            public void subscribe(@NonNull ObservableEmitter<IconBean> e) throws Exception {
                 XmlResourceParser xml = mView.getResources().getXml(R.xml.appfilter);
-                List<IconBean> icons = new ArrayList<>();
 
                 while (xml.getEventType() != XmlResourceParser.END_DOCUMENT) {
                     if (xml.getEventType() == XmlPullParser.START_TAG) {
@@ -98,37 +96,35 @@ public class IconShowPresenter {
                             bean.name = iconName;
 
                             checkCodeError(bean);
-                            icons.add(bean);
+
+                            e.onNext(bean);
                         }
                     }
                     xml.next();
                 }
-
-                flowableEmitter.onNext(icons);
+                e.onComplete();
             }
-        }, BackpressureStrategy.BUFFER)
-                .map(new Function<List<IconBean>, List<IconBean>>() {
-                    @Override
-                    public List<IconBean> apply(@NonNull List<IconBean> list) throws Exception {
-                        Set<String> appPkgNames = getAppPkgNames();
+        }).toList().map(new Function<List<IconBean>, List<IconBean>>() {
+            @Override
+            public List<IconBean> apply(@NonNull List<IconBean> list) throws Exception {
+                Set<String> appPkgNames = getAppPkgNames();
 
-                        List<IconBean> newList = new ArrayList<>();
-                        Set<String> tempSet = new HashSet<>();
+                List<IconBean> newList = new ArrayList<>();
+                Set<String> tempSet = new HashSet<>();
 
-                        for (IconBean bean : list) {
-                            String iconName = bean.name;
+                for (IconBean bean : list) {
+                    String iconName = bean.name;
 
-                            // 排除重复图标
-                            if (appPkgNames.contains(bean.iconPkgName) && !tempSet.contains(iconName)) {
-                                newList.add(bean);
-                                tempSet.add(iconName);
-                            }
-                        }
-
-                        return newList;
+                    // 排除重复图标
+                    if (appPkgNames.contains(bean.iconPkgName) && !tempSet.contains(iconName)) {
+                        newList.add(bean);
+                        tempSet.add(iconName);
                     }
-                })
-                .subscribeOn(Schedulers.io())
+                }
+
+                return newList;
+            }
+        }).subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<List<IconBean>>() {
                     @Override
