@@ -131,6 +131,27 @@ public class IconShowPresenter {
                 });
     }
 
+    public Disposable getWhatsNewIcons() {
+        return Observable.fromArray(mView.getResources().getStringArray(R.array.whatsnew))
+                .map(new Function<String, IconBean>() {
+                    @Override
+                    public IconBean apply(@NonNull String s) throws Exception {
+                        IconBean bean = new IconBean();
+                        bean.id = mView.getResources().getIdentifier(s, "drawable", BuildConfig.APPLICATION_ID);
+                        bean.name = s;
+
+                        return bean;
+                    }
+                }).toList().subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<List<IconBean>>() {
+                    @Override
+                    public void accept(List<IconBean> list) throws Exception {
+                        mView.onLoadData(list);
+                    }
+                });
+    }
+
     private String findPackageName(String component) {
         try {
             return component.split("/")[0].split("\\{")[1];
