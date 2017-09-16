@@ -14,7 +14,7 @@ import me.iacn.mbestyle.R;
 
 /**
  * Created by iAcn on 2017/2/20
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public abstract class ILazyFragment extends Fragment {

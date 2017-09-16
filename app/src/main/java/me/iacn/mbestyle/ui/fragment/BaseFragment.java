@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 /**
  * Created by iAcn on 2017/2/18
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public abstract class BaseFragment extends Fragment {

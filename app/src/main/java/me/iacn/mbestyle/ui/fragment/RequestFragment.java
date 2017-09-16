@@ -28,7 +28,7 @@ import me.iacn.mbestyle.util.StringUtils;
 
 /**
  * Created by iAcn on 2017/2/18
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public class RequestFragment extends ILazyFragment implements OnItemClickListener, View.OnClickListener, OnItemLongClickListener {
