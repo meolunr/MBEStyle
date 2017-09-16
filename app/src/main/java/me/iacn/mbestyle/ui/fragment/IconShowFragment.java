@@ -61,7 +61,7 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
                     mPresenter.getAdaptedIcons();
                     break;
                 case ICONS_LOAD_WHATSNEW:
-                    mPresenter.getAdaptedIcons();
+                    mPresenter.getWhatsNewIcons();
                     break;
                 case ICONS_LOAD_ALL:
                     mShowAllIcons = true;
@@ -69,6 +69,11 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
                     break;
             }
         }
+    }
+
+    @Override
+    protected void destroyData() {
+
     }
 
     @Override

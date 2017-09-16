@@ -14,4 +14,17 @@
         <item>Smart</item>
         <item>Solo</item>
     </string-array>
+
+    <string-array name="whatsnew">
+        <item>_10000_bbs</item>
+        <item>firefox</item>
+        <item>firefox_beta</item>
+        <item>firefox_focus</item>
+        <item>firefox_nightly</item>
+        <item>jinjiang</item>
+        <item>qvod</item>
+        <item>share_weibo</item>
+        <item>vianext</item>
+    </string-array>
+
 </resources>
