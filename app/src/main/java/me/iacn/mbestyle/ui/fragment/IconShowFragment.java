@@ -56,12 +56,17 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
         Bundle bundle = getArguments();
 
         if (bundle != null) {
-            mShowAllIcons = bundle.getBoolean("ifShowAllIcons", false);
-
-            if (mShowAllIcons) {
-                mPresenter.getAllIcons();
-            } else {
-                mPresenter.getAdaptedIcons();
+            switch (bundle.getInt("showIconCategory")) {
+                case ICONS_LOAD_INSTALLED:
+                    mPresenter.getAdaptedIcons();
+                    break;
+                case ICONS_LOAD_WHATSNEW:
+                    mPresenter.getAdaptedIcons();
+                    break;
+                case ICONS_LOAD_ALL:
+                    mShowAllIcons = true;
+                    mPresenter.getAllIcons();
+                    break;
             }
         }
     }

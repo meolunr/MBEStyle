@@ -59,7 +59,7 @@ public class IconFragment extends BaseFragment {
 
     public void setIconTotal(int total) {
         String all = String.format(Locale.getDefault(), "全部(%d)", total);
-        TabLayout.Tab allTab = mTab.getTabAt(1);
+        TabLayout.Tab allTab = mTab.getTabAt(2);
 
         if (allTab != null && total != 0) {
             allTab.setText(all);
