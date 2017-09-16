@@ -640,5 +640,14 @@
     <item drawable="_500px" />
     <item drawable="_58" />
     <item drawable="_5sing" />
+    <item drawable="_10000_bbs" />
+    <item drawable="firefox" />
+    <item drawable="firefox_beta" />
+    <item drawable="firefox_focus" />
+    <item drawable="firefox_nightly" />
+    <item drawable="jinjiang" />
+    <item drawable="qvod" />
+    <item drawable="share_weibo" />
+    <item drawable="vianext" />
 
 </resources>
