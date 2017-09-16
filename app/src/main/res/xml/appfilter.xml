@@ -4369,4 +4369,81 @@
         component="ComponentInfo{g.star.iota.milk/g.star.iota.milk.ui.splash.SplashActivity}"
         drawable="milk" />
 
+    <!-- 2017.09.16 Add -->
+    <item
+        component="ComponentInfo{com.iflytek.inputmethod/com.iflytek.inputmethod.WizardActivity}"
+        drawable="xunfei_keyboard" />
+    <item
+        component="ComponentInfo{com.iflytek.inputmethod.gionee/com.iflytek.inputmethod.gionee.WizardActivity}"
+        drawable="xunfei_keyboard" />
+    <item
+        component="ComponentInfo{com.chinatelecom.bestpayclient/com.chinatelecom.bestpayclient.ui.activity.SplashActivity}"
+        drawable="bestpayclient" />
+    <item
+        component="ComponentInfo{vStudio.Android.Camera360/vStudio.Android.Camera360.activity.CameraActivity}"
+        drawable="camera360" />
+    <item
+        component="ComponentInfo{camera360.lite.beauty.selfie.camera/us.pinguo.icecream.camera.CameraActivity}"
+        drawable="camera360" />
+    <item
+        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.splash.S}"
+        drawable="shanzhaiyun" />
+    <item
+        component="ComponentInfo{com.pandecheng.iconpack/com.by_syk.nanoiconpack.sample.MainActivity}"
+        drawable="pdc" />
+    <item
+        component="ComponentInfo{mark.via.z/mark.via.z.activities.BrowserActivity}"
+        drawable="vianext" />
+    <item
+        component="ComponentInfo{com.campmobile.snowcamera/com.linecorp.b612.android.activity.ActivityCamera}"
+        drawable="b612" />
+    <item
+        component="ComponentInfo{com.campmobile.snowcamera/com.campmobile.snow.feature.intro.SplashActivity}"
+        drawable="b612" />
+    <item
+        component="ComponentInfo{com.jjwxc.reader/com.example.jinjiangshucheng.AppStart}"
+        drawable="jinjiang" />
+    <item
+        component="ComponentInfo{com.xchat.stevenzack.spycamera/com.xchat.stevenzack.spycamera.MainActivity}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.asus.camera/com.asus.camera.CameraApp}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.ucamera.ucam.tob/com.ucamera.ucam.CameraActivity}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.myos.camera/com.myos.camera.activity.CameraActivity}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.android.hwcamera}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.xxpachecoxx.motocammod/com.pacheco.camera.Camera}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.meizu.media.camera/com.meizu.media.camera.OPCameraActivity}"
+        drawable="camera" />
+    <item
+        component="ComponentInfo{com.qvod.player/com.qvod.player.PlayerAdapterActivity}"
+        drawable="qvod" />
+    <item
+        component="ComponentInfo{dxwt.questionnaire.ui/com.dxwt.community.activity.main.MainActivity}"
+        drawable="_10000_bbs" />
+    <item
+        component="ComponentInfo{com.hengye.share/com.hengye.share.Launcher}"
+        drawable="share_weibo" />
+    <item
+        component="ComponentInfo{org.mozilla.firefox/org.mozilla.firefox.App}"
+        drawable="firefox" />
+    <item
+        component="ComponentInfo{org.mozilla.firefox_beta/org.mozilla.firefox_beta.App}"
+        drawable="firefox_beta" />
+    <item
+        component="ComponentInfo{org.mozilla.focus/org.mozilla.focus.activity.MainActivity}"
+        drawable="firefox_focus" />
+    <item
+        component="ComponentInfo{org.mozilla.fennec_aurora/org.mozilla.fennec_aurora.App}"
+        drawable="firefox_nightly" />
+
 </resources>
