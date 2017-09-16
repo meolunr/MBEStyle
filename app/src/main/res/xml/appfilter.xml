@@ -3529,9 +3529,6 @@
         component="ComponentInfo{com.vivo.game/com.vivo.game.ui.LogoActivity}"
         drawable="game" />
     <item
-        component="ComponentInfo{com.hengye.share/com.hengye.share.Launcher}"
-        drawable="share" />
-    <item
         component="ComponentInfo{com.tencent.weread/com.tencent.weread.LauncherActivity}"
         drawable="weread" />
     <item
