@@ -45,10 +45,11 @@ public class IconFragment extends BaseFragment {
         mPresenter = new IconPresenter(this);
 
         List<Fragment> fragments = new ArrayList();
-        fragments.add(makeIconShowFragment(false));
-        fragments.add(makeIconShowFragment(true));
+        fragments.add(makeIconShowFragment(IconShowFragment.ICONS_LOAD_INSTALLED));
+        fragments.add(makeIconShowFragment(IconShowFragment.ICONS_LOAD_WHATSNEW));
+        fragments.add(makeIconShowFragment(IconShowFragment.ICONS_LOAD_ALL));
 
-        String[] titles = new String[]{"已安装", "全部"};
+        String[] titles = new String[]{"已安装", "最近更新", "全部"};
 
         mTab.setupWithViewPager(mViewPager);
         mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), fragments, titles));
@@ -65,11 +66,11 @@ public class IconFragment extends BaseFragment {
         }
     }
 
-    private IconShowFragment makeIconShowFragment(boolean ifShowAllIcons) {
+    private IconShowFragment makeIconShowFragment(int category) {
         IconShowFragment fragment = new IconShowFragment();
 
         Bundle bundle = new Bundle();
-        bundle.putBoolean("ifShowAllIcons", ifShowAllIcons);
+        bundle.putInt("showIconCategory", category);
         fragment.setArguments(bundle);
 
         return fragment;
