@@ -12,7 +12,7 @@ import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/5/2
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperHolder> {

@@ -15,7 +15,7 @@ import me.iacn.mbestyle.util.GlideUtils;
 
 /**
  * Created by iAcn on 2017/2/18
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public class IconAdapter extends RecyclerView.Adapter<IconHolder> {

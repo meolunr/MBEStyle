@@ -14,7 +14,7 @@ import retrofit2.http.Query;
 
 /**
  * Created by iAcn on 2017/3/11
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 interface LeanService {

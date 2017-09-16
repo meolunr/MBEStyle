@@ -6,7 +6,7 @@ import android.content.Context;
 
 /**
  * Created by iAcn on 2016/8/17
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 public class StringUtils {
 

@@ -10,7 +10,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 /**
  * Created by iAcn on 2017/9/1
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public class GlideUtils {

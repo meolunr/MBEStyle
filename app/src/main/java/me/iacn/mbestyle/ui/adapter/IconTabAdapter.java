@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Created by iAcn on 2017/2/18
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public class IconTabAdapter extends FragmentPagerAdapter {

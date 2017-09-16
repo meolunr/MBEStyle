@@ -19,7 +19,7 @@ import moe.feng.alipay.zerosdk.AlipayZeroSdk;
 
 /**
  * Created by iAcn on 2017/2/18
- * Emali iAcn0301@foxmail.com
+ * Email i@iacn.me
  */
 
 public class AboutFragment extends BaseFragment implements View.OnClickListener {
