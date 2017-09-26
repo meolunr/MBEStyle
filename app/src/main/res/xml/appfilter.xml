@@ -3907,9 +3907,6 @@
         component="ComponentInfo{com.google.earth/com.google.android.apps.earth.EarthActivity}"
         drawable="google_earth" />
     <item
-        component="ComponentInfo{com.microsoft.office.officehub/com.microsoft.office.officesuite.OfficeSuiteLaunchActivity}"
-        drawable="microsoft_office" />
-    <item
         component="ComponentInfo{com.meizu.net.pedometer/com.meizu.net.pedometer.ui.PedometerMainActivitys}"
         drawable="jibuqi" />
     <item
@@ -4442,5 +4439,13 @@
     <item
         component="ComponentInfo{org.mozilla.fennec_aurora/org.mozilla.fennec_aurora.App}"
         drawable="firefox_nightly" />
+
+    <!-- Office Mobile -->
+    <item
+        component="ComponentInfo{com.microsoft.office.officehub/com.microsoft.office.officesuite.OfficeSuiteLaunchActivity}"
+        drawable="microsoft_office" />
+    <item
+        component="ComponentInfo{com.microsoft.office.officehub/com.microsoft.office.officesuite.OfficeSuiteActivity}"
+        drawable="microsoft_office" />
 
 </resources>
