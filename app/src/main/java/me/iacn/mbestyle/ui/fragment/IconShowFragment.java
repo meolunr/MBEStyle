@@ -80,7 +80,8 @@ public class IconShowFragment extends ILazyFragment implements OnItemClickListen
             mIcons.clear();
             mIcons = null;
         }
-        mDisposable.dispose();
+
+        if (mDisposable != null) mDisposable.dispose();
     }
 
     @Override
