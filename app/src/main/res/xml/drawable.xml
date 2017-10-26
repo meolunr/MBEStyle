@@ -648,5 +648,17 @@
     <item drawable="qvod" />
     <item drawable="share_weibo" />
     <item drawable="vianext" />
+    <item drawable="acrobat" />
+    <item drawable="baidu_fanyi" />
+    <item drawable="duo" />
+    <item drawable="duolingo" />
+    <item drawable="ibelieve" />
+    <item drawable="kaoyan" />
+    <item drawable="la_systemtoolbox" />
+    <item drawable="qkadm" />
+    <item drawable="seed" />
+    <item drawable="vpn" />
+    <item drawable="xiaoji_emulator" />
+    <item drawable="zhuanzhuan" />
 
 </resources>
