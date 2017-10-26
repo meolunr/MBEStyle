@@ -16,15 +16,18 @@
     </string-array>
 
     <string-array name="whatsnew">
-        <item>_10000_bbs</item>
-        <item>firefox</item>
-        <item>firefox_beta</item>
-        <item>firefox_focus</item>
-        <item>firefox_nightly</item>
-        <item>jinjiang</item>
-        <item>qvod</item>
-        <item>share_weibo</item>
-        <item>vianext</item>
+        <item>acrobat</item>
+        <item>baidu_fanyi</item>
+        <item>duo</item>
+        <item>duolingo</item>
+        <item>ibelieve</item>
+        <item>kaoyan</item>
+        <item>la_systemtoolbox</item>
+        <item>qkadm</item>
+        <item>seed</item>
+        <item>vpn</item>
+        <item>xiaoji_emulator</item>
+        <item>zhuanzhuan</item>
     </string-array>
 
 </resources>

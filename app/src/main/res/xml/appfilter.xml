@@ -4448,4 +4448,72 @@
         component="ComponentInfo{com.microsoft.office.officehub/com.microsoft.office.officesuite.OfficeSuiteActivity}"
         drawable="microsoft_office" />
 
+    <!-- 2017.10.26 Add -->
+    <item
+        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.splash.SplashActivity}"
+        drawable="shanzhaiyun" />
+    <item
+        component="ComponentInfo{com.tencent.androidqqmail/com.tencent.qqmail.launcher.desktop.LaucherActivity}"
+        drawable="qq_mail" />
+    <item
+        component="ComponentInfo{com.xiaomi.vipaccount/com.xiaomi.vipaccount.ui.VipAccountActivity}"
+        drawable="xiaomi_account" />
+    <item
+        component="ComponentInfo{com.vanda_adm.vanda/com.vanda_adm.vanda.MainActivity}"
+        drawable="qkadm" />
+    <item
+        component="ComponentInfo{com.everblue.myseed/com.stub.stub01.Stub01}"
+        drawable="seed" />
+    <item
+        component="ComponentInfo{com.chengcheng.FreeVPN/com.chengcheng.FreeVPN.SplashActivity}"
+        drawable="vpn" />
+    <item
+        component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.MainActivityBadge0}"
+        drawable="jinri" />
+    <item
+        component="ComponentInfo{com.niksoftware.snapseed/com.google.android.apps.snapseed.WelcomeScreenActivity}"
+        drawable="snapseed" />
+    <item
+        component="ComponentInfo{com.huawei.health/com.huawei.health.MainActivity}"
+        drawable="huawei_health" />
+    <item
+        component="ComponentInfo{com.huawei.fans/com.huawei.fans.activity.MainActivity}"
+        drawable="huawei_fans" />
+    <item
+        component="ComponentInfo{com.sonymobile.moviecreator.rmm/com.sonymobile.moviecreator.rmm.LaunchActivity}"
+        drawable="moviecreator" />
+    <item
+        component="ComponentInfo{com.vivo.Tips/com.vivo.Tips.MainActivity}"
+        drawable="support" />
+    <item
+        component="ComponentInfo{com.xzr.La.systemtoolbox/com.xzr.La.systemtoolbox.MainActivity}"
+        drawable="la_systemtoolbox" />
+    <item
+        component="ComponentInfo{windvix.com.lantern/windvix.com.lantern.AppStart}"
+        drawable="lantern" />
+    <item
+        component="ComponentInfo{com.adobe.reader/com.adobe.reader.AdobeReader}"
+        drawable="acrobat" />
+    <item
+        component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivity}"
+        drawable="duo" />
+    <item
+        component="ComponentInfo{com.wuba.zhuanzhuan/com.wuba.zhuanzhuan.presentation.view.activity.LaunchActivity}"
+        drawable="zhuanzhuan" />
+    <item
+        component="ComponentInfo{com.tal.kaoyan/com.tal.kaoyan.ui.activity.SplashActivity}"
+        drawable="kaoyan" />
+    <item
+        component="ComponentInfo{com.baidu.baidutranslate/com.baidu.baidutranslate.activity.SplashActivity}"
+        drawable="baidu_fanyi" />
+    <item
+        component="ComponentInfo{com.jx.cmcc.ict.ibelieve/com.jx.cmcc.ict.ibelieve.activity.MainGuideActivity}"
+        drawable="ibelieve" />
+    <item
+        component="ComponentInfo{com.duolingo/com.duolingo.app.LoginActivity}"
+        drawable="duolingo" />
+    <item
+        component="ComponentInfo{com.xiaoji.emulator/com.xiaoji.emulator.Entry}"
+        drawable="xiaoji_emulator" />
+
 </resources>
