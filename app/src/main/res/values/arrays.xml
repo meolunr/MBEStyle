@@ -16,18 +16,23 @@
     </string-array>
 
     <string-array name="whatsnew">
-        <item>acrobat</item>
-        <item>baidu_fanyi</item>
-        <item>duo</item>
-        <item>duolingo</item>
-        <item>ibelieve</item>
-        <item>kaoyan</item>
-        <item>la_systemtoolbox</item>
-        <item>qkadm</item>
-        <item>seed</item>
-        <item>vpn</item>
-        <item>xiaoji_emulator</item>
-        <item>zhuanzhuan</item>
+        <item>accubattery</item>
+        <item>aiwu_market</item>
+        <item>chaoxing</item>
+        <item>chenupt_day</item>
+        <item>everphoto</item>
+        <item>iplaymtg</item>
+        <item>job51</item>
+        <item>manhuamiao</item>
+        <item>meizu_reader</item>
+        <item>musicfx</item>
+        <item>retromusic</item>
+        <item>seekbooks</item>
+        <item>shihuo</item>
+        <item>ted</item>
+        <item>translator</item>
+        <item>watermark</item>
+        <item>zixun</item>
     </string-array>
 
 </resources>

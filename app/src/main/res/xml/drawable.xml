@@ -660,5 +660,22 @@
     <item drawable="vpn" />
     <item drawable="xiaoji_emulator" />
     <item drawable="zhuanzhuan" />
+    <item drawable="accubattery" />
+    <item drawable="aiwu_market" />
+    <item drawable="chaoxing" />
+    <item drawable="chenupt_day" />
+    <item drawable="everphoto" />
+    <item drawable="iplaymtg" />
+    <item drawable="job51" />
+    <item drawable="manhuamiao" />
+    <item drawable="meizu_reader" />
+    <item drawable="musicfx" />
+    <item drawable="retromusic" />
+    <item drawable="seekbooks" />
+    <item drawable="shihuo" />
+    <item drawable="ted" />
+    <item drawable="translator" />
+    <item drawable="watermark" />
+    <item drawable="zixun" />
 
 </resources>
