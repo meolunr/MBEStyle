@@ -4450,12 +4450,6 @@
 
     <!-- 2017.10.26 Add -->
     <item
-        component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.splash.SplashActivity}"
-        drawable="shanzhaiyun" />
-    <item
-        component="ComponentInfo{com.tencent.androidqqmail/com.tencent.qqmail.launcher.desktop.LaucherActivity}"
-        drawable="qq_mail" />
-    <item
         component="ComponentInfo{com.xiaomi.vipaccount/com.xiaomi.vipaccount.ui.VipAccountActivity}"
         drawable="xiaomi_account" />
     <item
@@ -4467,9 +4461,6 @@
     <item
         component="ComponentInfo{com.chengcheng.FreeVPN/com.chengcheng.FreeVPN.SplashActivity}"
         drawable="vpn" />
-    <item
-        component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.MainActivityBadge0}"
-        drawable="jinri" />
     <item
         component="ComponentInfo{com.niksoftware.snapseed/com.google.android.apps.snapseed.WelcomeScreenActivity}"
         drawable="snapseed" />
@@ -4515,5 +4506,76 @@
     <item
         component="ComponentInfo{com.xiaoji.emulator/com.xiaoji.emulator.Entry}"
         drawable="xiaoji_emulator" />
+
+    <!-- 2017.11.26 Add -->
+    <item
+        component="ComponentInfo{com.ximalaya.ting.android/com.ximalaya.ting.android.main.activity.account.WelComeActivity}"
+        drawable="ximalaya" />
+    <item
+        component="ComponentInfo{com.meizu.media.reader/com.meizu.media.reader.ReaderMainActivity}"
+        drawable="zixun" />
+    <item
+        component="ComponentInfo{com.wangdaye.mysplash/com.wangdaye.mysplash.main.view.activity.MainActivity}"
+        drawable="mysplash" />
+    <item
+        component="ComponentInfo{com.nowcasting.activity/com.nowcasting.activity.SplashActivity}"
+        drawable="weather" />
+    <item
+        component="ComponentInfo{code.name.monkey.retromusic/code.name.monkey.retromusic.ui.activities.MainActivity}"
+        drawable="retromusic" />
+    <item
+        component="ComponentInfo{com.aiwu.market/com.aiwu.market.ui.activity.SplashActivity}"
+        drawable="aiwu_market" />
+    <item
+        component="ComponentInfo{com.meizu.media.ebook/com.meizu.media.ebook.EBookActivity}"
+        drawable="meizu_reader" />
+    <item
+        component="ComponentInfo{com.job.android/com.job.android.pages.common.OpenImageActivity}"
+        drawable="job51" />
+    <item
+        component="ComponentInfo{com.chenupt.day/com.chenupt.day.launch.SplashActivity}"
+        drawable="chenupt_day" />
+    <item
+        component="ComponentInfo{com.hupu.shihuo/com.hupu.shihuo.view.activity.WelcomeActivity}"
+        drawable="shihuo" />
+    <item
+        component="ComponentInfo{tc.everphoto/everphoto.ui.feature.splash.SplashActivity}"
+        drawable="everphoto" />
+    <item
+        component="ComponentInfo{com.manhuamiao.activity/com.manhuamiao.activity.MainActivity}"
+        drawable="manhuamiao" />
+    <item
+        component="ComponentInfo{com.flyersoft.seekbooks/com.flyersoft.seekbooks.ActivityMain}"
+        drawable="seekbooks" />
+    <item
+        component="ComponentInfo{com.gonlan.iplaymtg/com.gonlan.iplaymtg.common.StartActivity}"
+        drawable="iplaymtg" />
+    <item
+        component="ComponentInfo{com.yaerin.watermark/com.yaerin.watermark.activity.SplashActivity}"
+        drawable="watermark" />
+    <item
+        component="ComponentInfo{com.ted.android/com.ted.android.view.splash.SplashActivity}"
+        drawable="ted" />
+    <item
+        component="ComponentInfo{com.chaoxing.mobile/com.chaoxing.mobile.main.ui.Logo}"
+        drawable="chaoxing" />
+    <item
+        component="ComponentInfo{com.vjson.anime/com.vjson.comic.ui.activity.MainActivity}"
+        drawable="kuke_manga" />
+    <item
+        component="ComponentInfo{com.xwtec.sd.mobileclient/com.xwtec.sd.mobileclient.LoadingActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{eu.thedarken.sdm.unlocker/eu.thedarken.sdm.unlocker.MainActivity}"
+        drawable="sdmaid_unlock" />
+    <item
+        component="ComponentInfo{com.android.musicfx/com.android.musicfx.ActivityMusic}"
+        drawable="musicfx" />
+    <item
+        component="ComponentInfo{com.digibites.accubattery/com.digibites.abatterysaver.BatterySaverActivity}"
+        drawable="accubattery" />
+    <item
+        component="ComponentInfo{com.microsoft.translator/com.microsoft.translator.activity.SplashActivity}"
+        drawable="translator" />
 
 </resources>
