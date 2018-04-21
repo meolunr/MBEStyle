@@ -4642,5 +4642,8 @@
     <item
         component="ComponentInfo{com.chaoxing.mobile/com.chaoxing.mobile.activity.SplashActivity}"
         drawable="chaoxingstudy" />
+    <item
+        component="ComponentInfo{cn.liuyin.manhua/cn.liuyin.manhua.activity.HomeActivity}"
+        drawable="android_app" />
 
 </resources>
