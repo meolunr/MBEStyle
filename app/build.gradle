@@ -8,8 +8,8 @@ android {
         applicationId "me.iacn.mbestyle"
         minSdkVersion 17
         targetSdkVersion 27
-        versionCode 25
-        versionName "1.7.2"
+        versionCode 26
+        versionName "1.7.3"
         resConfigs "en", "zh-rCN"
     }
 
@@ -30,8 +30,8 @@ android {
         prop.load(stream)
         stream.close()
 
-        leanCloudId = prop.getProperty('leancloudId')
-        leanCloudKey = prop.getProperty('leancloudKey')
+        leanCloudId = prop.getProperty('leanCloudId')
+        leanCloudKey = prop.getProperty('leanCloudKey')
     }
 
     buildTypes.each {

@@ -16,23 +16,18 @@
     </string-array>
 
     <string-array name="whatsnew">
-        <item>accubattery</item>
-        <item>aiwu_market</item>
-        <item>chaoxing</item>
-        <item>chenupt_day</item>
-        <item>everphoto</item>
-        <item>iplaymtg</item>
-        <item>job51</item>
-        <item>manhuamiao</item>
-        <item>meizu_reader</item>
-        <item>musicfx</item>
-        <item>retromusic</item>
-        <item>seekbooks</item>
-        <item>shihuo</item>
-        <item>ted</item>
-        <item>translator</item>
-        <item>watermark</item>
-        <item>zixun</item>
+        <item>baimiao</item>
+        <item>chaoxingstudy</item>
+        <item>hacg</item>
+        <item>jinritoutiao</item>
+        <item>meeye</item>
+        <item>mogicians</item>
+        <item>netease_comic</item>
+        <item>nutstore</item>
+        <item>pinduoduo</item>
+        <item>qtradio</item>
+        <item>unionpay</item>
+        <item>v2er</item>
     </string-array>
 
 </resources>
