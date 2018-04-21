@@ -21,8 +21,8 @@ android {
     }
 
     def file = project.rootProject.file('config.prop')
-    def leancloudId = '"+1S"'
-    def leancloudKey = '"+1S"'
+    def leanCloudId = '"+1S"'
+    def leanCloudKey = '"+1S"'
 
     if (file.exists()) {
         Properties prop = new Properties()
@@ -30,21 +30,21 @@ android {
         prop.load(stream)
         stream.close()
 
-        leancloudId = prop.getProperty('leancloudId')
-        leancloudKey = prop.getProperty('leancloudKey')
+        leanCloudId = prop.getProperty('leancloudId')
+        leanCloudKey = prop.getProperty('leancloudKey')
     }
 
     buildTypes.each {
-        it.buildConfigField 'String', 'LEANCLOUD_ID', leancloudId
-        it.buildConfigField 'String', 'LEANCLOUD_KEY', leancloudKey
+        it.buildConfigField 'String', 'LEANCLOUD_ID', leanCloudId
+        it.buildConfigField 'String', 'LEANCLOUD_KEY', leanCloudKey
     }
 
     // 修改生成 Apk 的文件名
-    /*android.applicationVariants.all { variant ->
-        def outFile = variant.outputs[0].outputFile
-        def outFileName = 'MBEStyle_' + defaultConfig.versionName + '.apk'
-        variant.outputs[0].outputFile = new File(outFile.parent, outFileName)
-    }*/
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "MBEStyle_${defaultConfig.versionName}.apk"
+        }
+    }
 }
 
 dependencies {
