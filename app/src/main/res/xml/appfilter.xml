@@ -1081,6 +1081,9 @@
     <item
         component="ComponentInfo{ComponentInfo{com.zhihu.android/com.zhihu.android.app.ui.activity.MainActivity}}"
         drawable="zhihu" />
+    <item
+        component="ComponentInfo{com.zhihu.android/com.zhihu.android.app.ui.activity.LauncherActivity}"
+        drawable="zhihu" />
     <!-- RE管理器 / re -->
     <item
         component="ComponentInfo{com.speedsoftware.rootexplorer/com.speedsoftware.rootexplorer.RootExplorer}"
@@ -1139,10 +1142,10 @@
         drawable="tencent_weiyun" />
     <!-- 闲鱼 / xianyu -->
     <item
-        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity}"
+        component="ComponentInfo{com.taobao.fleamarket/com.taobao.fleamarket.activity.InitActivity}"
         drawable="xianyu" />
     <item
-        component="ComponentInfo{com.taobao.fleamarket/com.taobao.fleamarket.activity.InitActivity}"
+        component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity}"
         drawable="xianyu" />
     <item
         component="ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.activity.InitActivity.Round}"
@@ -1348,6 +1351,9 @@
         component="ComponentInfo{com.kingpoint.gmcchh/com.kingpoint.gmcchh.ui.home.StartUpActivity}"
         drawable="_10086" />
     <item
+        component="ComponentInfo{com.kingpoint.gmcchh/com.kingpoint.gmcchh.newui.main.skeleton.view.SkeletonActivity}"
+        drawable="_10086" />
+    <item
         component="ComponentInfo{com.sunrise.scmbhc/com.sunrise.scmbhc.ui.activity.loading.LoadingActivity}"
         drawable="_10086" />
     <item
@@ -1427,9 +1433,15 @@
     <item
         component="ComponentInfo{com.evernote.world/com.evernote.ui.HomeActivity}"
         drawable="evernote" />
+
+    <!-- Tumblr -->
     <item
         component="ComponentInfo{com.tumblr/com.tumblr.ui.activity.JumpoffActivity}"
         drawable="tumblr" />
+    <item
+        component="ComponentInfo{com.tumblr/com.tumblr.ui.activity.RootActivity}"
+        drawable="tumblr" />
+
     <item
         component="ComponentInfo{com.ygkj.chelaile.standard/dev.xesam.chelaile.app.module.func.SplashActivity}"
         drawable="chelaile" />
@@ -1795,9 +1807,21 @@
     <item
         component="ComponentInfo{com.ohsame.android/com.ohsame.android.activity.WelcomeActivity}"
         drawable="same" />
+
+    <!-- 冰箱 -->
     <item
         component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainActivity}"
         drawable="icebox" />
+    <item
+        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainActivityWithRoundIcon}"
+        drawable="icebox" />
+    <item
+        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainActivityWithAnotherIcon}"
+        drawable="icebox" />
+    <item
+        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.MainActivity}"
+        drawable="icebox" />
+
     <item
         component="ComponentInfo{cn.xiaochuankeji.tieba/cn.xiaochuankeji.tieba.ui.base.SplashActivity}"
         drawable="zuiyou" />
@@ -2051,9 +2075,6 @@
     <item
         component="ComponentInfo{com.estrongs.android.pop/com.estrongs.android.pop.app.openscreenad.SplashActivity}"
         drawable="es_explorer" />
-    <item
-        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainActivityWithAnotherIcon}"
-        drawable="icebox" />
     <item
         component="ComponentInfo{cn.wq.myandroidtoolsxposed/cn.wq.myandroidtoolsxposed.MainActivity}"
         drawable="myandroidtool" />
@@ -2653,9 +2674,6 @@
         component="ComponentInfo{com.zui.recorder/com.zui.recorder.SoundRecorder}"
         drawable="soundrecorder" />
     <item
-        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainActivityWithRoundIcon}"
-        drawable="icebox" />
-    <item
         component="ComponentInfo{com.zui.calculator/com.zui.calculator.Calculator}"
         drawable="calculator" />
     <item
@@ -2715,9 +2733,15 @@
     <item
         component="ComponentInfo{com.dotamax.app/com.max.app.module.welcome.WelcomeActivity}"
         drawable="dotamax" />
+
+    <!-- 有道云笔记 -->
     <item
         component="ComponentInfo{com.youdao.note/com.youdao.note.v4.MainActivity}"
         drawable="youdaonote" />
+    <item
+        component="ComponentInfo{com.youdao.note/com.youdao.note.activity2.SplashActivity}"
+        drawable="youdaonote" />
+
     <item
         component="ComponentInfo{com.xiaomi.shop/com.xiaomi.shop.activity.MainTabActivity}"
         drawable="xiaomi_shop" />
@@ -4212,9 +4236,12 @@
     <item
         component="ComponentInfo{com.an.killthermal/com.an.killthermal.MainActivity}"
         drawable="killthermal" />
+
+    <!-- 抖音 -->
     <item
         component="ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}"
         drawable="aweme" />
+
     <item
         component="ComponentInfo{com.diyidan/com.diyidan.activity.SplashActivity}"
         drawable="diyidan" />
@@ -4577,5 +4604,43 @@
     <item
         component="ComponentInfo{com.microsoft.translator/com.microsoft.translator.activity.SplashActivity}"
         drawable="translator" />
+
+    <!-- 2018.04.21 Add -->
+    <item
+        component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.activity.SplashBadgeActivity}"
+        drawable="jinritoutiao" />
+    <item
+        component="ComponentInfo{com.xunmeng.pinduoduo/com.xunmeng.pinduoduo.ui.activity.MainFrameActivity}"
+        drawable="pinduoduo" />
+    <item
+        component="ComponentInfo{com.yeyebbc.meeye.iconpack/com.yeyebbc.meeye.iconpack.activities.SplashActivity}"
+        drawable="meeye" />
+    <item
+        component="ComponentInfo{com.unionpay/com.unionpay.activity.UPActivityWelcome}"
+        drawable="unionpay" />
+    <item
+        component="ComponentInfo{com.netease.cartoonreader/com.netease.cartoonreader.activity.ComicStartFlashActivity}"
+        drawable="netease_comic" />
+    <item
+        component="ComponentInfo{com.uzero.baimiao/com.uzero.baimiao.Hello}"
+        drawable="baimiao" />
+    <item
+        component="ComponentInfo{nutstore.android/nutstore.android.SplashScreen}"
+        drawable="nutstore" />
+    <item
+        component="ComponentInfo{fm.qingting.qtradio/fm.qingting.qtradio.WelcomeActivity}"
+        drawable="qtradio" />
+    <item
+        component="ComponentInfo{com.nacosiren.blog.mogiciansmanual/com.nacosiren.blog.mogiciansmanual.ui.activities.MainActivity}"
+        drawable="mogicians" />
+    <item
+        component="ComponentInfo{io.github.yueeng.hacg/io.github.yueeng.hacg.MainActivity}"
+        drawable="hacg" />
+    <item
+        component="ComponentInfo{me.ghui.v2er.free/me.ghui.v2er.module.general.RouteActivity}"
+        drawable="v2er" />
+    <item
+        component="ComponentInfo{com.chaoxing.mobile/com.chaoxing.mobile.activity.SplashActivity}"
+        drawable="chaoxingstudy" />
 
 </resources>
