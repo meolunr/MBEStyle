@@ -4,7 +4,7 @@
 Designer&nbsp;&nbsp;&nbsp;：幼幼保护协会 @Coolapk  
 Developer ：Leon连续 @Coolapk
  
-You can download it from [Coolapk](http://www.coolapk.com/apk/me.iacn.mbestyle), [Google Play](https://play.google.com/store/apps/details?id=me.iacn.mbestyle) or [F-Droid](https://f-droid.org/packages/me.iacn.mbestyle/)
+You can download it from [Coolapk](http://www.coolapk.com/apk/me.iacn.mbestyle) or [F-Droid](https://f-droid.org/packages/me.iacn.mbestyle/)
 
 ![1.png](https://ooo.0o0.ooo/2017/02/20/58ab008d7c89d.png)
 ![2.png](https://ooo.0o0.ooo/2017/02/20/58ab008d99451.png)
