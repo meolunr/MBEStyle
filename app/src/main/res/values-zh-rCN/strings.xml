@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MBE Style</string>
+    <string name="app_title">MBE Style 图标包</string>
+    <string name="icon">图标</string>
+    <string name="launcher">应用</string>
+    <string name="request">申请</string>
+    <string name="about">关于</string>
+    <string name="version">版本</string>
+    <string name="designer">设计</string>
+    <string name="developer">开发</string>
+    <string name="donate">捐赠</string>
+    <string name="set_wallpaper">应用壁纸到启动器</string>
+    <string name="donate_summary">点击会尝试打开支付宝</string>
+    <string name="open_source">开源相关</string>
+    <string name="licenses">开源许可</string>
+    <string name="activity_wallpaper_title">请选择一张壁纸</string>
+    <string name="toast_set_wallpaper_failed">壁纸设置失败</string>
+    <string name="set_wallpaper_title">设置壁纸</string>
+    <string name="toast_not_install_alipay">未安装支付宝客户端 已将支付宝ID复制到剪贴板</string>
+    <string name="launcher_not_found">你好像还没有安装该桌面==</string>
+    <string name="installed">已安装</string>
+    <string name="what_is_new">最近更新</string>
+    <string name="all">全部</string>
+    <string name="toast_copy_component_info">应用信息已复制到剪贴板</string>
+    <string name="waiting">请稍候</string>
+    <string name="request_success">申请成功</string>
+    <string name="request_failure">申请失败</string>
+    <string name="occur_error">出现异常</string>
+    <string name="check_sum">已选中 %d 个</string>
+    <string name="not_be_requested">还未被申请过~</string>
+    <string name="request_sum">已申请 %d 次</string>
+</resources>

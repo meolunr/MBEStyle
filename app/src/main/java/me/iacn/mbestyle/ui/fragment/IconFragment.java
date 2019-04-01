@@ -49,7 +49,7 @@ public class IconFragment extends BaseFragment {
         fragments.add(makeIconShowFragment(IconShowFragment.ICONS_LOAD_WHATSNEW));
         fragments.add(makeIconShowFragment(IconShowFragment.ICONS_LOAD_ALL));
 
-        String[] titles = new String[]{"已安装", "最近更新", "全部"};
+        String[] titles = new String[]{getString(R.string.installed), getString(R.string.what_is_new), getString(R.string.all)};
 
         mTab.setupWithViewPager(mViewPager);
         mViewPager.setAdapter(new IconTabAdapter(getFragmentManager(), fragments, titles));
@@ -58,7 +58,8 @@ public class IconFragment extends BaseFragment {
     }
 
     public void setIconTotal(int total) {
-        String all = String.format(Locale.getDefault(), "全部(%d)", total);
+        String format = getString(R.string.all) + "(%d)";
+        String all = String.format(Locale.getDefault(), format, total);
         TabLayout.Tab allTab = mTab.getTabAt(2);
 
         if (allTab != null && total != 0) {

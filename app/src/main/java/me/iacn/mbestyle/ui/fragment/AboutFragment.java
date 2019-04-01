@@ -26,8 +26,6 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
 
     private ImageView ivLogo;
     private AboutItem aiVersion;
-    private AboutItem aiDesigner;
-    private AboutItem aiDeveloper;
     private AboutItem aiDonate;
     private AboutItem aiOpenSource;
 
@@ -40,8 +38,6 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     protected void findView() {
         ivLogo = (ImageView) findViewById(R.id.iv_logo);
         aiVersion = (AboutItem) findViewById(R.id.ai_version);
-        aiDesigner = (AboutItem) findViewById(R.id.ai_designer);
-        aiDeveloper = (AboutItem) findViewById(R.id.ai_developer);
         aiDonate = (AboutItem) findViewById(R.id.ai_donate);
         aiOpenSource = (AboutItem) findViewById(R.id.ai_open_source);
     }
@@ -49,8 +45,6 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     @Override
     protected void setListener() {
         aiVersion.setOnClickListener(this);
-        aiDesigner.setOnClickListener(this);
-        aiDeveloper.setOnClickListener(this);
         aiDonate.setOnClickListener(this);
         aiOpenSource.setOnClickListener(this);
     }
@@ -64,12 +58,6 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.ai_designer:
-                openUrl("http://coolapk.com/u/433446");
-                break;
-            case R.id.ai_developer:
-                openUrl("http://coolapk.com/u/532152");
-                break;
             case R.id.ai_donate:
                 openAliPay();
                 break;
@@ -95,8 +83,7 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
             ((ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE))
                     .setPrimaryClip(ClipData.newPlainText(null, "18588533502"));
 
-            Toast.makeText(getActivity(),
-                    "未安装支付宝客户端\n已将支付宝ID复制到剪贴板", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), R.string.toast_not_install_alipay, Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -47,7 +47,7 @@ public class WallpaperActivity extends AppCompatActivity {
         StatusBarUtils.setColor(this, ContextCompat.getColor(this, R.color.colorPrimary));
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("请选择一张壁纸");
+        toolbar.setTitle(R.string.activity_wallpaper_title);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -90,7 +90,7 @@ public class WallpaperActivity extends AppCompatActivity {
     }
 
     private void showFailedToast() {
-        Toast.makeText(this, "壁纸设置失败", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.toast_set_wallpaper_failed, Toast.LENGTH_SHORT).show();
     }
 
     private void setWallpaper(@RawRes int rawId) {
@@ -126,7 +126,7 @@ public class WallpaperActivity extends AppCompatActivity {
             intent.setDataAndType(uri, "image/*");
             intent.putExtra("mimeType", "image/*");
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(Intent.createChooser(intent, "设置壁纸"));
+            startActivity(Intent.createChooser(intent, getString(R.string.set_wallpaper_title)));
         }
     }
 

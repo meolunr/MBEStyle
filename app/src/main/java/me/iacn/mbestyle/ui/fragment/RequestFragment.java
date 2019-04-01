@@ -114,11 +114,11 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
     @Override
     public boolean onItemLongClick(View itemView, int position) {
         RequestBean bean = mApps.get(position);
-        String template = getString(R.string.component_template)
+        String template = "ComponentInfo{$mainIntentActivity$}"
                 .replace("$mainIntentActivity$", bean.activity);
 
         StringUtils.copyToClipboard(getActivity(), template);
-        Toast.makeText(getActivity(), "应用信息已复制到剪贴板", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), R.string.toast_copy_component_info, Toast.LENGTH_SHORT).show();
 
         return true;
     }
@@ -162,19 +162,20 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
             @Override
             public void onSubscribe(Disposable d) {
                 mProgressDialog = new ProgressDialog(getActivity());
-                mProgressDialog.setMessage("请稍后");
+                mProgressDialog.setMessage(getString(R.string.waiting));
                 mProgressDialog.setCancelable(false);
                 mProgressDialog.show();
             }
 
             @Override
             public void onNext(Boolean success) {
-                Toast.makeText(getActivity(), success ? "申请成功" : "申请失败", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), success ? R.string.request_success : R.string.request_failure,
+                        Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(Throwable e) {
-                Toast.makeText(getActivity(), "出现异常 " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.occur_error + e.getMessage(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -219,7 +220,7 @@ public class RequestFragment extends ILazyFragment implements OnItemClickListene
                 mFab.show();
 
             mActivity.setToolbarTitle(String.format(
-                    Locale.getDefault(), "已选中 %d 个", mCheckedPositions.size()));
+                    Locale.getDefault(), getString(R.string.check_sum), mCheckedPositions.size()));
 
         } else if (mFab.isShown()) {
             mFab.hide();
