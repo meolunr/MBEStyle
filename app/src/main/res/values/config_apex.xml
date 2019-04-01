@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="theme_title">@string/app_name</string>
-    <string name="developer_name">iAcn</string>
+    <string name="theme_title" translatable="false">@string/app_name</string>
+    <string name="developer_name" translatable="false">iAcn</string>
 
     <bool name="config_iconpack">true</bool>
     <bool name="config_apexskin">false</bool>
