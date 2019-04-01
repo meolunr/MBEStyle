@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="开源许可">
+    <PreferenceCategory android:title="@string/licenses">
 
         <Preference
             android:summary="GNU General Public License 3.0"

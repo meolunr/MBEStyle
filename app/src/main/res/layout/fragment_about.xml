@@ -13,8 +13,8 @@
             android:id="@+id/iv_logo"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:layout_marginBottom="36dp"
             android:layout_marginTop="36dp"
+            android:layout_marginBottom="36dp"
             tools:src="@drawable/bg_about_logo" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
@@ -22,35 +22,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:summary="0.0"
-            app:title="版本" />
+            app:title="@string/version" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_designer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:summary="幼幼保护协会"
-            app:title="设计" />
+            app:title="@string/designer" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_developer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:summary="iAcn"
-            app:title="开发" />
+            app:title="@string/developer" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_donate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:summary="点击会尝试打开支付宝"
-            app:title="捐赠" />
+            app:summary="@string/donate_summary"
+            app:title="@string/donate" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_open_source"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:summary="https://github.com/iAcn/MBEStyle"
-            app:title="开源相关" />
+            app:title="@string/open_source" />
 
     </LinearLayout>
 

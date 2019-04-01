@@ -173,9 +173,9 @@ public class RequestPresenter {
 
     private void setRequestTotal(TextView textView, int value) {
         if (value == 0) {
-            textView.setText("还未被申请过~");
+            textView.setText(R.string.not_be_requested);
         } else {
-            textView.setText(String.format(Locale.getDefault(), "已申请 %d 次", value));
+            textView.setText(String.format(Locale.getDefault(), mView.getString(R.string.request_sum), value));
         }
     }
 }
