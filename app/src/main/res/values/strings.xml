@@ -1,4 +1,36 @@
 <resources>
     <string name="app_name">MBE Style</string>
-    <string name="app_title">MBE Style 图标包</string>
+    <string name="app_title">MBE Style IconPack</string>
+    <string name="translator">iAcn</string>
+
+    <string name="icon">Icon</string>
+    <string name="launcher">Launcher</string>
+    <string name="request">Apply</string>
+    <string name="about">About</string>
+
+    <string name="version">Version</string>
+    <string name="designer">Designer</string>
+    <string name="developer">Developer</string>
+    <string name="language">Translator</string>
+    <string name="donate">Donate</string>
+    <string name="set_wallpaper">Set wallpaper</string>
+    <string name="donate_summary">Click to try open Alipay client</string>
+    <string name="open_source">Licenses</string>
+    <string name="licenses">Licenses</string>
+    <string name="activity_wallpaper_title">Please select a wallpaper</string>
+    <string name="toast_set_wallpaper_failed">Failed to set wallpaper</string>
+    <string name="set_wallpaper_title">Set wallpaper</string>
+    <string name="toast_not_install_alipay">Alipay client is not installed</string>
+    <string name="launcher_not_found">The launcher is not installed (╯﹏╰)</string>
+    <string name="installed">Installed</string>
+    <string name="what_is_new">What\'s new</string>
+    <string name="all">All</string>
+    <string name="toast_copy_component_info">The ComponentInfo has been copied to clipboard</string>
+    <string name="waiting">Please wait a moment</string>
+    <string name="request_success">Application is successful</string>
+    <string name="request_failure">Application is failing</string>
+    <string name="occur_error">Occur error</string>
+    <string name="check_sum">Selected %d</string>
+    <string name="not_be_requested">It has not been applied</string>
+    <string name="request_sum">It has been applied %d times</string>
 </resources>
