@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Style Mbe</string>
+    <string name="app_title">Collection d\'icônes au style Mbe</string>
+    <string name="translator">Li GAN</string>
+
+    <string name="icon">Icône</string>
+    <string name="launcher">Lanceur</string>
+    <string name="request">Demande</string>
+    <string name="about">À propos de</string>
+
+    <string name="version">Version</string>
+    <string name="designer">Designer</string>
+    <string name="developer">Développeur</string>
+    <string name="language">Traduction</string>
+    <string name="donate">Faire un don</string>
+    <string name="set_wallpaper">Appliquer du fond d\'écran au lanceur</string>
+    <string name="donate_summary">Appuyer pour lancer Alipay</string>
+    <string name="open_source">Source ouverte</string>
+    <string name="licenses">Licenses</string>
+    <string name="activity_wallpaper_title">Veuillez sélectionner un fond d\'écran</string>
+    <string name="toast_set_wallpaper_failed">Impossible d\'appliquer le fond d\'écran</string>
+    <string name="set_wallpaper_title">Appliquer du fond d\'écran</string>
+    <string name="toast_not_install_alipay">Alipay n\'est pas installé</string>
+    <string name="launcher_not_found">Ce lanceur n\'est pas installé (╯﹏╰)</string>
+    <string name="installed">Installée(s)</string>
+    <string name="what_is_new">Quoi de neuf</string>
+    <string name="all">Toutes</string>
+    <string name="toast_copy_component_info">Le ComponentInfo a été copié dans le presse-papier.</string>
+    <string name="waiting">Veuillez patienter</string>
+    <string name="request_success">Demande réussite</string>
+    <string name="request_failure">Demande échouée</string>
+    <string name="occur_error">Erreur survenue</string>
+    <string name="check_sum">Nombre d\'apps sélectionnée(s) : %d</string>
+    <string name="not_be_requested">Pas encore demandée</string>
+    <string name="request_sum">Déjà demandée pour %d fois</string>
+</resources>
