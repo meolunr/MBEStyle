@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MBE Style</string>
+    <string name="app_title">MBE Style Icon Pack</string>
+    <string name="translator">Lana Schuhmacher</string>
+
+    <string name="icon">Icon</string>
+    <string name="launcher">Launcher</string>
+    <string name="request">Anwenden</string>
+    <string name="about">Über</string>
+
+    <string name="version">Version</string>
+    <string name="designer">Designer</string>
+    <string name="developer">Entwickler</string>
+    <string name="language">Übersetzer</string>
+    <string name="donate">Spenden</string>
+    <string name="set_wallpaper">Hintergrundbild anwenden</string>
+    <string name="donate_summary">Klicken, um Alipay zu öffnen</string>
+    <string name="open_source">Lizenzen</string>
+    <string name="licenses">Lizenzen</string>
+    <string name="activity_wallpaper_title">Bitte Hintergrundbild auswählen</string>
+    <string name="toast_set_wallpaper_failed">Anwenden des Hintergrundbilds fehlgeschlagen</string>
+    <string name="set_wallpaper_title">Hintergrundbild anwenden</string>
+    <string name="toast_not_install_alipay">Alipay ist nicht installiert</string>
+    <string name="launcher_not_found">Der Launcher ist nicht installiert (╯﹏╰)</string>
+    <string name="installed">Installiert</string>
+    <string name="what_is_new">Änderungsverlauf</string>
+    <string name="all">Alle</string>
+    <string name="toast_copy_component_info">Die ComponentInfo wurde in die Zwischenablage kopiert</string>
+    <string name="waiting">Bitte kurz warten</string>
+    <string name="request_success">Anfrage erfolgreich</string>
+    <string name="request_failure">Anfrage ist fehlgeschlagen</string>
+    <string name="occur_error">Fehler</string>
+    <string name="check_sum">%d ausgewählt</string>
+    <string name="not_be_requested">Anwendung fehlgeschlagen</string>
+    <string name="request_sum">Die Anfrage wurde %d gestellt</string>
+</resources>
