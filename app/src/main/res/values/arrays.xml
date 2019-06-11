@@ -16,18 +16,27 @@
     </string-array>
 
     <string-array name="whatsnew">
-        <item>baimiao</item>
-        <item>chaoxingstudy</item>
-        <item>hacg</item>
-        <item>jinritoutiao</item>
-        <item>meeye</item>
-        <item>mogicians</item>
-        <item>netease_comic</item>
-        <item>nutstore</item>
-        <item>pinduoduo</item>
-        <item>qtradio</item>
-        <item>unionpay</item>
-        <item>v2er</item>
+        <item>coloros_familyguard</item>
+        <item>coloros_gamespace</item>
+        <item>fasthub</item>
+        <item>fdroid</item>
+        <item>flyme_bbs</item>
+        <item>flyme_life</item>
+        <item>flyme_mall</item>
+        <item>heiyan</item>
+        <item>meizu_mcare</item>
+        <item>meizu_painter</item>
+        <item>meizu_store</item>
+        <item>openvpn</item>
+        <item>oppo_community</item>
+        <item>ourplay</item>
+        <item>outline</item>
+        <item>secscan_qr</item>
+        <item>taichi</item>
+        <item>vmall</item>
+        <item>whatsapp</item>
+        <item>xiaohongshu</item>
+        <item>_369trip</item>
     </string-array>
 
 </resources>
