@@ -4355,7 +4355,7 @@
         drawable="shoujiduoduo_ringtone" />
     <item
         component="ComponentInfo{com.meizu.compaign/com.meizu.component.HomeActivity}"
-        drawable="meizu_fuli" />
+        drawable="meizu_usercenter" />
     <item
         component="ComponentInfo{com.qihoo.cleandroid_cn/com.qihoo360.mobilesafe.opti.ui.main.AppEnterActivity}"
         drawable="qihoo_cleandroid" />
