@@ -924,15 +924,15 @@
     <!-- 头条 / jinri -->
     <item
         component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.activity.SplashActivity}"
-        drawable="jinri" />
+        drawable="jinritoutiao" />
 
     <item
         component="ComponentInfo{com.ss.android.article.news/com.ss.android.article.news.MainActivityBadge0}"
-        drawable="jinri" />
+        drawable="jinritoutiao" />
 
     <item
         component="ComponentInfo{com.ss.android.article.lite/com.ss.android.article.lite.activity.SplashActivity}"
-        drawable="jinri" />
+        drawable="jinritoutiao" />
 
     <!-- 邮箱 / mail -->
     <item
