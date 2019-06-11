@@ -110,6 +110,8 @@
     <item drawable="cm_filemanager" />
     <item drawable="cm_theme" />
     <item drawable="cnbeta" />
+    <item drawable="coloros_familyguard" />
+    <item drawable="coloros_gamespace" />
     <item drawable="compass" />
     <item drawable="contacts" />
     <item drawable="container" />
@@ -168,7 +170,9 @@
     <item drawable="e_hviewer" />
     <item drawable="facebook" />
     <item drawable="faceu" />
+    <item drawable="fasthub" />
     <item drawable="fategowiki" />
+    <item drawable="fdroid" />
     <item drawable="fenqile" />
     <item drawable="fgo" />
     <item drawable="fileman" />
@@ -181,6 +185,9 @@
     <item drawable="fitness" />
     <item drawable="flamingo" />
     <item drawable="flashlight" />
+    <item drawable="flyme_bbs" />
+    <item drawable="flyme_life" />
+    <item drawable="flyme_mall" />
     <item drawable="flyme_toolbox" />
     <item drawable="fm" />
     <item drawable="foodie" />
@@ -219,6 +226,7 @@
     <item drawable="hacg" />
     <item drawable="hanks_note" />
     <item drawable="happyelements" />
+    <item drawable="heiyan" />
     <item drawable="heiyu" />
     <item drawable="heshi" />
     <item drawable="hilink" />
@@ -320,7 +328,10 @@
     <item drawable="meituxiuxiu" />
     <item drawable="meiyan_camera" />
     <item drawable="meizu_fuli" />
+    <item drawable="meizu_mcare" />
+    <item drawable="meizu_painter" />
     <item drawable="meizu_reader" />
+    <item drawable="meizu_store" />
     <item drawable="memory_cleaner" />
     <item drawable="message" />
     <item drawable="microsoft_bing_dict" />
@@ -393,8 +404,12 @@
     <item drawable="onmyoji" />
     <item drawable="onmyoji_zs" />
     <item drawable="onmyoji_zyb" />
+    <item drawable="openvpn" />
     <item drawable="oppo" />
+    <item drawable="oppo_community" />
     <item drawable="originalwish" />
+    <item drawable="ourplay" />
+    <item drawable="outline" />
     <item drawable="pandatv" />
     <item drawable="paypal" />
     <item drawable="pdc" />
@@ -478,6 +493,7 @@
     <item drawable="sdmaid_unlock" />
     <item drawable="sd_maid" />
     <item drawable="searchbyimage" />
+    <item drawable="secscan_qr" />
     <item drawable="securefolder" />
     <item drawable="security" />
     <item drawable="seed" />
@@ -534,6 +550,7 @@
     <item drawable="s_manyou" />
     <item drawable="s_security" />
     <item drawable="s_voice" />
+    <item drawable="taichi" />
     <item drawable="taobao" />
     <item drawable="taobao_dianying" />
     <item drawable="taobao_trip" />
@@ -599,6 +616,7 @@
     <item drawable="virtualsim" />
     <item drawable="vivo_space" />
     <item drawable="vlc" />
+    <item drawable="vmall" />
     <item drawable="voiceassist" />
     <item drawable="vpn" />
     <item drawable="vsco" />
@@ -621,6 +639,7 @@
     <item drawable="weico" />
     <item drawable="welike" />
     <item drawable="weread" />
+    <item drawable="whatsapp" />
     <item drawable="wifi_key" />
     <item drawable="wifi_password" />
     <item drawable="wikipedia" />
@@ -632,6 +651,7 @@
     <item drawable="xiachufang" />
     <item drawable="xiami" />
     <item drawable="xianyu" />
+    <item drawable="xiaohongshu" />
     <item drawable="xiaoji_emulator" />
     <item drawable="xiaomi_account" />
     <item drawable="xiaomi_router" />
@@ -686,6 +706,7 @@
     <item drawable="_12123" />
     <item drawable="_12306" />
     <item drawable="_2048" />
+    <item drawable="_369trip" />
     <item drawable="_500px" />
     <item drawable="_58" />
     <item drawable="_5sing" />
