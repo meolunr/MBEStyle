@@ -4378,9 +4378,6 @@
         component="ComponentInfo{com.mdroid.read/com.mdroid.application.ui.welcome.WelcomeActivity}"
         drawable="aikanreader" />
     <item
-        component="ComponentInfo{com.oppo.usercenter/com.oppo.usercenter.vip.UCVIPMainActivity}"
-        drawable="oppo" />
-    <item
         component="ComponentInfo{cn.missevan/cn.missevan.activity.SplashActivity}"
         drawable="missevan" />
     <item
@@ -4645,5 +4642,10 @@
     <item
         component="ComponentInfo{cn.liuyin.manhua/cn.liuyin.manhua.activity.HomeActivity}"
         drawable="android_app" />
+
+    <!-- 2019.06.12 Added -->
+    <item
+        component="ComponentInfo{com.oppo.store/com.oppo.store.InitActivity}"
+        drawable="oppo" />
 
 </resources>
