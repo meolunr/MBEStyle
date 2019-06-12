@@ -16,8 +16,10 @@
     </string-array>
 
     <string-array name="whatsnew">
+        <item>coloros_bbs</item>
         <item>coloros_familyguard</item>
         <item>coloros_gamespace</item>
+        <item>deepink</item>
         <item>fasthub</item>
         <item>fdroid</item>
         <item>flyme_bbs</item>
@@ -29,6 +31,8 @@
         <item>meizu_store</item>
         <item>openvpn</item>
         <item>oppo_community</item>
+        <item>oppo_littlegames</item>
+        <item>oppo_usercenter</item>
         <item>ourplay</item>
         <item>outline</item>
         <item>secscan_qr</item>

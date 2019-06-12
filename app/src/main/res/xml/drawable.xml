@@ -110,6 +110,7 @@
     <item drawable="cm_filemanager" />
     <item drawable="cm_theme" />
     <item drawable="cnbeta" />
+    <item drawable="coloros_bbs" />
     <item drawable="coloros_familyguard" />
     <item drawable="coloros_gamespace" />
     <item drawable="compass" />
@@ -129,6 +130,7 @@
     <item drawable="dangle" />
     <item drawable="daysmatter" />
     <item drawable="ddcat" />
+    <item drawable="deepink" />
     <item drawable="delsart_color" />
     <item drawable="dgtle" />
     <item drawable="dianping" />
@@ -326,11 +328,11 @@
     <item drawable="meituanwaimai" />
     <item drawable="meituxiuxiu" />
     <item drawable="meiyan_camera" />
-    <item drawable="meizu_usercenter" />
     <item drawable="meizu_mcare" />
     <item drawable="meizu_painter" />
     <item drawable="meizu_reader" />
     <item drawable="meizu_store" />
+    <item drawable="meizu_usercenter" />
     <item drawable="memory_cleaner" />
     <item drawable="message" />
     <item drawable="microsoft_bing_dict" />
@@ -406,6 +408,8 @@
     <item drawable="openvpn" />
     <item drawable="oppo" />
     <item drawable="oppo_community" />
+    <item drawable="oppo_littlegames" />
+    <item drawable="oppo_usercenter" />
     <item drawable="originalwish" />
     <item drawable="ourplay" />
     <item drawable="outline" />
