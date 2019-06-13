@@ -759,6 +759,12 @@
     <item
         component="ComponentInfo{com.mxtech.videoplayer.ad/com.mxtech.videoplayer.ad.ActivityMediaList}"
         drawable="mxplayer" />
+    <item
+        component="ComponentInfo{com.mxtech.videoplayer.ad/com.mxtech.videoplayer.ad.ActivityWelcomeMX}"
+        drawable="mxplayer" />
+    <item
+        component="ComponentInfo{com.mxtech.videoplayer.pro/com.mxtech.videoplayer.pro.ActivityWelcomeMX}"
+        drawable="mxplayer" />
 
     <!-- 写轮眼 /  myandroidool  -->
     <item
@@ -1021,6 +1027,9 @@
         drawable="clock" />
     <item
         component="ComponentInfo{com.sonymobile.notes/com.sonymobile.notes.dashboard.DashboardActivity}"
+        drawable="note" />
+    <item
+        component="ComponentInfo{com.samsung.android.app.notes/com.samsung.android.app.notes.memolist.MemoListActivity}"
         drawable="note" />
     <item
         component="ComponentInfo{com.sonymobile.entrance/com.sonymobile.entrance.EntranceActivity}"
@@ -2044,7 +2053,7 @@
         component="ComponentInfo{com.by_syk.cooldp/com.by_syk.cooldp.HelloActivity}"
         drawable="coolri" />
     <item
-        component="ComponentInfo{info.papdt.blackblub/info.papdt.blackblub.ui.LaunchActivity}"
+        component="ComponentInfo{info.papdt.blackblub/info.papdt.blackblub.ui.MainActivity}"
         drawable="blackblub" />
     <item
         component="ComponentInfo{com.daimajia.gold/com.daimajia.gold.LogoActivity}"
@@ -2330,6 +2339,9 @@
         component="ComponentInfo{org.zwanoo.android.speedtest/com.ookla.speedtest.softfacade.MainActivity}"
         drawable="speedtest" />
     <item
+        component="ComponentInfo{org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity}"
+        drawable="speedtest" />
+    <item
         component="ComponentInfo{com.dianping.v1/com.dianping.main.guide.SplashScreenActivity}"
         drawable="dianping" />
     <item
@@ -2525,6 +2537,9 @@
         component="ComponentInfo{com.cainiao.wireless/com.cainiao.wireless.homepage.presentation.view.activity.HomepageActivity}"
         drawable="cainiao" />
     <item
+        component="ComponentInfo{com.cainiao.wireless/com.cainiao.wireless.homepage.presentation.view.activity.NewHomepageActivity}"
+        drawable="cainiao" />
+    <item
         component="ComponentInfo{com.nuomi/com.baidu.bainuo.dex.InstallDexActivity}"
         drawable="nuomi" />
     <item
@@ -2566,6 +2581,9 @@
         drawable="faceu" />
     <item
         component="ComponentInfo{com.netease.uu/com.netease.uu.activity.SplashScreenActivity}"
+        drawable="uu" />
+    <item
+        component="ComponentInfo{com.netease.uu/com.netease.uu.activity.MainActivity}"
         drawable="uu" />
     <item
         component="ComponentInfo{com.netease.onmyoji/com.netease.onmyoji.Launcher}"
@@ -2664,6 +2682,9 @@
         drawable="theme" />
     <item
         component="ComponentInfo{com.huawei.vassistant/com.huawei.vassistant.ui.VAssistantActivity}"
+        drawable="voiceassist" />
+    <item
+        component="ComponentInfo{com.huawei.vassistant/com.huawei.vassistant.ui.main.VAssistantActivity}"
         drawable="voiceassist" />
     <item
         component="ComponentInfo{com.flarejune.perfectcolorbar.kk/com.flarejune.perfectcolorbar.kk.ui.actMain}"
@@ -3148,6 +3169,9 @@
         drawable="caoliu" />
     <item
         component="ComponentInfo{video.vue.android/video.vue.android.ui.activity.SplashActivity}"
+        drawable="vue" />
+    <item
+        component="ComponentInfo{video.vue.android/video.vue.android.ui.launch.SplashActivity}"
         drawable="vue" />
     <item
         component="ComponentInfo{com.evergreen.greendroid/com.evergreen.greendroid.activities.SplashActivity}"
@@ -3980,7 +4004,7 @@
         component="ComponentInfo{com.xda.labs.play/com.xda.labs.ForumLauncher}"
         drawable="xda" />
     <item
-        component="ComponentInfo{com.icbc.im/com.icbc.im.ui.activity.LauncherActivity}"
+        component="ComponentInfo{com.icbc.im/com.icbc.im.SplashActivity}"
         drawable="icbc_im" />
     <item
         component="ComponentInfo{com.suning.mobile.ebuy/com.suning.mobile.ebuy.base.host.InitialActivity}"
@@ -4117,6 +4141,9 @@
         drawable="findmyphone" />
     <item
         component="ComponentInfo{com.meizu.flyme.find/com.meizu.flyme.find.ui.LoginActivity}"
+        drawable="findmyphone" />
+    <item
+        component="ComponentInfo{com.huawei.android.remotecontrol/com.huawei.android.remotecontrol.ui.PhoneFinderActivity}"
         drawable="findmyphone" />
     <item
         component="ComponentInfo{com.github.chenxiaolong.dualbootpatcher.snapshot/com.github.chenxiaolong.dualbootpatcher.MainActivity}"
@@ -4420,7 +4447,7 @@
     <item
         component="ComponentInfo{camera360.lite.beauty.selfie.camera/us.pinguo.icecream.camera.CameraActivity}"
         drawable="camera360" />
-    
+
     <!-- 山寨云 -->
     <item
         component="ComponentInfo{com.downloading.main.baiduyundownload/com.downloading.main.baiduyundownload.splash.SplashActivity}"
