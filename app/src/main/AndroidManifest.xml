@@ -96,6 +96,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
+            <!-- Turbo Launcher -->
+            <intent-filter>
+                <action android:name="com.phonemetra.turbo.launcher.THEMES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
             <!-- Other -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -148,6 +154,16 @@
                 <action android:name="com.lge.launcher2.THEME" />
 
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="cdproductions.crazyicons.TWO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.daeva112.manager.MAIN"/>
+                <category android:name="com.daeva112.manager.THEME"/>
             </intent-filter>
 
         </activity>

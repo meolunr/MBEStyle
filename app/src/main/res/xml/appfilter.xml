@@ -2625,6 +2625,9 @@
         component="ComponentInfo{com.topjohnwu.magisk/com.topjohnwu.magisk.SplashActivity}"
         drawable="magisk" />
     <item
+        component="ComponentInfo{com.topjohnwu.magisk/a.c}"
+        drawable="magisk" />
+    <item
         component="ComponentInfo{org.noear.ddcat/org.noear.ddcat.controller.HomeNavigationActivity}"
         drawable="ddcat" />
     <item
@@ -3123,7 +3126,7 @@
         component="ComponentInfo{liu.lock/liu.lock.LockActivity}"
         drawable="lockscreen" />
     <item
-        component="ComponentInfo{com.picacomic.fregata/com.picacomic.fregata.activities.LoginActivity}"
+        component="ComponentInfo{com.picacomic.fregata/com.picacomic.fregata.activities.SplashActivity}"
         drawable="bikamanga" />
     <item
         component="ComponentInfo{com.huati/com.huluxia.ui.base.BBSAppStart}"
