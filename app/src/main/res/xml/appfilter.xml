@@ -1075,6 +1075,8 @@
     <item
         component="ComponentInfo{com.cootek.smartinputv5/com.cootek.smartinput5.TouchPalOption}"
         drawable="touchpal_keyboard" />
+
+    <!-- 讯飞输入法 -->
     <item
         component="ComponentInfo{com.iflytek.inputmethod.google/com.iflytek.inputmethod.google.LauncherActivity}"
         drawable="xunfei_keyboard" />
@@ -1084,6 +1086,16 @@
     <item
         component="ComponentInfo{com.iflytek.inputmethod.oem/com.iflytek.inputmethod.oem.LauncherActivity}"
         drawable="xunfei_keyboard" />
+    <item
+        component="ComponentInfo{com.iflytek.inputmethod/com.iflytek.inputmethod.LauncherActivity}"
+        drawable="xunfei_keyboard" />
+    <item
+        component="ComponentInfo{com.iflytek.inputmethod/com.iflytek.inputmethod.WizardActivity}"
+        drawable="xunfei_keyboard" />
+    <item
+        component="ComponentInfo{com.iflytek.inputmethod.gionee/com.iflytek.inputmethod.gionee.WizardActivity}"
+        drawable="xunfei_keyboard" />
+
     <item
         component="ComponentInfo{com.google.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}"
         drawable="google_keyboard" />
@@ -1186,7 +1198,8 @@
     <item
         component="ComponentInfo{com.kugou.android/com.kugou.android.app.splash.SplashActivity}"
         drawable="kugou" />
-    <!-- 万能钥匙 / wifi_key -->
+
+    <!-- 万能钥匙 -->
     <item
         component="ComponentInfo{com.lfqy.wifilocating/com.lfqy.wifilocating.ui.activity.HomeActivity}"
         drawable="wifi_key" />
@@ -1208,8 +1221,17 @@
     <item
         component="ComponentInfo{com.halo.wifikey.wifilocating/com.halo.wifikey.wifilocating.ui.activity.WelcomeActivity}"
         drawable="wifi_key" />
+    <item
+        component="ComponentInfo{com.snda.wifilocating/com.lantern.launcher.ui.MainActivityC}"
+        drawable="wifi_key" />
+    <item
+        component="ComponentInfo{com.youan.universal/com.youan.universal.ui.activity.SplashActivity}"
+        drawable="wifi_key" />
+    <item
+        component="ComponentInfo{com.qy.wifi/l.　ۖۘۧۦ}"
+        drawable="wifi_key" />
 
-    <!-- 2_21 / 2017 -->
+    <!-- 2017.02.21 Added -->
     <item
         component="ComponentInfo{com.taptap/com.play.taptap.ui.MainAct}"
         drawable="taptap" />
@@ -1732,9 +1754,15 @@
     <item
         component="ComponentInfo{com.kibey.echo/com.kibey.echo.ui.account.EchoDexLoadingActivity}"
         drawable="echo" />
+
+    <!-- 铁路12306 -->
     <item
         component="ComponentInfo{com.MobileTicket/com.MobileTicket.MobileTicket}"
         drawable="_12306" />
+    <item
+        component="ComponentInfo{com.MobileTicket/com.alipay.mobile.quinox.LauncherActivity}"
+        drawable="_12306" />
+
     <!-- nova / nova -->
     <item
         component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaShortcutHandler}"
@@ -1831,6 +1859,9 @@
     <item
         component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.MainActivity}"
         drawable="icebox" />
+    <item
+        component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainAppActivity}"
+        drawable="icebox" />
 
     <item
         component="ComponentInfo{cn.xiaochuankeji.tieba/cn.xiaochuankeji.tieba.ui.base.SplashActivity}"
@@ -1909,6 +1940,9 @@
         drawable="kingsoft_dic" />
     <item
         component="ComponentInfo{com.alibaba.wireless/com.alibaba.wireless.v5.LauncherActivity}"
+        drawable="alibaba" />
+    <item
+        component="ComponentInfo{com.alibaba.wireless/com.alibaba.wireless.launch.LauncherActivity}"
         drawable="alibaba" />
     <item
         component="ComponentInfo{com.dropbox.android/com.dropbox.android.activity.DropboxBrowser}"
@@ -2046,9 +2080,21 @@
     <item
         component="ComponentInfo{com.dianping.movieheaven/com.dianping.movieheaven.activity.SplashActivity}"
         drawable="dianyingtt" />
+
+    <!-- 应用变量 -->
     <item
         component="ComponentInfo{com.sollyu.xposed.hook.model/com.sollyu.xposed.hook.model.MainActivity}"
         drawable="variables" />
+    <item
+        component="ComponentInfo{com.sollyu.xposed.hook.model/com.sollyu.xposed.hook.model.launcher}"
+        drawable="hook_model" />
+    <item
+        component="ComponentInfo{com.sollyu.xposed.hook.model/com.sollyu.android.appenv.activity.SplashActivity}"
+        drawable="hook_model" />
+    <item
+        component="ComponentInfo{com.sollyu.xposed.hook.model/com.sollyu.kotlin.appenv.activity.ActivityMain}"
+        drawable="hook_model" />
+
     <item
         component="ComponentInfo{com.by_syk.cooldp/com.by_syk.cooldp.HelloActivity}"
         drawable="coolri" />
@@ -2657,9 +2703,18 @@
     <item
         component="ComponentInfo{com.orekie.search/com.orekie.search.components.EntryActivity}"
         drawable="lite_search" />
+
+    <!-- 扫描全能王 -->
     <item
         component="ComponentInfo{com.intsig.camscanner/com.intsig.camscanner.WelcomeActivity}"
         drawable="camscanner" />
+    <item
+        component="ComponentInfo{com.intsig.camscanner/com.intsig.camscanner.launcher.WelcomeDefaultActivity}"
+        drawable="camscanner" />
+    <item
+        component="ComponentInfo{com.intsig.lic.camscanner/com.intsig.lic.camscanner.CamScannerLicense}"
+        drawable="camscanner" />
+
     <item
         component="ComponentInfo{com.samsung.android.onlinevideo/com.samsung.android.onlinevideo.list.activity.VideoList}"
         drawable="samsung_video" />
@@ -3675,12 +3730,7 @@
         component="ComponentInfo{com.wifi.pskviewer/com.wifibanlv.wifipartner.activity.LogoActivity}"
         drawable="wifi_password" />
 
-    <item
-        component="ComponentInfo{com.youan.universal/com.youan.universal.ui.activity.SplashActivity}"
-        drawable="wifi_key" />
-
     <!-- 2048 -->
-
     <item
         component="ComponentInfo{com.uberspot.a2048/com.uberspot.a2048.MainActivity}"
         drawable="_2048" />
@@ -3899,9 +3949,6 @@
     <item
         component="ComponentInfo{com.dodo.calendar/com.dodo.calendar.DCalendarAt}"
         drawable="calendar" />
-    <item
-        component="ComponentInfo{com.sollyu.xposed.hook.model/com.sollyu.xposed.hook.model.launcher}"
-        drawable="hook_model" />
     <item
         component="ComponentInfo{com.v.study/com.v.zy.mobile.activity.VZyJumpActivity}"
         drawable="v_study" />
@@ -4317,9 +4364,6 @@
         component="ComponentInfo{com.ximalaya.ting.android/com.ximalaya.ting.android.activity.login.WelcomeActivity}"
         drawable="ximalaya" />
     <item
-        component="ComponentInfo{com.sollyu.xposed.hook.model/com.sollyu.android.appenv.activity.SplashActivity}"
-        drawable="hook_model" />
-    <item
         component="ComponentInfo{com.starbucks.cn/com.starbucks.cn.ui.StartActivity}"
         drawable="starbucks" />
     <item
@@ -4429,12 +4473,6 @@
         drawable="milk" />
 
     <!-- 2017.09.16 Add -->
-    <item
-        component="ComponentInfo{com.iflytek.inputmethod/com.iflytek.inputmethod.WizardActivity}"
-        drawable="xunfei_keyboard" />
-    <item
-        component="ComponentInfo{com.iflytek.inputmethod.gionee/com.iflytek.inputmethod.gionee.WizardActivity}"
-        drawable="xunfei_keyboard" />
     <item
         component="ComponentInfo{com.chinatelecom.bestpayclient/com.chinatelecom.bestpayclient.ui.activity.SplashActivity}"
         drawable="bestpayclient" />
