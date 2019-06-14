@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
@@ -112,6 +111,7 @@ public class LeanApi {
                 // 更新+1 requestTotal
 
                 BodyAutoBean body = new BodyAutoBean("Increment", 1);
+                body.setComponentInfo(bean.activity);
 
                 req.method = LeanBatchRequest.METHOD_PUT;
                 req.path = builder.append("/1.1/classes/AppReport/").append(bean.objectId).toString();
