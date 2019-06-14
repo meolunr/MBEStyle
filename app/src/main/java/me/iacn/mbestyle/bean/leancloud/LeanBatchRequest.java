@@ -1,5 +1,7 @@
 package me.iacn.mbestyle.bean.leancloud;
 
+import android.text.TextUtils;
+
 import java.util.List;
 
 /**
@@ -35,11 +37,18 @@ public class LeanBatchRequest {
         public static class BodyAutoBean {
 
             private RequestTotalBean requestTotal;
+            private String componentInfo;
 
             public BodyAutoBean(String __op, int amount) {
                 this.requestTotal = new RequestTotalBean();
                 this.requestTotal.__op = __op;
                 this.requestTotal.amount = amount;
+            }
+
+            public void setComponentInfo(String component) {
+                if (!TextUtils.isEmpty(component)) {
+                    this.componentInfo = component;
+                }
             }
 
             private class RequestTotalBean {
