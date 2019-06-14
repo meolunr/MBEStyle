@@ -3244,18 +3244,6 @@
         component="ComponentInfo{com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity}"
         drawable="dingding" />
     <item
-        component="ComponentInfo{com.ceco.marshmallow.gravitybox/com.ceco.marshmallow.gravitybox.GravityBoxSettingsAlias}"
-        drawable="gravitybox" />
-    <item
-        component="ComponentInfo{com.ceco.lollipop.gravitybox/com.ceco.lollipop.gravitybox.GravityBoxSettingsAlias}"
-        drawable="gravitybox" />
-    <item
-        component="ComponentInfo{com.ceco.kitkat.gravitybox/com.ceco.kitkat.gravitybox.GravityBoxSettingsAlias}"
-        drawable="gravitybox" />
-    <item
-        component="ComponentInfo{com.ceco.gm2.gravitybox/com.ceco.gm2.gravitybox.GravityBoxSettingsAlias}"
-        drawable="gravitybox" />
-    <item
         component="ComponentInfo{com.lofter.android/com.lofter.android.activity.SplashActivity}"
         drawable="lofter" />
     <item
@@ -4883,5 +4871,33 @@
     <item
         component="ComponentInfo{cn.deepink.reader/cn.deepink.reader.ui.main.HomeActivity}"
         drawable="deepink" />
+
+    <!-- 重力工具箱 / GravityBox -->
+    <item
+        component="ComponentInfo{com.ceco.gm2.gravitybox/com.ceco.gm2.gravitybox.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
+    <item
+        component="ComponentInfo{com.ceco.kitkat.gravitybox/com.ceco.kitkat.gravitybox.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
+    <item
+        component="ComponentInfo{com.ceco.lollipop.gravitybox/com.ceco.lollipop.gravitybox.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
+    <item
+        component="ComponentInfo{com.ceco.marshmallow.gravitybox/com.ceco.marshmallow.gravitybox.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
+    <item
+        component="ComponentInfo{com.ceco.nougat.gravitybox/com.ceco.nougat.gravitybox.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
+    <item
+        component="ComponentInfo{com.ceco.oreo.gravitybox/com.ceco.oreo.gravitybox.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
+    <item
+        component="ComponentInfo{com.ceco.pie.gravitybox/com.ceco.pie.gravitybox.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
+
+    <!-- GravityBox - Coolapk edition -->
+    <item
+        component="ComponentInfo{com.wrbug.gravitybox.nougat/com.wrbug.gravitybox.nougat.GravityBoxSettingsAlias}"
+        drawable="gravitybox" />
 
 </resources>
