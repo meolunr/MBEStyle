@@ -16,7 +16,7 @@
     <string name="donate">捐赠</string>
     <string name="set_wallpaper">应用壁纸到启动器</string>
     <string name="donate_summary">点击会尝试打开支付宝</string>
-    <string name="open_source">开源相关</string>
+    <string name="open_source">开源许可</string>
     <string name="licenses">开源许可</string>
     <string name="activity_wallpaper_title">请选择一张壁纸</string>
     <string name="toast_set_wallpaper_failed">壁纸设置失败</string>
