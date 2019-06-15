@@ -1272,9 +1272,6 @@
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityII}"
         drawable="usim" />
     <item
-        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LOCK/com.android.vending.billing.InAppBillingService.LOCK.MainActivity-Original}"
-        drawable="lucklypatcher" />
-    <item
         component="ComponentInfo{com.tencent.qqmusiclocalplayer/com.tencent.qqmusiclocalplayer.app.activity.AppStarterActivity}"
         drawable="qq_music" />
     <item
@@ -1423,6 +1420,12 @@
         drawable="_10086" />
     <item
         component="ComponentInfo{zz.dela.cmcc.traffic/zz.dela.cmcc.traffic.activity.SplashActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.sinovatech.gxmobile.ui/com.sinovatech.gxmobile.ui.WelcomeActivity}"
+        drawable="_10086" />
+    <item
+        component="ComponentInfo{com.xwtec.sd.mobileclient/com.xwtec.sd.mobileclient.LoadingActivity}"
         drawable="_10086" />
 
     <!-- 2_23 / 2017-->
@@ -1954,11 +1957,6 @@
         component="ComponentInfo{com.dropbox.android/com.dropbox.android.activity.DropboxBrowser}"
         drawable="dropbox" />
 
-    <!-- Modify at 2017.03.14  LuckyPatcher -->
-    <item
-        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LACK/com.android.vending.billing.InAppBillingService.LACK.MainActivity-Original}"
-        drawable="lucklypatcher" />
-
     <!-- Modify at 2017.03.15  ColorOS Apps -->
     <item
         component="ComponentInfo{com.coloros.alarmclock/com.coloros.alarmclock.AlarmClock}"
@@ -2108,7 +2106,7 @@
         component="ComponentInfo{info.papdt.blackblub/info.papdt.blackblub.ui.MainActivity}"
         drawable="blackblub" />
     <item
-        component="ComponentInfo{com.daimajia.gold/com.daimajia.gold.LogoActivity}"
+        component="ComponentInfo{com.daimajia.gold/im.juejin.android.hull.activity.LogoActivity}"
         drawable="daimajia_gold" />
     <item
         component="ComponentInfo{org.zooper.zwpro/org.zooper.zwlib.Launcher}"
@@ -2373,9 +2371,6 @@
         component="ComponentInfo{com.gotokeep.keep/com.gotokeep.keep.activity.SplashActivity}"
         drawable="keep" />
     <item
-        component="ComponentInfo{com.mobike.mobikeapp/com.mobike.mobikeapp.SplashActivity}"
-        drawable="mobikeapp" />
-    <item
         component="ComponentInfo{com.smzdm.client.android/com.smzdm.client.android.activity.WelComeActivity}"
         drawable="smzdm" />
     <item
@@ -2420,9 +2415,6 @@
     <item
         component="ComponentInfo{com.sonymobile.androidapp.audiorecorder/com.sonymobile.androidapp.audiorecorder.activity.MainActivity}"
         drawable="soundrecorder" />
-    <item
-        component="ComponentInfo{com.qihoo.browser/com.qihoo.browser.activity.SplashActivity}"
-        drawable="qihoo_browser" />
     <item
         component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FMRadioMainActivity}"
         drawable="fm" />
@@ -2529,9 +2521,6 @@
         component="ComponentInfo{com.meizu.notes/com.meizu.flyme.notepaper.app.NoteSplashActivity}"
         drawable="note" />
     <item
-        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LOCK/com.android.vending.billing.InAppBillingService.LOCK.MainActivity-4}"
-        drawable="lucklypatcher" />
-    <item
         component="ComponentInfo{kh.android.dir/kh.android.dir.ui.Icons.EntryWithGreenIcon}"
         drawable="dirclean" />
     <item
@@ -2619,9 +2608,6 @@
     <item
         component="ComponentInfo{com.qihoo360.mobilesafe/com.qihoo360.mobilesafe.ui.index.AppEnterActivity}"
         drawable="qihoo" />
-    <item
-        component="ComponentInfo{com.qihoo.chrome360/com.qihoo.browser.activity.SplashActivity}"
-        drawable="qihoo_jisu" />
     <item
         component="ComponentInfo{com.lemon.faceu/com.lemon.faceu.login.LoadingPageActivity}"
         drawable="faceu" />
@@ -3329,12 +3315,6 @@
     <item
         component="ComponentInfo{de.robv.android.xposed.mods.appsettings/de.robv.android.xposed.mods.appsettings.XposedModActivity}"
         drawable="appsettings" />
-    <item
-        component="ComponentInfo{com.chinamworld.bocmbci/com.chinamworld.bocmbci.biz.DexActivity}"
-        drawable="boc" />
-    <item
-        component="ComponentInfo{com.forms/com.forms.start.ActStart}"
-        drawable="boc" />
     <item
         component="ComponentInfo{com.qqgame.hlddz/com.qqgame.hlddz.NewHLDDZ}"
         drawable="doudizhu" />
@@ -4361,9 +4341,6 @@
         component="ComponentInfo{com.starbucks.cn/com.starbucks.cn.ui.StartActivity}"
         drawable="starbucks" />
     <item
-        component="ComponentInfo{com.android.vending.billing.InAppBillingService.CLON/com.android.vending.billing.InAppBillingService.CLON.MainActivity-Original}"
-        drawable="lucklypatcher" />
-    <item
         component="ComponentInfo{com.dangdang.buy2/com.dangdang.buy2.StartupActivity}"
         drawable="dangdang" />
     <item
@@ -4579,9 +4556,6 @@
         component="ComponentInfo{com.vivo.Tips/com.vivo.Tips.MainActivity}"
         drawable="support" />
     <item
-        component="ComponentInfo{com.xzr.La.systemtoolbox/com.xzr.La.systemtoolbox.MainActivity}"
-        drawable="la_systemtoolbox" />
-    <item
         component="ComponentInfo{com.adobe.reader/com.adobe.reader.AdobeReader}"
         drawable="acrobat" />
     <item
@@ -4662,9 +4636,6 @@
         component="ComponentInfo{com.vjson.anime/com.vjson.comic.ui.activity.MainActivity}"
         drawable="kuke_manga" />
     <item
-        component="ComponentInfo{com.xwtec.sd.mobileclient/com.xwtec.sd.mobileclient.LoadingActivity}"
-        drawable="_10086" />
-    <item
         component="ComponentInfo{eu.thedarken.sdm.unlocker/eu.thedarken.sdm.unlocker.MainActivity}"
         drawable="sdmaid_unlock" />
     <item
@@ -4739,9 +4710,6 @@
     <item
         component="ComponentInfo{air.tv.douyu.android/tv.douyu.view.activity.launcher.DYLauncherActivity}"
         drawable="douyutv" />
-    <item
-        component="ComponentInfo{com.miui.voiceassist/com.xiaomi.voiceassistant.CTAAlertActivity}"
-        drawable="voiceassist" />
     <item
         component="ComponentInfo{com.meizu.media.life/com.meizu.media.life.ui.activity.HomeActivity}"
         drawable="flyme_life" />
@@ -4905,5 +4873,64 @@
     <item
         component="ComponentInfo{com.wrbug.gravitybox.nougat/com.wrbug.gravitybox.nougat.GravityBoxSettingsAlias}"
         drawable="gravitybox" />
+
+    <!-- MIUI语音助手 / 小爱同学 -->
+    <item
+        component="ComponentInfo{com.miui.voiceassist/com.xiaomi.voiceassistant.CTAAlertActivity}"
+        drawable="voiceassist" />
+    <item
+        component="ComponentInfo{com.miui.voiceassist/com.xiaomi.voiceassistant.LauncherRouterActivity}"
+        drawable="voiceassist" />
+
+    <!-- 摩拜单车 -->
+    <item
+        component="ComponentInfo{com.mobike.mobikeapp/com.mobike.mobikeapp.SplashActivity}"
+        drawable="mobikeapp" />
+    <item
+        component="ComponentInfo{com.mobike.mobikeapp/com.mobike.mobikeapp.splash.SplashActivity}"
+        drawable="mobikeapp" />
+
+    <!-- 360LiteBrowser / 极速浏览器 -->
+    <item
+        component="ComponentInfo{com.qihoo.contents/com.qihoo.contents.launcher.LauncherActivity}"
+        drawable="qihoo_jisu" />
+
+    <!-- 360浏览器 / 绿E -->
+    <item
+        component="ComponentInfo{com.qihoo.browser/com.qihoo.browser.launcher.LauncherActivity}"
+        drawable="qihoo_browser" />
+
+    <!-- 中国银行 -->
+    <item
+        component="ComponentInfo{com.chinamworld.bocmbci/com.boc.bocsoft.mobile.bocmobile.buss.system.splash.SplashActivity}"
+        drawable="boc" />
+    <item
+        component="ComponentInfo{com.forms/com.forms.start.ActStart}"
+        drawable="boc" />
+
+    <!-- 镧·系统工具箱 -->
+    <item
+        component="ComponentInfo{com.xzr.La.systemtoolbox/com.xzr.La.systemtoolbox.MainActivity}"
+        drawable="la_systemtoolbox" />
+    <item
+        component="ComponentInfo{xzr.La.systemtoolbox/xzr.La.systemtoolbox.ui.activities.StartActivity}"
+        drawable="la_systemtoolbox" />
+
+    <!-- LuckyPatcher / 幸运破解器 -->
+    <item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LOCK/com.android.vending.billing.InAppBillingService.LOCK.MainActivity-Original}"
+        drawable="lucklypatcher" />
+    <item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LACK/com.android.vending.billing.InAppBillingService.LACK.MainActivity-Original}"
+        drawable="lucklypatcher" />
+    <item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.LOCK/com.android.vending.billing.InAppBillingService.LOCK.MainActivity-4}"
+        drawable="lucklypatcher" />
+    <item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.CLON/com.android.vending.billing.InAppBillingService.CLON.MainActivity-Original}"
+        drawable="lucklypatcher" />
+    <item
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivity-Original}"
+        drawable="lucklypatcher" />
 
 </resources>
