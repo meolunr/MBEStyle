@@ -39,6 +39,12 @@
             app:title="@string/developer" />
 
         <me.iacn.mbestyle.ui.widget.AboutItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:summary="@string/translator"
+            app:title="@string/language" />
+
+        <me.iacn.mbestyle.ui.widget.AboutItem
             android:id="@+id/ai_donate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -16,7 +16,7 @@
             android:background="?android:selectableItemBackground"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="16dp">
+            android:paddingLeft="18dp">
 
             <TextView
                 android:id="@+id/tv_title"
