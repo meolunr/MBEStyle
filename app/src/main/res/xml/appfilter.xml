@@ -691,7 +691,7 @@
         component="ComponentInfo{com.coolapk.market/com.coolapk.market.view.main.MainActivity}"
         drawable="coolapk" />
 
-    <!-- 联系人 /  contects  -->
+    <!-- 联系人 /  contacts  -->
     <item
         component="ComponentInfo{com.google.android.contacts/com.android.contacts.activities.PeopleActivity}"
         drawable="contacts" />
@@ -766,7 +766,7 @@
         component="ComponentInfo{com.mxtech.videoplayer.pro/com.mxtech.videoplayer.pro.ActivityWelcomeMX}"
         drawable="mxplayer" />
 
-    <!-- 写轮眼 /  myandroidool  -->
+    <!-- 写轮眼 /  myandroidtool  -->
     <item
         component="ComponentInfo{cn.wq.myandroidtools/cn.wq.myandroidtools.MainActivity}"
         drawable="myandroidtool" />
@@ -4933,4 +4933,9 @@
         component="ComponentInfo{com.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivity-Original}"
         drawable="lucklypatcher" />
 
+    <!-- 2019.12.29 Added -->
+    <item
+        component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.views.main.MainActivity}"
+        drawable="fdroid" />
+    
 </resources>
